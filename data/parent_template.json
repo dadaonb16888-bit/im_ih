@@ -1,0 +1,15 @@
+{
+  "event_id": null,
+  "name": null,
+  "detection_mode": "News",
+  "category": null,
+  "known_at": null,
+  "event_time": null,
+  "first_tradable_time": null,
+  "initial_bias": null,
+  "channels": [],
+  "horizon": null,
+  "reviewed": false,
+  "invalidation": null,
+  "notes": null
+}

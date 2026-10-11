@@ -1,0 +1,9 @@
+{
+  "integrity": "ok",
+  "foreign_key_errors": [],
+  "events": 18,
+  "research_notes": 16,
+  "tests_passed": 22,
+  "market_feed_connected": false,
+  "backtest_executed": false
+}

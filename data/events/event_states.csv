@@ -1,0 +1,3 @@
+event_id,timestamp,pricing_state,acceptance,dominant
+202501_DEEPSEEK_AI_REPRICING,2025-02-10,Diffusing,Confirmed,True
+202401_SMALLCAP_LIQUIDITY_STRESS,2024-02-05,Crowded,Confirmed,True

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "policy-audit",
+      "title": "924：政策事实与公开时间分开记录",
+      "queries": [
+        {
+          "id": "audit-v1-924-transcript",
+          "source": {
+            "label": "国新办官方发言实录／西和县政府站转载，标注来源中国政府网",
+            "url": "https://zwfw.gansu.gov.cn/xihe/tsfw/szsc/ywjj/art/2024/art_121b5bd5d6464e6388fbdd7243acab31.html",
+            "caveats": [
+              "事实已核实至官方实录转载层。9时是发布会开始，不能替代每条政策的实际说出时间；转载时间不是原始信息首次公开时间。"
+            ]
+          },
+          "summary": "实录记载发布会上午9时开始，公布降准、政策利率调整、存量房贷调整及支持股票市场的新工具；另提出为六家大型商业银行补充核心一级资本。"
+        },
+        {
+          "id": "audit-v1-924-rrr",
+          "source": {
+            "label": "新华社原创报道",
+            "url": "https://www.xinhuanet.com/20240924/9f74d2c77b934548b3dfca99e3a6bcec/c.html",
+            "caveats": [
+              "报道内容和页面发布时间已核对；12:16:45只是已找到报道的页面时间，不能认定为全网首发或现场宣布时间。"
+            ]
+          },
+          "summary": "新华社报道潘功胜当日宣布近期下调存款准备金率，向市场提供长期流动性。"
+        },
+        {
+          "id": "audit-v1-926-politburo",
+          "source": {
+            "label": "中国共产党新闻网转载新华社通稿",
+            "url": "https://cpc.people.com.cn/n1/2024/0926/c64094-40328825.html",
+            "caveats": [
+              "通稿事实已核对，属于同一政策主题的新增部署；页面13:53不是经验证的最早公开时刻。新增部署也不能自动证明风格方向已经从IH转IM。"
+            ]
+          },
+          "summary": "通稿提出加大财政货币逆周期调节，促进房地产市场止跌回稳，并引导中长期资金入市。"
+        }
+      ]
+    },
+    {
+      "id": "deepseek-audit",
+      "title": "DeepSeek：初始发布与节后窗口分开记录",
+      "queries": [
+        {
+          "id": "audit-v1-r1-release",
+          "source": {
+            "label": "DeepSeek官方API文档发布公告",
+            "url": "https://api-docs.deepseek.com/news/news250120/",
+            "caveats": [
+              "发布日期与发布内容已核对。性能比较属于发行方自述，未独立复核；本轮未核实当天首次公开的小时、时区及历史版本修改记录。"
+            ]
+          },
+          "summary": "官方公告导航标注R1于2025/01/20发布，并宣布开放模型、技术报告及蒸馏模型。"
+        },
+        {
+          "id": "audit-v1-sse-cny",
+          "source": {
+            "label": "上海证券交易所官方公告",
+            "url": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20250123_10770570.shtml",
+            "caveats": [
+              "官方现货交易日历已核对。用于区分节后观察窗口与R1初始发布日；此条本身不证明中金所合约交易时段。"
+            ]
+          },
+          "summary": "上交所1月28日至2月4日休市，2月5日起照常开市。"
+        },
+        {
+          "id": "audit-v1-cffex-cny-copy",
+          "source": {
+            "label": "大地期货转载中国金融期货交易所2025年1月22日通知",
+            "url": "https://www.ddqh.com/services/noticeinfo/8428.html",
+            "caveats": [
+              "已核对会员转载，未取得中金所原始页面。该转载仅补充期货休市口径，不用于认定事件首发时间。"
+            ]
+          },
+          "summary": "会员转载的中金所通知记载1月28日至2月4日休市、2月5日起照常开市。"
+        }
+      ]
+    },
+    {
+      "id": "smallcap-audit",
+      "title": "小微盘：官方两融背景不等于危机识别证据",
+      "queries": [
+        {
+          "id": "audit-v1-csrc-margin",
+          "source": {
+            "label": "中国证券监督管理委员会官方答记者问",
+            "url": "https://www.csrc.gov.cn/csrc/c100028/c7461992/content.shtml",
+            "caveats": [
+              "官方答复事实已核对。全市场两融披露不是小微盘或量化产品专项数据，无法证明量化去杠杆规模、微盘危机起点或IM/IH方向；发布时间只有日期，不能作为2月5日开盘前已知信息。"
+            ]
+          },
+          "summary": "证监会披露全市场融资风险及平仓情况，指出主动卖出还融资也会造成融资余额下降，并拟通过延长追保时间、保持平仓线弹性减少强平压力。"
+        }
+      ]
+    }
+  ]
+}

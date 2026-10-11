@@ -1,0 +1,11 @@
+{
+  "state_id": null,
+  "event_id": null,
+  "effective_at": null,
+  "known_at": null,
+  "pricing_state": null,
+  "acceptance": null,
+  "evidence": [],
+  "method": null,
+  "notes": null
+}

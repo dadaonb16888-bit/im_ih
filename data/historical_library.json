@@ -1,0 +1,248 @@
+{
+  "note": "来源列出11个Parent；13个说法未取得对应完整清单。模板研究标签未验证，不导入当前活跃池。",
+  "parents": [
+    {
+      "event_id": "202210_CHIP_EXPORT",
+      "name": "芯片出口限制",
+      "source_research_channels": [
+        "TECH_GROWTH",
+        "RISK_OFF"
+      ],
+      "source_research_initial_bias": "IH",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节"
+    },
+    {
+      "event_id": "202211_REOPENING",
+      "name": "防疫政策转向",
+      "source_research_channels": [
+        "RISK_APPETITE"
+      ],
+      "source_research_initial_bias": "IM",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节"
+    },
+    {
+      "event_id": "202307_POLICY_SUPPORT",
+      "name": "政策支持",
+      "source_research_channels": [
+        "CREDIT_LARGECAP"
+      ],
+      "source_research_initial_bias": "IH",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节"
+    },
+    {
+      "event_id": "202310_HUIJIN",
+      "name": "汇金增持",
+      "source_research_channels": [
+        "DIRECT_LARGECAP"
+      ],
+      "source_research_initial_bias": "IH",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节"
+    },
+    {
+      "event_id": "202401_SMALLCAP_LIQUIDITY",
+      "name": "小微盘流动性危机",
+      "source_research_channels": [
+        "DIRECT_SMALLCAP_LIQUIDITY"
+      ],
+      "source_research_initial_bias": "Strong IH",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节",
+      "source_stages": {
+        "2024-01-29": "Watch",
+        "2024-01-31": "Active",
+        "2024-02-02": "Confirmed",
+        "2024-02-05": "Climax",
+        "2024-02-06": "Reversal"
+      }
+    },
+    {
+      "event_id": "202402_STABILIZATION",
+      "name": "国家队稳定行动",
+      "source_research_channels": [
+        "MARKET_STABILIZATION"
+      ],
+      "source_research_initial_bias": "IH",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节"
+    },
+    {
+      "event_id": "202404_REGULATION",
+      "name": "新国九条",
+      "source_research_channels": [
+        "REGULATION_QUALITY"
+      ],
+      "source_research_initial_bias": "IH",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节"
+    },
+    {
+      "event_id": "202405_PROPERTY",
+      "name": "地产救市",
+      "source_research_channels": [
+        "CREDIT_LARGECAP"
+      ],
+      "source_research_initial_bias": "IH",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节"
+    },
+    {
+      "event_id": "202409_POLICY_PIVOT",
+      "name": "政策大转向",
+      "source_research_channels": [
+        "MARKET_LIQUIDITY"
+      ],
+      "source_research_initial_bias": "IH",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节"
+    },
+    {
+      "event_id": "202501_DEEPSEEK",
+      "name": "DeepSeek AI重估",
+      "source_research_channels": [
+        "TECH_GROWTH"
+      ],
+      "source_research_initial_bias": "Strong IM",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节",
+      "source_stages": {
+        "2025-01-20": "Parent Created",
+        "2025-01-27": "Market Activation",
+        "2025-02-05": "Full Trading"
+      },
+      "source_conflict": "补充Schema示例写IM，主启动包写Strong IM；模板保留主启动包标签，未验证强度。"
+    },
+    {
+      "event_id": "202504_TARIFF",
+      "name": "关税冲突",
+      "source_research_channels": [
+        "RISK_OFF"
+      ],
+      "source_research_initial_bias": "IH",
+      "event_time": null,
+      "first_tradable_time": null,
+      "horizon": null,
+      "status": "Draft",
+      "verified": false,
+      "blockers": [
+        "具体事前可用时间未核实",
+        "新增事实与事前预期未审计",
+        "指数相对暴露与市场状态未重新验证"
+      ],
+      "source": "ChatGPT启动包V1.0第8节"
+    }
+  ],
+  "updates": [
+    {
+      "event_id": "202409_POLICY_PIVOT",
+      "source_date": "2024-09-26",
+      "new_channels": [
+        "RISK_APPETITE"
+      ],
+      "source_new_bias": "IM",
+      "verified": false,
+      "note": "同Parent的Channel Rotation；日期级不能伪造盘中可交易时间"
+    },
+    {
+      "event_id": "202504_TARIFF",
+      "source_month": "2025-05",
+      "name": "日内瓦缓和",
+      "source_acceptance": "Rejected",
+      "verified": false,
+      "note": "关税Parent的Update，不新建Parent；来源Acceptance标签须用当时行情重新核实"
+    }
+  ]
+}

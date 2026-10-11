@@ -1,0 +1,23 @@
+{
+  "update_id": null,
+  "event_id": null,
+  "effective_at": null,
+  "known_at": null,
+  "source_type": "News",
+  "information_gain": null,
+  "facts": null,
+  "reason": null,
+  "evidence": [],
+  "information_ids": [],
+  "changes": {
+    "bias": null,
+    "channels": [],
+    "horizon": null,
+    "directness": null,
+    "independent_cause": null,
+    "relative_pricing": null,
+    "reviewed": false,
+    "invalidation": null,
+    "first_tradable_time": null
+  }
+}

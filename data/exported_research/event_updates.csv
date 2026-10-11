@@ -1,0 +1,4 @@
+﻿description,event_id,information_gain,new_bias,new_channel,source_type,update_time
+日内瓦关税缓和,202504_TARIFF_CONFLICT,Medium,IM,,Diplomatic,2025-05-12
+全球AI重估,202501_DEEPSEEK_AI_REPRICING,High,Strong_IM,,GlobalMarket,2025-01-27
+政治局会议确认,202409_POLICY_PIVOT,High,IM,RISK_APPETITE,Policy,2024-09-26

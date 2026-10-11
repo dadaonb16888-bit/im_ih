@@ -1,0 +1,20 @@
+{
+  "information": 43,
+  "draft_events": 7,
+  "linked_information": 16,
+  "unassigned_information": 27,
+  "source_registry": 26,
+  "research_priorities": {
+    "P1": 11,
+    "P2": 15,
+    "P3": 10
+  },
+  "qualifications": {
+    "WATCH": 7
+  },
+  "causal_updates": 2,
+  "state_updates": 0,
+  "all_events": 18,
+  "historical_events": 11,
+  "research_notes": 19
+}

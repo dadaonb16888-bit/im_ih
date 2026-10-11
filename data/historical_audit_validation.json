@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-11T08:51:05.144762+00:00",
+  "tests_passed": 25,
+  "database_integrity": "ok",
+  "foreign_key_violations": [],
+  "counts": {
+    "events": 18,
+    "information_inbox": 43,
+    "research_notes": 19,
+    "event_updates": 2,
+    "state_updates": 0
+  },
+  "historical_audit_conclusions": {
+    "202409_POLICY_PIVOT": {
+      "bias": null,
+      "reviewed": false,
+      "event_time": null,
+      "qualification": "WATCH"
+    },
+    "202501_DEEPSEEK": {
+      "bias": null,
+      "reviewed": false,
+      "event_time": null,
+      "qualification": "WATCH"
+    },
+    "202401_SMALLCAP_LIQUIDITY": {
+      "bias": null,
+      "reviewed": false,
+      "event_time": null,
+      "qualification": "WATCH"
+    }
+  },
+  "scope": "本轮核对三个历史事件的来源、时间和传导假设；没有收集前一天至当前的全量新闻，没有行情验证或回测。核查时间作为known_at，不倒填到历史事件日期。"
+}

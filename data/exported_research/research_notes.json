@@ -1,0 +1,709 @@
+[
+  {
+    "claim": {
+      "raw": {
+        "description": "日内瓦关税缓和",
+        "event_id": "202504_TARIFF_CONFLICT",
+        "information_gain": "Medium",
+        "new_bias": "IM",
+        "new_channel": "",
+        "source_type": "Diplomatic",
+        "update_time": "2025-05-12"
+      },
+      "source_new_bias": "IM",
+      "source_new_channels": [],
+      "update_time_claim": {
+        "precision": "date",
+        "value": "2025-05-12",
+        "verified": false
+      }
+    },
+    "event_id": "202504_TARIFF",
+    "kind": "EventUpdate",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-37bb94c3cb4fb6bccb69",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "raw": {
+        "description": "全球AI重估",
+        "event_id": "202501_DEEPSEEK_AI_REPRICING",
+        "information_gain": "High",
+        "new_bias": "Strong_IM",
+        "new_channel": "",
+        "source_type": "GlobalMarket",
+        "update_time": "2025-01-27"
+      },
+      "source_new_bias": "Strong IM",
+      "source_new_channels": [],
+      "update_time_claim": {
+        "precision": "date",
+        "value": "2025-01-27",
+        "verified": false
+      }
+    },
+    "event_id": "202501_DEEPSEEK",
+    "kind": "EventUpdate",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-ad9cf884770b8b287c7d",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "raw": {
+        "description": "政治局会议确认",
+        "event_id": "202409_POLICY_PIVOT",
+        "information_gain": "High",
+        "new_bias": "IM",
+        "new_channel": "RISK_APPETITE",
+        "source_type": "Policy",
+        "update_time": "2024-09-26"
+      },
+      "source_new_bias": "IM",
+      "source_new_channels": [
+        "RISK_APPETITE"
+      ],
+      "update_time_claim": {
+        "precision": "date",
+        "value": "2024-09-26",
+        "verified": false
+      }
+    },
+    "event_id": "202409_POLICY_PIVOT",
+    "kind": "EventUpdate",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-ceaade2a6713b895471f",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "raw": {
+        "acceptance": "Confirmed",
+        "dominant": "True",
+        "event_id": "202401_SMALLCAP_LIQUIDITY_STRESS",
+        "pricing_state": "Crowded",
+        "timestamp": "2024-02-05"
+      },
+      "timestamp_claim": {
+        "precision": "date",
+        "value": "2024-02-05",
+        "verified": false
+      }
+    },
+    "event_id": "202401_SMALLCAP_LIQUIDITY",
+    "kind": "MarketState",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-135b3dc62c0d60a9c16b",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "raw": {
+        "acceptance": "Confirmed",
+        "dominant": "True",
+        "event_id": "202501_DEEPSEEK_AI_REPRICING",
+        "pricing_state": "Diffusing",
+        "timestamp": "2025-02-10"
+      },
+      "timestamp_claim": {
+        "precision": "date",
+        "value": "2025-02-10",
+        "verified": false
+      }
+    },
+    "event_id": "202501_DEEPSEEK",
+    "kind": "MarketState",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-90154c1b5a1553974fdf",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "audit": {
+        "baseline": "全市场官方融资披露不能代替量化产品仓位、微盘赎回、集中卖出与股指成分流动性证据。",
+        "candidate_bias": "IH",
+        "candidate_channels": [
+          "DIRECT_SMALLCAP_LIQUIDITY",
+          "POSITIONING"
+        ],
+        "candidate_horizon": "Fast",
+        "corrections": [
+          "保留2月5日开盘案例观察约定，不称为正式事件策略回测。",
+          "官方全市场两融答复不能用来验证1月31日DetectionTime或开盘前事件已知。"
+        ],
+        "direction_status": "条件性偏IH研究假设；未取得独立识别证据",
+        "event_id": "202401_SMALLCAP_LIQUIDITY",
+        "fact_status": "2月5日官方两融背景已核实；小微盘危机机制、规模及起点尚未证实",
+        "facts": "证监会2月5日说明全市场两融情况和降低强平压力的安排。该事实提供风险背景，不足以证明微盘危机、量化去杠杆或某日早盘已经能识别事件。",
+        "gaps": [
+          "仅用当时可获得数据的Detection规则、阈值及触发时刻",
+          "量化去杠杆、赎回及集中被动出售的独立证据",
+          "微盘冲击传至中证1000成分的暴露比较",
+          "所谓Fresh／Crowded／Reversing历史阶段的时点证据"
+        ],
+        "ih_countercase": "偏IH成立的前提是冲击对中证1000比上证50更集中；全市场融资数据本身不构成这个比较。",
+        "im_case": "小盘定向支持、赎回缓和或被动卖出结束可能改变渠道；是否形成反向机制需有独立新增事实，不能仅因反弹认定。",
+        "information_routing": "仍为MarketState候选。价格异常可先记研究State，成立为事件需额外机制证据或预先定义的市场结构识别方法。救市新政策应作为独立机制另审，再关联冲突与失效，不强制改写原事件。",
+        "invalidation": "集中被动出售的机制证据消失、定向支持改变资金约束或新机制主导时重审；单独价格反弹不自动证明事件已失效。",
+        "name": "小微盘流动性危机",
+        "next_action": "先定义机制证据清单和事前Detection规则；阶段判断待未来接入行情后验证。",
+        "source_ids": [
+          "audit-v1-csrc-margin"
+        ],
+        "time_review": "执行用户已确认口径：2024-02-05开盘观察的案例诊断。正式DetectionTime和触发规则留空；1月31日、2月1日及其他阶段日期只保留为待核实来源标签。日期级2月5日公告不能倒填成开盘前已知。",
+        "transmission": "若能事前观察到中小盘集中被动出售、流动性恶化与拥挤去杠杆→中小盘风险溢价和交易冲击上升→可能偏IH。微盘与中证1000不是同一资产集合，还需证明冲击传至IM成分。"
+      }
+    },
+    "event_id": "202401_SMALLCAP_LIQUIDITY",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:47:36.081277+00:00",
+    "note_id": "historical-audit-v1:202401_SMALLCAP_LIQUIDITY",
+    "review_status": "Pending",
+    "source": "历史原文核查 V1（来源与限制逐条记录）"
+  },
+  {
+    "claim": {
+      "audit": {
+        "baseline": "实录说明年内此前已有多次调整，924不是从完全没有宽松开始；本轮尚未取得会前一致预期，不能给Surprise=High。",
+        "candidate_bias": null,
+        "candidate_channels": [
+          "MARKET_LIQUIDITY",
+          "CREDIT_LARGECAP",
+          "RISK_APPETITE"
+        ],
+        "candidate_horizon": "Swing",
+        "corrections": [
+          "旧研究初始IH与Phase 1 CSV初始IM冲突继续保留；两者均不自动升级为正式方向。"
+        ],
+        "direction_status": "双路径竞争，暂不指定正式Bias",
+        "draft_update": {
+          "changes": {
+            "channels": [
+              "MARKET_LIQUIDITY",
+              "CREDIT_LARGECAP",
+              "RISK_APPETITE"
+            ],
+            "horizon": "Swing",
+            "independent_cause": true,
+            "reviewed": false
+          },
+          "information_gain": "Medium",
+          "source_type": "Policy"
+        },
+        "event_id": "202409_POLICY_PIVOT",
+        "fact_status": "官方政策事实已核实；部分来源为官方内容转载",
+        "facts": "9月24日公布流动性、房贷与股票市场支持措施，9月26日有新的宏观与资本市场部署；两次信息应分段留痕。",
+        "gaps": [
+          "具体政策首次公开时刻及可交易时间",
+          "会前政策预期与新增程度",
+          "2024年9月两指数成分和行业权重／直接受益名单",
+          "IH→IM演化的独立新增事实；不能凭事后涨跌确定"
+        ],
+        "ih_countercase": "大行资本、地产信用风险缓释和长期资金偏好可能先支持权重股；利率下降对银行净息差的作用也需与风险缓释共同评估。",
+        "im_case": "若增量政策主要缓解中小盘融资约束、扩散至成长行业，且其当期指数暴露更高，偏IM的因果解释增强。",
+        "information_routing": "924多篇复述归同一Parent；926新增部署可作为该Parent的Event Update候选。若发现独立的新机制，再研究拆Parent，不能每篇新闻建事件。",
+        "invalidation": "若政策实际受益结构与所选风格相反、落地弱于方向判断的前提，或新的独立风险机制压过该政策渠道，应重新审因果；单纯价格反向先记录State。",
+        "name": "924政策转向",
+        "next_action": "先补当期指数暴露与政策直接受益对照，决定哪个机制在哪个周期占主导。",
+        "source_ids": [
+          "audit-v1-924-transcript",
+          "audit-v1-924-rrr",
+          "audit-v1-926-politburo"
+        ],
+        "time_review": "924上午9时为发布会开始；具体政策现场宣布时刻未核实。926通稿的13:53为已找到转载页面时间。事件公开时间和FirstTradableTime继续留空，不将日期补为零点。",
+        "transmission": "流动性改善→融资约束缓和与风险偏好改善→可能偏IM；大行资本补充及信用风险缓释→金融权重受益→可能偏IH。方向需要比较相对受益强度，不能由全面宽松直接推出。"
+      }
+    },
+    "event_id": "202409_POLICY_PIVOT",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:47:36.081277+00:00",
+    "note_id": "historical-audit-v1:202409_POLICY_PIVOT",
+    "review_status": "Pending",
+    "source": "历史原文核查 V1（来源与限制逐条记录）"
+  },
+  {
+    "claim": {
+      "audit": {
+        "baseline": "已有V3和更早推理模型等公开背景，R1应比较新增能力、许可及可用性；本轮没有会前预期样本，也未把技术自述转换成超预期分值。",
+        "candidate_bias": "IM",
+        "candidate_channels": [
+          "TECH_GROWTH",
+          "RISK_APPETITE"
+        ],
+        "candidate_horizon": "Trend",
+        "corrections": [
+          "原CSV的2025-02-05 FirstTradableTime仅保留为来源标签；新增节后观察窗口字段，不覆盖原始CSV。",
+          "Strong IM降为尚待证实的IM研究假设；正式Bias仍未确定。"
+        ],
+        "direction_status": "保留偏IM研究假设，相对受益证据待补",
+        "draft_update": {
+          "changes": {
+            "channels": [
+              "TECH_GROWTH",
+              "RISK_APPETITE"
+            ],
+            "horizon": "Trend",
+            "independent_cause": true,
+            "reviewed": false
+          },
+          "information_gain": "Medium",
+          "source_type": "Announcement"
+        },
+        "event_id": "202501_DEEPSEEK",
+        "fact_status": "R1官方发布日期与开放内容已核实；技术效果限发行方自述",
+        "facts": "R1官方发布页标注2025年1月20日。2月5日是春节后观察窗口，不是R1最初发布后整个市场第一次有机会交易。",
+        "gaps": [
+          "R1最早公开小时、时区及当时可获得版本",
+          "2025年1月两指数成分及AI受益暴露",
+          "事件前市场预期和提前定价证据",
+          "节后新增事实与旧信息扩散的区分；本轮未核对所谓1月27日海外冲击"
+        ],
+        "ih_countercase": "大盘企业也可能是AI使用者；价格与竞争压力可能使部分供应商受损，开放模型不意味着所有科技公司的利润都会改善。",
+        "im_case": "软件、应用及配套产业可能受益，但必须列出当期指数成分中的受益公司、权重、商业传导和竞争影响，不能把科技概念等同IM。",
+        "information_routing": "1月20日发布进入该Parent；后续同一模型复述属低增量。海外价格变化单独记State研究材料；有明确新技术、商业应用或许可事实才考虑Event Update。",
+        "invalidation": "受益暴露比较不支持IM、商业传导假设被证伪，或出现更强独立风险事件时重审方向。海外股价下跌本身不是新的技术事实。",
+        "name": "DeepSeek AI重估",
+        "next_action": "补当期AI受益暴露对照，并核对首发时间；随后提交首次完整因果审核。",
+        "source_ids": [
+          "audit-v1-r1-release",
+          "audit-v1-sse-cny",
+          "audit-v1-cffex-cny-copy"
+        ],
+        "time_review": "分开记录1月20日R1发布与2月5日节后窗口。小时及发布时区未知，无法给初始事件精确FirstTradableTime。上交所节后日期已有原始公告；中金所安排本轮仅取得会员转载。",
+        "transmission": "推理模型开放→潜在降低AI应用试验门槛、改变产业预期→相关成长企业和风险偏好可能受益→只有当IM相对IH的有效受益暴露更高，才支持IM方向。"
+      }
+    },
+    "event_id": "202501_DEEPSEEK",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:47:36.081277+00:00",
+    "note_id": "historical-audit-v1:202501_DEEPSEEK",
+    "review_status": "Pending",
+    "source": "历史原文核查 V1（来源与限制逐条记录）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2024-05-17",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2024-05-20",
+        "verified": false
+      },
+      "raw": {
+        "channel": "CREDIT_LARGECAP",
+        "confidence": "High",
+        "event_id": "202405_PROPERTY_SUPPORT",
+        "event_name": "地产救市",
+        "event_time": "2024-05-17",
+        "event_type": "News",
+        "first_tradable_time": "2024-05-20",
+        "horizon": "Swing",
+        "initial_bias": "IH",
+        "status": "Closed"
+      },
+      "source_channels": [
+        "CREDIT_LARGECAP"
+      ],
+      "source_event_id": "202405_PROPERTY_SUPPORT",
+      "source_horizon": "Swing",
+      "source_initial_bias": "IH"
+    },
+    "event_id": "202405_PROPERTY",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-46ee6587295cebc309c0",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2022-10-07",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2022-10-10",
+        "verified": false
+      },
+      "raw": {
+        "channel": "TECH_GROWTH_RISK_OFF",
+        "confidence": "High",
+        "event_id": "202210_SEMICONDUCTOR_RESTRICTION",
+        "event_name": "芯片出口限制",
+        "event_time": "2022-10-07",
+        "event_type": "News",
+        "first_tradable_time": "2022-10-10",
+        "horizon": "Swing",
+        "initial_bias": "IH",
+        "status": "Closed"
+      },
+      "source_channels": [
+        "TECH_GROWTH",
+        "RISK_OFF"
+      ],
+      "source_event_id": "202210_SEMICONDUCTOR_RESTRICTION",
+      "source_horizon": "Swing",
+      "source_initial_bias": "IH"
+    },
+    "event_id": "202210_CHIP_EXPORT",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-63e9dbfa7c0058ce1206",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2025-04-07",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2025-04-07",
+        "verified": false
+      },
+      "raw": {
+        "channel": "RISK_OFF",
+        "confidence": "High",
+        "event_id": "202504_TARIFF_CONFLICT",
+        "event_name": "关税冲突",
+        "event_time": "2025-04-07",
+        "event_type": "News",
+        "first_tradable_time": "2025-04-07",
+        "horizon": "Fast",
+        "initial_bias": "IH",
+        "status": "Closed"
+      },
+      "source_channels": [
+        "RISK_OFF"
+      ],
+      "source_event_id": "202504_TARIFF_CONFLICT",
+      "source_horizon": "Fast",
+      "source_initial_bias": "IH"
+    },
+    "event_id": "202504_TARIFF",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-67ee996e4a3189be56ce",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2023-07-24",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2023-07-25",
+        "verified": false
+      },
+      "raw": {
+        "channel": "CREDIT_LARGECAP",
+        "confidence": "High",
+        "event_id": "202307_POLICY_SUPPORT",
+        "event_name": "政策支持",
+        "event_time": "2023-07-24",
+        "event_type": "News",
+        "first_tradable_time": "2023-07-25",
+        "horizon": "Swing",
+        "initial_bias": "IH",
+        "status": "Closed"
+      },
+      "source_channels": [
+        "CREDIT_LARGECAP"
+      ],
+      "source_event_id": "202307_POLICY_SUPPORT",
+      "source_horizon": "Swing",
+      "source_initial_bias": "IH"
+    },
+    "event_id": "202307_POLICY_SUPPORT",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-6a3555ef50317c54e105",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2024-04-12",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2024-04-15",
+        "verified": false
+      },
+      "raw": {
+        "channel": "REGULATION_QUALITY",
+        "confidence": "High",
+        "event_id": "202404_NEW_NINE_RULES",
+        "event_name": "新国九条",
+        "event_time": "2024-04-12",
+        "event_type": "News",
+        "first_tradable_time": "2024-04-15",
+        "horizon": "Swing",
+        "initial_bias": "IH",
+        "status": "Closed"
+      },
+      "source_channels": [
+        "REGULATION_QUALITY"
+      ],
+      "source_event_id": "202404_NEW_NINE_RULES",
+      "source_horizon": "Swing",
+      "source_initial_bias": "IH"
+    },
+    "event_id": "202404_REGULATION",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-7004f8b615a8191d0827",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2024-01-31",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2024-02-01",
+        "verified": false
+      },
+      "raw": {
+        "channel": "DIRECT_SMALLCAP_LIQUIDITY",
+        "confidence": "High",
+        "event_id": "202401_SMALLCAP_LIQUIDITY_STRESS",
+        "event_name": "小微盘流动性危机",
+        "event_time": "2024-01-31",
+        "event_type": "MarketState",
+        "first_tradable_time": "2024-02-01",
+        "horizon": "Fast",
+        "initial_bias": "Strong_IH",
+        "status": "Closed"
+      },
+      "source_channels": [
+        "DIRECT_SMALLCAP_LIQUIDITY"
+      ],
+      "source_event_id": "202401_SMALLCAP_LIQUIDITY_STRESS",
+      "source_horizon": "Fast",
+      "source_initial_bias": "Strong IH"
+    },
+    "event_id": "202401_SMALLCAP_LIQUIDITY",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-7f85e0edd8252de357c5",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2022-11-11",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2022-11-14",
+        "verified": false
+      },
+      "raw": {
+        "channel": "RISK_APPETITE",
+        "confidence": "High",
+        "event_id": "202211_REOPENING_TRANSITION",
+        "event_name": "防疫政策转向",
+        "event_time": "2022-11-11",
+        "event_type": "News",
+        "first_tradable_time": "2022-11-14",
+        "horizon": "Swing",
+        "initial_bias": "IM",
+        "status": "Closed"
+      },
+      "source_channels": [
+        "RISK_APPETITE"
+      ],
+      "source_event_id": "202211_REOPENING_TRANSITION",
+      "source_horizon": "Swing",
+      "source_initial_bias": "IM"
+    },
+    "event_id": "202211_REOPENING",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-884a93384d005c0ec950",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2025-01-20",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2025-02-05",
+        "verified": false
+      },
+      "raw": {
+        "channel": "TECH_GROWTH",
+        "confidence": "High",
+        "event_id": "202501_DEEPSEEK_AI_REPRICING",
+        "event_name": "DeepSeek AI重估",
+        "event_time": "2025-01-20",
+        "event_type": "News",
+        "first_tradable_time": "2025-02-05",
+        "horizon": "Trend",
+        "initial_bias": "Strong_IM",
+        "status": "Active"
+      },
+      "source_channels": [
+        "TECH_GROWTH"
+      ],
+      "source_event_id": "202501_DEEPSEEK_AI_REPRICING",
+      "source_horizon": "Trend",
+      "source_initial_bias": "Strong IM"
+    },
+    "event_id": "202501_DEEPSEEK",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-ab05d5c2108e9aebb958",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2024-02-06",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2024-02-06",
+        "verified": false
+      },
+      "raw": {
+        "channel": "MARKET_STABILIZATION",
+        "confidence": "High",
+        "event_id": "202402_MARKET_STABILIZATION",
+        "event_name": "国家队稳定行动",
+        "event_time": "2024-02-06",
+        "event_type": "News",
+        "first_tradable_time": "2024-02-06",
+        "horizon": "Fast",
+        "initial_bias": "IH",
+        "status": "Closed"
+      },
+      "source_channels": [
+        "MARKET_STABILIZATION"
+      ],
+      "source_event_id": "202402_MARKET_STABILIZATION",
+      "source_horizon": "Fast",
+      "source_initial_bias": "IH"
+    },
+    "event_id": "202402_STABILIZATION",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-b279571ac0f7eadde46f",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2024-09-24",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2024-09-24",
+        "verified": false
+      },
+      "raw": {
+        "channel": "LIQUIDITY_RISK_APPETITE",
+        "confidence": "High",
+        "event_id": "202409_POLICY_PIVOT",
+        "event_name": "政策大转向",
+        "event_time": "2024-09-24",
+        "event_type": "News",
+        "first_tradable_time": "2024-09-24",
+        "horizon": "Swing",
+        "initial_bias": "IM",
+        "status": "Active"
+      },
+      "source_channels": [
+        "MARKET_LIQUIDITY",
+        "RISK_APPETITE"
+      ],
+      "source_event_id": "202409_POLICY_PIVOT",
+      "source_horizon": "Swing",
+      "source_initial_bias": "IM"
+    },
+    "event_id": "202409_POLICY_PIVOT",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-b589b6c95ce5055ad1b7",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  },
+  {
+    "claim": {
+      "event_time_claim": {
+        "precision": "date",
+        "value": "2023-10-11",
+        "verified": false
+      },
+      "first_tradable_time_claim": {
+        "precision": "date",
+        "value": "2023-10-12",
+        "verified": false
+      },
+      "raw": {
+        "channel": "DIRECT_LARGECAP",
+        "confidence": "High",
+        "event_id": "202310_STATE_SUPPORT",
+        "event_name": "汇金增持",
+        "event_time": "2023-10-11",
+        "event_type": "News",
+        "first_tradable_time": "2023-10-12",
+        "horizon": "Fast",
+        "initial_bias": "IH",
+        "status": "Closed"
+      },
+      "source_channels": [
+        "DIRECT_LARGECAP"
+      ],
+      "source_event_id": "202310_STATE_SUPPORT",
+      "source_horizon": "Fast",
+      "source_initial_bias": "IH"
+    },
+    "event_id": "202310_HUIJIN",
+    "kind": "Parent",
+    "known_at": "2026-10-11T08:33:29.116297+00:00",
+    "note_id": "research-ef7793ccbe597bb06e39",
+    "review_status": "Pending",
+    "source": "ChatGPT Phase 1 工程包CSV（研究标签未重新核实）"
+  }
+]

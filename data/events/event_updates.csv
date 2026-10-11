@@ -1,0 +1,4 @@
+event_id,update_time,source_type,information_gain,description,new_bias,new_channel
+202409_POLICY_PIVOT,2024-09-26,Policy,High,政治局会议确认,IM,RISK_APPETITE
+202501_DEEPSEEK_AI_REPRICING,2025-01-27,GlobalMarket,High,全球AI重估,Strong_IM,
+202504_TARIFF_CONFLICT,2025-05-12,Diplomatic,Medium,日内瓦关税缓和,IM,
