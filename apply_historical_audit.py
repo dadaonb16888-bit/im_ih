@@ -73,6 +73,7 @@ def main():
     try:
         stamp = now()
         backup = ROOT / 'database' / 'backups' / 'before_historical_audit_v1.sqlite3'
+        backup.parent.mkdir(parents=True, exist_ok=True)
         if not backup.exists():
             import sqlite3
             with sqlite3.connect(backup) as target:

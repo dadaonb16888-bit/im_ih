@@ -162,13 +162,32 @@ class EventTests(unittest.TestCase):
         self.assertEqual(event['causal_status'], 'Active')
 
     def test_legacy_migration_idempotent(self):
-        folder = Path(__file__).resolve().parents[2] / 'analysis' / 'ih_im_event_research'
+        # Migration tests must run from a fresh checkout without the original workspace.
+        folder = Path(self.temp.name) / 'legacy_fixture'
+        folder.mkdir()
+        fixtures = {
+            'information_inbox.json': [{'information_id': 'legacy-info', 'title': 'fixture fact'}],
+            'events.json': [{'event_id': 'legacy-event', 'title': 'fixture event',
+                             'category': 'TECH', 'initial_bias': 'Strong IM',
+                             'information_ids': ['legacy-info']}],
+            'sources.json': [], 'information_review_20261010.json': [],
+            'collection_window_20261010.json': {}, 'index_exposure_20260930.json': {}}
+        for filename, content in fixtures.items():
+            (folder / filename).write_text(json.dumps(content), encoding='utf-8')
+        (folder / 'event_updates.jsonl').write_text(
+            json.dumps({'event_id': 'legacy-event', 'research_only': True}) + '\n', encoding='utf-8')
         first = migrate(self.engine, folder, T3)
         second = migrate(self.engine, folder, T4)
-        self.assertEqual(first['totals']['information_inbox'], 36)
-        self.assertEqual(first['totals']['events'], 7)
+        self.assertEqual(first['totals']['information_inbox'], 1)
+        self.assertEqual(first['totals']['events'], 1)
+        self.assertEqual(first['totals']['event_information'], 1)
+        self.assertEqual(first['totals']['legacy_audit'], 5)
         self.assertEqual(first['totals']['event_updates'], 0)
         self.assertTrue(all(v == 0 for v in second['migration_changes'].values()))
+        snapshot = self.engine.snapshot('legacy-event', T4)
+        self.assertIsNone(snapshot['bias'])
+        self.assertFalse(snapshot['reviewed'])
+        self.assertEqual(snapshot['known_at'], utc(T3))
 
 
 if __name__ == '__main__':
