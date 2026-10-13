@@ -25,6 +25,7 @@ def detail(engine, eid):
         '''SELECT i.payload FROM information_inbox i JOIN event_information l
            ON i.information_id=l.information_id WHERE l.event_id=? ORDER BY i.information_id''', (eid,))]
     history['ai_assessments'] = AIResearch(engine).list_assessments(eid)
+    history['research_alpha'] = AIResearch(engine).preview(eid)
     return history
 
 
@@ -78,6 +79,14 @@ def make_handler(database):
                     query = parse_qs(path.query)
                     self.respond(engine.alpha_report(query.get('as_of', [now()])[0],
                                                       query.get('include_historical', ['false'])[0] == 'true'))
+                elif path.path == '/api/research-alpha':
+                    query = parse_qs(path.query)
+                    self.respond(AIResearch(engine).scoring_report(query.get('as_of', [None])[0],
+                                                      query.get('include_historical', ['false'])[0] == 'true'))
+                elif path.path == '/api/source-snapshot':
+                    query = parse_qs(path.query)
+                    self.respond(AIResearch(engine).source_snapshot(query.get('id', [''])[0]),
+                                 content_type='application/pdf')
                 elif path.path == '/api/information':
                     self.respond([json.loads(r['payload']) for r in engine.db.execute('SELECT payload FROM information_inbox ORDER BY information_id')])
                 elif path.path == '/api/collection-plan':

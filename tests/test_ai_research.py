@@ -85,6 +85,81 @@ class AIResearchTests(unittest.TestCase):
     def count(self, table):
         return self.engine.db.execute('SELECT COUNT(*) FROM ' + table).fetchone()[0]
 
+    def scoring_assessment(self):
+        assessment = self.assessment()
+        values = {'source': self.source['url'], 'source_reliability': 'A',
+                  'impact_score': 2, 'confidence_score': .25, 'persistence_score': 1.0}
+        assessment.update(values)
+        assessment['score_basis'] = {'rubric_version': 'score-evidence-v1',
+            'components': {k: {'value': v, 'reason': 'Fixture reasoning', 'source_ids': ['fixture-news']} for k, v in values.items()},
+            'reference_time': {'value': None, 'reason': 'Fixture date only', 'source_ids': ['fixture-news']}}
+        return assessment
+
+    def test_score_basis_import_preserves_parent_and_formal_pool(self):
+        assessment = self.scoring_assessment()
+        self.research.apply_pack(self.pack(assessment))
+        preview = self.research.preview('fixture-event', KNOWN)
+        self.assertEqual(preview['event_strength'], .5)
+        self.assertIsNone(preview['score'])
+        self.assertIsNone(self.engine.snapshot('fixture-event', KNOWN)['bias'])
+        self.assertIsNone(self.engine.alpha_report(KNOWN)['dominant_event'])
+        self.assertEqual(self.research.scoring_report(KNOWN)['basis_count'], 1)
+        self.assertEqual(self.count('state_updates'), 0)
+
+    def test_invalid_score_basis_rolls_back_research_pack(self):
+        assessment = self.scoring_assessment()
+        assessment['score_basis']['components']['impact_score']['source_ids'] = ['unknown']
+        with self.assertRaises(ValueError):
+            self.research.apply_pack(self.pack(assessment))
+        self.assertEqual(self.count('ai_assessments'), 0)
+        self.assertEqual(self.count('ai_research_runs'), 0)
+
+    def test_archive_requires_real_local_pdf_and_matching_digest(self):
+        assessment = self.assessment()
+        assessment['source_checks'][0].update({'capture_mode': 'ArchivedOfficialAttachment', 'document_sha256': 'f' * 64})
+        with self.assertRaises(ValueError):
+            self.research.apply_pack(self.pack(assessment))
+        self.assertEqual(self.count('ai_assessments'), 0)
+
+    def test_valid_archive_can_be_read_and_tampered_archive_is_rejected(self):
+        import hashlib
+        root = Path(self.temp.name) / 'snapshot-root'
+        file = root / 'data/source_snapshots/fixture.pdf'
+        file.parent.mkdir(parents=True)
+        raw = b'%PDF-1.7 fixture for fingerprint validation only'
+        file.write_bytes(raw)
+        source = self.make_source('archive-fixture')
+        source.update({'local_snapshot': 'data/source_snapshots/fixture.pdf',
+                       'document_sha256': hashlib.sha256(raw).hexdigest()})
+        self.engine.add_information(source)
+        assessment = self.assessment(source_ids=['archive-fixture'])
+        assessment['source_checks'][0].update({'capture_mode': 'ArchivedOfficialAttachment',
+                                              'document_sha256': source['document_sha256']})
+        with patch('event_engine.ai_research.ROOT', root):
+            self.research.apply_pack(self.pack(assessment))
+            self.assertEqual(self.research.source_snapshot('archive-fixture'), raw)
+            file.write_bytes(b'%PDF-1.7 changed')
+            with self.assertRaises(ValueError):
+                self.research.source_snapshot('archive-fixture')
+
+    def test_research_scoring_api_returns_readonly_preview(self):
+        self.research.apply_pack(self.pack(self.scoring_assessment()))
+        server = ThreadingHTTPServer(('127.0.0.1', 0), make_handler(self.engine.path))
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        try:
+            with urlopen(f'http://127.0.0.1:{server.server_port}/api/research-alpha', timeout=10) as response:
+                result = json.load(response)
+            self.assertEqual(result['basis_count'], 1)
+            self.assertTrue(result['research_only'])
+            self.assertFalse(result['trade_permission'])
+            with self.assertRaises(HTTPError):
+                urlopen(f'http://127.0.0.1:{server.server_port}/api/source-snapshot?id=fixture-news', timeout=10)
+        finally:
+            server.shutdown()
+            thread.join()
+            server.server_close()
+
     def formal_assessment(self):
         for iid in ('fixture-baseline', 'fixture-exposure'):
             self.engine.add_information(self.make_source(iid))

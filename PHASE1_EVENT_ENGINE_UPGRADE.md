@@ -2,6 +2,10 @@
 
 完成日期：2026-10-13。规范：PROJECT_REVIEW.md、CODEX_TASK_PHASE1_EVENT_ENGINE.md。编码前先完成PHASE1_IMPLEMENTATION_PLAN.md。
 
+## 2026-10-13后续：评分证据
+
+新增event_engine/score_evidence.py和tests/test_score_evidence.py；修改AI判读、评分基础强度、CLI/API及工作台，提供有逐项证据的独立研究评分和受限归档原件读取。补4条来源、2条研究卡及两份官方PDF快照；旧记录均保留，正式方向及市场状态未升格。全量测试从100增至118项。原轮次记录如下保留；最新真实数据为18个事件、57条信息、10条AI判读、2条因果更新、0条正式市场State。详见[评分证据与研究案例](docs/评分证据与研究案例.md)。
+
 ## 实现结果
 
 原Event Research Layer已增量接入Event Alpha计算与方向输出。原Parent/Update/State、AI判读、收集、研究记录、数据库及工作台均保留。没有加入Spread、Timing、Execution、Broker或回测模块。

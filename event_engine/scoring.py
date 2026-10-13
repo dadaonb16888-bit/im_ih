@@ -24,8 +24,9 @@ def score_event(event, as_of):
     fresh = None
     if horizon in DECAY_PERIODS and event.get('event_time'):
         fresh = freshness(event['event_time'], as_of, horizon)
-    strength = None if gaps else impact * confidence * persistence
-    score = None if strength is None else strength * fresh
+    strength_gaps = [g for g in gaps if g != 'event_time']
+    strength = None if strength_gaps else impact * confidence * persistence
+    score = None if strength is None or fresh is None else strength * fresh
     return {'score': score, 'event_strength': strength, 'impact': impact, 'confidence': confidence,
             'persistence': persistence, 'freshness': fresh, 'score_gaps': gaps,
             'decay_period_days': DECAY_PERIODS.get(horizon), 'model_version': MODEL_VERSION, 'score_as_of': as_of}

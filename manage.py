@@ -71,6 +71,10 @@ def main():
     alpha.add_argument('--as-of', default=None)
     alpha.add_argument('--output', default=None)
     alpha.add_argument('--include-historical', action='store_true')
+    research_alpha = sub.add_parser('research-alpha-report')
+    research_alpha.add_argument('--as-of', default=None)
+    research_alpha.add_argument('--output', default=None)
+    research_alpha.add_argument('--include-historical', action='store_true')
     imp = sub.add_parser('import-research')
     imp.add_argument('directory')
     exp = sub.add_parser('export-research')
@@ -99,6 +103,10 @@ def main():
                 Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
         elif args.operation == 'alpha-report':
             result = engine.alpha_report(args.as_of or now(), args.include_historical)
+            if args.output:
+                Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+        elif args.operation == 'research-alpha-report':
+            result = AIResearch(engine).scoring_report(args.as_of, args.include_historical)
             if args.output:
                 Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
         elif args.operation == 'import-research':

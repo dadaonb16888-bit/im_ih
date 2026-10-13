@@ -1,0 +1,364 @@
+{
+  "as_of": "2026-10-13T13:38:00.598843+00:00",
+  "research_only": true,
+  "trade_permission": false,
+  "scored_count": 1,
+  "basis_count": 2,
+  "records": [
+    {
+      "event_name": "新质生产力政策意见发布",
+      "assessment_id": "AI-20261013-E001-SCORE-V2",
+      "event_id": "E-20261009-001",
+      "known_at": "2026-10-13T13:37:15.916588+00:00",
+      "bias": "IM",
+      "decision": "Directional",
+      "research_mode": "CurrentReview",
+      "reference_time": "2026-10-09T18:02:25+08:00",
+      "time_basis": "SourcePublicationReference",
+      "score_basis": {
+        "components": {
+          "confidence_score": {
+            "reason": "0.25是本次双向解释后的低方向把握，不是校准胜率；IH科技暴露和旧政策重合限制IM判断。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ],
+            "value": 0.25
+          },
+          "impact_score": {
+            "reason": "2/5为潜在、范围较广但未证实净受益的相对影响研究刻度；缺预算、力度和受益公司，不给3至5。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ],
+            "value": 2
+          },
+          "persistence_score": {
+            "reason": "政策机制涉及长期研发和产业升级，选Trend持续度1；是模型配置，不认定交易有效期。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ],
+            "value": 1.0
+          },
+          "source": {
+            "reason": "新华社受权发布正文，按B级权威媒体记录，不等于高方向置信度。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ],
+            "value": "https://www3.xinhuanet.com/politics/20261009/37bc898ce93f4c0899e926039f842891/c.html"
+          },
+          "source_reliability": {
+            "reason": "B级仅约束原文可靠性上限0.85；两份指数原件另留指纹。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ],
+            "value": "B"
+          }
+        },
+        "reference_time": {
+          "reason": "仅采用已读新华社来源页面的公开时刻作研究衰减参考；未核实全局首发。",
+          "source_ids": [
+            "I-20261010-002"
+          ],
+          "value": "2026-10-09T18:02:25+08:00"
+        },
+        "rubric_version": "score-evidence-v1"
+      },
+      "score": 0.40631235839907615,
+      "event_strength": 0.5,
+      "impact": 2.0,
+      "confidence": 0.25,
+      "persistence": 1.0,
+      "freshness": 0.8126247167981523,
+      "score_gaps": [],
+      "decay_period_days": 20.0,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T13:38:00.598843+00:00",
+      "research_only": true,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "formal_projection": null,
+      "research_gaps": [
+        "19项新旧政策完整对照与可执行增量",
+        "10月9日有效企业受益和业务权重",
+        "事前预期及PreMove",
+        "全局最早公开和可交易时刻"
+      ]
+    },
+    {
+      "event_name": "地方债务结存限额5500亿元安排",
+      "assessment_id": "AI-20261013-E002-V1",
+      "event_id": "E-20261009-002",
+      "known_at": "2026-10-13T08:25:37.426203+00:00",
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "research_mode": "CurrentReview",
+      "reference_time": null,
+      "time_basis": null,
+      "score_basis": null,
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": 0.7,
+      "freshness": null,
+      "score_gaps": [
+        "score_basis_missing"
+      ],
+      "decay_period_days": 5.0,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T13:38:00.598843+00:00",
+      "research_only": true,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "formal_projection": null,
+      "research_gaps": [
+        "既有额度与预期比较",
+        "项目及信用受益映射",
+        "两指数成分暴露",
+        "首发时刻与实际发行拨付进度"
+      ]
+    },
+    {
+      "event_name": "中欧贸易投资磋商第二次例会",
+      "assessment_id": "AI-20261013-E003-V1",
+      "event_id": "E-20261009-003",
+      "known_at": "2026-10-13T08:25:37.426203+00:00",
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "research_mode": "CurrentReview",
+      "reference_time": null,
+      "time_basis": null,
+      "score_basis": null,
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": 0.7,
+      "freshness": null,
+      "score_gaps": [
+        "score_basis_missing"
+      ],
+      "decay_period_days": 5.0,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T13:38:00.598843+00:00",
+      "research_only": true,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "formal_projection": null,
+      "research_gaps": [
+        "附件原件二次核对及内容指纹",
+        "前次磋商和已实行安排的基线",
+        "哪些措施已实行、何时生效",
+        "当期受益企业与指数权重"
+      ]
+    },
+    {
+      "event_name": "公募基金运作规则征求意见",
+      "assessment_id": "AI-20261013-E004-SCORE-V2",
+      "event_id": "E-20261009-004",
+      "known_at": "2026-10-13T13:37:15.916588+00:00",
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "research_mode": "CurrentReview",
+      "reference_time": null,
+      "time_basis": null,
+      "score_basis": {
+        "components": {
+          "confidence_score": {
+            "reason": "未知：未确定相对方向，原卡Medium不能自动变成方向数值概率。",
+            "source_ids": [],
+            "value": null
+          },
+          "impact_score": {
+            "reason": "未知：无法将成立门槛变化直接转换为IM/IH净相对资金影响。",
+            "source_ids": [],
+            "value": null
+          },
+          "persistence_score": {
+            "reason": "若最终实施可能影响长期基金运作，研究周期保持Trend=1；不认定草案已经生效。",
+            "source_ids": [
+              "I-20261010-005",
+              "AI-S-20261013-CSRC-BASELINE",
+              "AI-S-20261013-CSRC-REVISION",
+              "AI-S-20261013-FUND-DRAFT1"
+            ],
+            "value": 1.0
+          },
+          "source": {
+            "reason": "证监会公开征求意见正文。",
+            "source_ids": [
+              "I-20261010-005",
+              "AI-S-20261013-CSRC-BASELINE",
+              "AI-S-20261013-CSRC-REVISION",
+              "AI-S-20261013-FUND-DRAFT1"
+            ],
+            "value": "https://www.csrc.gov.cn/csrc/c100028/c7663393/content.shtml"
+          },
+          "source_reliability": {
+            "reason": "A级原文可靠性只说明草案事实可信，不能证明IH相对受益。",
+            "source_ids": [
+              "I-20261010-005",
+              "AI-S-20261013-CSRC-BASELINE",
+              "AI-S-20261013-CSRC-REVISION",
+              "AI-S-20261013-FUND-DRAFT1"
+            ],
+            "value": "A"
+          }
+        },
+        "reference_time": {
+          "reason": "仅有日期，时刻未知，不补造零点",
+          "source_ids": [
+            "I-20261010-005"
+          ],
+          "value": null
+        },
+        "rubric_version": "score-evidence-v1"
+      },
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": 1.0,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "event_time"
+      ],
+      "decay_period_days": 20.0,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T13:38:00.598843+00:00",
+      "research_only": true,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "formal_projection": null,
+      "research_gaps": [
+        "附件1剩余条款、附件2/3及2014旧规的完整对照",
+        "真实基金配置与大小盘资金净流向",
+        "最终实施文本与时刻",
+        "首发小时、事前预期与PreMove"
+      ]
+    },
+    {
+      "event_name": "财政政策执行报告发布",
+      "assessment_id": "AI-20261013-E005-V1",
+      "event_id": "E-20261009-005",
+      "known_at": "2026-10-13T08:25:37.426203+00:00",
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "research_mode": "CurrentReview",
+      "reference_time": null,
+      "time_basis": null,
+      "score_basis": null,
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": 1.0,
+      "freshness": null,
+      "score_gaps": [
+        "score_basis_missing"
+      ],
+      "decay_period_days": 20.0,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T13:38:00.598843+00:00",
+      "research_only": true,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "formal_projection": null,
+      "research_gaps": [
+        "逐项首次公开及政策增量比较",
+        "与其他Parent去重",
+        "当期指数相对受益映射"
+      ]
+    },
+    {
+      "event_name": "产能争议相关贸易风险回应",
+      "assessment_id": "AI-20261013-E006-V1",
+      "event_id": "E-20261009-006",
+      "known_at": "2026-10-13T08:25:37.426203+00:00",
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "research_mode": "CurrentReview",
+      "reference_time": null,
+      "time_basis": null,
+      "score_basis": null,
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": 0.4,
+      "freshness": null,
+      "score_gaps": [
+        "score_basis_missing"
+      ],
+      "decay_period_days": 1.0,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T13:38:00.598843+00:00",
+      "research_only": true,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "formal_projection": null,
+      "research_gaps": [
+        "外国联合声明原文与旧政策差异",
+        "任何新增措施的正式条款与生效时间",
+        "行业及成分暴露",
+        "事前风险定价"
+      ]
+    },
+    {
+      "event_name": "品质电商政策解读",
+      "assessment_id": "AI-20261013-E007-V1",
+      "event_id": "E-20261010-001",
+      "known_at": "2026-10-13T08:25:37.426203+00:00",
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "research_mode": "CurrentReview",
+      "reference_time": null,
+      "time_basis": null,
+      "score_basis": null,
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": 1.0,
+      "freshness": null,
+      "score_gaps": [
+        "score_basis_missing"
+      ],
+      "decay_period_days": 20.0,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T13:38:00.598843+00:00",
+      "research_only": true,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "formal_projection": null,
+      "research_gaps": [
+        "通知原文读取与首发时间",
+        "与旧品质电商政策逐条比较",
+        "具体上市公司净受益",
+        "有效成分与业务权重"
+      ]
+    }
+  ],
+  "note": "参考时间研究评分；不进入正式Dominant或市场状态"
+}

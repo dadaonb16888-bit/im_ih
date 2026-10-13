@@ -29,6 +29,18 @@ python manage.py alpha-report --as-of 2026-10-13T20:00:00+08:00
 
 全量100项测试通过，其中28项为本轮新增。未开发Spread Engine、Trading Execution或Broker API。
 
+### 评分证据与研究预览（2026-10-13后续）
+
+新增`score_basis`：每个评分组件分别保存数值、Codex解释和来源编号。参考时刻必须匹配已经核对的精确来源时间，不能把日期补成零点，也不能用官方原文的可靠性代替方向置信度。规则与真实案例见[评分证据与研究案例](docs/评分证据与研究案例.md)。
+
+工作台“AI判读”和“事件评分”页现在分别展示**研究评分**与正式Alpha。两条新研究卡已追加，AI判读总数10、原始信息57；其中一条仅有参考时间研究分数，另一条因相对影响及方向未知而保持null。正式Parent方向、Dominant和市场确认均未升格。来源原件快照与指纹保存于`data/source_snapshots`，可从工作台打开。
+
+```text
+python manage.py research-alpha-report --output data/research_alpha_report_20261013.json
+```
+
+只读API：`GET /api/research-alpha`。输出永远标记research_only=true、trade_permission=false。基础强度不依赖精确时刻，有完整数值依据时可单独展示；含Freshness的分数仍要求精确参考时间。原Alpha接口和资格规则保持。后续全量118项测试通过。
+
 ## 事件判读由Codex执行
 
 用户无需填IM/IH方向或审批研究结论。Codex读取原文、核对增量与预期、比较两指数受益并给出方向或证据不足结论；工作台默认展示“AI判读”，事实与推理、研究方向与正式资格分别保存。见[AI事件判读流程](docs/AI事件判读流程.md)。
