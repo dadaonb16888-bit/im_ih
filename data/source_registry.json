@@ -1,0 +1,258 @@
+[
+  {
+    "source_id": "GOV",
+    "name": "国务院政策文件库",
+    "url": "https://sousuo.www.gov.cn/zcwjk/",
+    "categories": [
+      "POLICY_GROWTH",
+      "BROAD_STIMULUS",
+      "REGULATION"
+    ],
+    "collect": "政策全文、实施对象、预算、执行日期"
+  },
+  {
+    "source_id": "NDRC",
+    "name": "国家发展改革委",
+    "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
+    "categories": [
+      "POLICY_GROWTH",
+      "BROAD_STIMULUS",
+      "TECH"
+    ],
+    "collect": "项目、产业支持、投资与政策解读"
+  },
+  {
+    "source_id": "MOF",
+    "name": "财政部",
+    "url": "https://www.mof.gov.cn/zhengwuxinxi/",
+    "categories": [
+      "POLICY_GROWTH",
+      "BROAD_STIMULUS"
+    ],
+    "collect": "财政增量、债务、补贴及资金用途"
+  },
+  {
+    "source_id": "PBC",
+    "name": "中国人民银行",
+    "url": "https://www.pbc.gov.cn/",
+    "categories": [
+      "MONETARY"
+    ],
+    "collect": "利率、准备金、公开市场操作、信贷"
+  },
+  {
+    "source_id": "CSRC",
+    "name": "中国证监会",
+    "url": "https://www.csrc.gov.cn/",
+    "categories": [
+      "REGULATION",
+      "FUND_FLOW",
+      "POSITIONING"
+    ],
+    "collect": "融资、交易制度、公募和量化规则"
+  },
+  {
+    "source_id": "MIIT",
+    "name": "工业和信息化部",
+    "url": "https://www.miit.gov.cn/",
+    "categories": [
+      "TECH",
+      "POLICY_GROWTH"
+    ],
+    "collect": "技术进展、产业标准、产业化落地"
+  },
+  {
+    "source_id": "MOFCOM",
+    "name": "商务部",
+    "url": "https://www.mofcom.gov.cn/xwfb/",
+    "categories": [
+      "POLICY_GROWTH",
+      "RISK_OFF",
+      "RISK_ON",
+      "EXTERNAL_MACRO"
+    ],
+    "collect": "贸易限制、谈判、消费政策"
+  },
+  {
+    "source_id": "CNINFO",
+    "name": "巨潮资讯",
+    "url": "https://www.cninfo.com.cn/",
+    "categories": [
+      "EARNINGS",
+      "TECH",
+      "VALUE_DIVIDEND",
+      "FUND_FLOW"
+    ],
+    "collect": "公司公告、业绩、分红、基金定期报告"
+  },
+  {
+    "source_id": "SSE",
+    "name": "上海证券交易所",
+    "url": "https://www.sse.com.cn/",
+    "categories": [
+      "REGULATION",
+      "FUND_FLOW",
+      "VALUE_DIVIDEND"
+    ],
+    "collect": "公告、ETF份额及交易规则"
+  },
+  {
+    "source_id": "SZSE",
+    "name": "深圳证券交易所",
+    "url": "https://www.szse.cn/",
+    "categories": [
+      "REGULATION",
+      "FUND_FLOW",
+      "EARNINGS"
+    ],
+    "collect": "公告、ETF份额及交易规则"
+  },
+  {
+    "source_id": "CFFEX",
+    "name": "中国金融期货交易所",
+    "url": "https://www.cffex.com.cn/",
+    "categories": [
+      "POSITIONING",
+      "SMALLCAP_LIQUIDITY",
+      "REGULATION"
+    ],
+    "collect": "持仓、成交、合约与风险公告"
+  },
+  {
+    "source_id": "NBS",
+    "name": "国家统计局",
+    "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/",
+    "categories": [
+      "POLICY_GROWTH",
+      "SEASONAL"
+    ],
+    "collect": "宏观数据与发布时间表"
+  },
+  {
+    "source_id": "FED",
+    "name": "美联储",
+    "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "categories": [
+      "EXTERNAL_MACRO",
+      "MONETARY",
+      "RISK_OFF",
+      "RISK_ON"
+    ],
+    "collect": "决议、声明与日历"
+  },
+  {
+    "source_id": "XINHUA",
+    "name": "新华社／新华网",
+    "url": "https://www.news.cn/",
+    "categories": [
+      "TECH",
+      "POLICY_GROWTH",
+      "BROAD_STIMULUS",
+      "RISK_OFF",
+      "RISK_ON",
+      "EXTERNAL_MACRO"
+    ],
+    "collect": "授权发布、权威报道和官方转载"
+  },
+  {
+    "source_id": "CLS",
+    "name": "财联社电报",
+    "url": "https://www.cls.cn/telegraph",
+    "categories": [
+      "TECH",
+      "POLICY_GROWTH",
+      "MONETARY",
+      "REGULATION",
+      "FUND_FLOW",
+      "RISK_OFF",
+      "RISK_ON",
+      "EARNINGS",
+      "EXTERNAL_MACRO"
+    ],
+    "collect": "快速发现线索，随后回溯原文"
+  },
+  {
+    "source_id": "MARKET",
+    "name": "行情、ETF份额和历史季节性资料",
+    "url": null,
+    "categories": [
+      "SMALLCAP_LIQUIDITY",
+      "POSITIONING",
+      "FUND_FLOW",
+      "SEASONAL"
+    ],
+    "collect": "横截面跌幅、成交深度、价差、持仓变化、份额变化及同期规律"
+  },
+  {
+    "source_id": "SINA",
+    "name": "新浪财经转载",
+    "url": "https://finance.sina.com.cn/",
+    "categories": [],
+    "collect": "本轮线索发现与交叉核实；原始发布和统计仍需回溯"
+  },
+  {
+    "source_id": "EASTMONEY",
+    "name": "东方财富财经转载",
+    "url": "https://finance.eastmoney.com/",
+    "categories": [],
+    "collect": "本轮线索发现与交叉核实；原始发布和统计仍需回溯"
+  },
+  {
+    "source_id": "THS",
+    "name": "同花顺新闻汇总",
+    "url": "https://news.10jqka.com.cn/",
+    "categories": [],
+    "collect": "本轮线索发现与交叉核实；原始发布和统计仍需回溯"
+  },
+  {
+    "source_id": "STOCKSTAR",
+    "name": "证券之星ETF统计报道",
+    "url": "https://stock.stockstar.com/",
+    "categories": [],
+    "collect": "本轮线索发现与交叉核实；原始发布和统计仍需回溯"
+  },
+  {
+    "source_id": "CAS",
+    "name": "中国科学院研究所发布",
+    "url": "https://sitp.cas.cn/",
+    "categories": [],
+    "collect": "本轮线索发现与交叉核实；原始发布和统计仍需回溯"
+  },
+  {
+    "source_id": "BJNEWS",
+    "name": "新京报",
+    "url": "https://www.bjnews.com.cn/",
+    "categories": [],
+    "collect": "本轮线索发现与交叉核实；原始发布和统计仍需回溯"
+  },
+  {
+    "source_id": "CNFIN",
+    "name": "新华财经",
+    "url": "https://www.cnfin.com/",
+    "categories": [],
+    "collect": "本轮线索发现与交叉核实；原始发布和统计仍需回溯"
+  },
+  {
+    "source_id": "GELONGHUI",
+    "name": "格隆汇",
+    "url": "https://www.gelonghui.com/",
+    "categories": [],
+    "collect": "本轮线索发现与交叉核实；原始发布和统计仍需回溯"
+  },
+  {
+    "source_id": "MCT",
+    "name": "文化和旅游部",
+    "url": "https://www.mct.gov.cn/",
+    "categories": [],
+    "collect": "本轮线索发现与交叉核实；原始发布和统计仍需回溯"
+  },
+  {
+    "source_id": "MOT",
+    "name": "交通运输部",
+    "url": "https://www.mot.gov.cn/",
+    "categories": [
+      "POLICY_GROWTH"
+    ],
+    "collect": "运输结构及物流产业政策"
+  }
+]

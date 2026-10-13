@@ -77,7 +77,9 @@ class EventEngine:
         self._atomic_depth = 0
         self.db.executescript((ROOT / 'database' / 'schema.sql').read_text(encoding='utf-8'))
         for table in ('information_inbox', 'events', 'event_updates', 'state_updates',
-                      'event_information', 'legacy_audit', 'research_notes'):
+                      'event_information', 'legacy_audit', 'research_notes', 'collection_batches',
+                      'source_checks', 'collection_items', 'information_reviews', 'parent_reviews',
+                      'ai_research_runs', 'ai_assessments'):
             for action in ('UPDATE', 'DELETE'):
                 self.db.execute(f'''CREATE TRIGGER IF NOT EXISTS immutable_{table}_{action}
                   BEFORE {action} ON {table} BEGIN

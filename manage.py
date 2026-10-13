@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 from event_engine.engine import EventEngine, ROOT, now
 from event_engine.csv_io import import_research, export_research
+from event_engine.collection import CollectionLedger
+from event_engine.ai_research import AIResearch
 
 
 def read_json(path):
@@ -54,7 +56,8 @@ def main():
     parser = argparse.ArgumentParser(description='IM/IH事件处理：保存事实、因果更新、市场状态及当前资格')
     parser.add_argument('--database', default=str(ROOT / 'database' / 'events.sqlite3'))
     sub = parser.add_subparsers(dest='operation', required=True)
-    for op in ('add-information', 'create', 'update', 'state'):
+    for op in ('add-information', 'create', 'update', 'state', 'collection',
+               'source-check', 'collection-item', 'triage', 'parent-review'):
         cmd = sub.add_parser(op)
         cmd.add_argument('json_file')
     migration = sub.add_parser('migrate')
@@ -71,6 +74,16 @@ def main():
     hist = sub.add_parser('history')
     hist.add_argument('event_id')
     hist.add_argument('--as-of', default=None)
+    collection_report = sub.add_parser('collection-report')
+    collection_report.add_argument('batch_id')
+    collection_report.add_argument('--as-of', default=None)
+    collection_report.add_argument('--output', default=None)
+    sub.add_parser('collection-plan')
+    ai_context = sub.add_parser('ai-context')
+    ai_context.add_argument('event_id')
+    ai_context.add_argument('--output', default=None)
+    ai_import = sub.add_parser('apply-ai-research')
+    ai_import.add_argument('json_file')
     args = parser.parse_args()
     engine = EventEngine(args.database)
     try:
@@ -86,9 +99,25 @@ def main():
             result = export_research(engine, args.directory)
         elif args.operation == 'history':
             result = engine.history(args.event_id, args.as_of or now())
+        elif args.operation == 'collection-plan':
+            result = CollectionLedger(engine).plan()
+        elif args.operation == 'collection-report':
+            result = CollectionLedger(engine).report(args.batch_id, args.as_of)
+            if args.output:
+                Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+        elif args.operation == 'ai-context':
+            result = AIResearch(engine).context(args.event_id)
+            if args.output:
+                Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+        elif args.operation == 'apply-ai-research':
+            result = AIResearch(engine).apply_pack(read_json(args.json_file))
         else:
+            collection = CollectionLedger(engine)
             operation = {'add-information': engine.add_information, 'create': engine.create_event,
-                         'update': engine.update_event, 'state': engine.update_state}[args.operation]
+                         'update': engine.update_event, 'state': engine.update_state,
+                         'collection': collection.create_batch, 'source-check': collection.check_source,
+                         'collection-item': collection.add_item, 'triage': collection.triage,
+                         'parent-review': collection.review_parent}[args.operation]
             result = {'inserted': operation(read_json(args.json_file))}
         print(json.dumps(result, ensure_ascii=False, indent=2))
     finally:

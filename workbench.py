@@ -7,7 +7,9 @@ from datetime import datetime, timedelta, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit, parse_qs
-from event_engine.engine import EventEngine, ROOT, now
+from event_engine.engine import EventEngine, ROOT, now, utc
+from event_engine.collection import CollectionLedger
+from event_engine.ai_research import AIResearch
 
 
 def identifier(prefix):
@@ -22,6 +24,7 @@ def detail(engine, eid):
     history['linked_information'] = [json.loads(r['payload']) for r in engine.db.execute(
         '''SELECT i.payload FROM information_inbox i JOIN event_information l
            ON i.information_id=l.information_id WHERE l.event_id=? ORDER BY i.information_id''', (eid,))]
+    history['ai_assessments'] = AIResearch(engine).list_assessments(eid)
     return history
 
 
@@ -52,7 +55,8 @@ def make_handler(database):
             path = urlsplit(self.path)
             assets = {'/': ('index.html', 'text/html; charset=utf-8'),
                       '/app.js': ('app.js', 'text/javascript; charset=utf-8'),
-                      '/style.css': ('style.css', 'text/css; charset=utf-8')}
+                      '/style.css': ('style.css', 'text/css; charset=utf-8'),
+                      '/collection.js': ('collection.js', 'text/javascript; charset=utf-8')}
             if path.path in assets:
                 file, mime = assets[path.path]
                 return self.respond((ROOT / 'dashboard' / file).read_bytes(), content_type=mime)
@@ -61,15 +65,27 @@ def make_handler(database):
                 if path.path == '/api/events':
                     result = engine.report(now(), include_historical=True)
                     result['counts'] = {table: engine.db.execute(f'SELECT COUNT(*) FROM {table}').fetchone()[0]
-                                        for table in ('events', 'information_inbox', 'research_notes', 'event_updates', 'state_updates')}
+                                        for table in ('events', 'information_inbox', 'research_notes', 'event_updates', 'state_updates', 'ai_assessments')}
+                    ai = AIResearch(engine)
+                    for event in result['events']:
+                        assessments = ai.list_assessments(event['event_id'], result['as_of'])
+                        event['ai_assessment_count'] = len(assessments)
+                        event['ai_latest_known_at'] = assessments[-1]['known_at'] if assessments else None
                     self.respond(result)
                 elif path.path == '/api/event':
                     self.respond(detail(engine, parse_qs(path.query).get('id', [''])[0]))
                 elif path.path == '/api/information':
                     self.respond([json.loads(r['payload']) for r in engine.db.execute('SELECT payload FROM information_inbox ORDER BY information_id')])
+                elif path.path == '/api/collection-plan':
+                    self.respond(CollectionLedger(engine).plan())
+                elif path.path == '/api/collections':
+                    self.respond(CollectionLedger(engine).list_batches())
+                elif path.path == '/api/collection':
+                    query = parse_qs(path.query)
+                    self.respond(CollectionLedger(engine).report(query.get('id', [''])[0], query.get('as_of', [None])[0]))
                 else:
                     self.respond({'error': '页面不存在'}, 404)
-            except (ValueError, KeyError) as exc:
+            except (ValueError, KeyError, TypeError) as exc:
                 self.respond({'error': str(exc)}, 400)
             finally:
                 engine.close()
@@ -93,26 +109,56 @@ def make_handler(database):
                 return self.respond({'error': str(exc)}, 400)
             engine = EventEngine(database)
             try:
+                if self.path == '/api/information':
+                    # Keep first sighting separate from the server's actual entry timestamp.
+                    data.setdefault('information_id', identifier('I'))
+                    data['recorded_at'] = now()
+                    data['observed_at'] = data['recorded_at']
+                    data['observation_time_basis'] = 'WorkbenchEntry'
+                    if data.get('first_seen_at'):
+                        data['first_seen_at'] = utc(data['first_seen_at'])
+                        if data['first_seen_at'] > data['recorded_at']:
+                            raise ValueError('首次发现时间不能晚于实际录入时间')
+                        if not isinstance(data.get('first_seen_evidence'), str) or not data['first_seen_evidence'].strip():
+                            raise ValueError('填写首次发现时间时必须提供依据')
+                    if data.get('published_at'):
+                        # Full timestamps are normalized. Explicit date precision stays a draft.
+                        if 'T' in data['published_at']:
+                            data['published_at'] = utc(data['published_at'])
+                        else:
+                            datetime.strptime(data['published_at'], '%Y-%m-%d')
+                    batch_id = data.pop('batch_id', None)
+                    category = data.pop('category', None)
+                    notes = data.pop('notes', '')
+                    with engine.atomic():
+                        inserted = engine.add_information(data)
+                        if batch_id:
+                            CollectionLedger(engine).add_item({'item_id': identifier('CI'), 'batch_id': batch_id,
+                                'information_id': data['information_id'], 'category': category,
+                                'notes': notes, 'known_at': data['recorded_at']})
+                    return self.respond({'inserted': inserted, 'id': data['information_id']})
                 if self.path == '/api/link':
                     eid, iid = data.get('event_id'), data.get('information_id')
                     if not eid or not iid:
                         raise ValueError('关联需要事件和信息编号')
                     engine.link_information(eid, iid)
                     return self.respond({'inserted': True, 'id': iid})
-                operations = {'/api/information': ('information_id', 'I', engine.add_information),
-                    '/api/parent': ('event_id', 'E', engine.create_event),
+                collection = CollectionLedger(engine)
+                operations = {'/api/parent': ('event_id', 'E', engine.create_event),
                     '/api/update': ('update_id', 'EU', engine.update_event),
                     '/api/state': ('state_id', 'ES', engine.update_state),
-                    '/api/note': ('note_id', 'RN', engine.add_research_note)}
+                    '/api/note': ('note_id', 'RN', engine.add_research_note),
+                    '/api/collection': ('batch_id', 'CB', collection.create_batch),
+                    '/api/source-check': ('check_id', 'SC', collection.check_source),
+                    '/api/collection-item': ('item_id', 'CI', collection.add_item),
+                    '/api/triage': ('review_id', 'TR', collection.triage),
+                    '/api/parent-review': ('review_id', 'PR', collection.review_parent)}
                 if self.path not in operations:
                     return self.respond({'error': '操作不存在'}, 404)
                 key, prefix, operation = operations[self.path]
                 data.setdefault(key, identifier(prefix))
-                if self.path != '/api/information':
-                    # UI judgments are known now. Earlier public times never backdate their annotation.
-                    data['known_at'] = now()
-                else:
-                    data['observed_at'] = now()
+                # UI judgments are known now. Earlier public times never backdate their annotation.
+                data['known_at'] = now()
                 inserted = operation(data)
                 self.respond({'inserted': inserted, 'id': data[key]})
             except (ValueError, KeyError, TypeError, sqlite3.IntegrityError) as exc:

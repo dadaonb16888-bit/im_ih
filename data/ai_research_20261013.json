@@ -1,0 +1,739 @@
+{
+  "pack_id": "AI-REVIEW-20261013-V1",
+  "actor": "Codex",
+  "method_version": "ai-event-v1",
+  "generated_at": "2026-10-13T08:25:37.420206+00:00",
+  "sources": [
+    {
+      "information_id": "AI-S-20261013-RD-BASELINE",
+      "title": "研发费用加计扣除的2023年政策基线",
+      "source_id": "MOF",
+      "url": "https://www.mof.gov.cn/jrttts/202303/t20230328_3875460.htm",
+      "published_at": "2023-03-27",
+      "fact": "2023年第7号公告规定符合条件研发费用按100%税前加计扣除；此条用于历史政策基线，不推断2026年所有细则仍完全相同。",
+      "verification": "Codex本轮读取财政部原文；日期精度，时刻未知。"
+    },
+    {
+      "information_id": "AI-S-20261013-CSRC-BASELINE",
+      "title": "公募基金高质量发展行动方案：2025年基线",
+      "source_id": "CSRC",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7555824/content.shtml",
+      "published_at": "2025-05-07",
+      "fact": "2025年行动方案已提出业绩基准约束、权益产品发展及运作规则修订。",
+      "verification": "Codex本轮读取证监会原文；只作此前政策基线。"
+    },
+    {
+      "information_id": "AI-S-20261013-CSRC-REVISION",
+      "title": "基金运作规则征求意见稿：修订说明",
+      "source_id": "CSRC",
+      "url": "https://www.csrc.gov.cn/csrc/c101981/c7663407/7663407/files/%E9%99%84%E4%BB%B64%EF%BC%9A%E4%BF%AE%E8%AE%A2%E8%AF%B4%E6%98%8E.pdf",
+      "published_at": "2026-10-09",
+      "fact": "修订说明拟将权益类和FOF成立规模门槛由2亿元降至5000万元，并强化风格与分散管理；仍是征求意见。",
+      "verification": "Codex读取官方附件4全部3页；附件1至3未在本轮全部逐条核对。"
+    },
+    {
+      "information_id": "AI-S-20261013-R1-CN",
+      "title": "DeepSeek R1官方发布文：中文索引内容",
+      "source_id": "DEEPSEEK",
+      "url": "https://api-docs.deepseek.com/zh-cn/news/news250120/",
+      "published_at": "2025-01-20",
+      "fact": "官方发布文说明模型权重开放、MIT许可、蒸馏授权及API上线。",
+      "verification": "取得官方域名搜索索引；原页直接读取超时，不能称历史原页快照。"
+    },
+    {
+      "information_id": "AI-S-20261013-R1-LOG",
+      "title": "DeepSeek官方更新日志",
+      "source_id": "DEEPSEEK",
+      "url": "https://api-docs.deepseek.com/updates/?release=deepseek-coder",
+      "published_at": null,
+      "fact": "更新日志将R1发布列在2025-01-20，此前已有2024-12-26的V3发布。",
+      "verification": "Codex读取官方当前日志；不推断首发小时或日志历史修改时间。"
+    },
+    {
+      "information_id": "AI-S-20261013-R1-V1",
+      "title": "DeepSeek R1技术报告v1",
+      "source_id": "ARXIV",
+      "url": "https://arxiv.org/html/2501.12948v1",
+      "published_at": "2025-01-22T15:19:35+00:00",
+      "fact": "发行方v1报告介绍R1系列及蒸馏模型，并讨论能力限制；时间为版本提交时间而非产品首发时间。",
+      "verification": "固定2025年v1；当前不带版本的URL已指向2026年v2，不能污染历史判断。"
+    },
+    {
+      "information_id": "AI-S-20261013-CSI1000",
+      "title": "中证1000指数编制方案：2023年12月版",
+      "source_id": "CSI",
+      "url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/20231208175402-000852_Index_Methodology_cn.pdf",
+      "published_at": null,
+      "fact": "中证1000从中证800之外选择规模偏小且流动性较好的1000只证券，编制定义并非AI或科技指数。",
+      "verification": "Codex读取官方编制方案；它不替代2025年1月的实际成分和行业权重。"
+    },
+    {
+      "information_id": "AI-S-20261013-SSE50",
+      "title": "上证50官方基本信息",
+      "source_id": "SSE",
+      "url": "https://www.sse.com.cn/market/sseindex/indexlist/basic/index.shtml?COMPANY_CODE=000016&INDEX_Code=000016",
+      "published_at": null,
+      "fact": "上证50官方定位为沪市规模大、流动性好、具有代表性的50只证券。",
+      "verification": "Codex读取官方基本信息；不能据此补造历史成分受益暴露。"
+    },
+    {
+      "information_id": "AI-S-20261013-EU-ATTACHMENT",
+      "title": "中欧第二次例会成果共识清单",
+      "source_id": "MOFCOM",
+      "url": "https://www.mofcom.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileName=%E6%88%90%E6%9E%9C%E5%85%B1%E8%AF%86%E6%B8%85%E5%8D%95.docx&fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6Cfm6JZmR2kFHH6jTkxY0hLYFa0P%2B5%2FRT%2Bls4MYWA6OoB10aVPkWJJ%2Fc10fwObYcVFzhs%2FEDwf4pMZ7A8UEg39gRwKKQJsVSfy0mlilf9h4SjjfZ8eaN%2FMld9iembKEjZ58Hehg41tAXfSfWtp9zhlA%3D",
+      "published_at": null,
+      "fact": "本轮协作AI提取的附件摘要包括混动汽车贸易谅解及出口许可便利安排；部分关税议题仍是探讨。",
+      "verification": "协作AI报告已读附件；本次复取HTTP403，未取得可留存文件指纹。保留部分取得状态并须再次核对，不把本日补读算成市场今日新增。"
+    },
+    {
+      "information_id": "AI-S-20261013-ECOM-NOTICE",
+      "title": "品质电商五优行动通知原文入口",
+      "source_id": "MOFCOM",
+      "url": "https://dzsws.mofcom.gov.cn/gztz/art/2026/art_bdbe518ae1684a3eb2ab141503ebb039.html",
+      "published_at": null,
+      "fact": "官方解读指向该通知；原文当前读取超时，内容与首发时间未独立核对。",
+      "verification": "Codex两次原文读取超时；不可将原文入口登记当成原文已读。"
+    }
+  ],
+  "assessments": [
+    {
+      "assessment_id": "AI-20261013-E001-V1",
+      "event_id": "E-20261009-001",
+      "source_ids": [
+        "I-20261010-002",
+        "AI-S-20261013-RD-BASELINE"
+      ],
+      "source_checks": [
+        {
+          "information_id": "I-20261010-002",
+          "url": "https://www3.xinhuanet.com/politics/20261009/37bc898ce93f4c0899e926039f842891/c.html",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "同时支持科技型中小企业、传统产业升级、科技领军企业与金融创新。"
+        },
+        {
+          "information_id": "AI-S-20261013-RD-BASELINE",
+          "url": "https://www.mof.gov.cn/jrttts/202303/t20230328_3875460.htm",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "2023年第7号公告规定符合条件研发费用按100%税前加计扣除；此条用于历史政策基线，不推断2026年所有细则仍完全相同。"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "授权全文支持科技型中小企业研发、成果转化，也支持科技领军企业和传统产业升级。",
+          "source_ids": [
+            "I-20261010-002"
+          ]
+        },
+        {
+          "statement": "研发加计扣除在2023年已有明确政策基线，此次不能把全部研发支持描述当作从零新增。",
+          "source_ids": [
+            "AI-S-20261013-RD-BASELINE"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": "IM",
+      "decision": "Directional",
+      "confidence": "Low",
+      "channels": [
+        "TECH_GROWTH",
+        "MARKET_LIQUIDITY"
+      ],
+      "horizon": "Trend",
+      "directness": 1,
+      "independent_cause": true,
+      "relative_pricing": null,
+      "increment_reason": "有新的政策纲领，但尚未完成19项措施与全部旧政策的逐项差异；不为推动方向审核而强填Medium。具体税收比例、预算和执行日仍待细则。",
+      "expectation_baseline": "已核对2023年研发扣除公告作为一项历史基线；未取得公告前市场预期，不能给Surprise=High。",
+      "transmission": "中小科技企业研发与转化支持→创新融资和采用门槛可能改善→若实际受益暴露在IM更高，则IM相对受益。我的研究倾向为IM，仍是条件推断。",
+      "im_case": "明确提及科技型中小企业、专精特新和中小微成果转化，形成偏IM研究路径；是否转为利润及资金增量须核查。",
+      "ih_case": "大型科技领军企业、国企和传统产业也受支持；IH相关权重企业及金融机构可能受益，不支持机械小盘优先。",
+      "exposure_evidence": "未取得2026年10月有效成分及具体受益映射，规模定位不能代替相对暴露。",
+      "pre_move": "未读取事件前同步IM/IH行情，不判是否已提前交易。",
+      "conflicts": [
+        "贸易风险可能削弱科技成长渠道，但尚未比较净影响"
+      ],
+      "invalidation": "后续细则或成分暴露显示IH净受益不弱于IM，或资金和税收支持主要重复旧安排，撤销IM候选并重审机制。",
+      "gaps": [
+        "完整新旧政策差异",
+        "增量比例与预算实施细则",
+        "当期指数受益权重",
+        "事前预期与PreMove",
+        "最早公开及可交易时刻"
+      ],
+      "next_action": "由Codex继续比对实施细则和当期成分受益；保留低置信度IM研究倾向，暂不写入正式因果方向。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [
+        "AI-S-20261013-RD-BASELINE"
+      ],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "90dc5cde89232db59f98a1ffbccff625763816273c5adec5c09347cbacd6e373",
+      "expected_last_update_id": null
+    },
+    {
+      "assessment_id": "AI-20261013-E002-V1",
+      "event_id": "E-20261009-002",
+      "source_ids": [
+        "I-20261010-003"
+      ],
+      "source_checks": [
+        {
+          "information_id": "I-20261010-003",
+          "url": "https://zwgls.mof.gov.cn/gzdt/202610/t20261009_4002433.htm",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "3000亿元一般债务限额用于县区预算保障，2500亿元专项债务限额支持项目资金需求。"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "财政部原文区分3000亿元一般债务预算保障和2500亿元专项债务项目需求，合计5500亿元不能全记为新增项目投资。",
+          "source_ids": [
+            "I-20261010-003"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "CREDIT_LARGECAP",
+        "MARKET_LIQUIDITY"
+      ],
+      "horizon": "Swing",
+      "directness": 1,
+      "independent_cause": true,
+      "relative_pricing": null,
+      "increment_reason": "安排的金额和用途已核实，但对既有额度及市场预期的净增量尚未核清；保持未知。",
+      "expectation_baseline": "未取得安排前的额度、用途预期和地方实际资金需求样本。",
+      "transmission": "县区预算保障与项目融资→财政现金流和信用风险缓释、投资需求→银行权重与制造链双路径竞争。AI结论是当前无法可靠区分IM/IH相对优势。",
+      "im_case": "项目落地若带动设备、材料及制造业中小企业需求，可能利于IM；必须映射实际项目受益。",
+      "ih_case": "预算与信用风险缓释可能改善银行及权重行业风险定价；并不证明这些行业必然涨幅更大。",
+      "exposure_evidence": "没有项目受益名单、银行敞口及两指数有效权重，无法比较净受益。",
+      "pre_move": "无事件前相对行情证据。",
+      "conflicts": [],
+      "invalidation": "新增发行拨付事实改变用途或主要受益结构时重审；原金额不能用作独立方向证明。",
+      "gaps": [
+        "既有额度与预期比较",
+        "项目及信用受益映射",
+        "两指数成分暴露",
+        "首发时刻与实际发行拨付进度"
+      ],
+      "next_action": "由Codex追踪地方发行和拨付及受益行业，当前明确不定方向，继续观察。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "8f452c6d802de749cd61ea9681298a2b3ef7f42f08fe81a7a358a3d3da49a95f",
+      "expected_last_update_id": null
+    },
+    {
+      "assessment_id": "AI-20261013-E004-V1",
+      "event_id": "E-20261009-004",
+      "source_ids": [
+        "I-20261010-005",
+        "AI-S-20261013-CSRC-BASELINE",
+        "AI-S-20261013-CSRC-REVISION"
+      ],
+      "source_checks": [
+        {
+          "information_id": "I-20261010-005",
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7663393/content.shtml",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "处于征求意见阶段；不能当成已生效制度。"
+        },
+        {
+          "information_id": "AI-S-20261013-CSRC-BASELINE",
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7555824/content.shtml",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "2025年行动方案已提出业绩基准约束、权益产品发展及运作规则修订。"
+        },
+        {
+          "information_id": "AI-S-20261013-CSRC-REVISION",
+          "url": "https://www.csrc.gov.cn/csrc/c101981/c7663407/7663407/files/%E9%99%84%E4%BB%B64%EF%BC%9A%E4%BF%AE%E8%AE%A2%E8%AF%B4%E6%98%8E.pdf",
+          "status": "Read",
+          "capture_mode": "OfficialAttachment",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "修订说明拟将权益类和FOF成立规模门槛由2亿元降至5000万元，并强化风格与分散管理；仍是征求意见。"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "新公告仍处征求意见阶段，不能按已生效制度处理。",
+          "source_ids": [
+            "I-20261010-005"
+          ]
+        },
+        {
+          "statement": "修订说明给出权益类及FOF成立门槛降低、风格稳定与分散管理等具体修订。",
+          "source_ids": [
+            "AI-S-20261013-CSRC-REVISION"
+          ]
+        },
+        {
+          "statement": "2025年行动方案已提出基金基准约束与运作制度修订，新稿应作为这条政策链的推进来比较。",
+          "source_ids": [
+            "AI-S-20261013-CSRC-BASELINE"
+          ]
+        }
+      ],
+      "information_gain": "Medium",
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "REGULATION_QUALITY",
+        "POSITIONING"
+      ],
+      "horizon": "Trend",
+      "directness": 2,
+      "independent_cause": true,
+      "relative_pricing": null,
+      "increment_reason": "官方修订说明提供成立门槛的明确前后差异及具体约束，AI判为Medium制度增量；不等于超预期，也不表示全部旧条款已逐项核清。",
+      "expectation_baseline": "2025年行动方案已给出改革方向，但未取得征求意见前对具体门槛和约束的预期。",
+      "transmission": "注册门槛与投资约束变化→新增产品供给、现有产品配置及集中度调整→大小盘需求可能双向变化；没有净资金配置证据，AI不定方向。",
+      "im_case": "主题产品创新与合规风格调整可能增加中小盘需求，需看合同与现有持仓。",
+      "ih_case": "分散和稳定约束可能降低某些拥挤主题集中度，也可能利于权重配置；资金不会机械流向IH。",
+      "exposure_evidence": "未比对真实基金持仓、合同分类和IM/IH成分覆盖。",
+      "pre_move": "无改革发布前的相对价格或持仓变动证据。",
+      "conflicts": [],
+      "invalidation": "最终规则删除关键修订、实际产品规模或持仓变化不支持所述配置机制时重审。",
+      "gaps": [
+        "附件1至3及旧规则逐条比较",
+        "真实基金配置暴露",
+        "最终实施文本与时间",
+        "市场事前预期"
+      ],
+      "next_action": "由Codex继续读取完整规则并比较基金实际组合；本轮判断为有制度增量、暂无可确定的相对方向。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [
+        "AI-S-20261013-CSRC-BASELINE",
+        "AI-S-20261013-CSRC-REVISION"
+      ],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "5fd3df3b6a6d58307175a91fab057f600cb5c9491b2e28a9915e687737918689",
+      "expected_last_update_id": null
+    },
+    {
+      "assessment_id": "AI-20261013-E005-V1",
+      "event_id": "E-20261009-005",
+      "source_ids": [
+        "I-20261010-008"
+      ],
+      "source_checks": [
+        {
+          "information_id": "I-20261010-008",
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202610/t20261009_4002434.htm",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "后续财政安排值得研究；不能把报告重述的支出全部视为当天增量。"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "财政报告回顾上半年预算执行与政策安排，同时提供支持科技、中小企业、消费和信用风险等多类内容。",
+          "source_ids": [
+            "I-20261010-008"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "MARKET_LIQUIDITY",
+        "TECH_GROWTH",
+        "CREDIT_LARGECAP"
+      ],
+      "horizon": "Trend",
+      "directness": 1,
+      "independent_cause": null,
+      "relative_pricing": null,
+      "increment_reason": "正文已读取，但公开报告的新统计、政策回顾和未来安排尚未与此前发布逐项比较；不能把累计财政支出全视为当日增量，尚不能给Low或Medium整稿评级。",
+      "expectation_baseline": "未核对各项数字和政策的此前公布时间及市场一致预期。",
+      "transmission": "报告可提供研究背景和待拆解线索，但只有当其中出现未被计入的独立政策或数据变化，才有资格形成新的相对定价机制。AI当前不定方向。",
+      "im_case": "科技、中小企业和设备更新支持可能形成IM路径；必须从累计安排中分离真正的新信息。",
+      "ih_case": "预算保障、金融协同和信用风险缓释可能支持权重路径；无法据总支出判断IH强弱。",
+      "exposure_evidence": "未得到新信息部分的受益企业和权重映射。",
+      "pre_move": "无报告发布前行情证据。",
+      "conflicts": [
+        "与5500亿元安排及新质生产力Parent可能信息重叠，须避免重复计数"
+      ],
+      "invalidation": "若逐项核对证明全文仅重复已知安排，则作为背景保留，不再单独参与方向判断。",
+      "gaps": [
+        "逐项首次公开及政策增量比较",
+        "与其他Parent去重",
+        "当期指数相对受益映射"
+      ],
+      "next_action": "由Codex拆解报告条款与数字并追溯首发，成立的增量归入已有Parent或另建独立机制；本轮保持观察。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "ce6d6e45c0146eb25aa79d5eec74e6188813684143c2f3b0e5240486f6573f3f",
+      "expected_last_update_id": null
+    },
+    {
+      "assessment_id": "AI-20261013-DEEPSEEK-V1",
+      "event_id": "202501_DEEPSEEK",
+      "source_ids": [
+        "AI-S-20261013-R1-CN",
+        "AI-S-20261013-R1-LOG",
+        "AI-S-20261013-R1-V1",
+        "AI-S-20261013-CSI1000",
+        "AI-S-20261013-SSE50"
+      ],
+      "source_checks": [
+        {
+          "information_id": "AI-S-20261013-R1-CN",
+          "url": "https://api-docs.deepseek.com/zh-cn/news/news250120/",
+          "status": "Partial",
+          "capture_mode": "OfficialSearchIndex",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "已取得官方域名索引中的发布内容；直接原页超时，不声称取得历史页面快照。"
+        },
+        {
+          "information_id": "AI-S-20261013-R1-LOG",
+          "url": "https://api-docs.deepseek.com/updates/?release=deepseek-coder",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "更新日志将R1发布列在2025-01-20，此前已有2024-12-26的V3发布。"
+        },
+        {
+          "information_id": "AI-S-20261013-R1-V1",
+          "url": "https://arxiv.org/html/2501.12948v1",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "发行方v1报告介绍R1系列及蒸馏模型，并讨论能力限制；时间为版本提交时间而非产品首发时间。"
+        },
+        {
+          "information_id": "AI-S-20261013-CSI1000",
+          "url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/20231208175402-000852_Index_Methodology_cn.pdf",
+          "status": "Read",
+          "capture_mode": "OfficialAttachment",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "中证1000从中证800之外选择规模偏小且流动性较好的1000只证券，编制定义并非AI或科技指数。"
+        },
+        {
+          "information_id": "AI-S-20261013-SSE50",
+          "url": "https://www.sse.com.cn/market/sseindex/indexlist/basic/index.shtml?COMPANY_CODE=000016&INDEX_Code=000016",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "上证50官方定位为沪市规模大、流动性好、具有代表性的50只证券。"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "官方日志将R1发布列为2025-01-20；R1之前已发布V3，不能把全部AI能力算作此次增量。",
+          "source_ids": [
+            "AI-S-20261013-R1-LOG"
+          ]
+        },
+        {
+          "statement": "官方发布文索引说明开放模型权重、许可和蒸馏；直接原页读取本轮受阻。",
+          "source_ids": [
+            "AI-S-20261013-R1-CN"
+          ]
+        },
+        {
+          "statement": "2025年技术说明应固定v1，性能陈述属于发行方报告，不当作独立验证。",
+          "source_ids": [
+            "AI-S-20261013-R1-V1"
+          ]
+        },
+        {
+          "statement": "中证1000按较小规模与流动性筛选，上证50按沪市大规模代表性筛选；均不能仅凭名称确定AI受益权重。",
+          "source_ids": [
+            "AI-S-20261013-CSI1000",
+            "AI-S-20261013-SSE50"
+          ]
+        }
+      ],
+      "information_gain": "Medium",
+      "surprise": null,
+      "bias": "IM",
+      "decision": "Directional",
+      "confidence": "Low",
+      "channels": [
+        "TECH_GROWTH",
+        "RISK_APPETITE"
+      ],
+      "horizon": "Trend",
+      "directness": 1,
+      "independent_cause": true,
+      "relative_pricing": null,
+      "increment_reason": "相对此前V3，新增推理产品、开放与授权安排形成Medium产品增量；不把后续报告和传播热度重复算高增量，不量化超预期。",
+      "expectation_baseline": "仅核对此前V3发布，不具备2025年事件前市场预期样本。",
+      "transmission": "开放推理模型和蒸馏→试验采用门槛可能降低→应用企业和国产AI生态预期可能改善→若IM真实受益暴露更高则偏IM。AI给条件性IM倾向，方向置信度低。",
+      "im_case": "软件应用和部署服务若在IM中的有效暴露更高，且采用成本下降转成收入或利润，IM路径增强；开放模型也可能加剧竞争降价。",
+      "ih_case": "大企业同样可能通过数据、渠道和部署能力降本增效；其收益若更大可推翻IM倾向，现有材料也未证明IH更强。",
+      "exposure_evidence": "已核对指数定位，没有2025年1月有效成分和受益权重；中证1000不是科技指数。",
+      "pre_move": "未读取2025年首发前同步IM/IH行情，未知是否已提前交易。",
+      "conflicts": [
+        "不带版本的arXiv链接当前指向2026年v2，已固定v1防止未来信息污染"
+      ],
+      "invalidation": "当期成分与商业事实显示IH受益不弱于IM，或成本下降主要转为竞争降价而非利润，撤销IM候选；独立风险机制压过AI渠道时重审。",
+      "gaps": [
+        "2025年1月成分、权重与实际受益公司",
+        "首发小时和可交易时间",
+        "市场事前预期",
+        "实际采用和竞争的净利润影响",
+        "事件前及随后同期行情"
+      ],
+      "next_action": "由Codex继续补历史成分和企业商业暴露；保留低置信度IM研究倾向，正式因果方向不升格，也不参与当前主导事件。",
+      "research_mode": "HistoricalReview",
+      "baseline_source_ids": [
+        "AI-S-20261013-R1-LOG"
+      ],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "f1df0ad61609d0d61797059f33ec4bc7f4dec077414f7c4b41ca91b749f98782",
+      "expected_last_update_id": "historical-audit-v1:202501_DEEPSEEK:draft"
+    },
+    {
+      "assessment_id": "AI-20261013-E003-V1",
+      "event_id": "E-20261009-003",
+      "source_ids": [
+        "I-20261010-004",
+        "I-20261010-011",
+        "AI-S-20261013-EU-ATTACHMENT"
+      ],
+      "source_checks": [
+        {
+          "information_id": "I-20261010-004",
+          "url": "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_870aab913b204c278dc2c42b51174cb1.html",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "双方表示继续稳定双边经贸关系，并安排后续沟通。"
+        },
+        {
+          "information_id": "I-20261010-011",
+          "url": "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_74a287d30de544e58745c6ed523ae960.html",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "并入既有中欧事件；保持沟通不等于贸易限制已经解除。"
+        },
+        {
+          "information_id": "AI-S-20261013-EU-ATTACHMENT",
+          "url": "https://www.mofcom.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileName=%E6%88%90%E6%9E%9C%E5%85%B1%E8%AF%86%E6%B8%85%E5%8D%95.docx&fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6Cfm6JZmR2kFHH6jTkxY0hLYFa0P%2B5%2FRT%2Bls4MYWA6OoB10aVPkWJJ%2Fc10fwObYcVFzhs%2FEDwf4pMZ7A8UEg39gRwKKQJsVSfy0mlilf9h4SjjfZ8eaN%2FMld9iembKEjZ58Hehg41tAXfSfWtp9zhlA%3D",
+          "status": "Partial",
+          "capture_mode": "OfficialAttachment",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "协作AI已提取附件摘要；当前复取403，缺可留存指纹。具体条款须再次核对，不把补读当今日新消息。"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "两份官方正文确认第二次磋商与成果清单，安排后续沟通，并讨论市场准入、出口管制等议题。",
+          "source_ids": [
+            "I-20261010-004",
+            "I-20261010-011"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Low",
+      "channels": [
+        "RISK_APPETITE",
+        "MARKET_STABILIZATION"
+      ],
+      "horizon": "Swing",
+      "directness": 1,
+      "independent_cause": null,
+      "relative_pricing": null,
+      "increment_reason": "附件摘要提示具体便利化内容，不能简单判为仅措辞改善；今天新读附件不等于市场今天新信息。原件复取受阻且缺前次条款比较，InformationGain暂不评级。",
+      "expectation_baseline": "未取得事件前一致预期及此前政策/谈判条款的完整差异基线。",
+      "transmission": "谈判与具体便利措施可能缓释相关企业贸易和许可风险→受益范围需逐项核对→才能比较IM/IH。当前AI判断为具有研究价值，但相对方向未确定。",
+      "im_case": "若措施缓释出口制造中小企业的关键约束且IM有效暴露更高，IM路径增强；不能把全部谈判议题当成限制已经解除。",
+      "ih_case": "大型出口与权重企业也可能直接受益；若主要便利集中于其业务，IH路径更强，须对照暴露。",
+      "exposure_evidence": "没有实际受益企业、有效成分及权重的对应比较，不能凭风险标签或规模名称定方向。",
+      "pre_move": "没有事件前同步IM/IH行情证据。",
+      "conflicts": [],
+      "invalidation": "若后续正式措施、实施范围或企业暴露否定当前传导路径，则重审该逻辑；价格反向单独记录市场反馈。",
+      "gaps": [
+        "附件原件二次核对及内容指纹",
+        "前次磋商和已实行安排的基线",
+        "哪些措施已实行、何时生效",
+        "当期受益企业与指数权重"
+      ],
+      "next_action": "由Codex继续复取并逐项核对成果附件、比较此前条款和有效受益范围；保持观察，不要求用户选方向。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "b15bb1bbb721d5bd8bb55aa3801cc5925f7f7220fcf26bda02d591d249606a8f",
+      "expected_last_update_id": null
+    },
+    {
+      "assessment_id": "AI-20261013-E006-V1",
+      "event_id": "E-20261009-006",
+      "source_ids": [
+        "I-20261010-009"
+      ],
+      "source_checks": [
+        {
+          "information_id": "I-20261010-009",
+          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_d1d6cc3945c74a6e99810c595a1c2ffa.html",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "贸易摩擦风险线索；未核实当天新增限制措施。"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "官方答问回应10月7日的产能联合声明，说明此前7月已阐明立场，并以未来采取损害利益措施为回应条件。",
+          "source_ids": [
+            "I-20261010-009"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "RISK_OFF",
+        "RISK_APPETITE"
+      ],
+      "horizon": "Fast",
+      "directness": 1,
+      "independent_cause": null,
+      "relative_pricing": null,
+      "increment_reason": "答问含新回应，但本文没有给出已生效的新关税或限制条款；外国声明相对旧机制的变化未核对，不能据Risk-off类别填High或IH。",
+      "expectation_baseline": "未取得事件前一致预期及此前政策/谈判条款的完整差异基线。",
+      "transmission": "外交/贸易争议可能提高风险溢价，但仅这份答问不足证明新的约束实际落地。AI当前判断为风险观察线索，相对方向不确定。",
+      "im_case": "若风险仅限某些权重行业，IM可能相对受影响较小；现有材料未证明该范围。",
+      "ih_case": "若后续实际措施主要冲击高风险中小制造企业，则可能相对利于IH；不能把条件性风险写成已经发生的冲击。",
+      "exposure_evidence": "没有实际受益企业、有效成分及权重的对应比较，不能凭风险标签或规模名称定方向。",
+      "pre_move": "没有事件前同步IM/IH行情证据。",
+      "conflicts": [],
+      "invalidation": "若后续正式措施、实施范围或企业暴露否定当前传导路径，则重审该逻辑；价格反向单独记录市场反馈。",
+      "gaps": [
+        "外国联合声明原文与旧政策差异",
+        "任何新增措施的正式条款与生效时间",
+        "行业及成分暴露",
+        "事前风险定价"
+      ],
+      "next_action": "由Codex读取当事方声明与实施文件，出现确切新措施再更新因果；现阶段不输出IH指令。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "b640eebc2af0703b6892852821f395418a6e74297e8a83879e92ff4e835b59fc",
+      "expected_last_update_id": null
+    },
+    {
+      "assessment_id": "AI-20261013-E007-V1",
+      "event_id": "E-20261010-001",
+      "source_ids": [
+        "I-20261010-010",
+        "AI-S-20261013-ECOM-NOTICE"
+      ],
+      "source_checks": [
+        {
+          "information_id": "I-20261010-010",
+          "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_1556a843ea4a4187a49caee26056b254.html",
+          "status": "Read",
+          "capture_mode": "DirectWebText",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "原通知首发时间未知，解读时间不能替代政策最初发布时间。"
+        },
+        {
+          "information_id": "AI-S-20261013-ECOM-NOTICE",
+          "url": "https://dzsws.mofcom.gov.cn/gztz/art/2026/art_bdbe518ae1684a3eb2ab141503ebb039.html",
+          "status": "Unavailable",
+          "capture_mode": "Unavailable",
+          "checked_at": "2026-10-13T08:25:37.420206+00:00",
+          "fact_summary": "已知官方解读链接到此通知，但当前两次直接读取超时，未独立核对通知正文及首发时间。"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "官方解读介绍品质电商五优维度及15项工作，涵盖平台、商家、消费、出海与规范标准，并链接通知原文。",
+          "source_ids": [
+            "I-20261010-010"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "MARKET_LIQUIDITY",
+        "REGULATION_QUALITY"
+      ],
+      "horizon": "Trend",
+      "directness": 1,
+      "independent_cause": null,
+      "relative_pricing": null,
+      "increment_reason": "解读全文已读，但通知原文及最初发布时间尚未取得；不能把解读当首次政策公告，也不能将15项工作全部当新增刺激。",
+      "expectation_baseline": "未取得事件前一致预期及此前政策/谈判条款的完整差异基线。",
+      "transmission": "品质培育、平台规则与消费服务可能改变商家机会和合规成本→需对照通知和企业暴露→才能判断大小盘相对受益。当前AI明确不定方向。",
+      "im_case": "若可上市中小品牌、服务和供应链企业得到新增流量或成本改善，可能支持IM；平台生态企业不一定属于IM。",
+      "ih_case": "大型消费企业和相关权重成分同样可受益；规范标准也可能压缩部分经营主体利润，净效应未比较。",
+      "exposure_evidence": "没有实际受益企业、有效成分及权重的对应比较，不能凭风险标签或规模名称定方向。",
+      "pre_move": "没有事件前同步IM/IH行情证据。",
+      "conflicts": [],
+      "invalidation": "若后续正式措施、实施范围或企业暴露否定当前传导路径，则重审该逻辑；价格反向单独记录市场反馈。",
+      "gaps": [
+        "通知原文读取与首发时间",
+        "与旧品质电商政策逐条比较",
+        "具体上市公司净受益",
+        "有效成分与业务权重"
+      ],
+      "next_action": "由Codex继续取得通知、比对旧政策并映射A股企业，当前保留观察；无须用户人工确认方向。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "e82f251227c57d462c914d42d2c3e44de99593723e8f60ea9d6843f41d725da2",
+      "expected_last_update_id": null
+    }
+  ]
+}

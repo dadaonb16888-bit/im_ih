@@ -36,3 +36,42 @@ CREATE TABLE IF NOT EXISTS research_notes (
  recorded_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')),
  payload TEXT NOT NULL CHECK(json_valid(payload))
 );
+CREATE TABLE IF NOT EXISTS collection_batches (
+ batch_id TEXT PRIMARY KEY, known_at TEXT NOT NULL,
+ recorded_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')),
+ payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE TABLE IF NOT EXISTS source_checks (
+ check_id TEXT PRIMARY KEY, batch_id TEXT NOT NULL REFERENCES collection_batches(batch_id),
+ known_at TEXT NOT NULL, payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE TABLE IF NOT EXISTS collection_items (
+ item_id TEXT PRIMARY KEY, batch_id TEXT NOT NULL REFERENCES collection_batches(batch_id),
+ information_id TEXT NOT NULL REFERENCES information_inbox(information_id),
+ known_at TEXT NOT NULL, payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE TABLE IF NOT EXISTS information_reviews (
+ review_id TEXT PRIMARY KEY, batch_id TEXT NOT NULL REFERENCES collection_batches(batch_id),
+ information_id TEXT NOT NULL REFERENCES information_inbox(information_id),
+ event_id TEXT REFERENCES events(event_id), known_at TEXT NOT NULL,
+ payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE TABLE IF NOT EXISTS parent_reviews (
+ review_id TEXT PRIMARY KEY, batch_id TEXT NOT NULL REFERENCES collection_batches(batch_id),
+ event_id TEXT NOT NULL REFERENCES events(event_id), known_at TEXT NOT NULL,
+ payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE INDEX IF NOT EXISTS source_checks_by_batch ON source_checks(batch_id, known_at);
+CREATE INDEX IF NOT EXISTS reviews_by_batch ON information_reviews(batch_id, information_id, known_at);
+CREATE TABLE IF NOT EXISTS ai_research_runs (
+ pack_id TEXT PRIMARY KEY, known_at TEXT NOT NULL,
+ recorded_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')),
+ payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE TABLE IF NOT EXISTS ai_assessments (
+ assessment_id TEXT PRIMARY KEY, event_id TEXT NOT NULL REFERENCES events(event_id),
+ pack_id TEXT NOT NULL REFERENCES ai_research_runs(pack_id), known_at TEXT NOT NULL,
+ recorded_at TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')),
+ payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE INDEX IF NOT EXISTS ai_assessments_by_event ON ai_assessments(event_id,known_at);

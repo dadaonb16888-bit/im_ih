@@ -1,0 +1,26 @@
+{
+  "batch_id": "CB-20261013-initial-collection",
+  "window": "2026-10-11T16:00:00.000000+00:00 / 2026-10-13T02:58:35.000000+00:00",
+  "counts": {
+    "information": 0,
+    "pending_triage": 0,
+    "unknown_time": 0,
+    "late": 0,
+    "after_cutoff": 0,
+    "missing_categories": 14,
+    "pending_parent_reviews": 7
+  },
+  "ready": false,
+  "gaps": [
+    "14类登记来源尚未完成覆盖；空白不代表无事件",
+    "7个既有Parent后续尚未复核"
+  ],
+  "existing_ledger_counts_unchanged": {
+    "information_inbox": 43,
+    "events": 18,
+    "research_notes": 19,
+    "event_updates": 2,
+    "state_updates": 0
+  },
+  "note": "仅建立空白收集批次，未联网扫描或录入新闻"
+}

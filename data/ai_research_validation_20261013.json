@@ -1,0 +1,98 @@
+{
+  "verified_at": "2026-10-13T08:35:26.135534+00:00",
+  "assessments": 8,
+  "current_assessments": 7,
+  "historical_assessments": 1,
+  "actual_source_checks": 18,
+  "repeat_idempotent": true,
+  "formal_projections": 0,
+  "market_states": 0,
+  "test_count": 72,
+  "causal_and_market_labels_preserved": true,
+  "execution_mode": "Codex performed actual research in this conversation; no unattended model service",
+  "sqlite_integrity": "ok",
+  "original_records_preserved": true,
+  "assessment_summary": [
+    {
+      "event_id": "202501_DEEPSEEK",
+      "name": "DeepSeek AI重估",
+      "ai_bias": "IM",
+      "confidence": "Low",
+      "decision": "Directional",
+      "formal_bias": null,
+      "market_acceptance": null,
+      "qualification": "WATCH"
+    },
+    {
+      "event_id": "E-20261009-001",
+      "name": "新质生产力政策意见发布",
+      "ai_bias": "IM",
+      "confidence": "Low",
+      "decision": "Directional",
+      "formal_bias": null,
+      "market_acceptance": null,
+      "qualification": "WATCH"
+    },
+    {
+      "event_id": "E-20261009-002",
+      "name": "地方债务结存限额5500亿元安排",
+      "ai_bias": null,
+      "confidence": "Medium",
+      "decision": "InsufficientEvidence",
+      "formal_bias": null,
+      "market_acceptance": null,
+      "qualification": "WATCH"
+    },
+    {
+      "event_id": "E-20261009-003",
+      "name": "中欧贸易投资磋商第二次例会",
+      "ai_bias": null,
+      "confidence": "Low",
+      "decision": "InsufficientEvidence",
+      "formal_bias": null,
+      "market_acceptance": null,
+      "qualification": "WATCH"
+    },
+    {
+      "event_id": "E-20261009-004",
+      "name": "公募基金运作规则征求意见",
+      "ai_bias": null,
+      "confidence": "Medium",
+      "decision": "InsufficientEvidence",
+      "formal_bias": null,
+      "market_acceptance": null,
+      "qualification": "WATCH"
+    },
+    {
+      "event_id": "E-20261009-005",
+      "name": "财政政策执行报告发布",
+      "ai_bias": null,
+      "confidence": "Medium",
+      "decision": "InsufficientEvidence",
+      "formal_bias": null,
+      "market_acceptance": null,
+      "qualification": "WATCH"
+    },
+    {
+      "event_id": "E-20261009-006",
+      "name": "产能争议相关贸易风险回应",
+      "ai_bias": null,
+      "confidence": "Medium",
+      "decision": "InsufficientEvidence",
+      "formal_bias": null,
+      "market_acceptance": null,
+      "qualification": "WATCH"
+    },
+    {
+      "event_id": "E-20261010-001",
+      "name": "品质电商政策解读",
+      "ai_bias": null,
+      "confidence": "Medium",
+      "decision": "InsufficientEvidence",
+      "formal_bias": null,
+      "market_acceptance": null,
+      "qualification": "WATCH"
+    }
+  ],
+  "ui_verified": true
+}
