@@ -117,6 +117,26 @@ class AIResearchTests(unittest.TestCase):
         self.assertFalse(self.research.apply_pack(self.pack(a))['inserted'])
         self.assertEqual(self.research.list_assessments('fixture-event', BEFORE), [])
 
+    def test_research_withdrawal_preserves_prior_scoring_at_its_known_time(self):
+        original = self.scoring_assessment()
+        self.research.apply_pack(self.pack(original))
+        withdrawn = copy.deepcopy(original)
+        withdrawn.update(assessment_id='fixture-withdrawal', decision='InsufficientEvidence',
+                         bias=None, impact_score=None, confidence_score=None)
+        for field in ('impact_score', 'confidence_score'):
+            withdrawn['score_basis']['components'][field]['value'] = None
+        with patch('event_engine.ai_research.now', return_value=FUTURE):
+            self.research.apply_pack(self.pack(withdrawn, pack_id='fixture-withdrawal-pack'))
+        prior = self.research.preview('fixture-event', KNOWN)
+        latest = self.research.preview('fixture-event', FUTURE)
+        self.assertEqual(prior['bias'], 'IM')
+        self.assertEqual(prior['event_strength'], .5)
+        self.assertIsNone(latest['bias'])
+        self.assertIsNone(latest['event_strength'])
+        self.assertIsNone(latest['score'])
+        self.assertEqual(self.count('event_updates'), 0)
+        self.assertEqual(self.count('state_updates'), 0)
+
     def test_invalid_impact_table_rolls_back_new_sources_and_run(self):
         a = self.impact_assessment()
         a['impact_analysis']['policy_deltas'][0]['new_source_ids'] = ['not-checked']

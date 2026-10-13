@@ -82,7 +82,7 @@ def validate_impact_analysis(assessment, sources, checks, as_of):
             raise ValueError('受益风格或预期净效应无效')
         if row['effect_status'] not in ('Hypothesis', 'VerifiedMechanism'):
             raise ValueError('受益效应需区分研究推断与已核对机制')
-        if row['exposure_type'] not in ('Business', 'SectorProxy', 'Unknown'):
+        if row['exposure_type'] not in ('Business', 'SectorProxy', 'PortfolioDisclosure', 'Unknown'):
             raise ValueError('相对暴露依据无效')
         refs(row['source_ids'], True)
         if row['exposure_type'] == 'SectorProxy' and row['effect_status'] == 'VerifiedMechanism':
@@ -92,4 +92,4 @@ def validate_impact_analysis(assessment, sources, checks, as_of):
             if observed > timestamp(as_of).astimezone(timezone(timedelta(hours=8))).date():
                 raise ValueError('不能使用未来暴露数据')
         if row['exposure_type'] != 'Unknown' and row['exposure_as_of'] is None:
-            raise ValueError('业务/行业暴露需注明观察或统计日期')
+            raise ValueError('业务/行业/披露组合需注明观察或统计日期')

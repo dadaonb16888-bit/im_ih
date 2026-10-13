@@ -79,6 +79,17 @@ class ImpactAnalysisTests(unittest.TestCase):
     def test_exposure_date_uses_china_calendar_across_utc_midnight(self):
         self.validate('2026-10-12T16:01:00Z')
 
+    def test_disclosed_portfolio_keeps_report_date_and_requires_read_source(self):
+        row = self.assessment['impact_analysis']['beneficiary_paths'][0]
+        row.update(exposure_type='PortfolioDisclosure', exposure_as_of='2026-06-30')
+        self.validate()
+        for value in (None, '2026-10-14'):
+            row['exposure_as_of'] = value
+            with self.assertRaises(ValueError): self.validate()
+        row['exposure_as_of'] = '2026-06-30'
+        self.checks['news'] = 'Unavailable'
+        with self.assertRaises(ValueError): self.validate()
+
     def test_unknown_fields_and_duplicate_row_ids_rejected(self):
         rows = self.assessment['impact_analysis']['policy_deltas']
         rows.append(copy.deepcopy(rows[0]))
