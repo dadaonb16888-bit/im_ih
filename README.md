@@ -4,6 +4,31 @@
 
 在其他电脑上运行与GitHub交付范围见[GitHub交付说明](docs/GitHub交付说明.md)。需要Python 3.10或更新版本，无第三方Python依赖。
 
+## Phase 1 Event Engine Upgrade（2026-10-13）
+
+当前最高优先级规范是 [PROJECT_REVIEW.md](PROJECT_REVIEW.md) 和 [CODEX_TASK_PHASE1_EVENT_ENGINE.md](CODEX_TASK_PHASE1_EVENT_ENGINE.md)。已在原事件系统内增量实现 **Event → Event Alpha → IM/IH Bias**，保留收集、AI研究、因果审核、数据库和工作台。分析计划见 [PHASE1_IMPLEMENTATION_PLAN.md](PHASE1_IMPLEMENTATION_PLAN.md)，完整变更与风险见 [PHASE1_EVENT_ENGINE_UPGRADE.md](PHASE1_EVENT_ENGINE_UPGRADE.md)。
+
+- 新增九类渠道默认影响（兼容POSITIONING）、数值评分、时间衰减、主导事件排序和按周期输出。TECH_GROWTH默认Strong IM；DIRECT_SMALLCAP_LIQUIDITY默认Strong IH，前提是小盘流动性危机。明确证据方向可以覆盖默认，明确null保持未知。
+- `Event Score = Impact × Confidence × Persistence × Freshness`。Impact为0–5，数值Confidence为0–1并受来源可靠性约束；默认Persistence为Fast 0.4/Swing 0.7/Trend 1，指数衰减周期为1/5/20自然日。来源等级上限A/B/C/D为1/0.85/0.6/0.3。这些工程参数尚未统计校准，不代表已验证的交易收益。
+- 使用`event_name`/`channel`或兼容的`name`/`channels`。新增source、source_reliability、impact_score、confidence_score、persistence_score、event_strength、affected_style、status；数值及方向通过具有新增事实的Event Update追加，低增量重复不能抬分或重启衰减。
+- State在提供接受度、priced_in或impact_weakening观察及证据后自动推导Fresh/Diffusing/Crowded/Reversing；没有行情不会生成市场Confirmed。`alpha_state=Fresh`仅表示完整事件评分进入生命周期，不等于市场已确认。Crowded需明确解除已定价观察才能恢复扩散。
+- 工作台增加 **事件评分** 页，显示评分组件、默认渠道前提、评分缺口、全池及三个周期的主导事件。现有18个事件/8条AI判读缺完整数值依据，仍无可评分主导事件；全部旧记录保持保留。
+
+运行数值Alpha报告：
+
+```text
+python manage.py alpha-report --output data/event_alpha_current_report.json
+python manage.py alpha-report --as-of 2026-10-13T20:00:00+08:00
+```
+
+只读API：`GET /api/alpha?as_of=<时区时间>`。响应含`dominant_event`、`score`、`bias`、`confidence`、`ranking`、`excluded`、`by_horizon`及`trade_permission`。后者只表示事件层资格；实际`entry_allowed`始终false。同分保留候选，反向同分显式输出conflict，不强行选方向。
+
+`GET /api/events`和`manage.py report`新增`event_alpha`作为数值输出，旧`dominant`保留为LegacyResearchPriority兼容结果。分数按as_of重新计算；SQL生成列中的Parent数值是创建时快照，Update的score_before/score_after及State的event_score是各自记录时刻快照，查询当前数值应使用Alpha接口。
+
+数据库升级为版本2：只追加JSON生成列与只读event_states视图，原始payload和记录时间不回写。Python 3.10标准运行时的SQLite支持这些生成列；外部SQLite工具需3.31或更新版本。升级前本地备份不进入仓库。
+
+全量100项测试通过，其中28项为本轮新增。未开发Spread Engine、Trading Execution或Broker API。
+
 ## 事件判读由Codex执行
 
 用户无需填IM/IH方向或审批研究结论。Codex读取原文、核对增量与预期、比较两指数受益并给出方向或证据不足结论；工作台默认展示“AI判读”，事实与推理、研究方向与正式资格分别保存。见[AI事件判读流程](docs/AI事件判读流程.md)。
@@ -38,7 +63,7 @@
 
 阅读顺序：
 
-最新开发计划：[最新开发路线](docs/最新开发路线.md)：Phase 1事件基础→Phase 1.5历史行情→Phase 2事件Alpha研究→Phase 3实时监控→Phase 4自动交易。历史版本见[Phase 1工程启动包与实现对照](docs/Phase1计划与当前实现对照.md)。具体行情和统计任务尚未执行。
+最新开发计划以根目录两份规范为准：Phase 1事件Alpha工程→Phase 2历史行情及Spread→Phase 3历史Alpha验证→Phase 4监控→Phase 5执行。原路线和历史版本保留在[最新开发路线](docs/最新开发路线.md)及[Phase 1工程启动包与实现对照](docs/Phase1计划与当前实现对照.md)。当前范围仍只含Event Layer，行情和统计任务尚未执行。
 
 1. [事件处理规则](docs/事件处理规则.md)：什么算事件，何时更新，方向怎样判断。
 2. [每日收集与审核流程](docs/每日收集与审核流程.md)：覆盖前一天至当前的完整收集窗口。

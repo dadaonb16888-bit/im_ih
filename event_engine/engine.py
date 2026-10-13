@@ -4,11 +4,15 @@ import sqlite3
 from contextlib import contextmanager, nullcontext
 from datetime import datetime, timezone
 from pathlib import Path
+from database.migrations import upgrade_alpha_schema
+from .channel import CHANNELS
+from .event import ALPHA_FIELDS, normalize_event, validate_alpha, project_event
+from .event_update import update_delta
+from .event_state import transition_state
+from .scoring import score_event
+from .dominance import dominant_event
 
 ROOT = Path(__file__).resolve().parents[1]
-CHANNELS = {'TECH_GROWTH', 'DIRECT_SMALLCAP_LIQUIDITY', 'DIRECT_LARGECAP',
-            'MARKET_LIQUIDITY', 'CREDIT_LARGECAP', 'REGULATION_QUALITY',
-            'RISK_APPETITE', 'RISK_OFF', 'MARKET_STABILIZATION', 'POSITIONING'}
 HORIZONS = {'Fast', 'Swing', 'Trend'}
 STYLE = {'Strong IM': 2, 'IM': 1, 'Neutral': 0, 'IH': -1, 'Strong IH': -2}
 GAIN = {'Low': 1, 'Medium': 2, 'High': 3}
@@ -76,6 +80,7 @@ class EventEngine:
         self.db.row_factory = sqlite3.Row
         self._atomic_depth = 0
         self.db.executescript((ROOT / 'database' / 'schema.sql').read_text(encoding='utf-8'))
+        upgrade_alpha_schema(self.db)
         for table in ('information_inbox', 'events', 'event_updates', 'state_updates',
                       'event_information', 'legacy_audit', 'research_notes', 'collection_batches',
                       'source_checks', 'collection_items', 'information_reviews', 'parent_reviews',
@@ -129,9 +134,12 @@ class EventEngine:
         return self._insert('information_inbox', 'information_id', data['information_id'], data)
 
     def create_event(self, data):
-        data = dict(data)
+        data = normalize_event(data)
         reject_extra(data, {'event_id', 'name', 'detection_mode', 'category', 'known_at',
-                            'initial_bias', 'notes', 'legacy', 'scope', *CAUSAL_FIELDS})
+                            'initial_bias', 'notes', 'legacy', 'scope', *CAUSAL_FIELDS, *ALPHA_FIELDS})
+        validate_alpha(data)
+        if data.get('status') not in (None, 'Draft'):
+            raise ValueError('新Parent为Draft；Active/Closed必须由因果更新产生')
         if not data.get('event_id') or not data.get('name'):
             raise ValueError('事件需要event_id/name')
         if data.get('detection_mode') not in ('News', 'MarketState'):
@@ -152,6 +160,11 @@ class EventEngine:
         data.setdefault('initial_bias', data.get('bias'))
         validate_causal(data)
         self._validate_time_order(data)
+        if set(data) & ALPHA_FIELDS:
+            scored = score_event(data, data['known_at'])
+            if data.get('event_strength') is not None and data['event_strength'] != scored['event_strength']:
+                raise ValueError('event_strength由评分组件计算，不允许不一致值')
+            data.update({'event_strength': scored['event_strength'], 'score': scored['score'], 'status': 'Draft'})
         return self._insert('events', 'event_id', data['event_id'], data, {'known_at': data['known_at']})
 
     @staticmethod
@@ -177,9 +190,12 @@ class EventEngine:
             raise ValueError('价格变化只能提交State Update，不能提交因果更新')
         if data.get('information_gain') not in GAIN:
             raise ValueError('InformationGain必须为High/Medium/Low')
-        changes = dict(data.get('changes', {}))
-        reject_extra(changes, CAUSAL_FIELDS)
+        changes = normalize_event(data.get('changes', {}))
+        reject_extra(changes, CAUSAL_FIELDS | ALPHA_FIELDS)
         validate_causal(changes)
+        validate_alpha(changes)
+        if 'status' in changes and changes['status'] not in (None, 'Active'):
+            raise ValueError('失效须使用invalidate并附新增因果证据，不能直接改status')
         if data['information_gain'] == 'Low' and (changes or data.get('invalidate')):
             raise ValueError('Low仅记录重复/低增量信息；因果修订需至少Medium及证据')
         if 'invalidate' in data and type(data['invalidate']) is not bool:
@@ -187,10 +203,19 @@ class EventEngine:
         data['changes'] = changes
         data['known_at'] = utc(data['known_at'])
         data['effective_at'] = utc(data['effective_at'])
+        existing = self.db.execute('SELECT payload FROM event_updates WHERE update_id=?', (data['update_id'],)).fetchone()
+        if existing:
+            previous = json.loads(existing['payload'])
+            submitted = previous.get('submitted_update', previous)
+            if encode(data) != encode(submitted):
+                raise ValueError('Update已存在且内容不同；请追加新记录')
+            return False
         snapshot = self.snapshot(data['event_id'], max(data['known_at'], data['effective_at']))
         if snapshot is None:
             raise ValueError('更新时父事件尚不可见或不存在')
         combined = {**snapshot, **changes}
+        if changes.get('status') == 'Active' and not combined.get('reviewed'):
+            raise ValueError('Active需要完成因果审核')
         self._validate_time_order(combined)
         if combined.get('event_time') and data['effective_at'] < combined['event_time']:
             raise ValueError('因果更新不能早于事件公开/识别时间')
@@ -199,8 +224,23 @@ class EventEngine:
             if any(combined.get(k) is None or combined.get(k) == [] or combined.get(k) == '' for k in required):
                 raise ValueError('审核通过需要完整时间、渠道、周期、方向、直接度及失效条件')
         for iid in data.get('information_ids', []):
-            if not self.db.execute('SELECT 1 FROM information_inbox WHERE information_id=?', (iid,)).fetchone():
+            source_row = self.db.execute('SELECT payload FROM information_inbox WHERE information_id=?', (iid,)).fetchone()
+            if source_row is None:
                 raise ValueError('引用的原始信息不存在: ' + iid)
+            source = json.loads(source_row['payload'])
+            for field in ('observed_at', 'recorded_at', 'known_at', 'published_at'):
+                value = source.get(field)
+                if value and 'T' in value and utc(value) > data['known_at']:
+                    raise ValueError('因果更新引用的资料在此时尚不可知: ' + iid)
+        submitted = dict(data)
+        data.update(update_delta(snapshot, combined, max(data['known_at'], data['effective_at'])))
+        data['submitted_update'] = submitted
+        if set(changes) & ALPHA_FIELDS:
+            scored = score_event(combined, data['score_as_of'])
+            if changes.get('event_strength') is not None and changes['event_strength'] != scored['event_strength']:
+                raise ValueError('event_strength与评分组件不一致')
+            if changes.get('affected_style') is not None and changes['affected_style'] != project_event(dict(combined), data['score_as_of'])['affected_style']:
+                raise ValueError('affected_style与Bias不一致')
         return self._insert('event_updates', 'update_id', data['update_id'], data,
                             {k: data[k] for k in ('event_id', 'effective_at', 'known_at')},
                             [(data['event_id'], iid) for iid in data.get('information_ids', [])])
@@ -208,7 +248,8 @@ class EventEngine:
     def update_state(self, data):
         data = dict(data)
         reject_extra(data, {'state_id', 'event_id', 'effective_at', 'known_at',
-                            'pricing_state', 'acceptance', 'evidence', 'method', 'notes', 'basis_epoch_id'})
+                            'pricing_state', 'acceptance', 'evidence', 'method', 'notes', 'basis_epoch_id',
+                            'auto_transition', 'observations'})
         for field in ('state_id', 'event_id', 'evidence', 'method'):
             if not data.get(field):
                 raise ValueError('市场状态缺少' + field)
@@ -216,16 +257,39 @@ class EventEngine:
             raise ValueError('PricingState无效')
         if data.get('acceptance') is not None and data['acceptance'] not in ACCEPTANCE:
             raise ValueError('MarketAcceptance无效')
-        if data.get('pricing_state') is None and data.get('acceptance') is None:
+        if data.get('pricing_state') is None and data.get('acceptance') is None and not data.get('observations'):
             raise ValueError('至少提供一种市场状态')
         data['known_at'] = utc(data['known_at'])
         data['effective_at'] = utc(data['effective_at'])
         snapshot = self.snapshot(data['event_id'], max(data['known_at'], data['effective_at']))
         if snapshot is None:
             raise ValueError('市场状态对应父事件不存在或尚不可见')
+        if snapshot.get('event_time') and data['effective_at'] < snapshot['event_time']:
+            raise ValueError('市场状态不能早于事件公开/识别时间')
+        if 'auto_transition' in data and type(data['auto_transition']) is not bool:
+            raise ValueError('auto_transition必须为布尔值')
+        if 'observations' in data:
+            transition_state(observations=data['observations'])
+        submitted = dict(data)
+        existing = self.db.execute('SELECT payload FROM state_updates WHERE state_id=?', (data['state_id'],)).fetchone()
+        if existing:
+            previous = json.loads(existing['payload'])
+            original = previous.get('submitted_state', {k: v for k, v in previous.items() if k != 'basis_epoch_id'})
+            if encode(submitted) != encode(original) and encode(data) != encode(previous):
+                raise ValueError('State已存在且内容不同；请追加新记录')
+            return False
+        if data.get('auto_transition', data.get('pricing_state') is None) or data.get('observations'):
+            generated = transition_state(data.get('acceptance'), data.get('observations'), snapshot.get('pricing_state'))
+            if generated is None:
+                raise ValueError('观察不足，不能自动生成状态')
+            if data.get('pricing_state') and data['pricing_state'] != generated:
+                raise ValueError('显式PricingState与自动转换不一致')
+            data['pricing_state'] = generated
         if data.get('basis_epoch_id') and data['basis_epoch_id'] != snapshot['causal_epoch_id']:
             raise ValueError('市场状态关联的因果阶段已变化，请重新审核')
         data['basis_epoch_id'] = snapshot['causal_epoch_id']
+        data['submitted_state'] = submitted
+        data['event_score'] = score_event(snapshot, max(data['known_at'], data['effective_at']))['score']
         return self._insert('state_updates', 'state_id', data['state_id'], data,
                             {k: data[k] for k in ('event_id', 'effective_at', 'known_at')})
 
@@ -315,7 +379,19 @@ class EventEngine:
         event['as_of'] = as_of
         event['entry_allowed'] = False  # Technical timing and execution are outside this module.
         event['qualification'], event['blockers'] = self.qualify(event)
-        return event
+        return project_event(event, as_of)
+
+    def alpha_report(self, as_of, include_historical=False):
+        as_of = utc(as_of)
+        events = [self.snapshot(r['event_id'], as_of) for r in self.db.execute('SELECT event_id FROM events ORDER BY event_id')]
+        events = [e for e in events if e is not None and (include_historical or e.get('scope', 'Current') != 'Historical')]
+        result = dominant_event(events, as_of)
+        result['by_horizon'] = {h: dominant_event(events, as_of, h) for h in sorted(HORIZONS)}
+        result['events'] = [{'event_id': e['event_id'], 'event_name': e['name'], 'bias': e.get('bias'),
+                             'status': e['status'], 'alpha_state': e['alpha_state'],
+                             'channel_default': e['channel_default'], 'qualification': e['qualification'],
+                             **e['alpha']} for e in events]
+        return result
 
     @staticmethod
     def qualify(event):
@@ -369,8 +445,10 @@ class EventEngine:
                                'candidates': [e['event_id'] for e in leaders],
                                'conflict': opposite,
                                'reason': '唯一最高优先级事件' if chosen else
-                               '同级方向冲突，待人工裁决' if opposite else
+                               '同级方向冲突，由Codex继续核对证据' if opposite else
                                '同级多个事件，未强行选一' if leaders else '没有通过事件资格审核的候选',
                                'entry_allowed': False}
         return {'as_of': as_of, 'dominant': dominant, 'events': events,
+                'dominant_method': 'LegacyResearchPriority (compatibility)',
+                'event_alpha': self.alpha_report(as_of, include_historical),
                 'scope': '事件资格与方向；不含进出场、回测及实盘指令'}

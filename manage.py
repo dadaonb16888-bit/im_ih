@@ -67,6 +67,10 @@ def main():
     report.add_argument('--as-of', default=None)
     report.add_argument('--output', default=None)
     report.add_argument('--include-historical', action='store_true')
+    alpha = sub.add_parser('alpha-report')
+    alpha.add_argument('--as-of', default=None)
+    alpha.add_argument('--output', default=None)
+    alpha.add_argument('--include-historical', action='store_true')
     imp = sub.add_parser('import-research')
     imp.add_argument('directory')
     exp = sub.add_parser('export-research')
@@ -91,6 +95,10 @@ def main():
             result = migrate(engine, args.research_folder, args.known_at or now())
         elif args.operation == 'report':
             result = engine.report(args.as_of or now(), include_historical=args.include_historical)
+            if args.output:
+                Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+        elif args.operation == 'alpha-report':
+            result = engine.alpha_report(args.as_of or now(), args.include_historical)
             if args.output:
                 Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
         elif args.operation == 'import-research':

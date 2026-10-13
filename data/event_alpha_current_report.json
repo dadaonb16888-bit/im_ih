@@ -1,0 +1,834 @@
+{
+  "dominant_event": null,
+  "event_name": null,
+  "score": null,
+  "bias": null,
+  "confidence": null,
+  "trade_permission": false,
+  "entry_allowed": false,
+  "permission_scope": "Event Layer only; timing and execution required",
+  "conflict": false,
+  "candidates": [],
+  "reason": "no_eligible_alpha",
+  "ranking": [],
+  "excluded": [
+    {
+      "event_id": "202210_CHIP_EXPORT",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "202211_REOPENING",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "202307_POLICY_SUPPORT",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "202310_HUIJIN",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "202401_SMALLCAP_LIQUIDITY",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "202402_STABILIZATION",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "202404_REGULATION",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "202405_PROPERTY",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "202409_POLICY_PIVOT",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "202501_DEEPSEEK",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "202504_TARIFF",
+      "reasons": [
+        "historical_scope",
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261009-001",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261009-002",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261009-003",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261009-004",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261009-005",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261009-006",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261010-001",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    }
+  ],
+  "as_of": "2026-10-13T12:48:01.117373+00:00",
+  "by_horizon": {
+    "Fast": {
+      "dominant_event": null,
+      "event_name": null,
+      "score": null,
+      "bias": null,
+      "confidence": null,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "permission_scope": "Event Layer only; timing and execution required",
+      "conflict": false,
+      "candidates": [],
+      "reason": "no_eligible_alpha",
+      "ranking": [],
+      "excluded": [],
+      "as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    "Swing": {
+      "dominant_event": null,
+      "event_name": null,
+      "score": null,
+      "bias": null,
+      "confidence": null,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "permission_scope": "Event Layer only; timing and execution required",
+      "conflict": false,
+      "candidates": [],
+      "reason": "no_eligible_alpha",
+      "ranking": [],
+      "excluded": [
+        {
+          "event_id": "202409_POLICY_PIVOT",
+          "reasons": [
+            "historical_scope",
+            "causal_review_missing",
+            "relative_causality_missing",
+            "time_or_invalidation_missing",
+            "no_directional_bias",
+            "impact_score",
+            "confidence_score/source_reliability",
+            "event_time",
+            "source"
+          ]
+        }
+      ],
+      "as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    "Trend": {
+      "dominant_event": null,
+      "event_name": null,
+      "score": null,
+      "bias": null,
+      "confidence": null,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "permission_scope": "Event Layer only; timing and execution required",
+      "conflict": false,
+      "candidates": [],
+      "reason": "no_eligible_alpha",
+      "ranking": [],
+      "excluded": [
+        {
+          "event_id": "202501_DEEPSEEK",
+          "reasons": [
+            "historical_scope",
+            "causal_review_missing",
+            "relative_causality_missing",
+            "time_or_invalidation_missing",
+            "no_directional_bias",
+            "impact_score",
+            "confidence_score/source_reliability",
+            "event_time",
+            "source"
+          ]
+        }
+      ],
+      "as_of": "2026-10-13T12:48:01.117373+00:00"
+    }
+  },
+  "events": [
+    {
+      "event_id": "202210_CHIP_EXPORT",
+      "event_name": "芯片出口限制",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "202211_REOPENING",
+      "event_name": "防疫政策转向",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "202307_POLICY_SUPPORT",
+      "event_name": "政策支持",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "202310_HUIJIN",
+      "event_name": "汇金增持",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "202401_SMALLCAP_LIQUIDITY",
+      "event_name": "小微盘流动性危机",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "202402_STABILIZATION",
+      "event_name": "国家队稳定行动",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "202404_REGULATION",
+      "event_name": "新国九条",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "202405_PROPERTY",
+      "event_name": "地产救市",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "202409_POLICY_PIVOT",
+      "event_name": "政策大转向",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": {
+        "im_impact": "positive",
+        "ih_impact": "positive",
+        "bias": "IM",
+        "assumption": "广谱宽松、风险弹性扩散"
+      },
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": 0.7,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": 5.0,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "202501_DEEPSEEK",
+      "event_name": "DeepSeek AI重估",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": {
+        "im_impact": "positive",
+        "ih_impact": "neutral",
+        "bias": "Strong IM",
+        "assumption": "科技增长冲击，IM相对暴露更高"
+      },
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": 1.0,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": 20.0,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "202504_TARIFF",
+      "event_name": "关税冲突",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "E-20261009-001",
+      "event_name": "新质生产力政策意见发布",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "E-20261009-002",
+      "event_name": "地方债务结存限额5500亿元安排",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "E-20261009-003",
+      "event_name": "中欧贸易投资磋商第二次例会",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "E-20261009-004",
+      "event_name": "公募基金运作规则征求意见",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "E-20261009-005",
+      "event_name": "财政政策执行报告发布",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "E-20261009-006",
+      "event_name": "产能争议相关贸易风险回应",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    },
+    {
+      "event_id": "E-20261010-001",
+      "event_name": "品质电商政策解读",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+    }
+  ]
+}

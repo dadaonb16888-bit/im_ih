@@ -8,6 +8,9 @@ import hashlib
 import json
 from .engine import utc, now, encode, reject_extra, CHANNELS, HORIZONS, STYLE, GAIN
 from .collection import normalize_url, text_required
+from .event import validate_alpha
+
+AI_ALPHA_FIELDS = {'source', 'source_reliability', 'impact_score', 'confidence_score', 'persistence_score'}
 
 METHOD = 'ai-event-v1'
 TEXT_FIELDS = ('increment_reason', 'expectation_baseline', 'transmission', 'im_case',
@@ -16,7 +19,7 @@ ASSESSMENT_FIELDS = {'assessment_id', 'event_id', 'source_ids', 'source_checks',
     'information_gain', 'surprise', 'bias', 'decision', 'confidence', 'channels', 'horizon',
     'conflicts', 'gaps', 'research_mode', 'input_digest', 'expected_last_update_id',
     'baseline_source_ids', 'exposure_source_ids', 'directness', 'independent_cause',
-    'relative_pricing', 'event_time', 'first_tradable_time', 'promote_causal', *TEXT_FIELDS}
+    'relative_pricing', 'event_time', 'first_tradable_time', 'promote_causal', *TEXT_FIELDS, *AI_ALPHA_FIELDS}
 
 
 def strings(value, name, nonempty=False):
@@ -75,6 +78,7 @@ class AIResearch:
     def _validate(self, assessment, at):
         a = dict(assessment)
         reject_extra(a, ASSESSMENT_FIELDS)
+        validate_alpha(a)
         text_required(a, ('assessment_id', 'event_id', 'input_digest', *TEXT_FIELDS))
         strings(a.get('source_ids'), 'source_ids', True)
         for field in ('gaps', 'conflicts', 'channels', 'baseline_source_ids', 'exposure_source_ids'):
@@ -166,6 +170,7 @@ class AIResearch:
         changes = {k: a.get(k) for k in ('bias', 'channels', 'horizon', 'directness',
             'independent_cause', 'relative_pricing', 'invalidation', 'event_time', 'first_tradable_time')}
         changes['reviewed'] = True
+        changes.update({k: a[k] for k in AI_ALPHA_FIELDS if k in a})
         update_id = 'AI-U-' + a['assessment_id']
         self.engine.update_event({'update_id': update_id, 'event_id': a['event_id'],
             'known_at': at, 'effective_at': at, 'source_type': 'News',

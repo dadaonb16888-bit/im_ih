@@ -74,6 +74,10 @@ def make_handler(database):
                     self.respond(result)
                 elif path.path == '/api/event':
                     self.respond(detail(engine, parse_qs(path.query).get('id', [''])[0]))
+                elif path.path == '/api/alpha':
+                    query = parse_qs(path.query)
+                    self.respond(engine.alpha_report(query.get('as_of', [now()])[0],
+                                                      query.get('include_historical', ['false'])[0] == 'true'))
                 elif path.path == '/api/information':
                     self.respond([json.loads(r['payload']) for r in engine.db.execute('SELECT payload FROM information_inbox ORDER BY information_id')])
                 elif path.path == '/api/collection-plan':

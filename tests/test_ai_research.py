@@ -97,6 +97,35 @@ class AIResearchTests(unittest.TestCase):
             'exposure_evidence': '虚构成分暴露表显示差异，引用独立证据'})
         return assessment
 
+    def test_numeric_alpha_fields_flow_through_formal_research_without_market_confirmation(self):
+        assessment = self.formal_assessment()
+        assessment.update({'source': self.source['url'], 'source_reliability': 'B',
+                           'impact_score': 4, 'confidence_score': .8, 'persistence_score': .7})
+        self.research.apply_pack(self.pack(assessment))
+        event = self.engine.snapshot('fixture-event', KNOWN)
+        self.assertGreater(event['score'], 0)
+        self.assertEqual(event['confidence_score'], .8)
+        self.assertIsNone(event['acceptance'])
+        self.assertEqual(self.engine.alpha_report(KNOWN)['dominant_event'], 'fixture-event')
+        self.assertFalse(self.engine.alpha_report(KNOWN)['trade_permission'])
+
+    def test_numeric_research_does_not_bypass_missing_evidence(self):
+        assessment = self.assessment()
+        assessment.update({'source': self.source['url'], 'source_reliability': 'A',
+                           'impact_score': 5, 'confidence_score': 1})
+        self.research.apply_pack(self.pack(assessment))
+        self.assertIsNone(self.engine.snapshot('fixture-event', KNOWN)['score'])
+        self.assertIsNone(self.engine.alpha_report(KNOWN)['dominant_event'])
+
+    def test_invalid_numeric_research_rolls_back_pack(self):
+        assessment = self.formal_assessment()
+        assessment['confidence_score'] = 2
+        with self.assertRaises(ValueError):
+            self.research.apply_pack(self.pack(assessment))
+        self.assertEqual(self.count('ai_research_runs'), 0)
+        self.assertEqual(self.count('ai_assessments'), 0)
+        self.assertEqual(self.count('event_updates'), 0)
+
     def test_real_known_at_does_not_backdate_or_invent_date_only_timestamp(self):
         self.research.apply_pack(self.pack(self.assessment()))
         saved = self.research.list_assessments('fixture-event')[0]
