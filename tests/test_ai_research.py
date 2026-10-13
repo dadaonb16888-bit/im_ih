@@ -95,6 +95,38 @@ class AIResearchTests(unittest.TestCase):
             'reference_time': {'value': None, 'reason': 'Fixture date only', 'source_ids': ['fixture-news']}}
         return assessment
 
+    def impact_assessment(self):
+        from test_impact_analysis import analysis_fixture
+        a = self.assessment()
+        a['impact_analysis'] = analysis_fixture()
+        delta = a['impact_analysis']['policy_deltas'][0]
+        delta.update(new_source_ids=['fixture-news'], baseline_source_ids=['fixture-news'],
+                     baseline_kind='IssuerComparison')
+        a['impact_analysis']['beneficiary_paths'][0]['source_ids'] = ['fixture-news']
+        return a
+
+    def test_impact_tables_append_without_formal_direction_or_market_state(self):
+        a = self.impact_assessment()
+        result = self.research.apply_pack(self.pack(a))
+        saved = self.research.list_assessments('fixture-event')[-1]
+        self.assertEqual(saved['impact_analysis'], a['impact_analysis'])
+        self.assertEqual(saved['bias'], 'IM')
+        self.assertIsNone(self.engine.snapshot('fixture-event', KNOWN)['bias'])
+        self.assertEqual(self.count('state_updates'), 0)
+        self.assertTrue(result['inserted'])
+        self.assertFalse(self.research.apply_pack(self.pack(a))['inserted'])
+        self.assertEqual(self.research.list_assessments('fixture-event', BEFORE), [])
+
+    def test_invalid_impact_table_rolls_back_new_sources_and_run(self):
+        a = self.impact_assessment()
+        a['impact_analysis']['policy_deltas'][0]['new_source_ids'] = ['not-checked']
+        source = self.make_source('fixture-uncommitted')
+        with self.assertRaises(ValueError):
+            self.research.apply_pack(self.pack(a, sources=[source]))
+        self.assertEqual(self.count('information_inbox'), 1)
+        self.assertEqual(self.count('ai_assessments'), 0)
+        self.assertEqual(self.count('ai_research_runs'), 0)
+
     def test_score_basis_import_preserves_parent_and_formal_pool(self):
         assessment = self.scoring_assessment()
         self.research.apply_pack(self.pack(assessment))

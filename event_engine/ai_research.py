@@ -10,6 +10,7 @@ from .engine import utc, now, encode, reject_extra, CHANNELS, HORIZONS, STYLE, G
 from .collection import normalize_url, text_required
 from .event import validate_alpha
 from .score_evidence import validate_score_basis, research_preview
+from .impact_analysis import validate_impact_analysis
 
 AI_ALPHA_FIELDS = {'source', 'source_reliability', 'impact_score', 'confidence_score', 'persistence_score'}
 
@@ -20,7 +21,7 @@ ASSESSMENT_FIELDS = {'assessment_id', 'event_id', 'source_ids', 'source_checks',
     'information_gain', 'surprise', 'bias', 'decision', 'confidence', 'channels', 'horizon',
     'conflicts', 'gaps', 'research_mode', 'input_digest', 'expected_last_update_id',
     'baseline_source_ids', 'exposure_source_ids', 'directness', 'independent_cause',
-    'relative_pricing', 'event_time', 'first_tradable_time', 'promote_causal', 'score_basis', *TEXT_FIELDS, *AI_ALPHA_FIELDS}
+    'relative_pricing', 'event_time', 'first_tradable_time', 'promote_causal', 'score_basis', 'impact_analysis', *TEXT_FIELDS, *AI_ALPHA_FIELDS}
 
 
 def strings(value, name, nonempty=False):
@@ -189,6 +190,7 @@ class AIResearch:
             if set(a[field]) - set(a['source_ids']):
                 raise ValueError(field + '须引用本次证据')
         validate_score_basis(a, {i: self._source(i) for i in a['source_ids']}, checked, at)
+        validate_impact_analysis(a, {i: self._source(i) for i in a['source_ids']}, checked, at)
         a.setdefault('promote_causal', False)
         if type(a['promote_causal']) is not bool:
             raise ValueError('promote_causal须为布尔值')

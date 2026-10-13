@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-13T23:20:29.326515+00:00",
+  "previous_validation": "data/policy_paths_validation_20261013.json",
+  "tests_passed": 130,
+  "api_cases": [
+    {
+      "event": "E-20261009-001",
+      "policy_rows": 5,
+      "path_rows": 4,
+      "formal_bias": null,
+      "history_versions": 3
+    },
+    {
+      "event": "E-20261009-004",
+      "policy_rows": 3,
+      "path_rows": 3,
+      "formal_bias": null,
+      "history_versions": 3
+    }
+  ],
+  "formal_dominant": null,
+  "integrity": "ok",
+  "foreign_key_errors": [],
+  "ui_verified_at": "2026-10-13T23:21:47.291438+00:00",
+  "ui_cases_verified": [
+    "E-20261009-001",
+    "E-20261009-004"
+  ],
+  "ui_console_errors": [],
+  "screenshot": "docs/policy_paths_preview.png"
+}
