@@ -2,6 +2,7 @@
 import json
 from .engine import encode, now, reject_extra, utc
 from .collection import text_required
+from .watch_verification import validate_follow_up, validate_group_budgets
 
 VERSION = 'news-screening-v1'
 DECISIONS = ('DeepReview', 'Watch', 'Background', 'Unscreened')
@@ -122,12 +123,17 @@ class NewsScreening:
             return {'inserted': False, 'known_at': previous['known_at'], 'pack_id': pack['pack_id']}
         if not isinstance(pack.get('screenings'), list) or not pack['screenings']:
             raise ValueError('需要至少一条初筛')
+        latest = self.latest(at)
+        seen = set()
         with self.engine.atomic():
             self.engine._insert('news_screening_runs', 'pack_id', pack['pack_id'], {'submitted_pack': pack, 'known_at': at}, {'known_at': at})
             ids = []
             for raw in pack['screenings']:
-                reject_extra(raw, {'screening_id', 'information_id', 'summary', 'input_rounds'})
+                reject_extra(raw, {'screening_id', 'information_id', 'summary', 'input_rounds', 'follow_up'})
                 text_required(raw, ('screening_id', 'information_id', 'summary'))
+                if raw['information_id'] in seen:
+                    raise ValueError('同包不可对同一信息重复筛选')
+                seen.add(raw['information_id'])
                 if len(raw['summary']) > 240:
                     raise ValueError('初筛只保存短摘要')
                 source = self.db.execute('SELECT payload FROM information_inbox WHERE information_id=?', (raw['information_id'],)).fetchone()
@@ -137,10 +143,12 @@ class NewsScreening:
                 if any(info.get(k) and utc(info[k]) > at for k in ('recorded_at', 'observed_at', 'known_at')):
                     raise ValueError('原始信息在此时尚不可知')
                 result = evaluate(raw['input_rounds'])
+                validate_follow_up(raw.get('follow_up'), raw, result, latest, self.engine, at)
                 if result['deep_review_allowed'] and info.get('read_status') == 'Unavailable':
                     raise ValueError('未取得原文不能声称有事实支持并进入深查；先短核验')
                 record = {**raw, **result, 'known_at': at, 'actor': 'Codex', 'version': VERSION}
                 self.engine._insert('information_screenings', 'screening_id', raw['screening_id'], record,
                                     {'information_id': raw['information_id'], 'pack_id': pack['pack_id'], 'known_at': at})
                 ids.append(raw['screening_id'])
+            validate_group_budgets(pack['screenings'])
         return {'inserted': True, 'known_at': at, 'pack_id': pack['pack_id'], 'screenings': ids}
