@@ -1,0 +1,113 @@
+{
+  "as_of": "2026-10-14T06:52:11.928207+00:00",
+  "apply": {
+    "inserted": true,
+    "pack_id": "AI-PRIORITY-20261014-V2",
+    "known_at": "2026-10-14T06:52:11.360562+00:00",
+    "assessments": [
+      "AI-PRIORITY-20261014-E-20261013-001-V2"
+    ]
+  },
+  "screening_apply": {
+    "inserted": true,
+    "known_at": "2026-10-14T06:52:11.517779+00:00",
+    "pack_id": "SCREEN-PRIORITY-BASELINES-20261014",
+    "screenings": [
+      "SCREEN-PR-S-20261014-CONFLICT0920",
+      "SCREEN-PR-S-20261014-CONFLICT0912"
+    ]
+  },
+  "old_tables_preserved": {
+    "information_inbox": true,
+    "events": true,
+    "event_updates": true,
+    "state_updates": true,
+    "event_information": true,
+    "legacy_audit": true,
+    "research_notes": true,
+    "collection_batches": true,
+    "source_checks": true,
+    "collection_items": true,
+    "information_reviews": true,
+    "parent_reviews": true,
+    "ai_research_runs": true,
+    "ai_assessments": true,
+    "news_screening_runs": true,
+    "information_screenings": true
+  },
+  "integrity": "ok",
+  "foreign_key_issues": [],
+  "pack_replay_inserted": false,
+  "formal_bias": null,
+  "state_count": 0,
+  "queue_counts": {
+    "NeedsReview": 0,
+    "ReviewedWithGaps": 1,
+    "Reviewed": 0
+  },
+  "screening_counts": {
+    "DeepReview": 2,
+    "Watch": 11,
+    "Background": 32,
+    "Unscreened": 67
+  },
+  "captures": [
+    {
+      "key": "war13",
+      "url": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+      "checked_at": "2026-10-14T06:48:08.903747+00:00",
+      "http_status": 200,
+      "final_url": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+      "document_sha256": "9c51deaf09a56acf8d85494e627ce1f7c34fca69b4653f8d9548deb44362a5d6",
+      "text_length": 906
+    },
+    {
+      "key": "aramco",
+      "url": "https://www.news.cn/20261014/8f289993d0c54023a70ca78de6335e4b/c.html",
+      "checked_at": "2026-10-14T06:48:10.990488+00:00",
+      "http_status": 200,
+      "final_url": "https://www.news.cn/20261014/8f289993d0c54023a70ca78de6335e4b/c.html",
+      "document_sha256": "690cc6888adef81c22389c74ae09e88be647514b5cd965424b460d372d2c4e17",
+      "text_length": 438
+    },
+    {
+      "key": "baseline20",
+      "url": "https://www.news.cn/20260920/b2521756522a4827ba2614a6870d0580/c.html",
+      "checked_at": "2026-10-14T06:48:13.378875+00:00",
+      "http_status": 200,
+      "final_url": "https://www.news.cn/20260920/b2521756522a4827ba2614a6870d0580/c.html",
+      "document_sha256": "1d77b14a936edf09037ff4bbcc9037dc8e625844a2fcf915362050511577a34b",
+      "text_length": 1843
+    },
+    {
+      "key": "baseline12",
+      "url": "https://www.news.cn/world/20260912/48f4c168e43d421c8405215b474e22cf/c.html",
+      "checked_at": "2026-10-14T06:48:15.294316+00:00",
+      "http_status": 200,
+      "final_url": "https://www.news.cn/world/20260912/48f4c168e43d421c8405215b474e22cf/c.html",
+      "document_sha256": "d0a62194d2e4a2b0d323143303e16611f6680eff6d6218f48abf00ce51950dfa",
+      "text_length": 1598
+    },
+    {
+      "key": "company_index",
+      "url": "https://www.aramco.com/en/news-media/news",
+      "checked_at": "2026-10-14T06:48:18.051300+00:00",
+      "error": "The read operation timed out"
+    }
+  ],
+  "tests": {
+    "total": 162,
+    "result": "passed"
+  },
+  "frontend_syntax": "passed",
+  "http_current_queue": "passed",
+  "http_before_review": "NeedsReview",
+  "browser": {
+    "merged_sources": 2,
+    "event_tasks": 1,
+    "latest_bias": null,
+    "prior_ih_review_visible": true,
+    "console_warn_errors": 0,
+    "screenshot": "docs/priority_event_20261014_preview.png"
+  }
+}

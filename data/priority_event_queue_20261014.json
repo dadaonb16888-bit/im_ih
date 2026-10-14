@@ -1,0 +1,41 @@
+{
+  "as_of": "2026-10-14T06:52:11.742758+00:00",
+  "tasks": [
+    {
+      "event_id": "E-20261013-001",
+      "event_name": "沙特—也门冲突升级与报复风险",
+      "scope": "Current",
+      "information_ids": [
+        "DC-S-20261014-ARAMCO",
+        "DC-S-20261014-WAR13"
+      ],
+      "source_count": 2,
+      "status": "ReviewedWithGaps",
+      "reason": "本轮通过项已合并判读",
+      "assessment_id": "AI-PRIORITY-20261014-E-20261013-001-V2",
+      "reviewed_at": "2026-10-14T06:52:11.360562+00:00",
+      "research_bias": null,
+      "decision": "InsufficientEvidence",
+      "gaps": [
+        "能源部原站声明尚未取得，仅读新华社转述",
+        "本次产销与航运新增中断量及恢复状态",
+        "事前预期与新增强度",
+        "两指数当期净暴露或事前风险敏感度",
+        "全局首次公开、最早可交易时刻及行情"
+      ],
+      "next_action": "本轮转为已判读、待证据。仅在出现可读取的运营/运输新增中断、恢复说明或可靠事前相对暴露资料时继续；相同消息转载只归档，不重做深查。取得证据前不定方向。",
+      "trade_permission": false,
+      "entry_allowed": false
+    }
+  ],
+  "needs_association": [],
+  "counts": {
+    "NeedsReview": 0,
+    "ReviewedWithGaps": 1,
+    "Reviewed": 0
+  },
+  "research_only": true,
+  "trade_permission": false,
+  "entry_allowed": false,
+  "note": "按Parent合并研究工作；已判读不等于方向或市场确认。旧关联表无建立时间，历史归属不能完整重建。"
+}

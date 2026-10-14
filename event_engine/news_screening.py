@@ -97,9 +97,12 @@ class NewsScreening:
             info = json.loads(row['payload'])
             if any(info.get(k) and utc(info[k]) > at for k in ('recorded_at', 'observed_at', 'known_at')):
                 continue
-            linked = [r[0] for r in self.db.execute('SELECT event_id FROM event_information WHERE information_id=?', (info['information_id'],))]
+            linked = [r[0] for r in self.db.execute('SELECT event_id FROM event_information WHERE information_id=?', (info['information_id'],))
+                      if self.engine.snapshot(r[0], at) is not None]
             information.append({**info, 'screening': latest.get(info['information_id']), 'event_ids': linked})
+        from .research_queue import research_queue
         return {'as_of': at, 'version': VERSION, 'gate_active': self.active(at), 'information': information,
+                'research_queue': research_queue(self.engine, information, at),
                 'counts': {d: sum((i['screening']['decision'] if i['screening'] else 'Unscreened') == d for i in information) for d in DECISIONS},
                 'note': '初筛决定是否值得深查，不代表IM/IH方向；未筛选与待核不自动判无价值。'}
 

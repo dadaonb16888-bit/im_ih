@@ -1,0 +1,34 @@
+{
+  "pack_id": "SCREEN-PRIORITY-BASELINES-20261014",
+  "actor": "Codex",
+  "version": "news-screening-v1",
+  "generated_at": "2026-10-14T06:52:11.515779+00:00",
+  "screenings": [
+    {
+      "screening_id": "SCREEN-PR-S-20261014-CONFLICT0920",
+      "information_id": "PR-S-20261014-CONFLICT0920",
+      "summary": "9月报道已描述双方多次袭击，风险并非本次首次出现。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "B",
+          "reason": "重点事件的旧事实基线，仅供已获资格的事件研究，不作为新开深查项。"
+        }
+      }
+    },
+    {
+      "screening_id": "SCREEN-PR-S-20261014-CONFLICT0912",
+      "information_id": "PR-S-20261014-CONFLICT0912",
+      "summary": "9月报道引述能源部：输油管道遇袭后采取预防性关闭。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "B",
+          "reason": "重点事件的旧事实基线，仅供已获资格的事件研究，不作为新开深查项。"
+        }
+      }
+    }
+  ]
+}
