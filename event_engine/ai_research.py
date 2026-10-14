@@ -11,6 +11,7 @@ from .collection import normalize_url, text_required
 from .event import validate_alpha
 from .score_evidence import validate_score_basis, research_preview
 from .impact_analysis import validate_impact_analysis
+from .news_screening import NewsScreening
 
 AI_ALPHA_FIELDS = {'source', 'source_reliability', 'impact_score', 'confidence_score', 'persistence_score'}
 
@@ -137,6 +138,12 @@ class AIResearch:
         expected_mode = 'HistoricalReview' if parent.get('scope') == 'Historical' else 'CurrentReview'
         if a.get('research_mode') != expected_mode:
             raise ValueError('历史研究不能伪装当前事件')
+        gate = NewsScreening(self.engine)
+        if expected_mode == 'CurrentReview' and gate.active(at):
+            screened = gate.latest(at)
+            linked = {r[0] for r in self.db.execute('SELECT information_id FROM event_information WHERE event_id=?', (a['event_id'],))}
+            if not any(iid in linked and screened.get(iid, {}).get('deep_review_allowed') for iid in a['source_ids']):
+                raise ValueError('当前深度判读须引用至少一条与事件关联且通过三轮初筛的信息；先做短初筛并归并')
         if 'expected_last_update_id' not in a or a['expected_last_update_id'] != parent['last_update_id']:
             raise ValueError('事件因果已经更新，请由Codex重新判读')
         context = self.context(a['event_id'], a['source_ids'], as_of=at)

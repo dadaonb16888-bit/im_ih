@@ -95,6 +95,17 @@ CREATE TABLE IF NOT EXISTS ai_assessments (
 );
 CREATE INDEX IF NOT EXISTS ai_assessments_by_event ON ai_assessments(event_id,known_at);
 
+CREATE TABLE IF NOT EXISTS news_screening_runs (
+ pack_id TEXT PRIMARY KEY, known_at TEXT NOT NULL,
+ payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE TABLE IF NOT EXISTS information_screenings (
+ screening_id TEXT PRIMARY KEY, information_id TEXT NOT NULL REFERENCES information_inbox(information_id),
+ pack_id TEXT NOT NULL REFERENCES news_screening_runs(pack_id), known_at TEXT NOT NULL,
+ payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE INDEX IF NOT EXISTS screenings_by_information ON information_screenings(information_id,known_at);
+
 -- Alpha generated columns are added idempotently by database/migrations.py.
 -- Values here are append-time snapshots, not scores recalculated at arbitrary as_of.
 CREATE VIEW IF NOT EXISTS event_states AS

@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-14T04:41:15.588195+00:00",
+  "tests": "155 passed",
+  "old_rows_preserved": {
+    "information_inbox": 96,
+    "events": 21,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 47,
+    "legacy_audit": 15,
+    "research_notes": 19,
+    "collection_batches": 2,
+    "source_checks": 57,
+    "collection_items": 29,
+    "information_reviews": 29,
+    "parent_reviews": 7,
+    "ai_research_runs": 5,
+    "ai_assessments": 19
+  },
+  "counts": {
+    "information_inbox": 110,
+    "events": 21,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 47,
+    "legacy_audit": 15,
+    "research_notes": 19,
+    "collection_batches": 2,
+    "source_checks": 57,
+    "collection_items": 29,
+    "information_reviews": 29,
+    "parent_reviews": 7,
+    "ai_research_runs": 5,
+    "ai_assessments": 19
+  },
+  "screened": 43,
+  "screening_counts": {
+    "DeepReview": 2,
+    "Watch": 11,
+    "Background": 30,
+    "Unscreened": 67
+  },
+  "previous_batch_29": {
+    "Background": 17,
+    "Watch": 10,
+    "DeepReview": 2
+  },
+  "screening_rows": 43,
+  "gate_active": true,
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "http_report_verified": true,
+  "ui_verified": {"default_queue": 2, "watch_filter": 11, "background_filter": 30, "console_errors": 0, "screenshot": "docs/news_screening_20261014_preview.png"},
+  "invariants": [
+    "当前深查须关联三轮通过资料",
+    "旧观点保留且旧包可重放",
+    "低影响与重复停止后轮",
+    "未知不当低价值",
+    "没有新增AI长分析/正式因果/市场状态",
+    "知识时刻不倒填",
+    "原始份额只显示未调整变化，金额估算仍未知"
+  ]
+}

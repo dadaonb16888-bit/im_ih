@@ -6,6 +6,7 @@ from event_engine.engine import EventEngine, ROOT, now
 from event_engine.csv_io import import_research, export_research
 from event_engine.collection import CollectionLedger
 from event_engine.ai_research import AIResearch
+from event_engine.news_screening import NewsScreening
 
 
 def read_json(path):
@@ -92,6 +93,11 @@ def main():
     ai_context.add_argument('--output', default=None)
     ai_import = sub.add_parser('apply-ai-research')
     ai_import.add_argument('json_file')
+    screening_import = sub.add_parser('apply-news-screening')
+    screening_import.add_argument('json_file')
+    screening_report = sub.add_parser('screening-report')
+    screening_report.add_argument('--as-of', default=None)
+    screening_report.add_argument('--output', default=None)
     args = parser.parse_args()
     engine = EventEngine(args.database)
     try:
@@ -127,6 +133,12 @@ def main():
                 Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
         elif args.operation == 'apply-ai-research':
             result = AIResearch(engine).apply_pack(read_json(args.json_file))
+        elif args.operation == 'apply-news-screening':
+            result = NewsScreening(engine).apply_pack(read_json(args.json_file))
+        elif args.operation == 'screening-report':
+            result = NewsScreening(engine).report(args.as_of)
+            if args.output:
+                Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
         else:
             collection = CollectionLedger(engine)
             operation = {'add-information': engine.add_information, 'create': engine.create_event,

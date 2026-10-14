@@ -10,6 +10,7 @@ from urllib.parse import urlsplit, parse_qs
 from event_engine.engine import EventEngine, ROOT, now, utc
 from event_engine.collection import CollectionLedger
 from event_engine.ai_research import AIResearch
+from event_engine.news_screening import NewsScreening
 
 
 def identifier(prefix):
@@ -89,6 +90,9 @@ def make_handler(database):
                                  content_type='application/pdf')
                 elif path.path == '/api/information':
                     self.respond([json.loads(r['payload']) for r in engine.db.execute('SELECT payload FROM information_inbox ORDER BY information_id')])
+                elif path.path == '/api/news-screening':
+                    query = parse_qs(path.query)
+                    self.respond(NewsScreening(engine).report(query.get('as_of', [None])[0]))
                 elif path.path == '/api/collection-plan':
                     self.respond(CollectionLedger(engine).plan())
                 elif path.path == '/api/collections':

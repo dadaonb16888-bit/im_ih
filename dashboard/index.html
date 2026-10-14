@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IM / IH · 事件工作台</title><link rel="stylesheet" href="/style.css"></head>
-<body><header><div><div class="eyebrow">PHASE 1 · 事件知识库</div><h1>IM / IH 事件工作台</h1><p>由 Codex 核对信息并解读方向；程序保存结果与执行资格校验。</p></div><div class="actions"><button id="daily-collection">每日收集</button><button id="inbox">信息池</button><button id="new-information">新增信息</button><button id="new-parent" class="primary">创建事件</button></div></header>
+<body><header><div><div class="eyebrow">PHASE 1 · 事件知识库</div><h1>IM / IH 事件工作台</h1><p>由 Codex 先筛选重要新闻，再核对证据并解读方向。</p></div><div class="actions"><button id="news-screening">新闻初筛</button><button id="daily-collection">每日收集</button><button id="inbox">信息池</button><button id="new-information">新增信息</button><button id="new-parent" class="primary">创建事件</button></div></header>
 <div id="stats" class="stats"></div><div class="notice">AI判读保留来源、双向传导和证据缺口；市场确认依赖行情验证。工作台显示已保存的 Codex 判读，不生成开仓指令。</div>
 <main><aside><div class="filters"><input id="search" placeholder="搜索事件名称或编号" aria-label="搜索事件"><select id="scope" aria-label="事件范围"><option value="all">全部事件</option><option value="Current">近期候选</option><option value="Historical">历史研究</option></select></div><div id="events"></div></aside><section id="detail"><p>正在读取本地知识库…</p></section></main>
 <div id="message" role="status"></div><footer>记录只追加，原始方向和来源持续保留 · 数据保存在本机 · 所有表单时间均为北京时间</footer><script src="/app.js"></script><script src="/collection.js"></script></body></html>
