@@ -1,0 +1,991 @@
+{
+  "pack_id": "AI-DAILY-COLLECTION-20261014-V1",
+  "actor": "Codex",
+  "method_version": "ai-event-v1",
+  "generated_at": "2026-10-14T00:37:16.241176+00:00",
+  "sources": [],
+  "assessments": [
+    {
+      "assessment_id": "AI-DAILY-20261014-E-20261013-001",
+      "event_id": "E-20261013-001",
+      "source_ids": [
+        "DC-S-20261014-WAR13",
+        "DC-S-20261014-ARAMCO"
+      ],
+      "source_checks": [
+        {
+          "information_id": "DC-S-20261014-WAR13",
+          "url": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T00:24:51.676809+00:00",
+          "fact_summary": "报道沙特空袭萨那石油设施，胡塞武装发出报复威胁；损害情况未明。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "DC-S-20261014-ARAMCO",
+          "url": "https://www.news.cn/20261014/8f289993d0c54023a70ca78de6335e4b/c.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T00:24:51.676809+00:00",
+          "fact_summary": "新华社引述沙特能源部声明：达兰办公楼遇袭，有局部火情，无人员伤亡。",
+          "capture_mode": "DirectWebText"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "报道沙特空袭萨那石油设施，胡塞武装发出报复威胁；损害情况未明。",
+          "source_ids": [
+            "DC-S-20261014-WAR13"
+          ]
+        },
+        {
+          "statement": "新华社引述沙特能源部声明：达兰办公楼遇袭，有局部火情，无人员伤亡。",
+          "source_ids": [
+            "DC-S-20261014-ARAMCO"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": "IH",
+      "decision": "Directional",
+      "confidence": "Low",
+      "channels": [
+        "RISK_OFF"
+      ],
+      "horizon": "Fast",
+      "increment_reason": "窗口内出现空袭和报复报道；相对既有冲突的超预期及供给实际影响尚未核定。",
+      "expectation_baseline": "尚未获得可核市场一致预期；旧政策基线与市场预期分开。",
+      "transmission": "地区升级可能提升风险厌恶；IH相对防御只是条件研究倾向，未经两指数Beta与风险暴露验证。",
+      "im_case": "若风险降温或流动性支持占优，IM可能反弹；冲击并未证明IM企业盈利独有损失。",
+      "ih_case": "权重金融的防御假设可能利于IH，但系统性风险也可能打击金融；办公楼遇袭不证明能源盈利受益。",
+      "exposure_evidence": "尚未量化事件受益或受损业务在两指数的净暴露；不能凭小盘/大盘标签当作暴露证据。",
+      "pre_move": "未读同步IM/IH分钟价格，不确认已提前定价。",
+      "conflicts": [
+        "同窗产业支持与风险厌恶可能互相抵消，尚未量化净影响。"
+      ],
+      "invalidation": "新信息若推翻传导或受益资格，追加修订；价格反馈须取得行情后另写State。",
+      "gaps": [
+        "地区既有冲突与事前预期",
+        "相对Beta/业务风险暴露",
+        "办公楼事故与供油/航运实际影响",
+        "全局首发及可交易时间",
+        "同步IM/IH价格"
+      ],
+      "next_action": "核能源部原始声明、后续降温/升级和实际供给航运中断；补事前暴露，再决定是否保持IH。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "5c120988590ea41b471c71eb7b76fa2d8c1c7aeb60344aa76713fcc8124f2b03",
+      "expected_last_update_id": null,
+      "source": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+      "source_reliability": "B",
+      "impact_score": null,
+      "confidence_score": 0.35,
+      "persistence_score": 0.4,
+      "score_basis": {
+        "rubric_version": "score-evidence-v1",
+        "components": {
+          "source": {
+            "value": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+            "source_ids": [
+              "DC-S-20261014-WAR13"
+            ],
+            "reason": "实际读取的发布页面，不认作全局首发。"
+          },
+          "source_reliability": {
+            "value": "B",
+            "source_ids": [
+              "DC-S-20261014-WAR13"
+            ],
+            "reason": "来源评级只限定事实可靠性，不决定相对方向。"
+          },
+          "impact_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261014-WAR13"
+            ],
+            "reason": "相对影响幅度缺暴露与预期依据，保留null，不用新闻严重程度冒充Alpha。"
+          },
+          "confidence_score": {
+            "value": 0.35,
+            "source_ids": [
+              "DC-S-20261014-WAR13"
+            ],
+            "reason": "IH为低置信度条件推断，0.35是未校准研究刻度。"
+          },
+          "persistence_score": {
+            "value": 0.4,
+            "source_ids": [
+              "DC-S-20261014-WAR13"
+            ],
+            "reason": "Fast 0.4 / Trend 1是既有持续度配置，并非已验证持有时间。"
+          }
+        },
+        "reference_time": {
+          "value": "2026-10-13T23:12:06+08:00",
+          "source_ids": [
+            "DC-S-20261014-WAR13"
+          ],
+          "reason": "仅为已读来源的公开时刻，不是全局首次发布；不用于自动开仓。"
+        }
+      }
+    },
+    {
+      "assessment_id": "AI-DAILY-20261014-E-20261013-002",
+      "event_id": "E-20261013-002",
+      "source_ids": [
+        "DC-S-20261014-BOAT_POLICY",
+        "DC-S-20261014-BOATS"
+      ],
+      "source_checks": [
+        {
+          "information_id": "DC-S-20261014-BOAT_POLICY",
+          "url": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261012_4225720.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T00:24:53.250963+00:00",
+          "fact_summary": "原文列出电动和甲醇船舶、补能网络、制造、技术攻关与政策支持安排。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "DC-S-20261014-BOATS",
+          "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261013_4225752.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T00:24:53.021185+00:00",
+          "fact_summary": "报道2026—2030年行动方案及2028年保有量相对2025年翻倍目标。",
+          "capture_mode": "DirectWebText"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "原文列出电动和甲醇船舶、补能网络、制造、技术攻关与政策支持安排。",
+          "source_ids": [
+            "DC-S-20261014-BOAT_POLICY"
+          ]
+        },
+        {
+          "statement": "报道2026—2030年行动方案及2028年保有量相对2025年翻倍目标。",
+          "source_ids": [
+            "DC-S-20261014-BOATS"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "TECH_GROWTH"
+      ],
+      "horizon": "Trend",
+      "increment_reason": "已核目标和任务，未取得独立旧方案逐项基线；新目标不直接证明新增预算。",
+      "expectation_baseline": "尚未获得可核市场一致预期；旧政策基线与市场预期分开。",
+      "transmission": "船舶及补能需求可能传给制造、设备和能源供应链，但费用、兑现周期和两指数差异未核。",
+      "im_case": "配套设备与电动化企业可能有订单机会，尚未核成分权重、资格或已签订单。",
+      "ih_case": "大型能源、制造及融资方也可能受益，不能将产业支持一概解释为IM优势。",
+      "exposure_evidence": "尚未量化事件受益或受损业务在两指数的净暴露；不能凭小盘/大盘标签当作暴露证据。",
+      "pre_move": "未读同步IM/IH分钟价格，不确认已提前定价。",
+      "conflicts": [
+        "同窗产业支持与风险厌恶可能互相抵消，尚未量化净影响。"
+      ],
+      "invalidation": "新信息若推翻传导或受益资格，追加修订；价格反馈须取得行情后另写State。",
+      "gaps": [
+        "历史船舶绿色转型政策基线",
+        "新增可用预算和补贴资格",
+        "企业成本/订单净受益",
+        "两指数相对暴露",
+        "全局首发"
+      ],
+      "next_action": "比较旧政策及新能源船舶/补能具体资格，核企业业务与成本，把机会映射到两指数。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "bd8c5cc70614fe19554191228d5addfc02074dcf9141558aff711c475e8d96a5",
+      "expected_last_update_id": null,
+      "impact_analysis": {
+        "version": "policy-paths-v1",
+        "policy_deltas": [
+          {
+            "item_id": "D1",
+            "topic": "船舶推广目标与支持工具",
+            "new_fact": "新增页面列2028/2030目标与政策支持。",
+            "baseline": "独立旧制度和同口径目标未找到。",
+            "new_source_ids": [
+              "DC-S-20261014-BOAT_POLICY"
+            ],
+            "baseline_source_ids": [],
+            "baseline_kind": "NotFound",
+            "change_type": "Unknown",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "已核目标和任务，未取得独立旧方案逐项基线；新目标不直接证明新增预算。",
+            "limits": "未做全篇独立旧制度对照，市场预期另缺。"
+          }
+        ],
+        "beneficiary_paths": [
+          {
+            "path_id": "B1",
+            "beneficiary": "具备资格的产业企业与配套方",
+            "style": "Unknown",
+            "benefit": "船舶及补能需求可能传给制造、设备和能源供应链，但费用、兑现周期和两指数差异未核。",
+            "offsets": "投资、合规和运营成本及兑现时滞仍未量化。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Unknown",
+            "exposure_as_of": null,
+            "source_ids": [
+              "DC-S-20261014-BOAT_POLICY"
+            ],
+            "limits": "尚未量化事件受益或受损业务在两指数的净暴露；不能凭小盘/大盘标签当作暴露证据。"
+          }
+        ],
+        "conclusion": "政策机制可研究；两指数净相对受益未核，继续不定方向。",
+        "limits": [
+          "历史船舶绿色转型政策基线",
+          "新增可用预算和补贴资格",
+          "企业成本/订单净受益",
+          "两指数相对暴露",
+          "全局首发"
+        ]
+      },
+      "source": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261012_4225720.html",
+      "source_reliability": "A",
+      "impact_score": null,
+      "confidence_score": null,
+      "persistence_score": 1.0,
+      "score_basis": {
+        "rubric_version": "score-evidence-v1",
+        "components": {
+          "source": {
+            "value": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261012_4225720.html",
+            "source_ids": [
+              "DC-S-20261014-BOAT_POLICY"
+            ],
+            "reason": "实际读取的发布页面，不认作全局首发。"
+          },
+          "source_reliability": {
+            "value": "A",
+            "source_ids": [
+              "DC-S-20261014-BOAT_POLICY"
+            ],
+            "reason": "来源评级只限定事实可靠性，不决定相对方向。"
+          },
+          "impact_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261014-BOAT_POLICY"
+            ],
+            "reason": "相对影响幅度缺暴露与预期依据，保留null，不用新闻严重程度冒充Alpha。"
+          },
+          "confidence_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261014-BOAT_POLICY"
+            ],
+            "reason": "相对方向证据不足，保留null。"
+          },
+          "persistence_score": {
+            "value": 1.0,
+            "source_ids": [
+              "DC-S-20261014-BOAT_POLICY"
+            ],
+            "reason": "Fast 0.4 / Trend 1是既有持续度配置，并非已验证持有时间。"
+          }
+        },
+        "reference_time": {
+          "value": "2026-10-13T08:43:00+08:00",
+          "source_ids": [
+            "DC-S-20261014-BOAT_POLICY"
+          ],
+          "reason": "仅为已读来源的公开时刻，不是全局首次发布；不用于自动开仓。"
+        }
+      }
+    },
+    {
+      "assessment_id": "AI-DAILY-20261014-E-20261013-003",
+      "event_id": "E-20261013-003",
+      "source_ids": [
+        "DC-S-20261014-EXPORT"
+      ],
+      "source_checks": [
+        {
+          "information_id": "DC-S-20261014-EXPORT",
+          "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_5fb14edff75c45fa887d5c16d3477eb4.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T00:24:51.678805+00:00",
+          "fact_summary": "解读拟对低风险民航维修等出口实施登记凭证并说明此前许可证制度。",
+          "capture_mode": "DirectWebText"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "解读拟对低风险民航维修等出口实施登记凭证并说明此前许可证制度。",
+          "source_ids": [
+            "DC-S-20261014-EXPORT"
+          ]
+        }
+      ],
+      "information_gain": "Medium",
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "REGULATION_QUALITY"
+      ],
+      "horizon": "Trend",
+      "increment_reason": "发行人解读说明旧年度许可与拟登记凭证对照；草案不等于已经生效。",
+      "expectation_baseline": "尚未获得可核市场一致预期；旧政策基线与市场预期分开。",
+      "transmission": "低风险民用维修等企业可能降低手续负担，但申报与合规义务仍有成本，相对受益未知。",
+      "im_case": "部分零部件/维修服务企业可能受益，实际资格和指数纳入未核。",
+      "ih_case": "大型航空和制造企业也可能受益；监管品质渠道不是预设IH方向。",
+      "exposure_evidence": "尚未量化事件受益或受损业务在两指数的净暴露；不能凭小盘/大盘标签当作暴露证据。",
+      "pre_move": "未读同步IM/IH分钟价格，不确认已提前定价。",
+      "conflicts": [
+        "同窗产业支持与风险厌恶可能互相抵消，尚未量化净影响。"
+      ],
+      "invalidation": "新信息若推翻传导或受益资格，追加修订；价格反馈须取得行情后另写State。",
+      "gaps": [
+        "草案正式附件及最终实施版本",
+        "独立旧制度原文对照",
+        "实际受益资格与成本",
+        "指数相对业务暴露",
+        "首次可交易时刻"
+      ],
+      "next_action": "取草案附件和旧制度，核哪些企业可用登记凭证及费用净变化；保持方向未知。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "8be11c74664c9d190ddd13a6b90903436ba449c53c10d2441deebdd8272a2400",
+      "expected_last_update_id": null,
+      "impact_analysis": {
+        "version": "policy-paths-v1",
+        "policy_deltas": [
+          {
+            "item_id": "D1",
+            "topic": "低风险民航出口手续",
+            "new_fact": "草案拟以登记凭证支持特定低风险维修等出口。",
+            "baseline": "解读内对照此前年度许可证及2024条例变化。",
+            "new_source_ids": [
+              "DC-S-20261014-EXPORT"
+            ],
+            "baseline_source_ids": [
+              "DC-S-20261014-EXPORT"
+            ],
+            "baseline_kind": "IssuerComparison",
+            "change_type": "ImplementationDetail",
+            "stage": "Draft",
+            "magnitude": null,
+            "reason": "发行人解读说明旧年度许可与拟登记凭证对照；草案不等于已经生效。",
+            "limits": "未做全篇独立旧制度对照，市场预期另缺。"
+          }
+        ],
+        "beneficiary_paths": [
+          {
+            "path_id": "B1",
+            "beneficiary": "具备资格的产业企业与配套方",
+            "style": "Unknown",
+            "benefit": "低风险民用维修等企业可能降低手续负担，但申报与合规义务仍有成本，相对受益未知。",
+            "offsets": "投资、合规和运营成本及兑现时滞仍未量化。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Unknown",
+            "exposure_as_of": null,
+            "source_ids": [
+              "DC-S-20261014-EXPORT"
+            ],
+            "limits": "尚未量化事件受益或受损业务在两指数的净暴露；不能凭小盘/大盘标签当作暴露证据。"
+          }
+        ],
+        "conclusion": "政策机制可研究；两指数净相对受益未核，继续不定方向。",
+        "limits": [
+          "草案正式附件及最终实施版本",
+          "独立旧制度原文对照",
+          "实际受益资格与成本",
+          "指数相对业务暴露",
+          "首次可交易时刻"
+        ]
+      },
+      "source": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_5fb14edff75c45fa887d5c16d3477eb4.html",
+      "source_reliability": "A",
+      "impact_score": null,
+      "confidence_score": null,
+      "persistence_score": 1.0,
+      "score_basis": {
+        "rubric_version": "score-evidence-v1",
+        "components": {
+          "source": {
+            "value": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_5fb14edff75c45fa887d5c16d3477eb4.html",
+            "source_ids": [
+              "DC-S-20261014-EXPORT"
+            ],
+            "reason": "实际读取的发布页面，不认作全局首发。"
+          },
+          "source_reliability": {
+            "value": "A",
+            "source_ids": [
+              "DC-S-20261014-EXPORT"
+            ],
+            "reason": "来源评级只限定事实可靠性，不决定相对方向。"
+          },
+          "impact_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261014-EXPORT"
+            ],
+            "reason": "相对影响幅度缺暴露与预期依据，保留null，不用新闻严重程度冒充Alpha。"
+          },
+          "confidence_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261014-EXPORT"
+            ],
+            "reason": "相对方向证据不足，保留null。"
+          },
+          "persistence_score": {
+            "value": 1.0,
+            "source_ids": [
+              "DC-S-20261014-EXPORT"
+            ],
+            "reason": "Fast 0.4 / Trend 1是既有持续度配置，并非已验证持有时间。"
+          }
+        },
+        "reference_time": {
+          "value": "2026-10-13T10:00:00+08:00",
+          "source_ids": [
+            "DC-S-20261014-EXPORT"
+          ],
+          "reason": "仅为已读来源的公开时刻，不是全局首次发布；不用于自动开仓。"
+        }
+      }
+    },
+    {
+      "assessment_id": "AI-DAILY-20261014-E001-V5",
+      "event_id": "E-20261009-001",
+      "source_ids": [
+        "I-20261010-002",
+        "AI-S-20261013-RD-BASELINE",
+        "AI-S-20261013-AIPLUS-BASELINE",
+        "AI-S-20261013-000852-ARCHIVE",
+        "AI-S-20261013-000016-ARCHIVE",
+        "AI-S-20261013-EQUIPMENT-BASELINE",
+        "AI-S-20261013-VC-BASELINE",
+        "AI-S-20261013-CIG-BUSINESS",
+        "AI-S-20261013-CAMBRICON-BUSINESS",
+        "AI-S-20261014-REFORM2024",
+        "AI-S-20261014-RD44",
+        "AI-S-20261014-TAX202609",
+        "DC-S-20261014-AI_REAFFIRM"
+      ],
+      "source_checks": [
+        {
+          "information_id": "I-20261010-002",
+          "url": "https://www3.xinhuanet.com/politics/20261009/37bc898ce93f4c0899e926039f842891/c.html",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "同时支持科技型中小企业、传统产业升级、科技领军企业与金融创新。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-RD-BASELINE",
+          "url": "https://www.mof.gov.cn/jrttts/202303/t20230328_3875460.htm",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "2023年第7号公告规定符合条件研发费用按100%税前加计扣除；此条用于历史政策基线，不推断2026年所有细则仍完全相同。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-AIPLUS-BASELINE",
+          "url": "https://www.cac.gov.cn/2025-08/27/c_1758018277755538.htm",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "2025年意见已有科研、产业应用、智能终端、算力与财政金融支持安排。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-000852-ARCHIVE",
+          "url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/000852factsheet.pdf",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "信息技术23.4%、工业27.9%、金融2.8%。",
+          "capture_mode": "ArchivedOfficialAttachment",
+          "document_sha256": "6d8885c93597a609260cc11385a9b8aaec33593d164d492120018d2b2e914551"
+        },
+        {
+          "information_id": "AI-S-20261013-000016-ARCHIVE",
+          "url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/000016factsheet.pdf",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "信息技术20.7%、工业8.4%、金融32.1%。",
+          "capture_mode": "ArchivedOfficialAttachment",
+          "document_sha256": "d7ced266f7100d99ff4dbd5cf134c649742cd13d8a752fde854c626458b43fd0"
+        },
+        {
+          "information_id": "AI-S-20261013-EQUIPMENT-BASELINE",
+          "url": "https://www.miit.gov.cn/xwdt/szyw/art/2024/art_a2452750705944c2ac56ea809ba7f2aa.html",
+          "status": "Read",
+          "checked_at": "2026-10-13T14:21:19.923142+00:00",
+          "fact_summary": "已有重点行业设备更新、智能制造设备软件及财税金融支持。 已读取公开行动方案。页面时刻为工信部转载，不认作全局首发。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-VC-BASELINE",
+          "url": "https://www.mee.gov.cn/zcwj/gwywj/202406/t20240620_1076246.shtml",
+          "status": "Partial",
+          "checked_at": "2026-10-13T14:21:19.923142+00:00",
+          "fact_summary": "公开文本已有中小科技、早期硬科技创业投资及政府基金安排。 本轮定向核对第2/3项及科技融资相关条款；页面自注本文有删减，标为Partial。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-CIG-BUSINESS",
+          "url": "https://www.cigtech.com/cn",
+          "status": "Read",
+          "checked_at": "2026-10-13T14:21:19.923142+00:00",
+          "fact_summary": "业务包括高速光模块和网络终端；光收发器面向数据中心、高性能计算等。 实际读取官网首页业务及产品预览，产品详情页超时未引用。当前业务观察不倒填历史首次公开。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-CAMBRICON-BUSINESS",
+          "url": "https://www.cambricon.com/index.php?a=lists&c=index&catid=7&m=content",
+          "status": "Read",
+          "checked_at": "2026-10-13T14:21:19.923142+00:00",
+          "fact_summary": "提供AI智能芯片及基础系统软件，覆盖训练推理与云边端场景。 实际读取官网公司介绍。没有页面发布时间；不能据此确认新增订单或历史首次公开。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261014-REFORM2024",
+          "url": "https://sfj.beijing.gov.cn/sfj/sfdt/rdzz8/543364612/index.html",
+          "status": "Partial",
+          "checked_at": "2026-10-13T23:35:07.854065+00:00",
+          "fact_summary": "第13项已有企业研发准备金、提高研发加计扣除比例和高校科研成果先用后付安排。 实际读取公开原文对应章节；日期来自页面PubDate元数据，未推断全局首发，标Partial。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261014-RD44",
+          "url": "https://www.mof.gov.cn/jrttts/202309/t20230928_3909593.htm",
+          "status": "Read",
+          "checked_at": "2026-10-13T23:35:07.854065+00:00",
+          "fact_summary": "符合条件集成电路和工业母机企业已有120%加计扣除及220%摊销安排，适用期间2023至2027年。 读取财政部原文及资格、清单条款；不声称任一具名企业已经符合资格。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261014-TAX202609",
+          "url": "https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202609/t481574.html",
+          "status": "Read",
+          "checked_at": "2026-10-13T23:35:07.854065+00:00",
+          "fact_summary": "发布于本事件前的官方答复仍区分一般100%与符合条件行业120%研发扣除。 实际读取答复，不能据有限检索证明此后不存在任何实施文件。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "DC-S-20261014-AI_REAFFIRM",
+          "url": "https://www.news.cn/tech/20261013/431df1d3c32d45b088254eedb64a2c09/c.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T00:24:53.799006+00:00",
+          "fact_summary": "报道引用10月9日政策并串联既有AI应用案例。",
+          "capture_mode": "DirectWebText"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "政策覆盖中小科技企业，也覆盖大型企业、传统产业与金融创新。",
+          "source_ids": [
+            "I-20261010-002"
+          ]
+        },
+        {
+          "statement": "研发扣除和人工智能产业应用已有2023/2025政策基线。",
+          "source_ids": [
+            "AI-S-20261013-RD-BASELINE",
+            "AI-S-20261013-AIPLUS-BASELINE"
+          ]
+        },
+        {
+          "statement": "9月30日官方事实表：信息技术IM23.4%、IH20.7%；工业IM27.9%、IH8.4%；不是10月9日企业净受益表。",
+          "source_ids": [
+            "AI-S-20261013-000852-ARCHIVE",
+            "AI-S-20261013-000016-ARCHIVE"
+          ]
+        },
+        {
+          "statement": "2024中央原文已出现本轮两个重点表述；本事件前税务答复区分一般与合格行业既有比例。",
+          "source_ids": [
+            "AI-S-20261014-REFORM2024",
+            "AI-S-20261014-RD44",
+            "AI-S-20261014-TAX202609"
+          ]
+        },
+        {
+          "statement": "报道引用10月9日政策并串联既有AI应用案例。",
+          "source_ids": [
+            "DC-S-20261014-AI_REAFFIRM"
+          ]
+        }
+      ],
+      "information_gain": "Low",
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "TECH_GROWTH",
+        "MARKET_LIQUIDITY"
+      ],
+      "horizon": "Trend",
+      "directness": 1,
+      "independent_cause": true,
+      "relative_pricing": null,
+      "increment_reason": "10月13日报道重述10月9日政策及既有应用，未核新增执行量；V4研发旧意向核查继续有效，不恢复IM方向或刷新衰减时刻。",
+      "expectation_baseline": "新补2024中央意向及2023行业税制、2026年9月答复。历史政策不等于市场预期，尚无事前一致预期。",
+      "transmission": "政策支持创新与产业升级的长期路径仍存在；目前所核条款不足以形成新的、可辨认的IM相对优势。",
+      "im_case": "中小科技支持有长期机会，但研发表述和先用后付已有旧意向；不能用重申替代新增IM冲击。",
+      "ih_case": "大型科技和金融也有受益路径；集成电路既有120%优惠适用须核资格，未确认任何公司新增优势。",
+      "exposure_evidence": "两份9月30日事实表经图表核对；另读取两家公司当前业务。样本例子及行业代理不能冒充全指数业务净暴露。",
+      "pre_move": "未读取事件前同步IM/IH行情，不判是否已提前交易。",
+      "conflicts": [
+        "贸易风险可能削弱科技成长渠道，但尚未比较净影响"
+      ],
+      "invalidation": "若后续新比例、预算、适用范围或订单提供新增且偏IM的可核证据，再建立方向；本次撤回研究IM不宣称原政策或市场已失效。",
+      "gaps": [
+        "其余14项与后续执行增量",
+        "全指数业务及适用资格相对暴露",
+        "事前预期与PreMove",
+        "全局首发及可交易时间"
+      ],
+      "next_action": "继续核剩余旧政策基线、执行预算/资格和相对净受益；本次报道仅作传播更新。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [
+        "AI-S-20261013-RD-BASELINE",
+        "AI-S-20261013-AIPLUS-BASELINE",
+        "AI-S-20261013-EQUIPMENT-BASELINE",
+        "AI-S-20261013-VC-BASELINE",
+        "AI-S-20261014-REFORM2024",
+        "AI-S-20261014-RD44",
+        "AI-S-20261014-TAX202609"
+      ],
+      "exposure_source_ids": [
+        "AI-S-20261013-000852-ARCHIVE",
+        "AI-S-20261013-000016-ARCHIVE",
+        "AI-S-20261013-CIG-BUSINESS",
+        "AI-S-20261013-CAMBRICON-BUSINESS"
+      ],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "aa646cbd6a08aa48d7b4755ff09461ef5a7064bea158d9e24823cac3d2fdc0d3",
+      "expected_last_update_id": null,
+      "source": "https://www3.xinhuanet.com/politics/20261009/37bc898ce93f4c0899e926039f842891/c.html",
+      "source_reliability": "B",
+      "impact_score": null,
+      "confidence_score": null,
+      "persistence_score": 1.0,
+      "score_basis": {
+        "rubric_version": "score-evidence-v1",
+        "components": {
+          "source": {
+            "value": "https://www3.xinhuanet.com/politics/20261009/37bc898ce93f4c0899e926039f842891/c.html",
+            "reason": "新华社受权发布正文，按B级权威媒体记录，不等于高方向置信度。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ]
+          },
+          "source_reliability": {
+            "value": "B",
+            "reason": "B级仅约束原文可靠性上限0.85；两份指数原件另留指纹。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ]
+          },
+          "impact_score": {
+            "value": null,
+            "reason": "新旧意向对照削弱新增相对冲击，撤回原刻度；当前相对影响和方向置信度不可量化。",
+            "source_ids": [
+              "AI-S-20261014-REFORM2024",
+              "AI-S-20261014-RD44",
+              "AI-S-20261014-TAX202609"
+            ]
+          },
+          "confidence_score": {
+            "value": null,
+            "reason": "新旧意向对照削弱新增相对冲击，撤回原刻度；当前相对影响和方向置信度不可量化。",
+            "source_ids": [
+              "AI-S-20261014-REFORM2024",
+              "AI-S-20261014-RD44",
+              "AI-S-20261014-TAX202609"
+            ]
+          },
+          "persistence_score": {
+            "value": 1.0,
+            "reason": "政策机制涉及长期研发和产业升级，选Trend持续度1；是模型配置，不认定交易有效期。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ]
+          }
+        },
+        "reference_time": {
+          "value": "2026-10-09T18:02:25+08:00",
+          "source_ids": [
+            "I-20261010-002"
+          ],
+          "reason": "仅采用已读新华社来源页面的公开时刻作研究衰减参考；未核实全局首发。"
+        }
+      },
+      "impact_analysis": {
+        "version": "policy-paths-v1",
+        "policy_deltas": [
+          {
+            "item_id": "rd",
+            "topic": "研发支持：意向与已执行税制分开",
+            "new_fact": "提出提高研发加计扣除比例，并支持科技型中小企业研发。",
+            "baseline": "2024中央决定已有准备金及提高比例意向；2023一般100%、合格行业120%为已执行税制。",
+            "new_source_ids": [
+              "I-20261010-002"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261014-REFORM2024",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261014-RD44",
+              "AI-S-20261014-TAX202609"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "Reaffirmation",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "新补较早同类中央意向，撤销上一版仅据税率基线作出的强化分类。",
+            "limits": "未找到可引用的本事件新增比例、覆盖与实施文件；有限检索不证明不存在。"
+          },
+          {
+            "item_id": "ai",
+            "topic": "人工智能应用",
+            "new_fact": "再次部署AI应用与基础要素支持。",
+            "baseline": "2025年AI+意见已有产业应用和算力支持。",
+            "new_source_ids": [
+              "I-20261010-002"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261013-AIPLUS-BASELINE"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "Reaffirmation",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "重合主题延续旧方向，不把整项当成首次AI刺激。",
+            "limits": "仅核对相同主题，未完成全部19项差异。"
+          },
+          {
+            "item_id": "equipment",
+            "topic": "设备更新与产业升级",
+            "new_fact": "继续推进设备更新和制造业技改支持。",
+            "baseline": "2024年方案已安排行业更新、智能设备软件与配套支持。",
+            "new_source_ids": [
+              "I-20261010-002"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261013-EQUIPMENT-BASELINE"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "Reaffirmation",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "方向重合，未找到本条新增预算。",
+            "limits": "后续预算与执行安排可能另有增量，目前未核实。"
+          },
+          {
+            "item_id": "vc",
+            "topic": "耐心资本与创业投资",
+            "new_fact": "继续支持早期、小型和硬科技资本。",
+            "baseline": "2024年公开措施已有对应创投与政府基金安排。",
+            "new_source_ids": [
+              "I-20261010-002"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261013-VC-BASELINE"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "Reaffirmation",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "不是自动新增基金或可计量资金流。",
+            "limits": "旧基线为公开删减文本，不能替代所有配套文件。"
+          },
+          {
+            "item_id": "conversion",
+            "topic": "科技成果先用后付",
+            "new_fact": "引导高校科研机构先许可使用、后收取费用。",
+            "baseline": "2024中央决定第13项已有高校科研成果先用后付方向。",
+            "new_source_ids": [
+              "I-20261010-002"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261014-REFORM2024"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "Reaffirmation",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "具体旧基线已找到，撤销Unknown分类，现核为意向延续。",
+            "limits": "全国范围、执行条件及后续预算未全面核；不把地方实践等同本事件全国新增刺激。"
+          }
+        ],
+        "beneficiary_paths": [
+          {
+            "path_id": "small-tech",
+            "beneficiary": "科技型中小企业群体",
+            "style": "IM",
+            "benefit": "研发与成果转化支持可能缓解创新和融资约束。",
+            "offsets": "适用资质、应税利润、融资条件和实施比例尚未核实。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Unknown",
+            "exposure_as_of": null,
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-VC-BASELINE"
+            ],
+            "limits": "中小企业不等于中证1000样本；未核覆盖率，不能量化指数净受益。"
+          },
+          {
+            "path_id": "cig",
+            "beneficiary": "剑桥科技：中证1000样本例子（9月30日权重0.70%）",
+            "style": "IM",
+            "benefit": "数据中心和AI应用扩展可能增加光通信产品需求。",
+            "offsets": "价格竞争、研发及扩产投入可能抵消收益；未取得本事件新增订单。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Business",
+            "exposure_as_of": "2026-10-13",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-CIG-BUSINESS",
+              "AI-S-20261013-000852-ARCHIVE"
+            ],
+            "limits": "官网只证实当前业务；样本权重为9月30日，不是10月9日实际收入或盈利暴露。"
+          },
+          {
+            "path_id": "cam",
+            "beneficiary": "寒武纪：上证50样本例子（9月30日权重3.47%）",
+            "style": "IH",
+            "benefit": "AI训练推理和产业应用扩展可能增加芯片及软件需求。",
+            "offsets": "生态适配、研发投入、竞争与供应链约束尚未评估，未核事件新增利润。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Business",
+            "exposure_as_of": "2026-10-13",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-CAMBRICON-BUSINESS",
+              "AI-S-20261013-000016-ARCHIVE"
+            ],
+            "limits": "IH也有直接AI业务路径；两个公司例子不能代表全指数或用权重直接比较净受益。"
+          },
+          {
+            "path_id": "industry",
+            "beneficiary": "工业与金融行业组合",
+            "style": "Both",
+            "benefit": "设备需求及科技融资服务可能同时增加。",
+            "offsets": "改造方先承担资本开支；贷款收益与信用风险亦需比较。",
+            "effect": "Mixed",
+            "effect_status": "Hypothesis",
+            "exposure_type": "SectorProxy",
+            "exposure_as_of": "2026-09-30",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-EQUIPMENT-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ],
+            "limits": "IM工业27.9%、IH工业8.4%；金融2.8%和32.1%只是行业代理，不等于全部企业收益。"
+          }
+        ],
+        "conclusion": "撤回上一版低置信度IM研究倾向，当前不定方向。已比5个主题均有旧安排；未核完其余14项，不声称整份政策无增量。两边相对净受益和新增执行力度仍不足。",
+        "limits": [
+          "同类意向已于2024年提出，不能仅比旧税率认定新意向强化。",
+          "未核全部19项及实施文件，不认定整个事件零增量。",
+          "未知方向不等于Neutral或零分。",
+          "不从研究撤回生成市场Rejected/失效状态。"
+        ]
+      }
+    },
+    {
+      "assessment_id": "AI-DAILY-20261014-E-20261009-003",
+      "event_id": "E-20261009-003",
+      "source_ids": [
+        "DC-S-20261014-DANONE"
+      ],
+      "source_checks": [
+        {
+          "information_id": "DC-S-20261014-DANONE",
+          "url": "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_c89c3db56dc54917b700ac5c438f9969.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T00:33:03.195438+00:00",
+          "fact_summary": "10月12日会见在13日发布，重述中欧磋商成果并表达投资意愿。",
+          "capture_mode": "DirectWebText"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "10月12日会见在13日发布，重述中欧磋商成果并表达投资意愿。",
+          "source_ids": [
+            "DC-S-20261014-DANONE"
+          ]
+        }
+      ],
+      "information_gain": "Low",
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "RISK_APPETITE"
+      ],
+      "horizon": "Trend",
+      "increment_reason": "本窗发布对华投资意愿并重述既有中欧磋商；未核新增签约金额或贸易限制取消。",
+      "expectation_baseline": "尚未获得可核市场一致预期；旧政策基线与市场预期分开。",
+      "transmission": "合作意愿可能缓和预期，但尚未确认有新增可执行贸易措施改变两指数盈利。",
+      "im_case": "出口相关中小企业可能受益，无法用此次会见量化。",
+      "ih_case": "大型消费与制造也可能受益，无法确认哪一风格更强。",
+      "exposure_evidence": "尚未量化事件受益或受损业务在两指数的净暴露；不能凭小盘/大盘标签当作暴露证据。",
+      "pre_move": "未读同步IM/IH分钟价格，不确认已提前定价。",
+      "conflicts": [
+        "同窗产业支持与风险厌恶可能互相抵消，尚未量化净影响。"
+      ],
+      "invalidation": "新信息若推翻传导或受益资格，追加修订；价格反馈须取得行情后另写State。",
+      "gaps": [
+        "新签合同/投资金额",
+        "实际贸易措施变化",
+        "相对指数暴露",
+        "事前预期"
+      ],
+      "next_action": "跟踪原磋商的措施落地与贸易限制变化；保持原母事件，不建立重复新Parent。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "204185f13abcb437c93e2c26b669a14b1298a23c017f231140a79a0ceef573f7",
+      "expected_last_update_id": null
+    }
+  ]
+}

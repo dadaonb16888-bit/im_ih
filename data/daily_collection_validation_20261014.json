@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-14T00:37:55.867348+00:00",
+  "old_rows_preserved": {
+    "information_inbox": 67,
+    "events": 18,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 40,
+    "legacy_audit": 14,
+    "research_notes": 19,
+    "collection_batches": 1,
+    "source_checks": 0,
+    "collection_items": 0,
+    "information_reviews": 0,
+    "parent_reviews": 0,
+    "ai_research_runs": 4,
+    "ai_assessments": 14
+  },
+  "counts": {
+    "information_inbox": 96,
+    "events": 21,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 47,
+    "legacy_audit": 15,
+    "research_notes": 19,
+    "collection_batches": 2,
+    "source_checks": 57,
+    "collection_items": 29,
+    "information_reviews": 29,
+    "parent_reviews": 7,
+    "ai_research_runs": 5,
+    "ai_assessments": 19
+  },
+  "collection_counts": {
+    "information": 29,
+    "pending_triage": 7,
+    "unknown_time": 9,
+    "late": 29,
+    "after_cutoff": 0,
+    "missing_categories": 14,
+    "pending_parent_reviews": 5
+  },
+  "coverage_checked": 14,
+  "source_checks": 57,
+  "ready": false,
+  "integrity_check": "ok",
+  "foreign_key_check": [],
+  "numeric_research_count": 0,
+  "tests": "136 passed",
+  "invariants": [
+    "cutoff固定，实际知识不倒填",
+    "29条信息逐条分流，Pending仍保留缺口",
+    "14类57项登记检查，无缺失入口记录但全部部分/受阻",
+    "既有记录逐行保留",
+    "研究IH不进入正式Bias/State/Dominant",
+    "同包与同AI包重放不新增"
+  ]
+}
