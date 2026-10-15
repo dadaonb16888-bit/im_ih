@@ -1,0 +1,82 @@
+{
+  "applied": {
+    "inserted": true,
+    "known_at": "2026-10-15T15:34:00.393863+00:00"
+  },
+  "checked_at": "2026-10-15T15:34:00.811788+00:00",
+  "old_rows_preserved": true,
+  "old_asof_unchanged": true,
+  "replay_no_write": true,
+  "all_other_tables_unchanged": true,
+  "changed_tables": [
+    "information_inbox",
+    "information_screenings",
+    "legacy_audit",
+    "news_screening_runs"
+  ],
+  "integrity": "ok",
+  "foreign_key_violations": 0,
+  "before_counts": {
+    "information_inbox": 164,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 59,
+    "legacy_audit": 17,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 69,
+    "information_reviews": 69,
+    "parent_reviews": 17,
+    "ai_research_runs": 9,
+    "ai_assessments": 25,
+    "news_screening_runs": 9,
+    "information_screenings": 113,
+    "discovery_runs": 2,
+    "discovery_leads": 729,
+    "discovery_resolutions": 729
+  },
+  "after_counts": {
+    "information_inbox": 170,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 59,
+    "legacy_audit": 18,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 69,
+    "information_reviews": 69,
+    "parent_reviews": 17,
+    "ai_research_runs": 9,
+    "ai_assessments": 25,
+    "news_screening_runs": 10,
+    "information_screenings": 122,
+    "discovery_runs": 2,
+    "discovery_leads": 729,
+    "discovery_resolutions": 729
+  },
+  "screening_counts": {
+    "DeepReview": 5,
+    "Watch": 28,
+    "Background": 70,
+    "Unscreened": 67
+  },
+  "discovery_counts": {
+    "Pending": 73,
+    "Blocked": 0,
+    "Linked": 29,
+    "Excluded": 627,
+    "PartialRead": 2
+  },
+  "unresolved_leads": 75,
+  "research_queue": {
+    "NeedsReview": 0,
+    "ReviewedWithGaps": 3,
+    "Reviewed": 0
+  },
+  "implementation_changed": false,
+  "code_test_status": "Prior implementation milestone:184 passed; no new code test run in this data-only turn."
+}
