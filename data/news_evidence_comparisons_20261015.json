@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-10-15T07:21:45.309249+00:00",
+  "buyout": {
+    "unit": "亿元",
+    "announced_new": 7000,
+    "announced_matched_maturity": 5000,
+    "announced_difference": 2000,
+    "previous_month_same_tenor": 5000,
+    "actual_total_net_liquidity": null,
+    "surprise": null,
+    "source_ids": [
+      "DC-S-20261015-BUYOUT",
+      "NE-S-20261015-BUYOUT8",
+      "NE-S-20261015-BUYOUT18"
+    ],
+    "scope": "Matching announced operations only; not executed total net liquidity"
+  },
+  "beige": {
+    "source_ids": [
+      "DC-S-20261015-FEDSUMMARY",
+      "NE-S-20261015-BEIGE_PRIOR"
+    ],
+    "prior_growth_districts": 10,
+    "current_growth_districts": 9,
+    "prior_robust_price_districts": 1,
+    "current_robust_price_districts": 3,
+    "prior_accelerating_price_districts": 1,
+    "current_accelerating_price_districts": 4,
+    "unweighted_qualitative_counts": true,
+    "surprise": null,
+    "bias": null
+  },
+  "fcc": {
+    "source_ids": [
+      "NE-S-20261015-FCC_GPO",
+      "NE-S-20261015-FCC_DIRECT"
+    ],
+    "read_pdf_pages": [
+      31,
+      32,
+      33,
+      34
+    ],
+    "printed_pages": [
+      57798,
+      57799,
+      57800,
+      57801
+    ],
+    "full_issue_read": false,
+    "full_fcc_order_read": false,
+    "rule_effective_date": "2026-10-13",
+    "all_media_claims_verified": false,
+    "bias": null
+  }
+}

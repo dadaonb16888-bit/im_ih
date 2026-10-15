@@ -1,0 +1,206 @@
+{
+  "checked_at": "2026-10-15T07:25:40.511217+00:00",
+  "before_counts": {
+    "information_inbox": 144,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 53,
+    "legacy_audit": 16,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 57,
+    "information_reviews": 57,
+    "parent_reviews": 17,
+    "ai_research_runs": 7,
+    "ai_assessments": 23,
+    "news_screening_runs": 5,
+    "information_screenings": 89
+  },
+  "after_counts": {
+    "information_inbox": 150,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 55,
+    "legacy_audit": 16,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 57,
+    "information_reviews": 57,
+    "parent_reviews": 17,
+    "ai_research_runs": 8,
+    "ai_assessments": 24,
+    "news_screening_runs": 7,
+    "information_screenings": 99
+  },
+  "all_old_rows_preserved": {
+    "information_inbox": true,
+    "events": true,
+    "event_updates": true,
+    "state_updates": true,
+    "event_information": true,
+    "legacy_audit": true,
+    "research_notes": true,
+    "collection_batches": true,
+    "source_checks": true,
+    "collection_items": true,
+    "information_reviews": true,
+    "parent_reviews": true,
+    "ai_research_runs": true,
+    "ai_assessments": true,
+    "news_screening_runs": true,
+    "information_screenings": true
+  },
+  "integrity": "ok",
+  "foreign_key_violations": [],
+  "same_pack_replay": "No writes",
+  "pre_import_as_of_hides_new_sources_and_revision": true,
+  "no_new_parent_causal_state_or_collection_batch": true,
+  "original_cutoff": "2026-10-15T03:02:05.000000+00:00",
+  "screening_counts": {
+    "DeepReview": 5,
+    "Watch": 23,
+    "Background": 55,
+    "Unscreened": 67
+  },
+  "research_queue": {
+    "as_of": "2026-10-15T07:21:45.594093+00:00",
+    "tasks": [
+      {
+        "event_id": "E-20261013-001",
+        "event_name": "沙特—也门冲突升级与报复风险",
+        "scope": "Current",
+        "information_ids": [
+          "DC-S-20261014-ARAMCO",
+          "DC-S-20261014-WAR13",
+          "DC-S-20261015-AIRPORT"
+        ],
+        "source_count": 3,
+        "status": "ReviewedWithGaps",
+        "reason": "本轮通过项已合并判读",
+        "assessment_id": "AI-DAILY-20261015-AIRPORT",
+        "reviewed_at": "2026-10-15T03:16:48.717905+00:00",
+        "research_bias": null,
+        "decision": "InsufficientEvidence",
+        "gaps": [
+          "机场停运与能源产运实际影响的独立证据",
+          "相对既有冲突基线的超预期程度",
+          "双方主张的第三方核查",
+          "两指数净盈利与风险暴露及行情反馈"
+        ],
+        "next_action": "继续观察独立供给、运输中断或降温协议等新触发；延续上一版不定方向，不因同链新闻变多恢复IH研究倾向。",
+        "trade_permission": false,
+        "entry_allowed": false
+      },
+      {
+        "event_id": "E-20261014-001",
+        "event_name": "2026年前三季度金融统计发布",
+        "scope": "Current",
+        "information_ids": [
+          "DC-S-20261015-FINSTATS"
+        ],
+        "source_count": 1,
+        "status": "ReviewedWithGaps",
+        "reason": "本轮通过项已合并判读",
+        "assessment_id": "AI-DAILY-20261015-FINSTATS",
+        "reviewed_at": "2026-10-15T03:16:48.717905+00:00",
+        "research_bias": null,
+        "decision": "InsufficientEvidence",
+        "gaps": [
+          "同口径上期数据与发布前一致预期",
+          "居民/企业/政府融资的新增边际与传导",
+          "IM与IH样本业务、融资和金融风险相对暴露",
+          "全局首发及精确最早可交易时刻"
+        ],
+        "next_action": "仅在取得同口径历史数据和事前预期后复核新增信用冲击；有显著分项异常再补受益与受损企业，不因标题总额直接定向。",
+        "trade_permission": false,
+        "entry_allowed": false
+      },
+      {
+        "event_id": "E-20261014-002",
+        "event_name": "美国10月褐皮书增长与成本压力",
+        "scope": "Current",
+        "information_ids": [
+          "DC-S-20261015-FEDSUMMARY"
+        ],
+        "source_count": 1,
+        "status": "ReviewedWithGaps",
+        "reason": "本轮通过项已合并判读",
+        "assessment_id": "AI-NE-20261015-BEIGE-V2",
+        "reviewed_at": "2026-10-15T07:21:45.309249+00:00",
+        "research_bias": null,
+        "decision": "InsufficientEvidence",
+        "gaps": [
+          "发布前一致预期与相对其他已公布数据的独立增量",
+          "两指数利率敏感度、出口、能源成本和盈利的净暴露",
+          "联储目录链接与August标题身份冲突未澄清",
+          "精确公开时间及最早可交易时刻；无同步行情"
+        ],
+        "next_action": "旧版比较缺口已部分关闭。只在有事前预期或相对暴露证据时继续，不再反复读取同两份摘要；目录身份冲突等官方说明。",
+        "trade_permission": false,
+        "entry_allowed": false
+      }
+    ],
+    "needs_association": [],
+    "counts": {
+      "NeedsReview": 0,
+      "ReviewedWithGaps": 3,
+      "Reviewed": 0
+    },
+    "research_only": true,
+    "trade_permission": false,
+    "entry_allowed": false,
+    "note": "按Parent合并研究工作；已判读不等于方向或市场确认。旧关联表无建立时间，历史归属不能完整重建。"
+  },
+  "code_changed": false,
+  "prior_code_test_baseline": "170 passed; no new code test run claimed",
+  "applied": [
+    {
+      "inserted": true,
+      "pack_id": "AI-NEWS-EVIDENCE-20261015-V1",
+      "known_at": "2026-10-15T07:21:45.309249+00:00",
+      "assessments": [
+        "AI-NE-20261015-BEIGE-V2"
+      ]
+    },
+    {
+      "inserted": true,
+      "known_at": "2026-10-15T07:21:45.313222+00:00",
+      "pack_id": "SCREEN-NEWS-EVIDENCE-20261015-V1",
+      "screenings": [
+        "NE-SC-NE-S-20261015-BUYOUT8",
+        "NE-SC-NE-S-20261015-BUYOUT18",
+        "NE-SC-NE-S-20261015-BEIGE_PRIOR",
+        "NE-SC-NE-S-20261015-BEIGE_AMBIGUOUS",
+        "NE-SC-NE-S-20261015-FCC_GPO",
+        "NE-SC-NE-S-20261015-FCC_DIRECT",
+        "NE-SC-20261015-BUYOUT",
+        "NE-SC-20261015-FCC"
+      ]
+    }
+  ],
+  "summary_correction": {
+    "applied": {
+      "inserted": true,
+      "known_at": "2026-10-15T07:23:12.157307+00:00",
+      "pack_id": "SCREEN-NEWS-EVIDENCE-20261015-SUMMARY-V2",
+      "screenings": [
+        "NE-SC-20261015-BUYOUT-SUMMARY-V2",
+        "NE-SC-20261015-FCC-SUMMARY-V2"
+      ]
+    },
+    "original_screening_summaries_preserved": true,
+    "resolved_maturity_gap_removed_from_round2": true,
+    "replay": "No writes"
+  },
+  "browser_verification": {
+    "counts": "150 information /24 AI assessments",
+    "original_summary_separate_from_findings": true,
+    "buyout_resolved_maturity_removed_from_current_round2": true,
+    "beige_v2_visible": true,
+    "console_warnings_errors": []
+  }
+}
