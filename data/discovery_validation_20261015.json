@@ -1,0 +1,36 @@
+{
+  "result": {
+    "inserted": true,
+    "known_at": "2026-10-15T09:19:30.992861+00:00",
+    "added": {
+      "leads": 729,
+      "resolutions": 38
+    }
+  },
+  "discovery_counts": {
+    "Pending": 691,
+    "Blocked": 0,
+    "Linked": 22,
+    "Excluded": 16,
+    "PartialRead": 0
+  },
+  "unresolved": 691,
+  "database_counts": {
+    "information_inbox": 152,
+    "events": 23,
+    "ai_assessments": 25,
+    "event_updates": 2,
+    "state_updates": 0,
+    "discovery_leads": 729,
+    "discovery_resolutions": 38
+  },
+  "validation": {
+    "trial_import": true,
+    "old_rows_unchanged": true,
+    "asof_unchanged": true,
+    "replay_no_write": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0
+  },
+  "scope": "旧缓存补录，实际known_at，不扩大11:02:05北京时间的旧收集截止；729为链接候选，不是有效新闻数"
+}

@@ -210,6 +210,7 @@ class CollectionLedger:
             {k: data[k] for k in ('batch_id', 'event_id', 'known_at')})
 
     def report(self, batch_id, as_of=None):
+        from .discovery import DiscoveryLedger
         at = utc(as_of or now())
         batch = self._batch(batch_id, at)
         checks = self._records('source_checks', batch_id, at)
@@ -269,7 +270,12 @@ class CollectionLedger:
             'after_cutoff': sum(i['temporal_relation'] == 'AfterCutoff' for i in information),
             'missing_categories': sum(c['status'] != 'Complete' for c in coverage),
             'pending_parent_reviews': sum(not p['review'] or p['review']['result'] == 'Pending' for p in followups)}
+        discovery = DiscoveryLedger(self.engine).report(batch_id, at)
+        counts['discovered_leads'] = len(discovery['leads'])
+        counts['unresolved_leads'] = discovery['unresolved']
         gaps = []
+        if discovery['unresolved']:
+            gaps.append(f"{discovery['unresolved']}条已登记线索待处理、受阻或仅部分读取")
         if counts['missing_categories']:
             gaps.append(f"{counts['missing_categories']}类登记来源尚未完成覆盖；空白不代表无事件")
         if counts['pending_triage']:
@@ -282,6 +288,7 @@ class CollectionLedger:
             gaps.append(f"{counts['pending_parent_reviews']}个既有Parent后续尚未复核")
         return {'batch': batch, 'as_of': at, 'coverage': coverage, 'information': information,
                 'parent_followups': followups, 'counts': counts, 'ready': not gaps, 'gaps': gaps,
+                'discovery': discovery,
                 'check_history': checks,
                 'routing_history': self._records('information_reviews', batch_id, at),
                 'parent_review_history': self._records('parent_reviews', batch_id, at),

@@ -7,6 +7,7 @@ from event_engine.csv_io import import_research, export_research
 from event_engine.collection import CollectionLedger
 from event_engine.ai_research import AIResearch
 from event_engine.news_screening import NewsScreening
+from event_engine.discovery import DiscoveryLedger
 
 
 def read_json(path):
@@ -95,6 +96,8 @@ def main():
     ai_import.add_argument('json_file')
     screening_import = sub.add_parser('apply-news-screening')
     screening_import.add_argument('json_file')
+    discovery_import = sub.add_parser('apply-discovery')
+    discovery_import.add_argument('json_file')
     screening_report = sub.add_parser('screening-report')
     screening_report.add_argument('--as-of', default=None)
     screening_report.add_argument('--output', default=None)
@@ -135,6 +138,8 @@ def main():
             result = AIResearch(engine).apply_pack(read_json(args.json_file))
         elif args.operation == 'apply-news-screening':
             result = NewsScreening(engine).apply_pack(read_json(args.json_file))
+        elif args.operation == 'apply-discovery':
+            result = DiscoveryLedger(engine).apply_pack(read_json(args.json_file))
         elif args.operation == 'screening-report':
             result = NewsScreening(engine).report(args.as_of)
             if args.output:

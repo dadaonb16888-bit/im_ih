@@ -2,6 +2,9 @@
 let collectionPlan = null, collectionBatches = [], collectionReport = null;
 let collectionTab = 'coverage', collectionCategory = 'TECH', collectionSource = null;
 let collectionEditing = null, collectionMode = null, collectionInbox = [];
+let discoveryStatus = 'All';
+let discoverySource = 'All', discoveryPage = 0;
+const discoveryNames = {Pending:'待读正文',Blocked:'读取受阻',Linked:'已关联原文',Excluded:'已排除'};
 const coverageNames = {Unreviewed:'未检查',Partial:'部分覆盖',Blocked:'入口受阻',Complete:'登记覆盖完成'};
 const routeNames = {NewParent:'新事件候选',EventUpdate:'既有事件新增信息',MarketState:'市场反馈',Background:'背景资料',Pending:'待核实'};
 const relationNames = {InWindow:'窗口内公开',Late:'早于窗口 · 补录',AfterCutoff:'晚于截止 · 转下一批',TimeUnknown:'公开时间未核实'};
@@ -33,6 +36,8 @@ async function loadCollection(id){
   const report=await api('/api/collection?id='+encodeURIComponent(id));
   if(sequence!==loadSequence||view!=='collection')return;
   collectionReport=report;collectionEditing=null;collectionMode=null;
+  discoveryPage=0;
+  if(!report.discovery?.leads.some(l=>l.source_id===discoverySource))discoverySource='All';
   if(!report.coverage.some(c=>c.category===collectionCategory))collectionCategory=report.coverage[0]?.category;
   if(!report.coverage.find(c=>c.category===collectionCategory)?.required_sources.some(s=>s.source_id===collectionSource))collectionSource=null;
   renderCollection();
@@ -57,14 +62,40 @@ function renderCollection(){
   if(collectionTab==='coverage')bindCoverage();
   if(collectionTab==='information')bindCollectionInformation();
   if(collectionTab==='parents')bindParentFollowups();
+  if(collectionTab==='discovery'){
+    $('discovery-status').onchange=e=>{discoveryStatus=e.target.value;discoveryPage=0;renderCollection();};
+    $('discovery-source').onchange=e=>{discoverySource=e.target.value;discoveryPage=0;renderCollection();};
+    $('discovery-prev').onclick=()=>{discoveryPage--;renderCollection();};
+    $('discovery-next').onclick=()=>{discoveryPage++;renderCollection();};
+  }
 }
 function collectionReportBody(report){
   const batch=report.batch,c=report.counts;
   return `<div class="collection-window"><b>本批窗口：</b>${esc(batchLabel(batch))}<br><small>${esc(batch.window_reason)} · 建立于 ${esc(datetime(batch.known_at))} · 报告截至 ${esc(datetime(report.as_of))}</small></div>
-  <div class="collection-metrics">${[['原始信息',c.information],['待分流',c.pending_triage],['未完成类别',c.missing_categories],['时间待核实',c.unknown_time],['补录 / 迟发现',c.late],['待复核事件',c.pending_parent_reviews]].map(([label,count])=>`<div><b>${count??0}</b><span>${label}</span></div>`).join('')}</div>
+  <div class="collection-metrics">${[['原始信息',c.information],['待分流',c.pending_triage],['未完成类别',c.missing_categories],['时间待核实',c.unknown_time],['待处理线索',c.unresolved_leads],['待复核事件',c.pending_parent_reviews]].map(([label,count])=>`<div><b>${count??0}</b><span>${label}</span></div>`).join('')}</div>
   <div class="collection-readiness ${report.ready?'complete':'incomplete'}"><div><strong>${report.ready?'本批登记与复核清单已完成':'本批仍有待处理事项'}</strong>${report.gaps?.length?`<ul>${report.gaps.map(g=>`<li>${esc(g)}</li>`).join('')}</ul>`:'<p>完成范围仅限本批登记入口及研究复核清单。</p>'}</div><button id="collection-download">下载报告 JSON</button></div>
-  <div class="tabs">${[['coverage','① 来源覆盖'],['information','② 信息分流'],['parents','③ 既有事件复核']].map(([key,label])=>`<button data-collection-tab="${key}" class="${collectionTab===key?'active':''}">${label}</button>`).join('')}</div>
-  ${{coverage:renderCoverage,information:renderCollectionInformation,parents:renderParentFollowups}[collectionTab]()}`;
+  <div class="tabs">${[['coverage','① 来源覆盖'],['discovery','② 新闻线索'],['information','③ 信息分流'],['parents','④ 既有事件复核']].map(([key,label])=>`<button data-collection-tab="${key}" class="${collectionTab===key?'active':''}">${label}</button>`).join('')}</div>
+  ${{coverage:renderCoverage,discovery:renderDiscovery,information:renderCollectionInformation,parents:renderParentFollowups}[collectionTab]()}`;
+}
+function renderDiscovery(){
+  const report=collectionReport.discovery||{leads:[],counts:{},note:'旧批次尚未登记新闻线索。'};
+  const filtered=report.leads.filter(l=>(discoveryStatus==='All'||l.status===discoveryStatus)&&(discoverySource==='All'||l.source_id===discoverySource));
+  discoveryPage=Math.max(0,Math.min(discoveryPage,Math.ceil(filtered.length/50)-1));
+  const leads=filtered.slice(discoveryPage*50,(discoveryPage+1)*50);
+  const sources=new Map(collectionReport.batch.sources.map(s=>[s.source_id,s.name]));
+  return `<h3>新闻线索 · 先保留，再决定是否读正文</h3><p>${esc(report.note)}</p>
+  <p>${Object.entries(discoveryNames).map(([k,v])=>`${v} ${report.counts[k]||0}`).join(' · ')} · 部分读取 ${report.counts.PartialRead||0}</p>
+  <div class="field"><label for="discovery-status">处理状态</label><select id="discovery-status">${[['All','全部线索'],...Object.entries(discoveryNames)].map(([k,v])=>`<option value="${k}" ${discoveryStatus===k?'selected':''}>${v}</option>`).join('')}</select></div>
+  <div class="field"><label for="discovery-source">发现来源</label><select id="discovery-source"><option value="All">全部来源</option>${[...new Set(report.leads.map(l=>l.source_id))].map(k=>`<option value="${esc(k)}" ${discoverySource===k?'selected':''}>${esc(sources.get(k)||k)}</option>`).join('')}</select></div>
+  <p>筛选后 ${filtered.length} 条 · 第 ${discoveryPage+1} / ${Math.max(1,Math.ceil(filtered.length/50))} 页（每页50条，全部记录仍保留） <button id="discovery-prev" ${discoveryPage===0?'disabled':''}>上一页</button> <button id="discovery-next" ${(discoveryPage+1)*50>=filtered.length?'disabled':''}>下一页</button></p>
+  <p><small>由Codex追加处理；标题和日期线索未核实，点击链接不改变读取状态。这里只覆盖已登记发现，未收齐的分页仍是缺口。</small></p>
+  ${leads.length?leads.map(l=>`<details class="source-card"><summary>${esc(discoveryNames[l.status])}${l.read_status==='Partial'?' · 部分读取':''} ｜ ${esc(l.title)}</summary>
+    <p>${esc(sources.get(l.source_id)||l.source_id)} · ${collectionLink(l.url,'查看线索链接')} · ${collectionLink(l.index_url,'发现入口')}</p>
+    <p>未核实日期线索：${esc(l.date_clue||'无')}<br>扫描注记：${esc(datetime(l.captured_at))}<br>实际登记：${esc(datetime(l.known_at))}</p>
+    <p>${esc(l.resolution?.reason||'尚未读取或作出处理判断。')}</p>
+    ${l.resolution?.information_id?`<p>关联资料：${esc(l.resolution.information_id)}；仍按原初筛规则处理。</p>`:''}
+    <small>线索编号 ${esc(l.lead_id)}</small>
+    ${report.history.filter(r=>r.lead_id===l.lead_id).map(r=>`<p><small>${esc(datetime(r.known_at))} · ${esc(discoveryNames[r.status])}：${esc(r.reason)}</small></p>`).join('')}</details>`).join(''):'<p class="empty-state">本筛选下没有已登记线索；不代表没有新闻。</p>'}`;
 }
 function renderCoverage(){
   const coverage=collectionReport.coverage;

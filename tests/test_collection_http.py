@@ -10,6 +10,7 @@ from urllib.request import Request, urlopen
 from http.server import ThreadingHTTPServer
 from workbench import make_handler
 from event_engine.engine import EventEngine
+from event_engine.discovery import DiscoveryLedger
 
 
 class CollectionHTTPTests(unittest.TestCase):
@@ -38,6 +39,26 @@ class CollectionHTTPTests(unittest.TestCase):
         return self.request('/api/collection', {'window_start': (end - timedelta(days=1)).isoformat(),
             'cutoff': end.isoformat(), 'window_reason': '测试窗口',
             'known_at': '2000-01-01T00:00:00Z'})['id']
+
+    def test_discovery_is_visible_asof_and_has_no_public_write_route(self):
+        batch = self.batch()
+        before = datetime.now(timezone.utc).isoformat()
+        engine = EventEngine(self.database)
+        try:
+            DiscoveryLedger(engine).apply_pack({'pack_id': 'HTTP-fixture', 'leads': [{
+                'lead_id': 'L', 'batch_id': batch, 'source_id': 'PBC', 'title': '<script>fixture</script>',
+                'url': 'https://example.org/news', 'index_url': 'https://example.org/',
+                'captured_at': before, 'evidence': ['fixture:index']}], 'resolutions': []})
+        finally:
+            engine.close()
+        report = self.request('/api/collection?id=' + batch)
+        self.assertEqual(report['discovery']['counts']['Pending'], 1)
+        self.assertEqual(report['counts']['unresolved_leads'], 1)
+        old = self.request('/api/collection?id=' + batch + '&as_of=' + before.replace('+', '%2B'))
+        self.assertEqual(old['discovery']['leads'], [])
+        with self.assertRaises(HTTPError) as err:
+            self.request('/api/apply-discovery', {'actor': 'Codex'})
+        self.assertEqual(err.exception.code, 404)
 
     def test_complete_ui_flow_preserves_draft_and_history(self):
         plan = self.request('/api/collection-plan')

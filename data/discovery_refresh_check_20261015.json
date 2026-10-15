@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-10-15T09:25:36.203673+00:00",
+  "mode": "CodexConversationWebIndexCheck",
+  "window_coverage_complete": false,
+  "entries": [
+    {
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/",
+      "status": "Partial",
+      "read_scope": "仅可见首页索引；没有将未读链接视为正文或新事件"
+    },
+    {
+      "source_id": "CSRC",
+      "url": "https://www.csrc.gov.cn/",
+      "status": "Partial",
+      "read_scope": "仅可见首页索引；没有穷尽辖区栏目、动态列表及附件"
+    },
+    {
+      "source_id": "MOF",
+      "url": "https://www.mof.gov.cn/",
+      "status": "Unavailable",
+      "read_scope": "未取得可用文本，不代表无发布"
+    },
+    {
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/fortune/",
+      "status": "Unavailable",
+      "read_scope": "返回test/极短文本，不能视为财经栏目已检查"
+    }
+  ],
+  "conclusion": "未完成新的全窗口收集，未据此声称截止后无重要消息；旧批次截止不变，未据索引新增事件/方向。"
+}

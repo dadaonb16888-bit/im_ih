@@ -106,6 +106,25 @@ CREATE TABLE IF NOT EXISTS information_screenings (
 );
 CREATE INDEX IF NOT EXISTS screenings_by_information ON information_screenings(information_id,known_at);
 
+CREATE TABLE IF NOT EXISTS discovery_runs (
+ pack_id TEXT PRIMARY KEY, known_at TEXT NOT NULL,
+ payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE TABLE IF NOT EXISTS discovery_leads (
+ lead_id TEXT PRIMARY KEY, batch_id TEXT NOT NULL REFERENCES collection_batches(batch_id),
+ source_id TEXT NOT NULL, normalized_url TEXT NOT NULL, known_at TEXT NOT NULL,
+ payload TEXT NOT NULL CHECK(json_valid(payload)),
+ UNIQUE(batch_id, source_id, normalized_url)
+);
+CREATE TABLE IF NOT EXISTS discovery_resolutions (
+ resolution_id TEXT PRIMARY KEY, batch_id TEXT NOT NULL REFERENCES collection_batches(batch_id),
+ lead_id TEXT NOT NULL REFERENCES discovery_leads(lead_id),
+ information_id TEXT REFERENCES information_inbox(information_id), known_at TEXT NOT NULL,
+ payload TEXT NOT NULL CHECK(json_valid(payload))
+);
+CREATE INDEX IF NOT EXISTS discovery_by_batch ON discovery_leads(batch_id,known_at);
+CREATE INDEX IF NOT EXISTS discovery_history ON discovery_resolutions(lead_id,known_at);
+
 -- Alpha generated columns are added idempotently by database/migrations.py.
 -- Values here are append-time snapshots, not scores recalculated at arbitrary as_of.
 CREATE VIEW IF NOT EXISTS event_states AS
