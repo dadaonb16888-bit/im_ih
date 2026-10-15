@@ -1,0 +1,377 @@
+{
+  "pack_id": "AI-DAILY-COLLECTION-20261015-V1",
+  "actor": "Codex",
+  "method_version": "ai-event-v1",
+  "generated_at": "2026-10-15T03:16:48.717905+00:00",
+  "sources": [],
+  "assessments": [
+    {
+      "assessment_id": "AI-DAILY-20261015-FINSTATS",
+      "event_id": "E-20261014-001",
+      "source_ids": [
+        "DC-S-20261015-FINSTATS"
+      ],
+      "source_checks": [
+        {
+          "information_id": "DC-S-20261015-FINSTATS",
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html",
+          "status": "Read",
+          "checked_at": "2026-10-15T03:07:15.648093+00:00",
+          "fact_summary": "央行发布9月末社融存量、前三季度增量及M1/M2和信贷数据。",
+          "capture_mode": "DirectWebText"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "央行发布9月末社融存量、前三季度增量及M1/M2和信贷数据。",
+          "source_ids": [
+            "DC-S-20261015-FINSTATS"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Low",
+      "channels": [
+        "MARKET_LIQUIDITY",
+        "CREDIT_LARGECAP"
+      ],
+      "horizon": "Swing",
+      "increment_reason": "新发布的季度及月末统计有宏观观察价值；原文给同比结构，但没有可核一致预期，尚不能认定政策冲击或相对Alpha增量。",
+      "expectation_baseline": "原文前值和调查比较不等于发布前一致预期；本轮未取得可核预期快照。",
+      "transmission": "信用、货币和资金成本可能影响风险溢价及企业现金流；社融中的政府债、居民与企业贷款方向不同，不能将总量机械等同小盘宽松。",
+      "im_case": "若新增融资降低中小企业资金约束、风险偏好改善，IM可能受益；但居民需求、融资资格及成本约束可能抵消，未核样本净效应。",
+      "ih_case": "银行可能受信贷扩张和信用修复支持，也可能承受净息差压力；大型工业和消费同样受需求影响，不能直接给IH负面。",
+      "exposure_evidence": "未取得两指数当时样本的业务收入、利润、资金及风险暴露差异；行业/大小盘标签不能替代净受益比较。",
+      "pre_move": "本轮没有读取同步IM/IH行情，不判断提前交易、接受度或市场阶段。",
+      "conflicts": [
+        "国内信用、海外需求与风险偏好可能同时作用；未核净相对影响，不叠加同链来源为独立冲击。"
+      ],
+      "invalidation": "若新增原文推翻事实、执行条件或净传导，追加修订；取得价格证据以后另做市场State。",
+      "gaps": [
+        "同口径上期数据与发布前一致预期",
+        "居民/企业/政府融资的新增边际与传导",
+        "IM与IH样本业务、融资和金融风险相对暴露",
+        "全局首发及精确最早可交易时刻"
+      ],
+      "next_action": "仅在取得同口径历史数据和事前预期后复核新增信用冲击；有显著分项异常再补受益与受损企业，不因标题总额直接定向。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "5c874c5b57cfe38cb7166c02a9094d43957fe85c36639130d6d6aedf9e9e3149",
+      "expected_last_update_id": null,
+      "source": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html",
+      "source_reliability": "A",
+      "impact_score": null,
+      "confidence_score": null,
+      "persistence_score": null,
+      "score_basis": {
+        "rubric_version": "score-evidence-v1",
+        "components": {
+          "source": {
+            "value": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html",
+            "source_ids": [
+              "DC-S-20261015-FINSTATS"
+            ],
+            "reason": "实际读取的发布页；不认作全局首发。"
+          },
+          "source_reliability": {
+            "value": "A",
+            "source_ids": [
+              "DC-S-20261015-FINSTATS"
+            ],
+            "reason": "来源等级只约束报道/原文事实可靠性，不等于方向置信度。"
+          },
+          "impact_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261015-FINSTATS"
+            ],
+            "reason": "缺相对净暴露和事前预期，影响幅度未知。"
+          },
+          "confidence_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261015-FINSTATS"
+            ],
+            "reason": "方向未知，不能借事实可信度填写方向分数。"
+          },
+          "persistence_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261015-FINSTATS"
+            ],
+            "reason": "传导持续时间未核，保留未知而不套持仓期。"
+          }
+        },
+        "reference_time": {
+          "value": null,
+          "source_ids": [
+            "DC-S-20261015-FINSTATS"
+          ],
+          "reason": "未知独立Alpha增量，不新增评分起点；日期级不造零点，原冲突链不因再次传播刷新。"
+        }
+      }
+    },
+    {
+      "assessment_id": "AI-DAILY-20261015-FEDSUMMARY",
+      "event_id": "E-20261014-002",
+      "source_ids": [
+        "DC-S-20261015-FEDSUMMARY"
+      ],
+      "source_checks": [
+        {
+          "information_id": "DC-S-20261015-FEDSUMMARY",
+          "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm",
+          "status": "Read",
+          "checked_at": "2026-10-15T03:14:17.116954+00:00",
+          "fact_summary": "官方摘要报告地区增长不一、就业总体变化小，部分地区价格增速上升。",
+          "capture_mode": "DirectWebText"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "官方摘要报告地区增长不一、就业总体变化小，部分地区价格增速上升。",
+          "source_ids": [
+            "DC-S-20261015-FEDSUMMARY"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Low",
+      "channels": [
+        "RISK_APPETITE",
+        "RISK_OFF"
+      ],
+      "horizon": "Fast",
+      "increment_reason": "官方新一期全国摘要值得研究；“较上一期”是调查描述，尚未独立读取上一期全文和事前预期；10月5日截止意味着信息存在滞后。",
+      "expectation_baseline": "原文前值和调查比较不等于发布前一致预期；本轮未取得可核预期快照。",
+      "transmission": "增长、就业和成本压力可能通过美国利率与全球风险偏好影响中国股票；褐皮书不是利率决议，报告价格压力不能直接当新加息。",
+      "im_case": "海外贴现率若上升可能压制成长估值；但制造业和AI需求也可能利于出口与科技，缺少净暴露不能把IM统称受损。",
+      "ih_case": "相对防御和金融配置可能利于IH；但海外需求、金融风险与内需盈利也可能拖累IH，不能用大盘标签认定避险收益。",
+      "exposure_evidence": "未取得两指数当时样本的业务收入、利润、资金及风险暴露差异；行业/大小盘标签不能替代净受益比较。",
+      "pre_move": "本轮没有读取同步IM/IH行情，不判断提前交易、接受度或市场阶段。",
+      "conflicts": [
+        "国内信用、海外需求与风险偏好可能同时作用；未核净相对影响，不叠加同链来源为独立冲击。"
+      ],
+      "invalidation": "若新增原文推翻事实、执行条件或净传导，追加修订；取得价格证据以后另做市场State。",
+      "gaps": [
+        "上一期官方摘要与可核事前预期",
+        "新信息相对已公布美国统计的独立增量",
+        "两指数利率敏感度、出口和盈利暴露",
+        "精确发布时间与最早可交易时刻"
+      ],
+      "next_action": "只在独立旧版/预期及相对暴露可得时继续；不把CPI媒体评论与褐皮书价格描述作为两个独立收紧冲击重复计分。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "ecd7bc57857f9c5b4d7cd52c77effc69545b831f2078601e97577cc5d7447e02",
+      "expected_last_update_id": null,
+      "source": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm",
+      "source_reliability": "A",
+      "impact_score": null,
+      "confidence_score": null,
+      "persistence_score": null,
+      "score_basis": {
+        "rubric_version": "score-evidence-v1",
+        "components": {
+          "source": {
+            "value": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm",
+            "source_ids": [
+              "DC-S-20261015-FEDSUMMARY"
+            ],
+            "reason": "实际读取的发布页；不认作全局首发。"
+          },
+          "source_reliability": {
+            "value": "A",
+            "source_ids": [
+              "DC-S-20261015-FEDSUMMARY"
+            ],
+            "reason": "来源等级只约束报道/原文事实可靠性，不等于方向置信度。"
+          },
+          "impact_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261015-FEDSUMMARY"
+            ],
+            "reason": "缺相对净暴露和事前预期，影响幅度未知。"
+          },
+          "confidence_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261015-FEDSUMMARY"
+            ],
+            "reason": "方向未知，不能借事实可信度填写方向分数。"
+          },
+          "persistence_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261015-FEDSUMMARY"
+            ],
+            "reason": "传导持续时间未核，保留未知而不套持仓期。"
+          }
+        },
+        "reference_time": {
+          "value": null,
+          "source_ids": [
+            "DC-S-20261015-FEDSUMMARY"
+          ],
+          "reason": "未知独立Alpha增量，不新增评分起点；日期级不造零点，原冲突链不因再次传播刷新。"
+        }
+      }
+    },
+    {
+      "assessment_id": "AI-DAILY-20261015-AIRPORT",
+      "event_id": "E-20261013-001",
+      "source_ids": [
+        "DC-S-20261015-AIRPORT",
+        "DC-S-20261014-WAR13",
+        "DC-S-20261014-ARAMCO"
+      ],
+      "source_checks": [
+        {
+          "information_id": "DC-S-20261015-AIRPORT",
+          "url": "https://www.news.cn/world/20261015/66db50dca312495fabe85b74736f654f/c.html",
+          "status": "Read",
+          "checked_at": "2026-10-15T03:07:18.419847+00:00",
+          "fact_summary": "新华社分别转述胡塞命中机场主张、沙特方面拦截导弹和碎片伤人的说法。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "DC-S-20261014-ARAMCO",
+          "url": "https://www.news.cn/20261014/8f289993d0c54023a70ca78de6335e4b/c.html",
+          "status": "Partial",
+          "checked_at": "2026-10-14T00:24:51.676809+00:00",
+          "fact_summary": "沿用此前已入库摘要，本轮未重读原文，不把旧核实标签当本轮核实或新的事实增量。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "DC-S-20261014-WAR13",
+          "url": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+          "status": "Partial",
+          "checked_at": "2026-10-14T00:24:51.676809+00:00",
+          "fact_summary": "沿用此前已入库摘要，本轮未重读原文，不把旧核实标签当本轮核实或新的事实增量。",
+          "capture_mode": "DirectWebText"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "新华社分别转述胡塞命中机场主张、沙特方面拦截导弹和碎片伤人的说法。",
+          "source_ids": [
+            "DC-S-20261015-AIRPORT"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Low",
+      "channels": [
+        "RISK_OFF"
+      ],
+      "horizon": "Fast",
+      "increment_reason": "原冲突链新增一次袭击与拦截说法；不能证明冲突首次发生或供给实损超预期，不把新报道日期重置为整条事件起点。",
+      "expectation_baseline": "原文前值和调查比较不等于发布前一致预期；本轮未取得可核预期快照。",
+      "transmission": "升级可能影响能源运输与风险偏好；目前双方关于命中的说法不一致，机场停运和能源供应损失未独立核实，传导幅度未知。",
+      "im_case": "风险厌恶可能压制高波动股票；但中小盘并不等于统一风险暴露，科技盈利和国内支持亦可能抵消。",
+      "ih_case": "IH的金融和能源相关公司可能有不同反应；原油涨价对生产方与需求方方向不同，不能把办公楼/机场受袭等同能源公司净受益。",
+      "exposure_evidence": "未取得两指数当时样本的业务收入、利润、资金及风险暴露差异；行业/大小盘标签不能替代净受益比较。",
+      "pre_move": "本轮没有读取同步IM/IH行情，不判断提前交易、接受度或市场阶段。",
+      "conflicts": [
+        "国内信用、海外需求与风险偏好可能同时作用；未核净相对影响，不叠加同链来源为独立冲击。"
+      ],
+      "invalidation": "若新增原文推翻事实、执行条件或净传导，追加修订；取得价格证据以后另做市场State。",
+      "gaps": [
+        "机场停运与能源产运实际影响的独立证据",
+        "相对既有冲突基线的超预期程度",
+        "双方主张的第三方核查",
+        "两指数净盈利与风险暴露及行情反馈"
+      ],
+      "next_action": "继续观察独立供给、运输中断或降温协议等新触发；延续上一版不定方向，不因同链新闻变多恢复IH研究倾向。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "08c5571557d7ae6f4bb6feccdbec06f904ec726a2ccfc40fbdb53f6ffd0088c4",
+      "expected_last_update_id": null,
+      "source": "https://www.news.cn/world/20261015/66db50dca312495fabe85b74736f654f/c.html",
+      "source_reliability": "B",
+      "impact_score": null,
+      "confidence_score": null,
+      "persistence_score": null,
+      "score_basis": {
+        "rubric_version": "score-evidence-v1",
+        "components": {
+          "source": {
+            "value": "https://www.news.cn/world/20261015/66db50dca312495fabe85b74736f654f/c.html",
+            "source_ids": [
+              "DC-S-20261015-AIRPORT",
+              "DC-S-20261014-WAR13",
+              "DC-S-20261014-ARAMCO"
+            ],
+            "reason": "实际读取的发布页；不认作全局首发。"
+          },
+          "source_reliability": {
+            "value": "B",
+            "source_ids": [
+              "DC-S-20261015-AIRPORT",
+              "DC-S-20261014-WAR13",
+              "DC-S-20261014-ARAMCO"
+            ],
+            "reason": "来源等级只约束报道/原文事实可靠性，不等于方向置信度。"
+          },
+          "impact_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261015-AIRPORT",
+              "DC-S-20261014-WAR13",
+              "DC-S-20261014-ARAMCO"
+            ],
+            "reason": "缺相对净暴露和事前预期，影响幅度未知。"
+          },
+          "confidence_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261015-AIRPORT",
+              "DC-S-20261014-WAR13",
+              "DC-S-20261014-ARAMCO"
+            ],
+            "reason": "方向未知，不能借事实可信度填写方向分数。"
+          },
+          "persistence_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261015-AIRPORT",
+              "DC-S-20261014-WAR13",
+              "DC-S-20261014-ARAMCO"
+            ],
+            "reason": "传导持续时间未核，保留未知而不套持仓期。"
+          }
+        },
+        "reference_time": {
+          "value": null,
+          "source_ids": [
+            "DC-S-20261015-AIRPORT",
+            "DC-S-20261014-WAR13",
+            "DC-S-20261014-ARAMCO"
+          ],
+          "reason": "未知独立Alpha增量，不新增评分起点；日期级不造零点，原冲突链不因再次传播刷新。"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2587 @@
+{
+  "window": {
+    "batch_id": "CB-20261015-110205",
+    "window_start": "2026-10-14T00:00:00+08:00",
+    "cutoff": "2026-10-15T11:02:05+08:00",
+    "window_reason": "本轮启动时冻结前一日00:00至启动时刻；后续发现按实际known_at入库，不倒填"
+  },
+  "entries": [
+    {
+      "source_id": "GOV",
+      "url": "https://sousuo.www.gov.cn/zcwjk/",
+      "categories": [
+        "POLICY_GROWTH",
+        "BROAD_STIMULUS",
+        "REGULATION"
+      ],
+      "searched_at": "2026-10-15T03:03:31.470969+00:00",
+      "status": "Partial",
+      "links": [],
+      "http_status": 200,
+      "final_url": "https://sousuo.www.gov.cn/zcwjk/",
+      "document_sha256": "ce81dd119e141f504631ccd1bda83e2b8495b991a6c329b8893a027da2ecef64",
+      "text_length": 8,
+      "undated_headlines": []
+    },
+    {
+      "source_id": "NDRC",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
+      "categories": [
+        "POLICY_GROWTH",
+        "BROAD_STIMULUS",
+        "TECH"
+      ],
+      "searched_at": "2026-10-15T03:03:31.481185+00:00",
+      "status": "Partial",
+      "links": [],
+      "http_status": 200,
+      "final_url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
+      "document_sha256": "d1ee2fed1028244338a537965b6275f38d1af900a2ca234fbf31c9bc4fdd504b",
+      "text_length": 1076,
+      "undated_headlines": [
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261013_1408128.html",
+          "title": "国家发展改革委组织召开中央区域办专题会议协调推进西部大开发重点事项"
+        },
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261010_1408066.html",
+          "title": "郑栅洁主任主持召开民营企业座谈会 围绕准确把握三季度经济形势、积极应对国际供需情况变化听取意见建议"
+        },
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261009_1408037.html",
+          "title": "国家发展改革委有关负责同志就《关于发展新质生产力的意见》答记者问"
+        },
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260930_1407977.html",
+          "title": "国家发展改革委举行升国旗仪式庆祝中华人民共和国成立77周年"
+        },
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260929_1407929.html",
+          "title": "国家发展改革委举行专题新闻发布会 介绍推进服务业扩能提质有关情况"
+        },
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260924_1407824.html",
+          "title": "2026年9月24日国家继续实施调控，成品油价格适当调整"
+        },
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260922_1407781.html",
+          "title": "国家发展改革委举行9月份新闻发布会"
+        },
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260917_1407697.html",
+          "title": "郑栅洁主任会见印尼国家经济委员会主席卢胡特"
+        }
+      ]
+    },
+    {
+      "source_id": "MOF",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/",
+      "categories": [
+        "POLICY_GROWTH",
+        "BROAD_STIMULUS"
+      ],
+      "searched_at": "2026-10-15T03:03:31.482182+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "http://he.mof.gov.cn/caizhengjiancha/202610/t20261014_4002790.htm",
+          "title": "财政部河北监管局：“四坚持四强化”扎实推进中央财政农业保险保费补贴..."
+        },
+        {
+          "url": "http://zj.mof.gov.cn/caizhengjiancha/202610/t20261014_4002778.htm",
+          "title": "财政部浙江监管局：深化联合监管机制 构建系统监管新格局"
+        },
+        {
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202610/t20261014_4002757.htm",
+          "title": "2026年APEC财长会会前访财政部有关负责人"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://www.mof.gov.cn/zhengwuxinxi/",
+      "document_sha256": "864f4d65e80cebbd9e31ac3a749f2bb0a192131c5646f44ac07d978055249fe0",
+      "text_length": 2323,
+      "undated_headlines": [
+        {
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/tupianxinwen1/202610/t20261012_4002668.htm",
+          "title": "蓝佛安会见世界银行常务副行长兼首席知识官多诺霍"
+        },
+        {
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/tupianxinwen1/202610/t20261010_4002539.htm",
+          "title": "廖岷会见高盛集团总裁温泽恩"
+        },
+        {
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/tupianxinwen1/202609/t20260930_3998473.htm",
+          "title": "财政部党组理论学习中心组开展集体学习研讨"
+        },
+        {
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/tupianxinwen1/202609/t20260929_3998330.htm",
+          "title": "蓝佛安以视频方式出席亚洲基础设施投资银行第十一届理事会年会"
+        },
+        {
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/tupianxinwen1/202609/t20260922_3997929.htm",
+          "title": "宋其超为2026年深化财税体制改革专题研究班（地市级）作专题..."
+        },
+        {
+          "url": "https://www.mof.gov.cn/zhengwuxinxi/tupianxinwen1/202609/t20260916_3997495.htm",
+          "title": "郭婷婷出席2026年深化财税体制改革专题研究班（地市级）开班式"
+        },
+        {
+          "url": "http://zwgls.mof.gov.cn/ywgg/202610/t20261013_4002703.htm",
+          "title": "关于2026年记账式贴现（六十五期）国债发行工作有关事宜的通知"
+        },
+        {
+          "url": "http://zwgls.mof.gov.cn/ywgg/202610/t20261013_4002694.htm",
+          "title": "关于2026年记账式贴现（六十四期）国债发行工作有关事宜的通知"
+        }
+      ]
+    },
+    {
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/",
+      "categories": [
+        "MONETARY"
+      ],
+      "searched_at": "2026-10-15T03:03:31.482902+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101510063698366/index.html",
+          "title": "潘功胜行长出席中国与海合会第四次央行行长会并举行系列双边会见"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101418371517078/index.html",
+          "title": "第十五届中日韩央行行长会议在曼谷举行"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html",
+          "title": "2026年前三季度金融统计数据报告"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/hanglingdao/128697/128734/128874/2026101419073235648/index.html",
+          "title": "第十五届中日韩央行行长会议在..."
+        },
+        {
+          "url": "https://tv.cctv.com/2026/10/14/VIDExq6xFbWuzkEl2SPQ51Ni261014.shtml",
+          "title": "[视频]习近平向第140届中国进出口商品交易会致贺信"
+        },
+        {
+          "url": "https://tv.cctv.com/2026/10/14/VIDEOMEJ9yBkH3OF3yOdZmz6261014.shtml",
+          "title": "[视频]李强出席“广交世界70年”座谈会"
+        },
+        {
+          "url": "https://tv.cctv.com/2026/10/14/VIDEBvJrpn4430p6YBXTDNkN261014.shtml",
+          "title": "[视频]李强出席第140届中国进出口商品交易会开幕式并发表..."
+        },
+        {
+          "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101508552484698/index.html",
+          "title": "公开市场业务交易公告 [2026]第199号"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026101416522429536/index.html",
+          "title": "公开市场买断式逆回购招标公告 [2026]第20号"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101408462382153/index.html",
+          "title": "公开市场业务交易公告 [2026]第198号"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/2026101509014017867/index.html",
+          "title": "2026年10月15日中国外汇交易中心..."
+        },
+        {
+          "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/2026101409031784329/index.html",
+          "title": "2026年10月14日中国外汇交易中心..."
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://www.pbc.gov.cn/",
+      "document_sha256": "68867969cddc7c4f824f1ba3da3837833bddaac3274ff80f65bb5304e9e1be8a",
+      "text_length": 2993,
+      "undated_headlines": [
+        {
+          "url": "https://www.pbc.gov.cn/en/3688006/index.html",
+          "title": "English Version"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101011293518009/index.html",
+          "title": "中国人民银行行长潘功胜会见法国总统外事顾问博纳"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026100918390137001/index.html",
+          "title": "中国人民银行行长潘功胜会见高盛集团总裁兼首席运营官温泽恩"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026100816231113295/index.html",
+          "title": "中国人民银行关于人民币汇率的政策立场"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092917153548424/index.html",
+          "title": "财政部、中国人民银行、金融监管总局有关负责人就实施居民购房贷款贴息政策答记者问"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092917051440583/index.html",
+          "title": "财政部 中国人民银行 金融监管总局关于实施居民购房贷款贴息政策的通知"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092917474922559/index.html",
+          "title": "中国人民银行调整完善若干货币政策工具"
+        },
+        {
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092916445869455/index.html",
+          "title": "中国人民银行行长潘功胜会见欧盟驻华大使范恺珀"
+        }
+      ]
+    },
+    {
+      "source_id": "CSRC",
+      "url": "https://www.csrc.gov.cn/",
+      "categories": [
+        "REGULATION",
+        "FUND_FLOW",
+        "POSITIONING"
+      ],
+      "searched_at": "2026-10-15T03:03:31.484203+00:00",
+      "status": "Partial",
+      "links": [],
+      "http_status": 200,
+      "final_url": "https://www.csrc.gov.cn/",
+      "document_sha256": "5cfc20c4e8604e389311c598b6aff72082296fc7e23a28af6cff263da3ec4b8f",
+      "text_length": 8910,
+      "undated_headlines": [
+        {
+          "url": "https://www.csrc.gov.cn/csrc/c106311/c7664121/content.shtml",
+          "title": "吴清主席会见阿联酋穆巴达拉投资公司首席执行官兼董事总经理哈勒敦"
+        },
+        {
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7663814/content.shtml",
+          "title": "中国证监会召开资本市场和金融形势专家座谈会"
+        },
+        {
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7663393/content.shtml",
+          "title": "中国证监会就《公开募集证券投资基金运作管理办法（征求意见稿）》及配套规则公开征求意见"
+        },
+        {
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7661513/content.shtml",
+          "title": "湖北证监局原党委书记、局长王广幼被开除党籍"
+        },
+        {
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7659506/content.shtml",
+          "title": "中国证监会拟对17起案件线索的“吹哨人”给予奖励"
+        },
+        {
+          "url": "https://www.csrc.gov.cn/csrc/c100029/c7473708/content.shtml",
+          "title": "2024年4月12日新闻发布会"
+        },
+        {
+          "url": "https://www.csrc.gov.cn/csrc/c100029/c7464344/content.shtml",
+          "title": "2024年2月23日新闻发布会"
+        },
+        {
+          "url": "https://www.csrc.gov.cn/csrc/c100029/c7458464/content.shtml",
+          "title": "2024 年1月19日新闻发布会"
+        }
+      ]
+    },
+    {
+      "source_id": "MIIT",
+      "url": "https://www.miit.gov.cn/",
+      "categories": [
+        "TECH",
+        "POLICY_GROWTH"
+      ],
+      "searched_at": "2026-10-15T03:03:31.484848+00:00",
+      "status": "Partial",
+      "links": [],
+      "http_status": 200,
+      "final_url": "https://www.miit.gov.cn/",
+      "document_sha256": "be09b44ebaa846d010d7bc6eedf58c6a3d80d28f405a4f79b11f359101dae167",
+      "text_length": 4336,
+      "undated_headlines": [
+        {
+          "url": "https://www.miit.gov.cn/xwfb/szyw/art/2026/art_72185c194b72461fad360cebfc7467b1.html",
+          "title": "习近平向第140届中国进出口商品交易会致贺信"
+        },
+        {
+          "url": "http://www.miit.gov.cn/xwfb/szyw/art/2026/art_b34447a35832433aa6d7591e9807621c.html",
+          "title": "习近平在全国卫生与健康大会上强调 坚定不移走中国特色卫生与健康发展道路 确保“十五五”时期健康中国建设取得决定性进展"
+        },
+        {
+          "url": "https://www.miit.gov.cn/ztzl/rdzt/xxgcddesjszqhjs0802/index.html",
+          "title": "学习贯彻党的二十届四中全会精神"
+        },
+        {
+          "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_ad9f71a8dd3f4ec4a8b045d02823042a.html",
+          "title": "李乐成主持召开中小企业圆桌会 强调健全主动发现机制 做好对企服务"
+        },
+        {
+          "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_c6aff1cc2d094936aaca2f131389d3f8.html",
+          "title": "工业和信息化部召开党组会议和干部大会 学习贯彻习近平总书记重要指示和全国先进制造业大会精神"
+        },
+        {
+          "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_7285ee48244d4f20b0f127c7f013ec11.html",
+          "title": "国新办举行国务院政策例行吹风会 介绍加强中小企业回款难问题治理有关工作情况"
+        },
+        {
+          "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_9de7da6aaf4345c6920b4fdf3a0732f5.html",
+          "title": "国新办举行新闻发布会 介绍推动历史经典产业高质量发展有关情况"
+        },
+        {
+          "url": "https://www.miit.gov.cn/xwfb/szyw/art/2026/art_05b4442d0aef40d9b3eb4fe60e9f1d7a.html",
+          "title": "习近平会见多哥部长会议主席福雷"
+        }
+      ]
+    },
+    {
+      "source_id": "MOFCOM",
+      "url": "https://www.mofcom.gov.cn/xwfb/",
+      "categories": [
+        "POLICY_GROWTH",
+        "RISK_OFF",
+        "RISK_ON",
+        "EXTERNAL_MACRO"
+      ],
+      "searched_at": "2026-10-15T03:03:31.485855+00:00",
+      "status": "Partial",
+      "links": [],
+      "http_status": 200,
+      "final_url": "https://www.mofcom.gov.cn/xwfb/",
+      "document_sha256": "8a364a3f1801c588a3f47b00dc50ccb7432289596a979d32142b3298ef3af613",
+      "text_length": 2128,
+      "undated_headlines": [
+        {
+          "url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2026/art_e09d863934884b4b9783ec3605153d09.html",
+          "title": "李强在第140届中国进出口商品交易会开幕式上的主旨演讲（全文）"
+        },
+        {
+          "url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2026/art_ce17581fa6ae44fcb1f21c9c46a8b70b.html",
+          "title": "李强出席第140届中国进出口商品交易会开幕式并发表主旨演讲"
+        },
+        {
+          "url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2026/art_0004995983d04f968f68bcac7f223dc3.html",
+          "title": "习近平向第140届中国进出口商品交易会致贺信"
+        },
+        {
+          "url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2026/art_b02ad895e27340b4a69b0624b069a997.html",
+          "title": "李强出席“广交世界70年”座谈会"
+        },
+        {
+          "url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2026/art_d43210cbe68c47cea184ede3a9212bd8.html",
+          "title": "习近平同博茨瓦纳总统博科会谈"
+        },
+        {
+          "url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2026/art_13676cb2522449c6b6e7234ffd91021d.html",
+          "title": "何立峰会见苹果公司执行董事长蒂姆·库克"
+        },
+        {
+          "url": "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_26bbb216adea491caac7e7e0ed80cdaa.html",
+          "title": "中新双边投资促进委员会第八次联席会议召开"
+        },
+        {
+          "url": "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_daf555c04cd24d85b23a6f0225419abd.html",
+          "title": "中国—白俄罗斯政府间合作委员会经贸合作分委会第十次会议暨中白工业园协调工作组第十六次会议在京召开"
+        }
+      ]
+    },
+    {
+      "source_id": "CNINFO",
+      "url": "https://www.cninfo.com.cn/",
+      "categories": [
+        "EARNINGS",
+        "TECH",
+        "VALUE_DIVIDEND",
+        "FUND_FLOW"
+      ],
+      "searched_at": "2026-10-15T03:03:31.485855+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://www.cninfo.com.cn/new/disclosure/detail?stockCode=600246&orgId=gssh0600246&announcementId=1225605893&announcementTime=2026-10-15",
+          "title": "第九届董事会第三十一次临时会议决议公告"
+        },
+        {
+          "url": "https://www.cninfo.com.cn/new/disclosure/detail?stockCode=600693&orgId=gssh0600693&announcementId=1225605884&announcementTime=2026-10-15",
+          "title": "东百集团关于终止收购杭州快灵光电科技有限公司部分股权的公告"
+        },
+        {
+          "url": "https://www.cninfo.com.cn/new/disclosure/detail?stockCode=002343&orgId=9900010328&announcementId=1225605874&announcementTime=2026-10-15",
+          "title": "关于股票交易异常波动的公告"
+        },
+        {
+          "url": "https://www.cninfo.com.cn/new/disclosure/detail?stockCode=603015&orgId=9900023700&announcementId=1225605863&announcementTime=2026-10-15",
+          "title": "第五届董事会2026年第三次会议决议公告"
+        },
+        {
+          "url": "https://www.cninfo.com.cn/new/disclosure/detail?stockCode=603083&orgId=9900033004&announcementId=1225605853&announcementTime=2026-10-15",
+          "title": "关于根据一般性授权完成配售新H股及发行可转换债券的公告"
+        },
+        {
+          "url": "https://www.cninfo.com.cn/new/disclosure/detail?stockCode=300304&orgId=9900021923&announcementId=1225605850&announcementTime=2026-10-15",
+          "title": "关于补充确认关联交易的公告"
+        },
+        {
+          "url": "https://www.cninfo.com.cn/new/disclosure/detail?stockCode=603650&orgId=9900035570&announcementId=1225605838&announcementTime=2026-10-15",
+          "title": "H股公告-董事会会议通告"
+        },
+        {
+          "url": "https://www.cninfo.com.cn/new/disclosure/detail?stockCode=688443&orgId=9900056031&announcementId=1225605836&announcementTime=2026-10-15",
+          "title": "自愿披露关于泰利奇拜单抗注射液慢性鼻窦炎伴鼻息肉适应症上市申请获得受理的公告"
+        },
+        {
+          "url": "https://www.cninfo.com.cn/new/disclosure/detail?stockCode=300666&orgId=9900031914&announcementId=1225605784&announcementTime=2026-10-15",
+          "title": "关于筹划发行H股股票并上市相关事项的提示性公告"
+        },
+        {
+          "url": "https://www.cninfo.com.cn/new/disclosure/detail?stockCode=603843&orgId=9900027728&announcementId=1225605766&announcementTime=2026-10-15",
+          "title": "正平股份关于公司及子公司诉讼仲裁事项进展及新增诉讼仲裁事项的公告"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://www.cninfo.com.cn/",
+      "document_sha256": "668f32b965a7cfd75dc5f4ccd776ad2e295577926fa30322faa4c30b0d088b57",
+      "text_length": 2959,
+      "undated_headlines": [
+        {
+          "url": "http://webapi.cninfo.com.cn/#/enDataServices",
+          "title": "For Overseas Clients"
+        },
+        {
+          "url": "http://www.szsi.cn/",
+          "title": "深圳证券信息有限公司"
+        },
+        {
+          "url": "http://webapi.cninfo.com.cn/#/home-en",
+          "title": "CNINFO Data Service"
+        },
+        {
+          "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002001497",
+          "title": "粤公网安备 44030002001497 号"
+        },
+        {
+          "url": "https://beian.miit.gov.cn",
+          "title": "粤B2-20050313号"
+        }
+      ]
+    },
+    {
+      "source_id": "SSE",
+      "url": "https://www.sse.com.cn/",
+      "categories": [
+        "REGULATION",
+        "FUND_FLOW",
+        "VALUE_DIVIDEND"
+      ],
+      "searched_at": "2026-10-15T03:03:32.938023+00:00",
+      "status": "Partial",
+      "links": [],
+      "http_status": 200,
+      "final_url": "https://www.sse.com.cn/",
+      "document_sha256": "2cdc31cef22be15f935da829968bf808443b218eec63800c6c25f9cf08ddfff2",
+      "text_length": 2382,
+      "undated_headlines": [
+        {
+          "url": "https://one.sse.com.cn/onething/reits/",
+          "title": "REITs发行上市一件事"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7083239.htm",
+          "title": "习近平向第140届中国进出口商品交易会致贺信"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7083088.htm",
+          "title": "习近平在全国卫生与健康大会上强调 坚定不移走中国特色卫生与健康发展道路 确保“十五五”时期健康中国建设取得决定性进展"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7082979.htm",
+          "title": "夯实中国式现代化的健康根基"
+        },
+        {
+          "url": "https://www.sse.com.cn/home/component/news/c/c_20261013_10834588.shtml",
+          "title": "吴清主席会见阿联酋穆巴达拉投资公司首席执行官兼董事总经理哈勒敦"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7082974.htm",
+          "title": "坚持人民至上、生命至上"
+        },
+        {
+          "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260924_10833301.shtml",
+          "title": "吸引境外中长期资金入市上交所举办“国际投资者赴境内调研上市公司”活动"
+        },
+        {
+          "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260918_10832624.shtml",
+          "title": "第七届国际信息商会议在中国香港成功举办"
+        }
+      ]
+    },
+    {
+      "source_id": "SZSE",
+      "url": "https://www.szse.cn/",
+      "categories": [
+        "REGULATION",
+        "FUND_FLOW",
+        "EARNINGS"
+      ],
+      "searched_at": "2026-10-15T03:03:32.938527+00:00",
+      "status": "Blocked",
+      "links": [],
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "source_id": "CFFEX",
+      "url": "https://www.cffex.com.cn/",
+      "categories": [
+        "POSITIONING",
+        "SMALLCAP_LIQUIDITY",
+        "REGULATION"
+      ],
+      "searched_at": "2026-10-15T03:03:33.147768+00:00",
+      "status": "Blocked",
+      "links": [],
+      "error": "<urlopen error _ssl.c:993: The handshake operation timed out>"
+    },
+    {
+      "source_id": "NBS",
+      "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/",
+      "categories": [
+        "POLICY_GROWTH",
+        "SEASONAL"
+      ],
+      "searched_at": "2026-10-15T03:03:33.149945+00:00",
+      "status": "Partial",
+      "links": [],
+      "http_status": 200,
+      "final_url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/",
+      "document_sha256": "aa001bbec914bc10f97b71c910ba2a8415d4bc8d5bff7315fd9013a9eafb429d",
+      "text_length": 370,
+      "undated_headlines": [
+        {
+          "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/202512/t20251224_1962137.html",
+          "title": "2026年国家统计局主要统计信息发布日程表"
+        },
+        {
+          "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/202412/t20241230_1957931.html",
+          "title": "2025年国家统计局主要统计信息发布日程表"
+        },
+        {
+          "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/202312/t20231229_1946090.html",
+          "title": "2024年国家统计局主要统计信息发布日程表"
+        },
+        {
+          "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/202301/t20230105_1891483.html",
+          "title": "2023年国家统计局主要统计信息发布日程表"
+        },
+        {
+          "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/202210/t20221024_1889506.html",
+          "title": "2022年国家统计局主要统计信息发布日程表"
+        },
+        {
+          "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/202203/t20220315_1828643.html",
+          "title": "2021年国家统计局主要统计信息发布日程表"
+        },
+        {
+          "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/202006/t20200617_1764551.html",
+          "title": "2020年国家统计局主要统计信息发布日程表"
+        },
+        {
+          "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/201907/t20190726_1759234.html",
+          "title": "2019年国家统计局主要统计信息发布日程表"
+        }
+      ]
+    },
+    {
+      "source_id": "FED",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "categories": [
+        "EXTERNAL_MACRO",
+        "MONETARY",
+        "RISK_OFF",
+        "RISK_ON"
+      ],
+      "searched_at": "2026-10-15T03:03:33.186801+00:00",
+      "status": "Partial",
+      "links": [],
+      "http_status": 200,
+      "final_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "document_sha256": "499c129adec5446981389e65ebf3241555f4a199cc74f7bddc23eeb7298c719c",
+      "text_length": 17521,
+      "undated_headlines": [
+        {
+          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm#content",
+          "title": "Skip to main content"
+        },
+        {
+          "url": "https://www.federalreserve.gov/default.htm",
+          "title": "Back to Home"
+        },
+        {
+          "url": "https://www.facebook.com/federalreserve",
+          "title": "Federal Reserve Facebook Page"
+        },
+        {
+          "url": "https://www.instagram.com/federalreserveboard/",
+          "title": "Federal Reserve Instagram Page"
+        },
+        {
+          "url": "https://www.youtube.com/federalreserve",
+          "title": "Federal Reserve YouTube Page"
+        },
+        {
+          "url": "https://www.flickr.com/photos/federalreserve/",
+          "title": "Federal Reserve Flickr Page"
+        },
+        {
+          "url": "https://www.linkedin.com/company/federal-reserve-board",
+          "title": "Federal Reserve LinkedIn Page"
+        },
+        {
+          "url": "https://www.threads.net/@federalreserveboard",
+          "title": "Federal Reserve Threads Page"
+        }
+      ]
+    },
+    {
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/",
+      "categories": [
+        "TECH",
+        "POLICY_GROWTH",
+        "BROAD_STIMULUS",
+        "RISK_OFF",
+        "RISK_ON",
+        "EXTERNAL_MACRO"
+      ],
+      "searched_at": "2026-10-15T03:03:33.212593+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://www.news.cn/politics/leaders/20261014/6bc109bfa75e4d99bb5527b5ad9cce94/c.html",
+          "title": "聆听总书记深情话语 赓续伟大长征精神"
+        },
+        {
+          "url": "https://www.news.cn/politics/leaders/20261014/6f9449194d2543039f60d2e1c5731032/c.html",
+          "title": "长征丨红军先烈永志不忘"
+        },
+        {
+          "url": "https://www.news.cn/politics/leaders/20261015/448e504317804054912fda391541b114/c.html",
+          "title": "第一观察丨习近平主席向广交会致贺信传递高水平开放强音"
+        },
+        {
+          "url": "https://www.news.cn/politics/leaders/20261014/ed83cd38760046f8929f401090b95b8d/c.html",
+          "title": "习近平向第140届中国进出口商品交易会致贺信"
+        },
+        {
+          "url": "https://www.news.cn/politics/leaders/20261014/078675403ecc47ba99d45c351ac65043/c.html",
+          "title": "凝聚推进开放合作信心和力量 为世界发展繁荣持续注入新动力"
+        },
+        {
+          "url": "https://www.news.cn/20261014/fc302ebf1179468faa84fe3c4aa1aee0/c.html",
+          "title": "学习快评丨广交天下客 开放向未来"
+        },
+        {
+          "url": "https://www.news.cn/politics/20261014/90ecda0646f242e0a700ae995622f1b8/c.html",
+          "title": "高质量共建“一带一路”成就观察"
+        },
+        {
+          "url": "https://www.news.cn/local/20261015/1bcb3695becb4bd0addfbce8f62a02c9/c.html",
+          "title": "把信仰写进地名——红军镇、瑞金村、胜利山，这三地因何得名"
+        },
+        {
+          "url": "https://www.news.cn/photo/20261015/24fa06d6f19e4d4995e8298cc1fa13b0/c.html",
+          "title": "中朝新鸭绿江大桥开通仪式举行"
+        },
+        {
+          "url": "https://www.news.cn/photo/20261014/f1f737a1cc71473c9e719d35871f4e96/c.html",
+          "title": "一箭十星 朱雀二号改进型遥四运载火箭发射成功"
+        },
+        {
+          "url": "https://www.news.cn/photo/20261015/570c5a17abc84db3ac0d6d2deae3013f/c.html",
+          "title": "“北大仓”：晒场上“晒”丰收"
+        },
+        {
+          "url": "https://www.news.cn/tech/20261015/9fe18fd026a244c1b4aae6cb5766b44a/c.html",
+          "title": "中国空间站动态丨悬于苍穹 静看云海"
+        },
+        {
+          "url": "https://www.news.cn/local/20261015/be6c34ef2a3641cfa6c0c34615c756ff/c.html",
+          "title": "“三燕故都”朝阳的文脉守护与蝶变"
+        },
+        {
+          "url": "https://www.news.cn/politics/20261015/186638e6b71a40e59f0de78fd3840c18/c.html",
+          "title": "走近“国家的孩子”丨草原上 姐弟俩"
+        },
+        {
+          "url": "https://www.news.cn/world/20261015/6f914847879c4ec6a73aee8e1ffae91e/c.html",
+          "title": "杜立特行动队员后人与中国守护者续写跨洋情谊"
+        },
+        {
+          "url": "http://www.fj.xinhuanet.com/20261014/9171b3117d744a89869bc3159d27a57a/c.html",
+          "title": "寻迹中国丨俄罗斯姑娘游漳州龙文：这座年轻城区有多“潮”"
+        },
+        {
+          "url": "https://www.news.cn/photo/20261014/2a7978b0a58b40ab91ac8df4cd335d2d/c.html",
+          "title": "河北黄骅港：原油码头建设有序推进"
+        },
+        {
+          "url": "https://www.news.cn/photo/20261014/51057cc6fcf6486c92a6370a667d7f7a/c.html",
+          "title": "出海图志丨“中国绿”风行河内"
+        },
+        {
+          "url": "https://www.news.cn/sports/20261014/092f0925049b4ca897c0031fe2a6d8d1/c.html",
+          "title": "长春大冬会已有超3700人报名 筹备工作稳步推进"
+        },
+        {
+          "url": "https://www.news.cn/photo/20261014/4ce125bacee74025957460148e0be0cb/c.html",
+          "title": "黄河壶口瀑布现云海景观"
+        },
+        {
+          "url": "https://www.news.cn/sports/20261015/cfc5923147b748c78db7be7d8fffa819/c.html",
+          "title": "他们看不见赛道，却偏要“冲破”黑暗"
+        },
+        {
+          "url": "https://www.news.cn/tech/20261014/097924a36aa44a6bbba775c0281e72e2/c.html",
+          "title": "已知最早不会飞的鸟在中国发现 名字 怎么念？"
+        },
+        {
+          "url": "https://www.news.cn/politics/leaders/20261014/c40b902d3d9144b2ae51833ee77bac46/c.html",
+          "title": "习近平总书记重要讲话为做好新时代新征程卫生与健康工作指明方向"
+        },
+        {
+          "url": "https://www.news.cn/politics/leaders/20261014/b8a4d7552bb94f2d8b5dd74904249308/c.html",
+          "title": "李强出席第140届中国进出口商品交易会开幕式并发表主旨演讲"
+        },
+        {
+          "url": "https://www.news.cn/politics/leaders/20261014/6d50c840a82a47d9b8df68a28bbe73f5/c.html",
+          "title": "赵乐际集体会见出席2026年国际议员友好交流论坛的各国代表"
+        },
+        {
+          "url": "https://www.news.cn/fortune/20261014/cd4eb95b255243dca3a02a7c2b9c4aac/c.html",
+          "title": "透视前3季外贸成绩单"
+        },
+        {
+          "url": "https://www.news.cn/world/20261015/462740ddff154d308e4ef55178c9103d/c.html",
+          "title": "中朝新鸭绿江大桥正式开通"
+        },
+        {
+          "url": "https://www.news.cn/politics/20261015/d19fd8ba9ab24db1a4ee7faf620cae5e/c.html",
+          "title": "第五届中国考古学大会开幕"
+        },
+        {
+          "url": "https://www.news.cn/fortune/20261015/d1c21c6de1eb4ab19461f4dfbc4117db/c.html",
+          "title": "我国出台新规规范牙膏功效标注"
+        },
+        {
+          "url": "https://education.news.cn/20261015/892aaa83532f4690938b01f7be2481a2/c.html",
+          "title": "2027年全国硕士研究生招生考试今起正式报名"
+        },
+        {
+          "url": "https://www.news.cn/politics/20261015/602480cb3f5e4043bf2924566f8a0bd0/c.html",
+          "title": "新一股冷空气来袭 北方将迎同期少见强降雨"
+        },
+        {
+          "url": "https://www.news.cn/world/20261014/03c91ce07c7d49dc8c2f2e6d513fef61/c.html",
+          "title": "亚信34年互信合作不断深化 成员国或增至29个"
+        },
+        {
+          "url": "https://www.news.cn/world/20261015/66db50dca312495fabe85b74736f654f/c.html",
+          "title": "也门胡塞武装称再次袭击沙特首都机场"
+        },
+        {
+          "url": "https://www.news.cn/world/20261014/9625ebd92d4344cd900960823a18bdcc/c.html",
+          "title": "IMF：日本GDP明年或降至全球第六"
+        },
+        {
+          "url": "https://www.news.cn/world/20261014/ffa66dc2ee90478a9d037a5940cc5103/c.html",
+          "title": "俄总统代表：未来几天将签署首批对美柴油供应合同"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://www.news.cn/",
+      "document_sha256": "08cdb6b1161c4b72066b380307eb8b61ca103615cc4d22debb71c7591df598bf",
+      "text_length": 6881,
+      "undated_headlines": [
+        {
+          "url": "https://russian.news.cn/index.htm",
+          "title": "Русский язык"
+        },
+        {
+          "url": "https://www.piyao.org.cn/",
+          "title": "中国互联网联合辟谣平台"
+        },
+        {
+          "url": "https://segg.sh.gov.cn/",
+          "title": "上海企业走出去服务平台"
+        },
+        {
+          "url": "https://www.news.cn/money/20260928/cfe547a83be24edea5a7e87bd0d8d786/c.html",
+          "title": "出口信用保险助力外贸提质扩容"
+        },
+        {
+          "url": "https://www.news.cn/zt/czsl90zn/index.html",
+          "title": "赓续长征精神 奋进复兴征程"
+        },
+        {
+          "url": "https://www.news.cn/politics/20261013/e587a71d7d5e4f4891e245359022b458/c.html",
+          "title": "从烽火长征路到乡村全面振兴路"
+        },
+        {
+          "url": "https://www.news.cn/zt/xhyd/index.html",
+          "title": "新华社权威AI时政资讯智能体“新华语典”"
+        },
+        {
+          "url": "https://www.news.cn/digital/20261010/29b7dafcabdc409aa368f76567e53dfb/c.html",
+          "title": "新华语典上新“舆情分析助手”：舆情研判“快人一步”"
+        }
+      ]
+    },
+    {
+      "source_id": "CLS",
+      "url": "https://www.cls.cn/telegraph",
+      "categories": [
+        "TECH",
+        "POLICY_GROWTH",
+        "MONETARY",
+        "REGULATION",
+        "FUND_FLOW",
+        "RISK_OFF",
+        "RISK_ON",
+        "EARNINGS",
+        "EXTERNAL_MACRO"
+      ],
+      "searched_at": "2026-10-15T03:03:34.139435+00:00",
+      "status": "Partial",
+      "links": [],
+      "http_status": 200,
+      "final_url": "https://www.cls.cn/telegraph",
+      "document_sha256": "dc2e64b666644028a68e856415398ca0e57d8c78c45a0573637b4dd9b80f7d21",
+      "text_length": 521,
+      "undated_headlines": [
+        {
+          "url": "http://beian.miit.gov.cn",
+          "title": "沪ICP备14040942号-9"
+        },
+        {
+          "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402006047",
+          "title": "沪公网安备31010402006047号"
+        },
+        {
+          "url": "https://fisbaobei.ifcert.cn/Home/homeIindex",
+          "title": "沪金信备 [2021] 2号"
+        }
+      ]
+    },
+    {
+      "source_id": "MARKET",
+      "url": null,
+      "categories": [
+        "SMALLCAP_LIQUIDITY",
+        "POSITIONING",
+        "FUND_FLOW",
+        "SEASONAL"
+      ],
+      "searched_at": "2026-10-15T03:03:34.554220+00:00",
+      "status": "Blocked",
+      "links": [],
+      "error": "未配置行情/原始持仓接口"
+    },
+    {
+      "source_id": "SINA",
+      "url": "https://finance.sina.com.cn/",
+      "categories": [],
+      "searched_at": "2026-10-15T03:03:34.554220+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-15/doc-inivfmyx7579941.shtml",
+          "title": "金价后续怎么走？专家解读"
+        },
+        {
+          "url": "https://finance.sina.com.cn/money/future/fmnews/2026-10-15/doc-inivhawr7451027.shtml",
+          "title": "凌晨，集体暴跌，银价“闪崩”！"
+        },
+        {
+          "url": "https://finance.sina.com.cn/money/future/fmnews/2026-10-15/doc-inivhawy1247934.shtml",
+          "title": "智利最大铜矿突传和解，有色金属全线跳水？"
+        },
+        {
+          "url": "https://finance.sina.com.cn/money/future/fmnews/2026-10-15/doc-inivhawr7452923.shtml",
+          "title": "重回“3元时代”！蛋价怎么了？"
+        },
+        {
+          "url": "https://finance.sina.com.cn/money/forex/forexroll/2026-10-15/doc-inivfmyx7566243.shtml",
+          "title": "“通胀先生”的2026年9月CPI解读"
+        },
+        {
+          "url": "https://finance.sina.com.cn/stock/zqgd/2026-10-15/doc-inivhaww4487412.shtml",
+          "title": "利空突袭，全线跳水！美联储，加息大消息！"
+        },
+        {
+          "url": "https://finance.sina.com.cn/roll/2026-10-15/doc-inivfmyz8321034.shtml",
+          "title": "A股缩量调整中分化 红利与AI影视活跃"
+        },
+        {
+          "url": "https://video.sina.com.cn/p/finance/2026-10-15/detail-inivhawy1193741.d.html",
+          "title": "中东两脚泥：特朗普可能再开新战场"
+        },
+        {
+          "url": "https://wap.cj.sina.cn/pc/7x24/5146518",
+          "title": "【蚂蚁百灵正式开源Ling-3.1-flash】据百灵大模型微信公众号消息，10月15日，蚂蚁百灵正式开源Ling-3.1-flash，让团队能够在自己的任务和算力环境中，检验模型能力与推理效率。据悉，Ling-3.1-flash 总参数约560B，每个Token激活约25B，最高支持1M上下文。"
+        },
+        {
+          "url": "https://wap.cj.sina.cn/pc/7x24/5146507",
+          "title": "【中朝新鸭绿江大桥正式开通】10月15日，中朝新鸭绿江大桥正式开通。新鸭绿江大桥是两国互联互通重要设施，开通后将进一步促进两国经贸交流和人员往来，增进两国人民福祉。（新华社）"
+        },
+        {
+          "url": "https://wap.cj.sina.cn/pc/7x24/5146483",
+          "title": "【深圳：APEC会议期间将实施地铁、公交票价五折优惠等措施】亚太经合组织（APEC）第三十三次领导人非正式会议将于2026年11月18日至19日在深圳举行。10月15日上午，深圳举行APEC会议“绿色出行、畅通有我”主题新闻发布会，介绍会议期间交通组织保障、城市运行及相关安排。深圳市交通运输局副局长徐炜表示，APEC会议期间，将实施地铁、公交票价5折优惠等措施，鼓励市民采取绿色交通出行方式。"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-15/doc-inivfmyx7578462.shtml",
+          "title": "伊方：伊朗已做好准备应对任何新的侵略"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-15/doc-inivfsie1217922.shtml",
+          "title": "24小时两货船遭袭沉没"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-14/doc-inivfmyx7527011.shtml",
+          "title": "伊朗革命卫队称全天候监控霍尔木兹海峡"
+        },
+        {
+          "url": "https://finance.sina.com.cn/roll/2026-10-15/doc-inivfmzh1297978.shtml",
+          "title": "社融增量超27万亿元 直接融资占比上升"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-15/doc-inivfwqy4528070.shtml",
+          "title": "前三季度社会融资规模增量累计为27.46万亿元"
+        },
+        {
+          "url": "https://finance.sina.com.cn/stock/hyyj/2026-10-15/doc-inivhawt8186071.shtml",
+          "title": "AI短剧突然火了！这些概念股滞涨（附股）"
+        },
+        {
+          "url": "https://finance.sina.com.cn/wm/2026-10-15/doc-inivfmyz8296583.shtml",
+          "title": "A股预增最高超1300%"
+        },
+        {
+          "url": "https://finance.sina.com.cn/roll/2026-10-15/doc-inivhiew1266330.shtml",
+          "title": "何立峰会见美国桥水投资公司创始人达利欧"
+        },
+        {
+          "url": "https://finance.sina.com.cn/wm/2026-10-15/doc-inivhiep7384183.shtml",
+          "title": "刷新世界纪录！我国量子网络领域实现关键技术突破"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-15/doc-inivhieu4533694.shtml",
+          "title": "IMF上调2026年亚太地区经济增长预期"
+        },
+        {
+          "url": "https://finance.sina.com.cn/tech/shenji/2026-10-15/doc-inivhier8136497.shtml",
+          "title": "DeepSeek崩了！实测提示“服务器暂时不可用”"
+        },
+        {
+          "url": "https://finance.sina.com.cn/roll/2026-10-15/doc-inivfmze4525390.shtml",
+          "title": "9月CPI、PPI同比涨幅均扩大 四季度回升态势有望延续"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-15/doc-inivfwqv8255325.shtml",
+          "title": "今日视点：从外贸上扬曲线看中国经济稳中有进"
+        },
+        {
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-15/doc-inivhiep7472324.shtml",
+          "title": "日本央行委员警告在加息问题上不宜过于谨慎"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-15/doc-inivhaww4425565.shtml",
+          "title": "9分钟充好电！中国新能源车硬核实力横扫海外"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-15/doc-inivhawr7417369.shtml",
+          "title": "探索优化路径  欧洲车企接连释放“学习中国”信号"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-15/doc-inivfwra1300718.shtml",
+          "title": "硅光“小巨人”羲禾科技IPO过会"
+        },
+        {
+          "url": "https://finance.sina.com.cn/roll/2026-10-15/doc-inivhawr7425649.shtml",
+          "title": "兢强科技IPO终止 多个“关系户”挤进员工持股平台"
+        },
+        {
+          "url": "https://finance.sina.com.cn/wm/2026-10-15/doc-inivhawt8210288.shtml",
+          "title": "79岁陶华碧用AI一年赚54亿？你真信了 就掉坑里去了"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jinrong/yh/2026-10-14/doc-inivevcf7757143.shtml",
+          "title": "多家银行信用卡权益缩水 贵宾厅接送机门槛抬升"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jinrong/yh/2026-10-14/doc-inivevcq1330229.shtml",
+          "title": "最高年化22%！多家香港银行推出限时高息定存"
+        },
+        {
+          "url": "https://finance.sina.com.cn/chanjing/jync/djbd/2026-10-15/doc-inivhiew1252969.shtml",
+          "title": "飞天茅台零售均价上涨3元 古井贡古20重跌10元"
+        },
+        {
+          "url": "https://finance.sina.cn/zaobao/app.d.html?date=20261015&froms=pccs",
+          "title": "财经早报-2026年10月15日财经新闻早知道-新浪财经"
+        },
+        {
+          "url": "https://finance.sina.com.cn/headline/2026-10-15/doc-inivhawy1270054.shtml?froms=pccs",
+          "title": "今日A股市场重要快讯汇总｜2026年10月15日"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://finance.sina.com.cn/",
+      "document_sha256": "cd79b89d6bfa8662534f4bb1b3312aa266969d3906a1ae728b057750c24279e6",
+      "text_length": 26078,
+      "undated_headlines": [
+        {
+          "url": "https://finance.sina.com.cn/2026esg/index.shtml",
+          "title": "可持续全球领导者大会报名限时开启"
+        },
+        {
+          "url": "http://stock.finance.sina.com.cn/hkstock/view/stock.php?code=00005&level2=1",
+          "title": "十档level2行情"
+        },
+        {
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-11/doc-iniuwkha0549641.shtml",
+          "title": "美国加密资产立法受挫"
+        },
+        {
+          "url": "https://finance.sina.com.cn/desktopapp/download/index.shtml",
+          "title": "下载新浪财经App,随时随地看突发新闻"
+        },
+        {
+          "url": "https://wap.cj.sina.cn/pc/7x24/5146547",
+          "title": "沙特领导的联军：在东部地区截获无人机。"
+        },
+        {
+          "url": "https://wap.cj.sina.cn/pc/7x24/5146546",
+          "title": "韩国9月底家庭贷款总额升至1198.9万亿韩元。"
+        },
+        {
+          "url": "https://wap.cj.sina.cn/pc/7x24/5146545",
+          "title": "韩国8月经调整后的M2货币供应量环比增长0.9%。"
+        },
+        {
+          "url": "https://wap.cj.sina.cn/pc/7x24/5146544",
+          "title": "韩国8月经调整后的L货币供应量环比增长0.2%。"
+        }
+      ]
+    },
+    {
+      "source_id": "EASTMONEY",
+      "url": "https://finance.eastmoney.com/",
+      "categories": [],
+      "searched_at": "2026-10-15T03:03:34.812555+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896059467.html",
+          "title": "Anthropic全力冲刺史上最大IPO"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610143895813316.html",
+          "title": "千亿元龙头荣盛石化业绩亮眼"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896197743.html",
+          "title": "美联储加息悬念：全球紧盯沃什讲话定调"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153895886595.html",
+          "title": "纳指、标普500跌超1% 费城半导体指数跌超4%"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896161980.html",
+          "title": "光模块、PCB被传限制 海外扰动被放大"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896139526.html",
+          "title": "双创指数大跌 A股接下来怎么走"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896008657.html",
+          "title": "朱雀二号“一箭十星”再传捷报"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153895916824.html",
+          "title": "华尔街激辩科技股走向：平仓潮前夜？"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153895880190.html",
+          "title": "美联储褐皮书：涨价提速、消费承压"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610143895769615.html",
+          "title": "美国9月份CPI通胀再度升温"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896267032.html",
+          "title": "CPI强化加息预期？美联储官员接连表态：不急于10月行动！"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896134995.html",
+          "title": "韩国股市又跌到熔断了"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896404884.html",
+          "title": "突然！美军发动袭击！"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896616520.html",
+          "title": "苹果AI定档12月入华！融资客抢筹苹果概念股(名单)"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896350110.html",
+          "title": "多家药企相继终止IPO 究竟卡在哪了？"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153895936816.html",
+          "title": "“绿泡泡”对决“红果果”：微信杀入短剧市场 行业将迎来哪些新变化？"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896438615.html",
+          "title": "五年内违约概率高达63%！AI信贷的第一颗“雷”要爆？"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153895880319.html",
+          "title": "24小时内两艘货船遭袭沉没！霍尔木兹海峡局势持续升级"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896524847.html",
+          "title": "Anthropic盈利破冰 国内AI应用多点落地 多只概念股获资金青睐(名单)"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896096483.html",
+          "title": "10月15日投资日历 | 第140届中国进出口商品交易会(广交会)开幕"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896494336.html",
+          "title": "AI狂欢降温？亚太芯片股遭遇抛售潮 韩股跌至近半年新低"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896478651.html",
+          "title": "AI安全引爆担忧？黄仁勋表态：若客户开发“不安全软件” 会断供芯片！"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896374423.html",
+          "title": "AI制药管线被扫货！两日30亿美元BD达成 行业迈入临床验证兑现期"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896342454.html",
+          "title": "10月15日集合竞价：崇达技术竞价涨停"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153895915713.html",
+          "title": "清晨跳水超500点！英伟达、甲骨文、美光、海力士集体大跌！"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610143895781985.html",
+          "title": "东方财富财经早餐 10月15日周四"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610143895783856.html",
+          "title": "10月15日国内四大证券报纸、重要财经媒体头版头条内容精华摘要"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896142991.html",
+          "title": "A股热点前瞻丨中东局势升级推升油价；ASML客户询单排至2030年"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896094891.html",
+          "title": "ETF追踪丨10月14日股票型ETF净申购3亿元 资金加仓创业板ETF易方达"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896114080.html",
+          "title": "AI借贷狂潮引爆担忧！英伟达“亲儿子”债券收益率逼近15% 科技板块重挫"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896266971.html",
+          "title": "俄副总理：俄罗斯年底前柴油出口量将占全球10%以上"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896140962.html",
+          "title": "李强在第140届中国进出口商品交易会开幕式上的主旨演讲（全文）"
+        },
+        {
+          "url": "http://same.eastmoney.com/c?z=eastmoney&la=0&si=1&ci=51&cg=3&c=9&or=5548&l=18649&bg=18651&b=21399&u=https%3A%2F%2Ffinance.eastmoney.com%2Fa%2F202610143895017995.html",
+          "title": "华夏银行做实养老金融大文章"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896471231.html",
+          "title": "美国消费分化加剧 制造业与AI投资支撑温和增长"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610153896499549.html",
+          "title": "信用动能到底弱不弱？前三季度人民币贷款增加11.52万亿元，企业扛起信贷“大梁”"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://finance.eastmoney.com/",
+      "document_sha256": "edd94a952de64743d7000e90ff1852aff2b84b91bfa43d153998135b68ebfa4c",
+      "text_length": 6857,
+      "undated_headlines": [
+        {
+          "url": "https://data.eastmoney.com/hsgt/index.html",
+          "title": "速览沪深港通资金流向"
+        },
+        {
+          "url": "http://data.eastmoney.com/gsrl/gddh.html",
+          "title": "股东大会召开 95 家"
+        },
+        {
+          "url": "https://topic.eastmoney.com/detail/wxsrdjsz.html",
+          "title": "“绿泡泡”对决“红果果”：微信杀入短剧市场"
+        },
+        {
+          "url": "https://topic.eastmoney.com/detail/mytlcqzzknx.html",
+          "title": "美以领导人讨论重启对伊战争可能性"
+        },
+        {
+          "url": "https://topic.eastmoney.com/detail/gfgljtbmh.html",
+          "title": "光伏硅料巨头召开闭门会 明确价格底线"
+        },
+        {
+          "url": "https://topic.eastmoney.com/detail/hgbdtzlh.html",
+          "title": "韩国半导体展览会明日举行"
+        },
+        {
+          "url": "https://topic.eastmoney.com/detail/zjtddjyycq.html",
+          "title": "字节跳动旗下短剧应用出圈"
+        },
+        {
+          "url": "https://finance.eastmoney.com/a/202610083889960217.html",
+          "title": "炒股小猫如何快速搞懂一个行业"
+        }
+      ]
+    },
+    {
+      "source_id": "THS",
+      "url": "https://news.10jqka.com.cn/",
+      "categories": [],
+      "searched_at": "2026-10-15T03:03:35.009071+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680719291.shtml",
+          "title": "机构下调金价四季度预测，明年仍看到5000美元，称回调是布局金矿股良机"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680719291.shtml",
+          "title": "汇通财经APP讯——在持续的通胀压力与加息预期升温的背景下，金价近期走势承压。但杰富瑞(Jefferies)在最新行业报告中提出不同观点，该机构认为短期金价走弱恰恰是入场机会，并且长期金价上 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680719240.shtml",
+          "title": "《“一带一路”税收征管产品体系(2.0版)》正式发布 数字赋能助力税收征管转型"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680719240.shtml",
+          "title": "2026年10月，第七届“一带一路”税收征管合作论坛期间，“一带一路”税收征管合作机制正式发布税收征管产品体系2.0版本。这是继2025年第六届论坛首次推出1.0版本后，合作机制在税收征管领域 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680719025.shtml",
+          "title": "国务院国资委：指导推动有关中央企业做强医药创新、高端医疗装备、公共卫生应急物资保障"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680719025.shtml",
+          "title": "上证报中国证券网讯(记者王子霖)10月14日，国务院国资委党委召开扩大会议。会议强调，要聚焦主责主业发挥央企产业、科技、资源优势，让改革发展成果更多更公平惠及广大人民群众，更好服务党 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680718978.shtml",
+          "title": "开盘不到2分钟，603999逆势涨停！AI视频持续走红，行业热门股已5连板"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680718978.shtml",
+          "title": "10月15日开盘，A股各大指数普遍低开，上证指数开盘下跌1.5%，创业板指开盘下跌3.13%，科创50指数开盘下跌3.91%，其中上证指数和创业板指均创年内新低。传媒娱乐板块低开高走，开盘后多只股 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680718972.shtml",
+          "title": "让“民生家底”托起更稳的晚年"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680718972.shtml",
+          "title": "10.79亿人参加基本养老保险、三项社保基金积累超11万亿元……在10月10日举行的国新办新闻发布会上，人力资源社会保障部公布的这组数据，勾勒出我国建成的具有鲜明中国特色、世界上规模最大 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680718944.shtml",
+          "title": "前三季度我国货物贸易进出口同比增长18.8% 呈现“快、新、优、好”特点"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680718944.shtml",
+          "title": "10月14日，国新办举行新闻发布会，介绍2026年前三季度进出口情况。据海关统计，今年前三季度，我国货物贸易进出口39.94万亿元，同比增长18.8%。其中，出口23.2万亿元，增长16.4%；进口16.74 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680718764.shtml",
+          "title": "俊知集团盘中跌超10%，FCC限制预期引发光通信板块担忧"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680718764.shtml",
+          "title": "10月15日，俊知集团(01300.HK)盘中跌超10%，截至10时39分，跌10.52%，报2.25港元/股，成交额1368.42万港元。消息面上，花旗研报指出美国投资者因对潜在FCC限制感担忧，目前较偏好美国多于中 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680718256.shtml",
+          "title": "华能国际投资成立电力科技新公司"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680718256.shtml",
+          "title": "人民财讯10月15日电，企查查APP显示，近日，华能(安国)电力科技有限公司成立，经营范围包含风力发电技术服务；太阳能发电技术服务；储能技术服务；新兴能源技术研发等。企查查股权穿透显示 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680717963.shtml",
+          "title": "天赐材料印尼电解液项目预计2026年12月进入试生产阶段"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680717963.shtml",
+          "title": "据天赐材料(002709.SZ)消息，近日，印度尼西亚纬达贝工业园(IWIP)举行镍下游产业项目开工及商业化运营暨电动汽车电池首次出口仪式。天赐材料印尼电解液项目建设正加快推进，预计于2026年12 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680717761.shtml",
+          "title": "国恩股份股价异动 前三季净利润预计增长54.45%—78.84%"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680717761.shtml",
+          "title": "国恩股份股价出现异动，截至今日9时33分，股价下跌7.93%，成交367.70万股，成交金额1.86亿元，换手率为1.46%，公司发布的最新业绩预告显示，预计前三季实现净利润9.50亿元—11.00亿元，净利 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680717687.shtml",
+          "title": "天赐材料印尼电解液项目预计2026年12月进入试生产阶段"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680717687.shtml",
+          "title": "人民财讯10月15日电，据天赐材料消息，近日，印度尼西亚纬达贝工业园(IWIP)举行镍下游产业项目开工及商业化运营暨电动汽车电池首次出口仪式。天赐材料印尼电解液项目建设正加快推进，预计于 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680717268.shtml",
+          "title": "中国瑞林牵头承担的省重大科技专项顺利通过绩效评价"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680717268.shtml",
+          "title": "10月11日，由江西省科技厅发榜立项、江西睿锋环保有限公司提出需求，中国瑞林牵头联合中南大学、南昌大学、万载志成实业有限公司共同实施的江西省重大科技研发专项“复杂难处理锡基多金属 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680716961.shtml",
+          "title": "检察机关依法对王凤朝涉嫌受贿案提起公诉"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680716961.shtml",
+          "title": "人民财讯10月15日电，据最高人民检察院，四川省成都市委原副书记、市政府原市长王凤朝涉嫌受贿一案，由国家监察委员会调查终结，移送检察机关审查起诉。最高人民检察院依法以涉嫌受贿罪对王 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680716784.shtml",
+          "title": "今早，DeepSeek崩了"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680716784.shtml",
+          "title": "10月15日，北京时间早上8点后，DeepSeek网页和APP均显示“服务器暂时不可用”。截至记者发稿，这种状况仍在持续，网页和APP对话服务都受到影响。 DeepSeek回应称，官方正在排查问题、定位原 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680716341.shtml",
+          "title": "检察机关依法对王凤朝涉嫌受贿案提起公诉"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680716341.shtml",
+          "title": "新华社北京10月15日电记者10月15日从最高人民检察院获悉，四川省成都市委原副书记、市政府原市长王凤朝涉嫌受贿一案，由国家监察委员会调查终结，移送检察机关审查起诉。最高人民检察院依法 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680715787.shtml",
+          "title": "国务院国资委：指导推动有关中央企业做强医药创新等 加快核心技术攻关和成果转化"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680715787.shtml",
+          "title": "人民财讯10月15日电，10月14日，国务院国资委党委召开扩大会议。会议强调，要着眼增强健康产业核心功能，发挥国有资本引领作用，指导推动有关中央企业做强医药创新、高端医疗装备、公共卫生 ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680715656.shtml",
+          "title": "南京钛白公司2026年9月份一般工业固体废物等台账数据公示"
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680715656.shtml",
+          "title": "现将南京钛白化工有限责任公司2026年9月份一般工业固废管理台账、9月份企业自测自报方案及报告数据予以公示。相关材料已存入百度云盘(https://pan.baidu.com)，请打开链接：https://pan.bai ..."
+        },
+        {
+          "url": "http://news.10jqka.com.cn/20261015/c680715405.shtml",
+          "title": "华能国际投资成立电力科技新公司"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://news.10jqka.com.cn/",
+      "document_sha256": "5eaa6adeab0814af922d968805c9152e1ac41e41514c715521c5611464f25a33",
+      "text_length": 7309,
+      "undated_headlines": [
+        {
+          "url": "http://windows.microsoft.com/zh-cn/internet-explorer/download-ie",
+          "title": "����IE�汾���ͣ�Ϊ�������õ����飬�������ϸ߰汾"
+        },
+        {
+          "url": "http://data.10jqka.com.cn/market/ggsd/ggtype/2/#refCountId=www_52201297_5095",
+          "title": "�������ù���"
+        },
+        {
+          "url": "http://www.iwencai.com/",
+          "title": "i�ʲ�����ѡ��"
+        },
+        {
+          "url": "http://www.10jqka.com.cn/sitemap_index.shtml",
+          "title": "�鿴��վ��ͼ\n            >"
+        },
+        {
+          "url": "http://yuanchuang.10jqka.com.cn/20250822/c670565615.shtml",
+          "title": "�����ʽ�����������ɢ����ǰ10��"
+        },
+        {
+          "url": "http://yuanchuang.10jqka.com.cn/20250822/c670568058.shtml",
+          "title": "�����ʽ𣺽�����������ǰ10��"
+        },
+        {
+          "url": "http://yuanchuang.10jqka.com.cn/20250822/c670565453.shtml",
+          "title": "�����ʽ�������������ǰ10��"
+        },
+        {
+          "url": "http://stock.10jqka.com.cn/20250822/c670564887.shtml",
+          "title": "����Ӧ�³����ۣ�ε������ȥ����Ҫ"
+        }
+      ],
+      "text_encoding": "gb18030",
+      "decoding_note": "从已保存原始字节重解码，未再次请求"
+    },
+    {
+      "source_id": "STOCKSTAR",
+      "url": "https://stock.stockstar.com/",
+      "categories": [],
+      "searched_at": "2026-10-15T03:03:35.326554+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://stock.stockstar.com/SS2026101400008451.shtml",
+          "title": "硬科技股，谁可能被“错杀”（附股）"
+        },
+        {
+          "url": "https://stock.stockstar.com/SS2026101400008769.shtml",
+          "title": "A股企稳了吗？机构解读震荡配置思路→"
+        },
+        {
+          "url": "https://stock.stockstar.com/SS2026101500008138.shtml",
+          "title": "AI短剧，突然火了！这些概念股滞涨（附股）"
+        },
+        {
+          "url": "https://stock.stockstar.com/SS2026101500008138.shtml",
+          "title": "短剧、漫剧、AI剧已成为内容生态的新竞争主线。"
+        },
+        {
+          "url": "https://stock.stockstar.com/SS2026101500008115.shtml",
+          "title": "行业首条，吉瓦时级全固态电池产线投产，产业化元年渐近"
+        },
+        {
+          "url": "https://stock.stockstar.com/SS2026101500008115.shtml",
+          "title": "业界普遍认为，2027年有望成为固态电池产业化元年。"
+        },
+        {
+          "url": "https://stock.stockstar.com/SS2026101400033404.shtml",
+          "title": "一图看懂 | 电解铝的利润，一半来自氧化铝降价"
+        },
+        {
+          "url": "https://stock.stockstar.com/SS2026101400033286.shtml",
+          "title": "数据显微镜｜电解铝的利润，一半来自氧化铝降价"
+        },
+        {
+          "url": "https://stock.stockstar.com/SS2026101400033286.shtml",
+          "title": "10月12日晚间，神火股份披露2026年前三季度业绩预告：预计实现归属于上市公司股东的净利润74亿元，同比增长112.05%；扣除非经常性损益后的净利润74.1亿元，同比增长107.03%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027477.shtml",
+          "title": "10月14日哈空调涨停：超超临界发电，振兴东北，中俄贸易概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027477.shtml",
+          "title": "证券之星消息，哈空调10月14日涨停收盘，收盘价6.15元。该股于9点25分涨停，1次打开涨停，截止收盘封单资金为3252.92万元，占其流通市值1.38%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027476.shtml",
+          "title": "10月14日百洋股份涨停：广西概念，水产养殖，保健品概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027476.shtml",
+          "title": "证券之星消息，百洋股份10月14日涨停收盘，收盘价9.75元。该股于9点25分涨停，未打开涨停，截止收盘封单资金为1.66亿元，占其流通市值5.1%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027475.shtml",
+          "title": "10月14日超声电子涨停：铜箔/覆铜板，PCB板，毫米波雷达概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027475.shtml",
+          "title": "证券之星消息，超声电子10月14日涨停收盘，收盘价24.55元。该股于9点25分涨停，1次打开涨停，截止收盘封单资金为2.63亿元，占其流通市值1.8%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027474.shtml",
+          "title": "10月14日宝鼎科技涨停：铜箔/覆铜板，国企改革，PCB板概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027474.shtml",
+          "title": "证券之星消息，宝鼎科技10月14日涨停收盘，收盘价45.8元。该股于9点25分涨停，未打开涨停，截止收盘封单资金为2.74亿元，占其流通市值1.62%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027473.shtml",
+          "title": "10月14日阳光乳业涨停：乳业（奶粉），饮料，食品概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027473.shtml",
+          "title": "证券之星消息，阳光乳业10月14日涨停收盘，收盘价15.43元。该股于9点25分涨停，4次打开涨停，截止收盘封单资金为1.06亿元，占其流通市值2.43%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027472.shtml",
+          "title": "10月14日冰山冷热涨停：冰雪产业，碳中和，地热概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027472.shtml",
+          "title": "证券之星消息，冰山冷热10月14日涨停收盘，收盘价6.3元。该股于9点25分涨停，未打开涨停，截止收盘封单资金为3.67亿元，占其流通市值9.71%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027471.shtml",
+          "title": "10月14日富春染织涨停：印染，纺织服装，机器人概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027471.shtml",
+          "title": "证券之星消息，富春染织10月14日涨停收盘，收盘价16.23元。该股于9点25分涨停，未打开涨停，截止收盘封单资金为2.44亿元，占其流通市值6.31%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027470.shtml",
+          "title": "10月14日龙江交通涨停：高速公路，黑龙江自贸区，振兴东北概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027470.shtml",
+          "title": "证券之星消息，龙江交通10月14日涨停收盘，收盘价3.53元。该股于9点30分涨停，2次打开涨停，截止收盘封单资金为4942.24万元，占其流通市值1.07%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027469.shtml",
+          "title": "10月14日金奥博涨停：民爆，一带一路，人工智能概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027469.shtml",
+          "title": "证券之星消息，金奥博10月14日涨停收盘，收盘价12.1元。该股于9点30分涨停，2次打开涨停，截止收盘封单资金为4051.93万元，占其流通市值1.29%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027468.shtml",
+          "title": "10月14日慈文传媒涨停：动漫，游戏，手游概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027468.shtml",
+          "title": "证券之星消息，慈文传媒10月14日涨停收盘，收盘价8.1元。该股于9点30分涨停，未打开涨停，截止收盘封单资金为2.23亿元，占其流通市值5.82%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027467.shtml",
+          "title": "10月14日新经典涨停：知识产权，传媒，盲盒概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027467.shtml",
+          "title": "证券之星消息，新经典10月14日涨停收盘，收盘价23.07元。该股于9点30分涨停，3次打开涨停，截止收盘封单资金为5092.7万元，占其流通市值1.43%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027466.shtml",
+          "title": "10月14日醋化股份涨停：甜味剂/代糖，食品，染料概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027466.shtml",
+          "title": "证券之星消息，醋化股份10月14日涨停收盘，收盘价15.8元。该股于9点30分涨停，4次打开涨停，截止收盘封单资金为3461.15万元，占其流通市值1.07%。"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027325.shtml",
+          "title": "10月14日开创国际涨停：水产养殖，上海国企改革，国企改革概念热股"
+        },
+        {
+          "url": "https://stock.stockstar.com/RB2026101400027325.shtml",
+          "title": "证券之星消息，开创国际10月14日涨停收盘，收盘价10.2元。该股于9点31分涨停，2次打开涨停，截止收盘封单资金为1845.38万元，占其流通市值0.75%。"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://stock.stockstar.com/",
+      "document_sha256": "6c41dd50a985228d674dd6d66477addd7608bf8671d2cdbaf542dafb1817221f",
+      "text_length": 19462,
+      "undated_headlines": [
+        {
+          "url": "https://stock.stockstar.com/IG2026101300040435.shtml",
+          "title": "A�������ȵ� | ��߱���1500%!��ҹҵ����������"
+        },
+        {
+          "url": "https://stock.stockstar.com/IG2026101300037085.shtml",
+          "title": "A�ɹ��澫ѡ | ��ҵ��ͷ����Ԥ����200% ���������4��Ԫ��Ͷ��Ͷ����"
+        },
+        {
+          "url": "https://stock.stockstar.com/IG2026101300025144.shtml",
+          "title": "A������ | ��ָ̽�׻�����0.10% ����Ӳ�������������ǿ"
+        },
+        {
+          "url": "https://stock.stockstar.com/IG2026101300018394.shtml",
+          "title": "A������ | ����ָ��̽�׻�����PCB����ѩ��ҵ������ǿ"
+        },
+        {
+          "url": "https://stock.stockstar.com/IG2026101300010570.shtml",
+          "title": "A�ɿ����ٵ� | ����ָ������Ϳ������洢��� ú̿���п���"
+        },
+        {
+          "url": "https://stock.stockstar.com/IG2026101300007357.shtml",
+          "title": "ȯ�̳��ᾫ�� | AI��������Ӱ�������ɱ���IP����ģʽ"
+        },
+        {
+          "url": "https://stock.stockstar.com/IG2026101200005051.shtml",
+          "title": "A�ɿ����ٵ� | ����ָ������Ϳ� ũҵ��ý���ƻ�Ծ ���Ӱ뵼���ѹ"
+        },
+        {
+          "url": "https://resource.stockstar.com/DataCenter/PrivateData/GetStockLimitSaleSummary.htm",
+          "title": "���۽������"
+        }
+      ],
+      "text_encoding": "gb18030",
+      "decoding_note": "从已保存原始字节重解码，未再次请求"
+    },
+    {
+      "source_id": "CAS",
+      "url": "https://sitp.cas.cn/",
+      "categories": [],
+      "searched_at": "2026-10-15T03:03:35.390738+00:00",
+      "status": "Partial",
+      "links": [],
+      "http_status": 200,
+      "final_url": "https://sitp.cas.cn/",
+      "document_sha256": "601d4af0708292e2e1d28e816a93e1320f2cf9026541b718d8d00836bf42c18b",
+      "text_length": 2650,
+      "undated_headlines": [
+        {
+          "url": "https://sitp.cas.cn/xwzx/tpxw/202610/t20261010_8290698.html",
+          "title": "中共中央、国务院印发《关于发展新质生产力的意见》"
+        },
+        {
+          "url": "https://sitp.cas.cn/xwzx/zhxw/202609/t20260922_8286117.html",
+          "title": "第四届“地球与太空：从红外到太赫兹国际会议”（E..."
+        },
+        {
+          "url": "https://sitp.cas.cn/xwzx/kydt/202609/t20260910_8280448.html",
+          "title": "聚焦波动科学数据 Data Wave新刊启程"
+        },
+        {
+          "url": "https://sitp.cas.cn/xwzx/tpxw/202609/t20260930_8288498.html",
+          "title": "锚定科技强国目标 决胜“四个率先”攻坚——《中国科学院“十五五”发展规划》发布"
+        },
+        {
+          "url": "https://sitp.cas.cn/zdsys/hwwl/",
+          "title": "红外科学与技术全国重点实验室"
+        },
+        {
+          "url": "https://sitp.cas.cn/zdsys/hwtc/",
+          "title": "红外探测全国重点实验室"
+        },
+        {
+          "url": "https://sitp.cas.cn/zdsys/xjmqxwxcxzx/",
+          "title": "许健民气象卫星创新中心"
+        },
+        {
+          "url": "http://www.sitp.cas.cn/kjzdgdsys/",
+          "title": "空间主动光电技术重点实验室"
+        }
+      ]
+    },
+    {
+      "source_id": "BJNEWS",
+      "url": "https://www.bjnews.com.cn/",
+      "categories": [],
+      "searched_at": "2026-10-15T03:03:35.688968+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://www.bjnews.com.cn/detail/1791959699169523.html",
+          "title": "5 10月14日BC雅思考试恢复举行"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://www.bjnews.com.cn/",
+      "document_sha256": "1fa666e374f739492ce7316bfbd681c7d6a4fdb73052beaafe7dbf110fc08c9f",
+      "text_length": 3709,
+      "undated_headlines": [
+        {
+          "url": "https://m.bjnews.com.cn/detail/161769822515511.html",
+          "title": "习近平向第140届中国进出口商品交易会致贺信"
+        },
+        {
+          "url": "https://www.bjnews.com.cn/detail/1791995038129802.html",
+          "title": "长征胜利90周年｜天险腊子口，陇上守青绿"
+        },
+        {
+          "url": "https://www.bjnews.com.cn/detail/1792025025169550.html",
+          "title": "长征·村志 | 四川岚安：云端的红色五角星"
+        },
+        {
+          "url": "https://www.bjnews.com.cn/detail/1792030394129911.html",
+          "title": "从草鞋到星辰：长征胜利90周年，寻找不灭的答案｜诗赞长征魂"
+        },
+        {
+          "url": "https://www.bjnews.com.cn/detail/1791968458129541.html",
+          "title": "流量退场，牌照登场：基金大V走到十字路口"
+        },
+        {
+          "url": "https://m.bjnews.com.cn/detail/1788742587129484.html",
+          "title": "山河回响·征途——长征胜利90周年特别报道"
+        },
+        {
+          "url": "https://www.bjnews.com.cn/detail/1792031696129936.html",
+          "title": "中朝新鸭绿江大桥正式开通"
+        },
+        {
+          "url": "https://www.bjnews.com.cn/detail/1792029436129898.html",
+          "title": "视频｜64岁独居老人寻求意定监护，甚至妥善安排了自己的宠物龟"
+        }
+      ]
+    },
+    {
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/",
+      "categories": [],
+      "searched_at": "2026-10-15T03:03:36.517037+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://www.cnfin.com/kx/detail/20261015/4481090_1.html",
+          "title": "10:38 据Mysteel数据显示，10月15日MMLC电池级碳酸锂（早盘）价格较前一日下跌3000元／吨，中间价报104000元／吨。"
+        },
+        {
+          "url": "https://www.cnfin.com/kx/detail/20261015/4481088_1.html",
+          "title": "10:36 印尼央行称，将继续通过离岸无本金交割远期、即期交易及境内无本金交割远期等渠道，持续开展外汇干预；印尼卢比汇率走势仍与区域内其他货币保持一致。"
+        },
+        {
+          "url": "https://www.cnfin.com/kx/detail/20261015/4481087_1.html",
+          "title": "10:35 亚洲交易时段盘中，印尼卢比兑美元汇率跌至17955，创自10月以来新低。"
+        },
+        {
+          "url": "https://www.cnfin.com/kx/detail/20261015/4481086_1.html",
+          "title": "10:34 亚洲交易时段盘中，美元指数跌破102，日内跌0.52%。"
+        },
+        {
+          "url": "https://www.cnfin.com/kx/detail/20261015/4481083_1.html",
+          "title": "10:23 PCB概念日内持续活跃，澳弘电子19天11板，续创历史新高，此前金禄电子、骏亚科技、崇达技术、天津普林跟涨，嘉元科技、依顿电子、四会富仕、超声电子等多股涨超5%。"
+        },
+        {
+          "url": "https://www.cnfin.com/kx/detail/20261015/4481081_1.html",
+          "title": "10:13 印尼央行称，将继续在市场上积极介入，以确保卢比的稳定。"
+        },
+        {
+          "url": "https://www.cnfin.com/kx/detail/20261015/4481073_1.html",
+          "title": "10:00 因市场下调利率峰值预期，美国联邦基金期货延续涨势，2027年12月到期合约上涨9个基点。"
+        },
+        {
+          "url": "https://www.cnfin.com/kx/detail/20261015/4481067_1.html",
+          "title": "09:50 白酒概念震荡走高，皇台酒业3天2板，金种子酒、金徽酒、迎驾贡酒、今世缘跟涨。消息面上，据河南、山东、广东、安徽等地经销商、批发商和终端零售商获悉，渠道库存总体仍在去化，部分受访酒商库存同比下降约10%-20%，名酒大单品周转相对较快，部分终端库存已控制在1-2个月。"
+        },
+        {
+          "url": "https://www.cnfin.com/kx/detail/20261015/4481066_1.html",
+          "title": "09:49 新西兰联储首席经济学家康威称，新西兰正感受到油价冲击的影响，官方现金利率（OCR）最有可能上调；有信心将新西兰通胀率重新拉回目标区间。"
+        },
+        {
+          "url": "https://www.cnfin.com/yw-lb/detail/20261015/4481060_1.html",
+          "title": "何立峰会见美国桥水投资公司创始人达利欧"
+        },
+        {
+          "url": "https://www.cnfin.com/yw-lb/detail/20261015/4481057_1.html",
+          "title": "美国消费分化加剧 制造业与AI投资支撑温和增长"
+        },
+        {
+          "url": "https://www.cnfin.com/yw-lb/detail/20261015/4481021_1.html",
+          "title": "【五大信披媒体精华摘要】10月15日"
+        },
+        {
+          "url": "https://www.cnfin.com/yw-lb/detail/20261015/4480994_1.html",
+          "title": "国际金融市场早知道：10月15日"
+        },
+        {
+          "url": "https://www.cnfin.com/yw-lb/detail/20261015/4480985_1.html",
+          "title": "掘金再生资源 循环经济站上新风口"
+        },
+        {
+          "url": "https://www.cnfin.com/jrjfb-lb/detail/20261014/4480759_1.html",
+          "title": "【金融街发布】人民银行：9月末社融规模增量为27.46万亿元 M2余额同比增长7.2%"
+        },
+        {
+          "url": "https://www.cnfin.com/hg-lb/detail/20261015/4481093_1.html",
+          "title": "新华社权威快报｜中朝新鸭绿江大桥正式开通"
+        },
+        {
+          "url": "https://www.cnfin.com/hg-lb/detail/20261015/4481068_1.html",
+          "title": "国务院国资委：助力“十五五”时期健康中国建设取得决定性进展"
+        },
+        {
+          "url": "https://www.cnfin.com/hg-lb/detail/20261015/4481059_1.html",
+          "title": "何立峰会见美国桥水投资公司创始人达利欧"
+        },
+        {
+          "url": "https://www.cnfin.com/hg-lb/detail/20261015/4481051_1.html",
+          "title": "我国地理信息产业总产值超9000亿元 已构建起完整产业链"
+        },
+        {
+          "url": "https://www.cnfin.com/hg-lb/detail/20261015/4481032_1.html",
+          "title": "9月存储价格涨幅收窄"
+        },
+        {
+          "url": "https://www.cnfin.com/gs-lb/detail/20261015/4481097_1.html",
+          "title": "中金所何庆文：深化国债期货功能 提升服务实体经济质效"
+        },
+        {
+          "url": "https://www.cnfin.com/gs-lb/detail/20261015/4481044_1.html",
+          "title": "【环球财经】通胀数据打压市场人气 纽约股市三大股指14日均下跌"
+        },
+        {
+          "url": "https://www.cnfin.com/gs-lb/detail/20261015/4481037_1.html",
+          "title": "【环球财经】日经平均指数盘中一度暴跌 半导体相关板块遭集中抛售"
+        },
+        {
+          "url": "https://www.cnfin.com/gs-lb/detail/20261015/4481020_1.html",
+          "title": "【五大信披媒体精华摘要】10月15日"
+        },
+        {
+          "url": "https://www.cnfin.com/gs-lb/detail/20261015/4481009_1.html",
+          "title": "荣盛石化前三季度经营业绩大幅预增"
+        },
+        {
+          "url": "https://www.cnfin.com/zs-lb/detail/20261015/4481098_1.html",
+          "title": "中金所何庆文：深化国债期货功能 提升服务实体经济质效"
+        },
+        {
+          "url": "https://www.cnfin.com/zs-lb/detail/20261015/4480957_1.html",
+          "title": "债券型ETF连续3天成交超3000亿元"
+        },
+        {
+          "url": "https://www.cnfin.com/zs-lb/detail/20261015/4480956_1.html",
+          "title": "CPI超预期叠加油价高企 美债收益率日内多数冲高回落"
+        },
+        {
+          "url": "https://www.cnfin.com/zs-lb/detail/20261015/4480953_1.html",
+          "title": "腾讯260亿点心债刷新年内纪录 互联网巨头“双币齐下” 巨额资金投向AI资本开支"
+        },
+        {
+          "url": "https://www.cnfin.com/zs-lb/detail/20261015/4480946_1.html",
+          "title": "新华财经早报：10月15日"
+        },
+        {
+          "url": "https://www.cnfin.com/hs-lb/detail/20261015/4481096_1.html",
+          "title": "新西兰联储首席经济学家：下一次利率决定“完全开放” 利率最有可能上升"
+        },
+        {
+          "url": "https://www.cnfin.com/hs-lb/detail/20261015/4481094_1.html",
+          "title": "亚洲明年经济增长或将放缓 受能源冲击与收益率上升等因素拖累"
+        },
+        {
+          "url": "https://www.cnfin.com/hs-lb/detail/20261015/4481089_1.html",
+          "title": "中金所：正扎实推进人民币外汇期货试点准备工作"
+        },
+        {
+          "url": "https://www.cnfin.com/hs-lb/detail/20261015/4481071_1.html",
+          "title": "日本央行委员小枝淳子：价格上行风险显著 不应过度谨慎加息"
+        },
+        {
+          "url": "https://www.cnfin.com/hs-lb/detail/20261015/4481056_1.html",
+          "title": "美国消费分化加剧 制造业与AI投资支撑温和增长"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://www.cnfin.com/",
+      "document_sha256": "88b1361642f5785d32eca2c85cc565fe8e6bc1fe2adb627db931cdc0964da9d9",
+      "text_length": 13624,
+      "undated_headlines": [
+        {
+          "url": "https://www.imsilkroad.com/db/#/home",
+          "title": "丝路资讯/智讯/案例/全球数据/知识产权"
+        },
+        {
+          "url": "https://cnfin.com/d/index.html#u",
+          "title": "专业终端（智能升级版）"
+        },
+        {
+          "url": "https://cnfin.com/d/index.html#g",
+          "title": "专业终端（智能政务版）"
+        },
+        {
+          "url": "http://fisbaobei.ifcert.cn",
+          "title": "境内金融信息服务报备编号 京金信备〔2021〕1号"
+        },
+        {
+          "url": "https://www.cnfin.com/jrjfb-lb/detail/20261009/4478757_1.html",
+          "title": "【金融街发布】公募基金规则迎重要修订 支持权益基金发展"
+        },
+        {
+          "url": "https://www.cnfin.com/jrjfb-lb/detail/20261009/4478681_1.html",
+          "title": "【金融街发布】金融监管总局发布《财产保险公司保险产品开发管理规定》"
+        },
+        {
+          "url": "https://www.cnfin.com/jrjfb-lb/detail/20261008/4478195_1.html",
+          "title": "【金融街发布】中国人民银行发布关于人民币汇率的政策立场"
+        },
+        {
+          "url": "https://www.cnfin.com/jrjfb-lb/detail/20260929/4476323_1.html",
+          "title": "【金融街发布】中国人民银行：下调抵押补充贷款（PSL）利率0.25个百分点"
+        }
+      ]
+    },
+    {
+      "source_id": "GELONGHUI",
+      "url": "https://www.gelonghui.com/",
+      "categories": [],
+      "searched_at": "2026-10-15T03:03:36.653790+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://www.gelonghui.com/p/6994403",
+          "title": "24小时环球政经要闻全览 | 10月15日 全球热点狙击"
+        },
+        {
+          "url": "https://www.gelonghui.com/live/2712146",
+          "title": "SHIBOR主要期限利率普跌格隆汇10月15日｜隔夜shibor报1.2660%，下跌0.3个基点；7天shibor报1.3460%，下跌0.24个基点；3个月shibor报1.4300%，与上日持平。"
+        },
+        {
+          "url": "https://www.gelonghui.com/live/2712145",
+          "title": "欧洲斯托克50期指跌1%格隆汇10月15日｜欧洲斯托克50指数期货下跌幅度扩大至1.0%，德国DAX指数期货下跌0.8%，英国富时100指数期货下跌0.2%。"
+        },
+        {
+          "url": "https://www.gelonghui.com/live/2712143",
+          "title": "格隆汇10月15日｜韩国8月L货币供应年率 7.2%，前值由8%修正为8.1%。"
+        },
+        {
+          "url": "https://www.gelonghui.com/live/2712142",
+          "title": "字节跳动据悉正洽谈采购联发科AI芯片用于数据中心格隆汇10月15日｜据市场消息，字节跳动据悉即将达成协议，采购联发科的数据中心芯片。知情人士透露称，该公司正与联发科就定制芯片的供应进行深入洽谈，旨在采购专为字节跳动的数据中心而设计的芯片。知情人士称，联发科将提供数量不详的专用集成电路，即为客户平台定制的芯片。若交易达成，字节跳动可能成为联发科继谷歌之后的第二大专用集成电路领域的客户。"
+        },
+        {
+          "url": "https://www.gelonghui.com/live/2712134",
+          "title": "格隆汇10月15日｜日本首相高市早苗：没有证据表明日本在俄罗斯存在间谍活动。"
+        },
+        {
+          "url": "https://www.gelonghui.com/live/2712133",
+          "title": "摩通下调阿斯麦目标价至2350美元格隆汇10月15日｜摩根大通将阿斯麦(ASML)目标价从2400美元下调至2350美元。"
+        },
+        {
+          "url": "https://www.gelonghui.com/live/2712121",
+          "title": "蚂蚁百灵正式开源Ling-3.1-flash格隆汇10月15日｜据百灵大模型微信公众号消息，10月15日，蚂蚁百灵正式开源Ling-3.1-flash，让团队能够在自己的任务和算力环境中，检验模型能力与推理效率。据悉，Ling-3.1-flash 总参数约560B，每个Token激活约25B，最高支持1M上下文。"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://www.gelonghui.com/",
+      "document_sha256": "168fbb87dde9733b970207b360d1330762f3a4b49f24a1a9143b73f0705f608c",
+      "text_length": 6571,
+      "undated_headlines": [
+        {
+          "url": "https://www.gelonghui.com/search?keyword&type=post",
+          "title": "查看全部股票/文章/快讯/事件/用户/财富圈搜索结果"
+        },
+        {
+          "url": "https://www.gelonghui.com/p/6995058.html",
+          "title": "恐慌加剧！美AI科技全线下跌，今天大A怎么办？"
+        },
+        {
+          "url": "https://www.gelonghui.com/p/6997496.html",
+          "title": "暴涨46%！Anthropic Q3营收168亿交卷"
+        },
+        {
+          "url": "https://www.gelonghui.com/p/6994412.html",
+          "title": "美联储褐皮书：油价加剧通胀压力，AI支撑增长"
+        },
+        {
+          "url": "https://www.gelonghui.com/p/6994664.html",
+          "title": "美元破位：预期差后的不寻常"
+        },
+        {
+          "url": "https://www.gelonghui.com/p/6999034",
+          "title": "DeepSeek“崩了”，故障超1个小时 官方正在排查问题，目前已定位原因，正在实施修复"
+        },
+        {
+          "url": "https://www.gelonghui.com/p/6998627",
+          "title": "联亚药业今日上市，一度涨超400%触发临停 主营复杂药物制剂"
+        },
+        {
+          "url": "https://www.gelonghui.com/p/6997496",
+          "title": "暴涨46%！Anthropic Q3营收168亿交卷 AI开始赚钱了"
+        }
+      ]
+    },
+    {
+      "source_id": "MCT",
+      "url": "https://www.mct.gov.cn/",
+      "categories": [],
+      "searched_at": "2026-10-15T03:03:37.372870+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://www.mct.gov.cn/whzx/qgwhxxlb/gs/202610/t20261014_967366.htm",
+          "title": "长征红色故事宣讲活动在甘肃宕昌举行"
+        },
+        {
+          "url": "https://www.mct.gov.cn/whzx/qgwhxxlb/hlj/202610/t20261014_967369.htm",
+          "title": "免签红利推动龙江跨境文旅再升级"
+        },
+        {
+          "url": "https://www.mct.gov.cn/whzx/qgwhxxlb/ln/202610/t20261014_967370.htm",
+          "title": "辽驿·非遗会客厅正式对外开放"
+        },
+        {
+          "url": "https://www.mct.gov.cn/ggfw/cxts/glqxyb/202610/t20261015_967372.htm",
+          "title": "中国气象局与交通运输部2026年10月14日联..."
+        },
+        {
+          "url": "https://www.mct.gov.cn/ggfw/cxts/glqxyb/202610/t20261014_967363.htm",
+          "title": "中国气象局与交通运输部2026年10月13日联..."
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://www.mct.gov.cn/",
+      "document_sha256": "0b7a3491c270f66d3c9660e60790f82616ab09bd7910c206fcf41bad9001d168",
+      "text_length": 4859,
+      "undated_headlines": [
+        {
+          "url": "http://gjzwfw.www.gov.cn/",
+          "title": "国家政务服务平台试运行"
+        },
+        {
+          "url": "https://www.gov.cn/zhengce/jiedu/sbgxyjhx/index.htm",
+          "title": "重要政策举措及实施效果"
+        },
+        {
+          "url": "https://weibo.com/wenhuabu0?topnav=1&wvr=6&topsug=1&is_hot=1",
+          "title": "文化和旅游部官方微博"
+        },
+        {
+          "url": "https://www.mct.gov.cn/hdjl/12318whscjb/",
+          "title": "全国文化和旅游..."
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7083239.htm",
+          "title": "习近平向第140届中国进出口商品交易会致贺信"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7083132.htm",
+          "title": "习近平会见多哥部长会议主席福雷"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7083130.htm",
+          "title": "习近平同博茨瓦纳总统博科会谈"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7083088.htm",
+          "title": "习近平在全国卫生与健康大会上强调 坚定不移..."
+        }
+      ]
+    },
+    {
+      "source_id": "MOT",
+      "url": "https://www.mot.gov.cn/",
+      "categories": [
+        "POLICY_GROWTH"
+      ],
+      "searched_at": "2026-10-15T03:03:37.679829+00:00",
+      "status": "Partial",
+      "links": [
+        {
+          "url": "https://www.mot.gov.cn/xinwen/tupianxinwen/202610/t20261015_4225941.html",
+          "title": "全球首例绿氨燃料船对船加注圆满完成"
+        },
+        {
+          "url": "https://www.mot.gov.cn/xinwen/tupianxinwen/202610/t20261014_4225855.html",
+          "title": "太仓港今年出口汽车突破100万辆"
+        },
+        {
+          "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261015_4225924.html",
+          "title": "持续深化交通法治建设 以高水平法治服务保障交通运输高质量发展"
+        },
+        {
+          "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261015_4225931.html",
+          "title": "聚焦三方面22个场景 水运领域人工智能应用场景指引发布"
+        },
+        {
+          "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261015_4225933.html",
+          "title": "丰富人工智能应用场景 赋能水运高质量发展 ——部水运局有关负责同志解读《水运领域人工智能应用场景指引》"
+        },
+        {
+          "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261015_4225929.html",
+          "title": "国际中心学习贯彻习近平总书记重要贺信精神 持续打造“海外挺身探路”党建品牌"
+        },
+        {
+          "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261015_4225926.html",
+          "title": "皖美村路串起好风景带来好“钱景”"
+        },
+        {
+          "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261015_4225932.html",
+          "title": "河北推动交通资源更多向农村倾斜"
+        },
+        {
+          "url": "https://xxgk.mot.gov.cn/jigou/ysfws/202610/t20261015_4225963.html",
+          "title": "交通运输部办公厅关于印发促进城市公交企业深化改革典型案例（第一批）名单的通知"
+        },
+        {
+          "url": "https://xxgk.mot.gov.cn/jigou/glj/202610/t20261014_4225891.html",
+          "title": "交通运输部关于发布《公路工程行业标准法文版编译细则》的公告"
+        },
+        {
+          "url": "https://xxgk.mot.gov.cn/jigou/glj/202610/t20261014_4225890.html",
+          "title": "交通运输部关于发布《公路路基施工技术规范》英文版的公告"
+        },
+        {
+          "url": "https://xxgk.mot.gov.cn/jigou/glj/202610/t20261014_4225889.html",
+          "title": "交通运输部关于发布《公路工程行业标准英文版编译细则》的公告"
+        },
+        {
+          "url": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261014_4225856.html",
+          "title": "交通运输部关于发布2026年度新增沿海省际散装液体危险货物船舶运输市场运力综合评审结果有关事宜的公告"
+        },
+        {
+          "url": "https://www.mot.gov.cn/fuwu/yujingtishi/jinhaihaiqutqyb/202610/t20261015_4225925.html",
+          "title": "2026年10月15日14时近海海区天气预报"
+        },
+        {
+          "url": "https://www.mot.gov.cn/fuwu/yujingtishi/zhujiangshuiqingxx/202610/t20261015_4225946.html",
+          "title": "2026年10月15日珠江水情信息"
+        },
+        {
+          "url": "https://www.mot.gov.cn/fuwu/yujingtishi/haiyangtianqigb/202610/t20261015_4225927.html",
+          "title": "2026年10月15日06时海洋天气公报"
+        },
+        {
+          "url": "https://www.mot.gov.cn/fuwu/yujingtishi/jinhaihaiqutqyb/202610/t20261015_4225923.html",
+          "title": "2026年10月15日08时近海海区天气预报"
+        },
+        {
+          "url": "https://www.mot.gov.cn/fuwu/yujingtishi/cjshuiweichaowei/202610/t20261015_4225936.html",
+          "title": "2026年10月15日长江潮位"
+        },
+        {
+          "url": "https://www.douyin.com/video/7696442947998469402?previous_page=app_code_link",
+          "title": "公交车司机看到没到站的学生一路奔跑，特地放缓速度，等待女孩顺利上车，司机：祖国的花朵需要呵护 （来源：掌上巴彦淖尔） @\n                                                交通运输部-抖音 ·\n                                                2026-10-14"
+        },
+        {
+          "url": "https://www.douyin.com/video/7696428906261269770?previous_page=app_code_link",
+          "title": "生死时速！列车紧急停靠站台4分钟，列车、车站接力转运突发疾病旅客。（来源: 新华社） @\n                                                交通运输部-抖音 ·\n                                                2026-10-14"
+        }
+      ],
+      "http_status": 200,
+      "final_url": "https://www.mot.gov.cn/",
+      "document_sha256": "3721234621b132b913d254eb8ad5f90ba546fd471a09905ac06a532fa693a2f5",
+      "text_length": 3147,
+      "undated_headlines": [
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7083239.htm",
+          "title": "习近平向第140届中国进出口商品交易会致贺信"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7083088.htm",
+          "title": "习近平出席全国卫生与健康大会并发表重要讲话"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7083018.htm",
+          "title": "习近平同巴布亚新几内亚总督达达埃就中巴新建交50周年互致贺电"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7082974.htm",
+          "title": "坚持人民至上、生命至上——习近平总书记引领健康中国建设"
+        },
+        {
+          "url": "https://www.gov.cn/yaowen/liebiao/202610/content_7082868.htm",
+          "title": "以创新赢未来——习近平经济思想引领中国加快发展新质生产力"
+        },
+        {
+          "url": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261013_4225770.html",
+          "title": "交通运输部办公厅关于印发《水运领域人工智能应用场景指引》的通知"
+        },
+        {
+          "url": "https://www.mot.gov.cn/gongkai/zcjd/202610/t20261013_4225771.html",
+          "title": "《水运领域人工智能应用场景指引》解读"
+        },
+        {
+          "url": "https://www.mot.gov.cn/gongkai/zcjd/202610/t20261012_4225721.html",
+          "title": "《内河新能源船舶推广应用行动方案（2026—2030年）》政策解读"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "key": "FINSTATS",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html",
+      "title": "2026年前三季度金融统计数据报告",
+      "checked_at": "2026-10-15T03:07:15.648093+00:00",
+      "http_status": 200,
+      "final_url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html",
+      "document_sha256": "d57a7e87f5bb638848d06273c0b37400929d7b5b70bb0beffc637158eb711021",
+      "text_length": 3092,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-14 17:00:04"
+      ]
+    },
+    {
+      "key": "OMO199",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101508552484698/index.html",
+      "title": "公开市场业务交易公告 [2026]第199号",
+      "checked_at": "2026-10-15T03:07:15.650092+00:00",
+      "http_status": 200,
+      "final_url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101508552484698/index.html",
+      "document_sha256": "902debe0233a6359c79af9436c8f12548c5a709386c8cde93b1c8dee4537c44c",
+      "text_length": 648,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-15 09:20:30",
+        "2026年10月15日中国人民银行以固定利率、数量招标方式开展了450"
+      ]
+    },
+    {
+      "key": "OMO198",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101408462382153/index.html",
+      "title": "公开市场业务交易公告 [2026]第198号",
+      "checked_at": "2026-10-15T03:07:15.651091+00:00",
+      "http_status": 200,
+      "final_url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101408462382153/index.html",
+      "document_sha256": "63a37b674d33b6fd7d18b3d3879abee1725273bd461ac78961691cd1c72d173f",
+      "text_length": 648,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-14 09:20:30",
+        "2026年10月14日中国人民银行以固定利率、数量招标方式开展了560"
+      ]
+    },
+    {
+      "key": "BUYOUT",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026101416522429536/index.html",
+      "title": "公开市场买断式逆回购招标公告 [2026]第20号",
+      "checked_at": "2026-10-15T03:07:15.651703+00:00",
+      "http_status": 200,
+      "final_url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026101416522429536/index.html",
+      "document_sha256": "f65068ae5ee81c46fb6291eec148160dc625f68b2beec7a2f5e4e4ee0603b0fe",
+      "text_length": 646,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-14 17:00:00",
+        "2026年10月15日，中国人民银行将以固定数量、利率招标、多重价位中",
+        "2026年10月14日"
+      ]
+    },
+    {
+      "key": "CBMEET14",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101418371517078/index.html",
+      "title": "第十五届中日韩央行行长会议在曼谷举行",
+      "checked_at": "2026-10-15T03:07:15.651703+00:00",
+      "http_status": 200,
+      "final_url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101418371517078/index.html",
+      "document_sha256": "8a5e569aee4c2d5e61e14fa25ff903e4ec58522acbc4931abc0381508165b866",
+      "text_length": 589,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-14 19:00:04",
+        "2026年10月14日，第十五届中日韩央行行长会议在曼谷举行。韩国银行"
+      ]
+    },
+    {
+      "key": "CBMEET15",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101510063698366/index.html",
+      "title": "潘功胜行长出席中国与海合会第四次央行行长会并举行系列双边会见",
+      "checked_at": "2026-10-15T03:07:15.652710+00:00",
+      "http_status": 200,
+      "final_url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101510063698366/index.html",
+      "document_sha256": "d6047ae4fbd19be20c5acdec84921530d07be6ef387c50e84a198f4b2e4fd9f1",
+      "text_length": 965,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-15 10:53:46",
+        "2026年10月14日，中国人民银行行长潘功胜在泰国曼谷出席中国与海湾"
+      ]
+    },
+    {
+      "key": "APEC",
+      "source_id": "MOF",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202610/t20261014_4002757.htm",
+      "title": "2026年APEC财长会会前访财政部有关负责人",
+      "checked_at": "2026-10-15T03:07:15.653711+00:00",
+      "http_status": 200,
+      "final_url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202610/t20261014_4002757.htm",
+      "document_sha256": "154eeffce2423252366e5f7aa54f9fc5711684c436c2173a4fa5addd8b14ecba",
+      "text_length": 2192,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026年10月14日",
+        "2026年10月14日 来源：财政部新闻办公室"
+      ]
+    },
+    {
+      "key": "BRIDGE",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/world/20261015/462740ddff154d308e4ef55178c9103d/c.html",
+      "title": "中朝新鸭绿江大桥正式开通",
+      "checked_at": "2026-10-15T03:07:15.653711+00:00",
+      "http_status": 200,
+      "final_url": "https://www.news.cn/world/20261015/462740ddff154d308e4ef55178c9103d/c.html",
+      "document_sha256": "fa45c34c761b012964ce921e09df05456015e03e2c13a1ec555f07d79ba34a61",
+      "text_length": 213,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-15 10:38:30"
+      ]
+    },
+    {
+      "key": "AIRPORT",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/world/20261015/66db50dca312495fabe85b74736f654f/c.html",
+      "title": "也门胡塞武装称再次袭击沙特首都机场",
+      "checked_at": "2026-10-15T03:07:18.419847+00:00",
+      "http_status": 200,
+      "final_url": "https://www.news.cn/world/20261015/66db50dca312495fabe85b74736f654f/c.html",
+      "document_sha256": "6e3472265efa9f379f6642cb8dc2f2df6ac54ce3f9acc191171c1d0c7b15c02a",
+      "text_length": 776,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-15 06:08:45"
+      ]
+    },
+    {
+      "key": "ROCKET",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/photo/20261014/f1f737a1cc71473c9e719d35871f4e96/c.html",
+      "title": "一箭十星 朱雀二号改进型遥四运载火箭发射成功",
+      "checked_at": "2026-10-15T03:07:18.756811+00:00",
+      "http_status": 200,
+      "final_url": "https://www.news.cn/photo/20261014/f1f737a1cc71473c9e719d35871f4e96/c.html",
+      "document_sha256": "efdf165dbf1711b2a56f0109a7c8e2ef88ad586a16d667b06cba7937d73ec381",
+      "text_length": 812,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-14 21:19:53"
+      ]
+    },
+    {
+      "key": "DIESEL",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/world/20261014/ffa66dc2ee90478a9d037a5940cc5103/c.html",
+      "title": "俄总统代表：未来几天将签署首批对美柴油供应合同",
+      "checked_at": "2026-10-15T03:07:18.758356+00:00",
+      "http_status": 200,
+      "final_url": "https://www.news.cn/world/20261014/ffa66dc2ee90478a9d037a5940cc5103/c.html",
+      "document_sha256": "23ef2df949d8b7e7f764615b0c4056b8345c6b2788be4d59062e04236c68b058",
+      "text_length": 679,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-14 23:43:34"
+      ]
+    },
+    {
+      "key": "SHIPAI",
+      "source_id": "MOT",
+      "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261015_4225931.html",
+      "title": "聚焦三方面22个场景 水运领域人工智能应用场景指引发布",
+      "checked_at": "2026-10-15T03:07:18.821240+00:00",
+      "http_status": 200,
+      "final_url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261015_4225931.html",
+      "document_sha256": "bfdbd97ef6b1c20b473da18e02abf2d560f00d293594b385c0a6070abb9f9bc3",
+      "text_length": 1463,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-15 08:46"
+      ]
+    },
+    {
+      "key": "GREENAMMONIA",
+      "source_id": "MOT",
+      "url": "https://www.mot.gov.cn/xinwen/tupianxinwen/202610/t20261015_4225941.html",
+      "title": "全球首例绿氨燃料船对船加注圆满完成",
+      "checked_at": "2026-10-15T03:07:19.043844+00:00",
+      "http_status": 200,
+      "final_url": "https://www.mot.gov.cn/xinwen/tupianxinwen/202610/t20261015_4225941.html",
+      "document_sha256": "9ea1a66ae100ea130fee9047ad56065f262bea523762675d37e2905eeffaf0c6",
+      "text_length": 1155,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-15 09:10"
+      ]
+    },
+    {
+      "key": "CFFEXFX",
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/hs-lb/detail/20261015/4481089_1.html",
+      "title": "中金所：正扎实推进人民币外汇期货试点准备工作",
+      "checked_at": "2026-10-15T03:07:19.275239+00:00",
+      "http_status": 200,
+      "final_url": "https://www.cnfin.com/hs-lb/detail/20261015/4481089_1.html",
+      "document_sha256": "48d12b7a05a5cef604fc4d00965f96811749c9bad3a6078f392338132e5ec6ad",
+      "text_length": 1319,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026年10月15日"
+      ]
+    },
+    {
+      "key": "BONDETF",
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/zs-lb/detail/20261015/4480957_1.html",
+      "title": "债券型ETF连续3天成交超3000亿元",
+      "checked_at": "2026-10-15T03:07:19.902518+00:00",
+      "http_status": 200,
+      "final_url": "https://www.cnfin.com/zs-lb/detail/20261015/4480957_1.html",
+      "document_sha256": "c77fe6f9a8f093ffe64744008d9976991ea2bab6ed97f7f94f224968d90bb5b1",
+      "text_length": 2327,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026年10月15日"
+      ]
+    },
+    {
+      "key": "EARNINGS",
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/gs-lb/detail/20261015/4481009_1.html",
+      "title": "荣盛石化前三季度经营业绩大幅预增",
+      "checked_at": "2026-10-15T03:07:20.123502+00:00",
+      "http_status": 200,
+      "final_url": "https://www.cnfin.com/gs-lb/detail/20261015/4481009_1.html",
+      "document_sha256": "584a5a890f6a9d147ffa00458a3673bd53d3b692dd5f8f09ae0774c2ceac31b7",
+      "text_length": 1589,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026年10月15日"
+      ]
+    },
+    {
+      "key": "LING",
+      "source_id": "GELONGHUI",
+      "url": "https://www.gelonghui.com/live/2712121",
+      "title": "蚂蚁百灵正式开源Ling-3.1-flash格隆汇10月15日｜据百灵大模型微信公众号消息，10月15日，蚂蚁百灵正式开源Ling-3.1-flash，让团队能够在自己的任务和算力环境中，检验模型能力与推理效率。据悉，Ling-3.1-flash 总参数约560B，每个Token激活约25B，最高支持1M上下文。",
+      "checked_at": "2026-10-15T03:07:20.763746+00:00",
+      "http_status": 200,
+      "final_url": "https://www.gelonghui.com/live/2712121",
+      "document_sha256": "272fd9c9225601b06e29489eb64f306e93a90a54243e32af6c7f2a410fb89bda",
+      "text_length": 970,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-15"
+      ]
+    },
+    {
+      "key": "ASIC",
+      "source_id": "GELONGHUI",
+      "url": "https://www.gelonghui.com/live/2712142",
+      "title": "字节跳动据悉正洽谈采购联发科AI芯片用于数据中心格隆汇10月15日｜据市场消息，字节跳动据悉即将达成协议，采购联发科的数据中心芯片。知情人士透露称，该公司正与联发科就定制芯片的供应进行深入洽谈，旨在采购专为字节跳动的数据中心而设计的芯片。知情人士称，联发科将提供数量不详的专用集成电路，即为客户平台定制的芯片。若交易达成，字节跳动可能成为联发科继谷歌之后的第二大专用集成电路领域的客户。",
+      "checked_at": "2026-10-15T03:07:21.991072+00:00",
+      "http_status": 200,
+      "final_url": "https://www.gelonghui.com/live/2712142",
+      "document_sha256": "2ae57b51e5120ca9f07d2183f0d46b2837df57cc5ae4e788847947b20deab48c",
+      "text_length": 1008,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-15"
+      ]
+    },
+    {
+      "key": "SOLIDBATTERY",
+      "source_id": "STOCKSTAR",
+      "url": "https://stock.stockstar.com/SS2026101500008115.shtml",
+      "title": "行业首条，吉瓦时级全固态电池产线投产，产业化元年渐近",
+      "checked_at": "2026-10-15T03:07:22.395604+00:00",
+      "http_status": 200,
+      "final_url": "https://stock.stockstar.com/SS2026101500008115.shtml",
+      "document_sha256": "b22a7699d06bf687e04c96bb7af0dedb975627865bca3d4e01b0af12700a20ad",
+      "text_length": 3371,
+      "encoding": "gb18030",
+      "date_clues": [
+        "2026-10-15 09:09:21"
+      ]
+    },
+    {
+      "key": "FCC",
+      "source_id": "EASTMONEY",
+      "url": "https://finance.eastmoney.com/a/202610153896161980.html",
+      "title": "光模块、PCB被传限制 海外扰动被放大",
+      "checked_at": "2026-10-15T03:07:22.409740+00:00",
+      "http_status": 200,
+      "final_url": "https://finance.eastmoney.com/a/202610153896161980.html",
+      "document_sha256": "f2c77d7d5a0ceea8dcd6b045c16a04385939241c314deb566f33bf5b1398e371",
+      "text_length": 4748,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026年10月15日 08:54",
+        "2026年10月8日，中国产光模块并未作为独立产品类别被列入Cove",
+        "2026-10-15"
+      ]
+    },
+    {
+      "key": "CPI_MEDIA",
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/yw-lb/detail/20261014/4480910_1.html",
+      "title": "美国9月通胀率超预期上行至3.7% 美元短线拉升",
+      "checked_at": "2026-10-15T03:07:22.973514+00:00",
+      "error": "IncompleteRead(45785 bytes read)"
+    },
+    {
+      "key": "MEEREPRINT",
+      "source_id": "GOV",
+      "url": "https://www.mee.gov.cn/zcwj/zyygwj/202610/t20261014_1182955.shtml",
+      "title": "新质生产力意见14日转载",
+      "checked_at": "2026-10-15T03:07:23.257567+00:00",
+      "http_status": 200,
+      "final_url": "https://www.mee.gov.cn/zcwj/zyygwj/202610/t20261014_1182955.shtml",
+      "document_sha256": "cd343f3ec3bb96d56bbc7dce3baecb3a8f1ed50d1927a79bb9173d926c652916",
+      "text_length": 6543,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-14"
+      ]
+    },
+    {
+      "key": "FEDRECENT",
+      "source_id": "FED",
+      "url": "https://www.federalreserve.gov/recentpostings.htm",
+      "title": "美联储最新发布目录",
+      "checked_at": "2026-10-15T03:07:23.869226+00:00",
+      "http_status": 200,
+      "final_url": "https://www.federalreserve.gov/recentpostings.htm",
+      "document_sha256": "a2945cfbe45240e8ce48e82cc91d9db06e63031e510a1f6aef60917912f4d11c",
+      "text_length": 13134,
+      "encoding": "utf-8",
+      "date_clues": []
+    },
+    {
+      "key": "SSEGENERAL",
+      "source_id": "SSE",
+      "url": "https://www.sse.com.cn/disclosure/announcement/general/",
+      "title": "上交所公告目录",
+      "checked_at": "2026-10-15T03:07:24.079822+00:00",
+      "http_status": 200,
+      "final_url": "https://www.sse.com.cn/disclosure/announcement/general/",
+      "document_sha256": "b10e34ae16827444006bf4031b85b7ff9c8479f0a25ffe117fb74786702b68a4",
+      "text_length": 1782,
+      "encoding": "utf-8",
+      "date_clues": [
+        "2026-10-14",
+        "2026-10-13",
+        "2026-10-12",
+        "2026-10-09"
+      ]
+    },
+    {
+      "key": "FEDSUMMARY",
+      "source_id": "FED",
+      "title": "2026年10月褐皮书全国摘要",
+      "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm",
+      "checked_at": "2026-10-15T03:14:17.116954+00:00",
+      "document_sha256": "15e80fe9db174681abd784c5ec5b93a2973cccb09c1facab97870822b72ef847",
+      "text_length": 17838,
+      "http_status": 200
+    },
+    {
+      "key": "CPI_MEDIA",
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/yw-lb/detail/20261014/4480910_1.html",
+      "title": "美国9月通胀率超预期上行至3.7% 美元短线拉升",
+      "checked_at": "2026-10-15T03:14:18.279363+00:00",
+      "error": "IncompleteRead(45785 bytes read)",
+      "capture_note": "本地IncompleteRead后，web.open取得并读取正文；无本地完整HTML指纹。原BLS/DOL仍未取得，不重试。"
+    }
+  ],
+  "limits": [
+    "日期线索列表最多35条/入口，不等于全站穷尽。",
+    "原文在本机exports，仓库只保留链接、短事实和指纹。",
+    "CPI通过web.open读取正文，未取得原BLS/DOL；不以媒体数值当正式已核实际值。",
+    "部分登记来源无类别，仅作补充发现，不伪造覆盖计数。"
+  ]
+}

@@ -288,9 +288,84 @@
         "event_time",
         "source"
       ]
+    },
+    {
+      "event_id": "E-20261013-001",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261013-002",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261013-003",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261014-001",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
+    },
+    {
+      "event_id": "E-20261014-002",
+      "reasons": [
+        "causal_review_missing",
+        "relative_causality_missing",
+        "information_gain_missing",
+        "time_or_invalidation_missing",
+        "no_directional_bias",
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ]
     }
   ],
-  "as_of": "2026-10-13T12:48:01.117373+00:00",
+  "as_of": "2026-10-15T03:19:39.239783+00:00",
   "by_horizon": {
     "Fast": {
       "dominant_event": null,
@@ -306,7 +381,7 @@
       "reason": "no_eligible_alpha",
       "ranking": [],
       "excluded": [],
-      "as_of": "2026-10-13T12:48:01.117373+00:00"
+      "as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     "Swing": {
       "dominant_event": null,
@@ -337,7 +412,7 @@
           ]
         }
       ],
-      "as_of": "2026-10-13T12:48:01.117373+00:00"
+      "as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     "Trend": {
       "dominant_event": null,
@@ -368,7 +443,7 @@
           ]
         }
       ],
-      "as_of": "2026-10-13T12:48:01.117373+00:00"
+      "as_of": "2026-10-15T03:19:39.239783+00:00"
     }
   },
   "events": [
@@ -395,7 +470,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "202211_REOPENING",
@@ -420,7 +495,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "202307_POLICY_SUPPORT",
@@ -445,7 +520,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "202310_HUIJIN",
@@ -470,7 +545,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "202401_SMALLCAP_LIQUIDITY",
@@ -495,7 +570,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "202402_STABILIZATION",
@@ -520,7 +595,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "202404_REGULATION",
@@ -545,7 +620,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "202405_PROPERTY",
@@ -570,7 +645,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "202409_POLICY_PIVOT",
@@ -599,7 +674,7 @@
       ],
       "decay_period_days": 5.0,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "202501_DEEPSEEK",
@@ -628,7 +703,7 @@
       ],
       "decay_period_days": 20.0,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "202504_TARIFF",
@@ -653,7 +728,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "E-20261009-001",
@@ -678,7 +753,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "E-20261009-002",
@@ -703,7 +778,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "E-20261009-003",
@@ -728,7 +803,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "E-20261009-004",
@@ -753,7 +828,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "E-20261009-005",
@@ -778,7 +853,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "E-20261009-006",
@@ -803,7 +878,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     },
     {
       "event_id": "E-20261010-001",
@@ -828,7 +903,132 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-13T12:48:01.117373+00:00"
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
+    },
+    {
+      "event_id": "E-20261013-001",
+      "event_name": "沙特—也门冲突升级与报复风险",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
+    },
+    {
+      "event_id": "E-20261013-002",
+      "event_name": "内河新能源船舶推广行动方案",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
+    },
+    {
+      "event_id": "E-20261013-003",
+      "event_name": "民航两用物项出口登记草案",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
+    },
+    {
+      "event_id": "E-20261014-001",
+      "event_name": "2026年前三季度金融统计发布",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
+    },
+    {
+      "event_id": "E-20261014-002",
+      "event_name": "美国10月褐皮书增长与成本压力",
+      "bias": null,
+      "status": "Draft",
+      "alpha_state": null,
+      "channel_default": null,
+      "qualification": "WATCH",
+      "score": null,
+      "event_strength": null,
+      "impact": null,
+      "confidence": null,
+      "persistence": null,
+      "freshness": null,
+      "score_gaps": [
+        "impact_score",
+        "confidence_score/source_reliability",
+        "horizon",
+        "event_time",
+        "source"
+      ],
+      "decay_period_days": null,
+      "model_version": "event-alpha-v1",
+      "score_as_of": "2026-10-15T03:19:39.239783+00:00"
     }
   ]
 }
