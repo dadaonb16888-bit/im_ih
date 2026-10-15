@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-15T15:34:00.905473+00:00",
+  "as_of": "2026-10-15T22:24:38.764746+00:00",
   "dominant": {
     "Intraday": {
       "event_id": null,
@@ -115,7 +115,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -130,13 +130,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "新质生产力政策意见发布",
       "channel": null,
       "channel_default": null,
@@ -157,7 +157,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -235,7 +235,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -251,13 +251,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "地方债务结存限额5500亿元安排",
       "channel": null,
       "channel_default": null,
@@ -278,7 +278,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -358,7 +358,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -374,13 +374,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "中欧贸易投资磋商第二次例会",
       "channel": null,
       "channel_default": null,
@@ -401,7 +401,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -490,7 +490,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -505,13 +505,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "公募基金运作规则征求意见",
       "channel": null,
       "channel_default": null,
@@ -532,7 +532,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -599,7 +599,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -615,13 +615,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "财政政策执行报告发布",
       "channel": null,
       "channel_default": null,
@@ -642,7 +642,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -709,7 +709,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -725,13 +725,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "产能争议相关贸易风险回应",
       "channel": null,
       "channel_default": null,
@@ -752,7 +752,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -819,7 +819,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -835,13 +835,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "品质电商政策解读",
       "channel": null,
       "channel_default": null,
@@ -862,7 +862,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -891,7 +891,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -907,13 +907,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "沙特—也门冲突升级与报复风险",
       "channel": null,
       "channel_default": null,
@@ -934,7 +934,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -963,7 +963,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -979,13 +979,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "内河新能源船舶推广行动方案",
       "channel": null,
       "channel_default": null,
@@ -1006,7 +1006,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -1035,7 +1035,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -1051,13 +1051,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "民航两用物项出口登记草案",
       "channel": null,
       "channel_default": null,
@@ -1078,7 +1078,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -1107,7 +1107,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -1123,13 +1123,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "2026年前三季度金融统计发布",
       "channel": null,
       "channel_default": null,
@@ -1150,7 +1150,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     },
@@ -1179,7 +1179,7 @@
       "last_state_known_at": null,
       "style_signal": null,
       "D": null,
-      "as_of": "2026-10-15T15:34:00.905473+00:00",
+      "as_of": "2026-10-15T22:24:38.764746+00:00",
       "entry_allowed": false,
       "qualification": "WATCH",
       "blockers": [
@@ -1195,13 +1195,13 @@
         "独立因果及相对定价影响尚未确认"
       ],
       "source_reliability": null,
-      "source": null,
-      "persistence_score": null,
+      "confidence_score": null,
       "event_strength": null,
       "affected_style": null,
-      "impact_score": null,
+      "persistence_score": null,
       "status": "Draft",
-      "confidence_score": null,
+      "impact_score": null,
+      "source": null,
       "event_name": "美国10月褐皮书增长与成本压力",
       "channel": null,
       "channel_default": null,
@@ -1222,7 +1222,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "score": null
     }
@@ -1423,7 +1423,7 @@
         ]
       }
     ],
-    "as_of": "2026-10-15T15:34:00.905473+00:00",
+    "as_of": "2026-10-15T22:24:38.764746+00:00",
     "by_horizon": {
       "Fast": {
         "dominant_event": null,
@@ -1439,7 +1439,7 @@
         "reason": "no_eligible_alpha",
         "ranking": [],
         "excluded": [],
-        "as_of": "2026-10-15T15:34:00.905473+00:00"
+        "as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "Swing": {
         "dominant_event": null,
@@ -1455,7 +1455,7 @@
         "reason": "no_eligible_alpha",
         "ranking": [],
         "excluded": [],
-        "as_of": "2026-10-15T15:34:00.905473+00:00"
+        "as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       "Trend": {
         "dominant_event": null,
@@ -1471,7 +1471,7 @@
         "reason": "no_eligible_alpha",
         "ranking": [],
         "excluded": [],
-        "as_of": "2026-10-15T15:34:00.905473+00:00"
+        "as_of": "2026-10-15T22:24:38.764746+00:00"
       }
     },
     "events": [
@@ -1498,7 +1498,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261009-002",
@@ -1523,7 +1523,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261009-003",
@@ -1548,7 +1548,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261009-004",
@@ -1573,7 +1573,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261009-005",
@@ -1598,7 +1598,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261009-006",
@@ -1623,7 +1623,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261010-001",
@@ -1648,7 +1648,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261013-001",
@@ -1673,7 +1673,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261013-002",
@@ -1698,7 +1698,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261013-003",
@@ -1723,7 +1723,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261014-001",
@@ -1748,7 +1748,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       },
       {
         "event_id": "E-20261014-002",
@@ -1773,7 +1773,7 @@
         ],
         "decay_period_days": null,
         "model_version": "event-alpha-v1",
-        "score_as_of": "2026-10-15T15:34:00.905473+00:00"
+        "score_as_of": "2026-10-15T22:24:38.764746+00:00"
       }
     ]
   },
