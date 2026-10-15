@@ -1,0 +1,153 @@
+[
+  {
+    "lead_id": "DL-20261015-0035",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026100816231113295/index.html",
+    "checked_at": "2026-10-15T09:37:31.792775+00:00",
+    "http_status": 200,
+    "final_url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026100816231113295/index.html",
+    "document_sha256": "022d5e3f2bd44f9398292bc9758994bbcc3763455d54ce2e595eb360ce386edd",
+    "text_length": 6541,
+    "date_clues": [
+      "2026-10-08 17:48:39"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0036",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092917153548424/index.html",
+    "checked_at": "2026-10-15T09:37:31.795775+00:00",
+    "http_status": 200,
+    "final_url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092917153548424/index.html",
+    "document_sha256": "5e0b272dbff39f0db8d9bfec071fec4a4226ad68e4119033897d1e72df52aabd",
+    "text_length": 2331,
+    "date_clues": [
+      "2026-09-29 18:03:03"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0037",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092917051440583/index.html",
+    "checked_at": "2026-10-15T09:37:31.795775+00:00",
+    "http_status": 200,
+    "final_url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092917051440583/index.html",
+    "document_sha256": "2e923e0edbcedc462597b9e82d6fbe01671e545aa21411a815e54cd7bd6d1ebb",
+    "text_length": 1969,
+    "date_clues": [
+      "2026-09-29 18:00:32",
+      "2026年10月1日",
+      "2026年9月29日"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0038",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092917474922559/index.html",
+    "checked_at": "2026-10-15T09:37:31.796742+00:00",
+    "http_status": 200,
+    "final_url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026092917474922559/index.html",
+    "document_sha256": "b9c5a2a3bc261b81827a2dc97b738071c8534c2f8b818f63971c6215cd676031",
+    "text_length": 1137,
+    "date_clues": [
+      "2026-09-29 17:52:48"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0053",
+    "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_7285ee48244d4f20b0f127c7f013ec11.html",
+    "checked_at": "2026-10-15T09:37:31.797743+00:00",
+    "http_status": 200,
+    "final_url": "https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_7285ee48244d4f20b0f127c7f013ec11.html",
+    "document_sha256": "983f7136a6259b190b190932cd0ec6e5c9a3cc8bdfea8c02e656546651d323aa",
+    "text_length": 10488,
+    "date_clues": [
+      "2026-09-14 19:00",
+      "2026年9月14日"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0084",
+    "url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260924_10833301.shtml",
+    "checked_at": "2026-10-15T09:37:31.797743+00:00",
+    "http_status": 200,
+    "final_url": "https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20260924_10833301.shtml",
+    "document_sha256": "7149c78f499475f38112575fb27079c3593237af8a0372105fce709355f952a6",
+    "text_length": 1422,
+    "date_clues": [
+      "2026-09-24"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0174",
+    "url": "https://www.news.cn/world/20261014/4b779175f7624c93a6bcf730285ebd9a/c.html",
+    "checked_at": "2026-10-15T09:37:34.253137+00:00",
+    "http_status": 200,
+    "final_url": "https://www.news.cn/world/20261014/4b779175f7624c93a6bcf730285ebd9a/c.html",
+    "document_sha256": "feb568a6e8105c8e498e0cf6893b8e5c7e6240ea079f5160641c6972787e24c4",
+    "text_length": 604,
+    "date_clues": [
+      "2026-10-14 23:17:46"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0198",
+    "url": "https://www.news.cn/tech/20261015/85fa980638564c15a746cd5a7b704373/c.html",
+    "checked_at": "2026-10-15T09:37:35.327941+00:00",
+    "http_status": 200,
+    "final_url": "https://www.news.cn/tech/20261015/85fa980638564c15a746cd5a7b704373/c.html",
+    "document_sha256": "d32a40deaa82c189b5394847fc1a7263200410d85992242537c57950a60d3b46",
+    "text_length": 2715,
+    "date_clues": [
+      "2026-10-15 08:52:54"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0398",
+    "url": "https://finance.eastmoney.com/a/202610153896438615.html",
+    "checked_at": "2026-10-15T09:37:36.162400+00:00",
+    "http_status": 200,
+    "final_url": "https://finance.eastmoney.com/a/202610153896438615.html",
+    "document_sha256": "cd528b3accf312d177fc44774758e99146a19c68f88296abae3fec80d93095e3",
+    "text_length": 4005,
+    "date_clues": [
+      "2026年10月15日 09:49",
+      "2026-10-15"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0399",
+    "url": "https://finance.eastmoney.com/a/202610153895880319.html",
+    "checked_at": "2026-10-15T09:37:36.328973+00:00",
+    "http_status": 200,
+    "final_url": "https://finance.eastmoney.com/a/202610153895880319.html",
+    "document_sha256": "8602de163a3b09f160e30ea30f170ca78c2cdc3e28be79a9bebde92d3a5fa1dc",
+    "text_length": 2706,
+    "date_clues": [
+      "2026年10月15日 04:06",
+      "2026-10-15"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0410",
+    "url": "https://finance.eastmoney.com/a/202610153896094891.html",
+    "checked_at": "2026-10-15T09:37:36.577875+00:00",
+    "http_status": 200,
+    "final_url": "https://finance.eastmoney.com/a/202610153896094891.html",
+    "document_sha256": "61cc1d07c6e9b1be42ce69497d28e095b8a7eb36609e135324140ab91d04c867",
+    "text_length": 1677,
+    "date_clues": [
+      "2026年10月15日 08:00",
+      "2026-10-15"
+    ]
+  },
+  {
+    "lead_id": "DL-20261015-0597",
+    "url": "https://sitp.cas.cn/xwzx/tpxw/202609/t20260930_8288498.html",
+    "checked_at": "2026-10-15T09:37:36.971625+00:00",
+    "http_status": 200,
+    "final_url": "https://sitp.cas.cn/xwzx/tpxw/202609/t20260930_8288498.html",
+    "document_sha256": "fa3b71fcb42ee354269975b86e5e191fa9b291104cb8ae370b326b9211bea539",
+    "text_length": 6151,
+    "date_clues": [
+      "2026-09-30",
+      "2026年7月8日"
+    ]
+  }
+]
