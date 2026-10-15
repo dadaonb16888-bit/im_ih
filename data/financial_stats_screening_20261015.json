@@ -1,0 +1,34 @@
+{
+  "pack_id": "SCREEN-FINANCIAL-STATS-20261015-V1",
+  "actor": "Codex",
+  "version": "news-screening-v1",
+  "generated_at": "2026-10-15T08:51:37.550824+00:00",
+  "screenings": [
+    {
+      "screening_id": "FS-SC-20261015-FS-S-20261015-AUG",
+      "information_id": "FS-S-20261015-AUG",
+      "summary": "8月报告列社融、M1/M2、贷款及分部门累计值，注明初步数和2025年启用M1新口径。 旧报告用于事前已公开数据基线，不代表市场一致预期；分项覆盖与修订需核。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "原事件的旧基线或官方镜像证据，不是新的独立事件；保留引用，不重启深查或衰减。"
+        }
+      }
+    },
+    {
+      "screening_id": "FS-SC-20261015-FS-S-20261015-SEP_MIRROR",
+      "information_id": "FS-S-20261015-SEP_MIRROR",
+      "summary": "统计司发布与原沟通交流页相同的主要金融统计数字段落。 镜像不是新事件或独立冲击，不重置原事件/评分起点；仅核主要数字段落而非声称HTML完全相同。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": true,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "原事件的旧基线或官方镜像证据，不是新的独立事件；保留引用，不重启深查或衰减。"
+        }
+      }
+    }
+  ]
+}

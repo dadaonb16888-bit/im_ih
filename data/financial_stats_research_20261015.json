@@ -1,0 +1,220 @@
+{
+  "pack_id": "AI-FINANCIAL-STATS-20261015-V1",
+  "actor": "Codex",
+  "method_version": "ai-event-v1",
+  "generated_at": "2026-10-15T08:51:37.550824+00:00",
+  "sources": [
+    {
+      "information_id": "FS-S-20261015-AUG",
+      "title": "央行8月金融统计：前期基线",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116225/2026091417020862747/index.html",
+      "published_at": "2026-09-14T17:00:00+08:00",
+      "publication_precision": "SourceTimestamp",
+      "content_as_of": "2026-08-31",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-15T08:47:50.791591+00:00",
+      "document_sha256": "2be3b50ac4c72068c9b17e28b184cb2186b3f6a6ffe606c2a5b58334bf642998",
+      "fact": "8月报告列社融、M1/M2、贷款及分部门累计值，注明初步数和2025年启用M1新口径。",
+      "verification": "旧报告用于事前已公开数据基线，不代表市场一致预期；分项覆盖与修订需核。",
+      "collection_mode": "CodexStatisticalEvidenceReview"
+    },
+    {
+      "information_id": "FS-S-20261015-SEP_MIRROR",
+      "title": "前三季度报告统计司镜像",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116225/2026101417073743604/index.html",
+      "published_at": "2026-10-14T17:00:04+08:00",
+      "publication_precision": "SourceTimestamp",
+      "content_as_of": "2026-09-30",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-15T08:47:50.793587+00:00",
+      "document_sha256": "41c2f6f84f997c66fe342d571aec38e315240cd25e853b0c4d72a09804534a25",
+      "fact": "统计司发布与原沟通交流页相同的主要金融统计数字段落。",
+      "verification": "镜像不是新事件或独立冲击，不重置原事件/评分起点；仅核主要数字段落而非声称HTML完全相同。",
+      "collection_mode": "CodexStatisticalEvidenceReview"
+    }
+  ],
+  "assessments": [
+    {
+      "assessment_id": "AI-FS-20261015-V2",
+      "baseline_source_ids": [
+        "FS-S-20261015-AUG"
+      ],
+      "bias": null,
+      "channels": [
+        "MARKET_LIQUIDITY",
+        "CREDIT_LARGECAP"
+      ],
+      "confidence": "Low",
+      "confidence_score": null,
+      "conflicts": [
+        "国内信用、海外需求与风险偏好可能同时作用；未核净相对影响，不叠加同链来源为独立冲击。"
+      ],
+      "decision": "InsufficientEvidence",
+      "event_id": "E-20261014-001",
+      "event_time": null,
+      "expectation_baseline": "8月官方报告是旧数据基线，不是9月发布前市场预期。跨版本累计差仅作披露变化，未取得同版本单月表与预期快照。",
+      "expected_last_update_id": null,
+      "exposure_evidence": "已重读两份9月30日归档事实表的行业图：金融IM2.8%/IH32.1%，工业IM27.9%/IH8.4%。这是SectorProxy，不能用权重乘宏观变化当收益，也不是10月14日实时成分权重。",
+      "exposure_source_ids": [
+        "AI-S-20261013-000852-ARCHIVE",
+        "AI-S-20261013-000016-ARCHIVE"
+      ],
+      "facts": [
+        {
+          "statement": "8月与9月末M2同比由7.5%至7.2%，M1同比由4.1%至3.2%，社融存量同比由7.2%至7.1%；两份报告均注明初步数及M1新口径。",
+          "source_ids": [
+            "FS-S-20261015-AUG",
+            "DC-S-20261015-FINSTATS"
+          ]
+        },
+        {
+          "statement": "前三季度与前八月社融累计分别27.46、23.91万亿元；披露累计之差3.55，社融存量余额之差3.37，不能混为同一月流量。",
+          "source_ids": [
+            "FS-S-20261015-AUG",
+            "DC-S-20261015-FINSTATS"
+          ]
+        },
+        {
+          "statement": "两份报告列示的住户、企事业、非银贷款累计数之和未与对应总项严格对平，尚未确认列示分项穷尽或口径一致。",
+          "source_ids": [
+            "FS-S-20261015-AUG",
+            "DC-S-20261015-FINSTATS"
+          ]
+        },
+        {
+          "statement": "归档9月30日事实表金融行业权重：中证1000为2.8%，上证50为32.1%；工业为27.9%和8.4%，均为行业代理。",
+          "source_ids": [
+            "AI-S-20261013-000852-ARCHIVE",
+            "AI-S-20261013-000016-ARCHIVE"
+          ]
+        }
+      ],
+      "first_tradable_time": null,
+      "gaps": [
+        "发布前一致预期与独立相对定价增量",
+        "累计数据修订及同版本官方单月表；列示贷款部门与总项覆盖未对平",
+        "银行与其他金融的拆分、样本融资需求/净息差/信用风险/订单的净暴露",
+        "事件日成分权重、全局首发和精确最早可交易时刻；无同步行情"
+      ],
+      "horizon": "Swing",
+      "ih_case": "IH金融行业代理权重更高，金融传导值得优先核；金融不等于银行，贷款数量、息差和信用风险可能互相抵消，尚不能认定IH净受益。",
+      "im_case": "9月30日IM工业代理权重较高；融资与需求可能影响工业企业，但融资资格、债务成本、订单及利润净受益未知，不能将全部工业当受益。",
+      "impact_score": null,
+      "increment_reason": "补齐已公开8月基线，货币及社融增速、累计融资结构存在可核研究信息变化；镜像只作一致性核对，不计独立增量。Medium不等于超预期或中等交易Alpha。",
+      "information_gain": "Medium",
+      "input_digest": "6b30f92b8f9323975452e96725c845c3044fb21bd5060146d516bffbaac6229a",
+      "invalidation": "若新增原文推翻事实、执行条件或净传导，追加修订；取得价格证据以后另做市场State。",
+      "next_action": "8月基线与行业代理缺口已部分关闭，不重复读取相同报告。下一触发是同版本月表、发布前预期或样本净传导依据；先解释部门覆盖差异，仍不定方向。",
+      "persistence_score": null,
+      "pre_move": "本轮没有读取同步IM/IH行情，不判断提前交易、接受度或市场阶段。",
+      "promote_causal": false,
+      "research_mode": "CurrentReview",
+      "score_basis": {
+        "components": {
+          "confidence_score": {
+            "reason": "已补旧数据和行业代理，但相对净影响、方向数值置信度与持续度未核，保留null。",
+            "source_ids": [
+              "DC-S-20261015-FINSTATS"
+            ],
+            "value": null
+          },
+          "impact_score": {
+            "reason": "已补旧数据和行业代理，但相对净影响、方向数值置信度与持续度未核，保留null。",
+            "source_ids": [
+              "DC-S-20261015-FINSTATS"
+            ],
+            "value": null
+          },
+          "persistence_score": {
+            "reason": "已补旧数据和行业代理，但相对净影响、方向数值置信度与持续度未核，保留null。",
+            "source_ids": [
+              "DC-S-20261015-FINSTATS"
+            ],
+            "value": null
+          },
+          "source": {
+            "reason": "实际读取的发布页；不认作全局首发。",
+            "source_ids": [
+              "DC-S-20261015-FINSTATS"
+            ],
+            "value": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html"
+          },
+          "source_reliability": {
+            "reason": "来源等级只约束报道/原文事实可靠性，不等于方向置信度。",
+            "source_ids": [
+              "DC-S-20261015-FINSTATS"
+            ],
+            "value": "A"
+          }
+        },
+        "reference_time": {
+          "reason": "补证不是新政策起点；未知独立相对Alpha增量，不重置评分参考时刻。",
+          "source_ids": [
+            "DC-S-20261015-FINSTATS"
+          ],
+          "value": null
+        },
+        "rubric_version": "score-evidence-v1"
+      },
+      "source": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html",
+      "source_checks": [
+        {
+          "information_id": "DC-S-20261015-FINSTATS",
+          "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html",
+          "status": "Read",
+          "checked_at": "2026-10-15T08:47:50.794577+00:00",
+          "fact_summary": "央行发布9月末社融存量、前三季度增量及M1/M2和信贷数据。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "FS-S-20261015-AUG",
+          "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116225/2026091417020862747/index.html",
+          "status": "Read",
+          "checked_at": "2026-10-15T08:47:50.791591+00:00",
+          "fact_summary": "8月报告列社融、M1/M2、贷款及分部门累计值，注明初步数和2025年启用M1新口径。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "FS-S-20261015-SEP_MIRROR",
+          "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116225/2026101417073743604/index.html",
+          "status": "Read",
+          "checked_at": "2026-10-15T08:47:50.793587+00:00",
+          "fact_summary": "统计司发布与原沟通交流页相同的主要金融统计数字段落。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-000852-ARCHIVE",
+          "url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/000852factsheet.pdf",
+          "status": "Partial",
+          "checked_at": "2026-10-15T08:47:54.580662+00:00",
+          "fact_summary": "只重核归档PDF第2页行业图、日期及图例，不声称事件日实时暴露。",
+          "capture_mode": "ArchivedOfficialAttachment",
+          "document_sha256": "6d8885c93597a609260cc11385a9b8aaec33593d164d492120018d2b2e914551"
+        },
+        {
+          "information_id": "AI-S-20261013-000016-ARCHIVE",
+          "url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/000016factsheet.pdf",
+          "status": "Partial",
+          "checked_at": "2026-10-15T08:47:54.891935+00:00",
+          "fact_summary": "只重核归档PDF第2页行业图、日期及图例，不声称事件日实时暴露。",
+          "capture_mode": "ArchivedOfficialAttachment",
+          "document_sha256": "d7ced266f7100d99ff4dbd5cf134c649742cd13d8a752fde854c626458b43fd0"
+        }
+      ],
+      "source_ids": [
+        "DC-S-20261015-FINSTATS",
+        "FS-S-20261015-AUG",
+        "FS-S-20261015-SEP_MIRROR",
+        "AI-S-20261013-000852-ARCHIVE",
+        "AI-S-20261013-000016-ARCHIVE"
+      ],
+      "source_reliability": "A",
+      "surprise": null,
+      "transmission": "融资总量、资金成本、银行息差与信用风险可能共同影响风格。同比增速回落不能直接推为政策收紧，累计总额增加也不能推为宽松增强；部门未对平时不拼完整贡献。"
+    }
+  ]
+}

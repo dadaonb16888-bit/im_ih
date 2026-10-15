@@ -1,0 +1,51 @@
+[
+  {
+    "key": "AUG",
+    "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116225/2026091417020862747/index.html",
+    "checked_at": "2026-10-15T08:47:50.791591+00:00",
+    "http_status": 200,
+    "final_url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116225/2026091417020862747/index.html",
+    "document_sha256": "2be3b50ac4c72068c9b17e28b184cb2186b3f6a6ffe606c2a5b58334bf642998",
+    "text_length": 3031
+  },
+  {
+    "key": "SEP_MIRROR",
+    "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116225/2026101417073743604/index.html",
+    "checked_at": "2026-10-15T08:47:50.793587+00:00",
+    "http_status": 200,
+    "final_url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116225/2026101417073743604/index.html",
+    "document_sha256": "41c2f6f84f997c66fe342d571aec38e315240cd25e853b0c4d72a09804534a25",
+    "text_length": 3099
+  },
+  {
+    "key": "SEP_ORIGINAL",
+    "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html",
+    "checked_at": "2026-10-15T08:47:50.794577+00:00",
+    "http_status": 200,
+    "final_url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/2026101415422529740/index.html",
+    "document_sha256": "d57a7e87f5bb638848d06273c0b37400929d7b5b70bb0beffc637158eb711021",
+    "text_length": 3092
+  },
+  {
+    "key": "000852",
+    "information_id": "AI-S-20261013-000852-ARCHIVE",
+    "checked_at": "2026-10-15T08:47:54.580662+00:00",
+    "source_url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/000852factsheet.pdf",
+    "local_snapshot": "data/source_snapshots/000852_factsheet_20260930.pdf",
+    "document_sha256": "6d8885c93597a609260cc11385a9b8aaec33593d164d492120018d2b2e914551",
+    "content_as_of": "2026-09-30",
+    "pages": 2,
+    "read_scope": "Industry chart and date on page2; extracted text used to locate data; other charts not re-audited"
+  },
+  {
+    "key": "000016",
+    "information_id": "AI-S-20261013-000016-ARCHIVE",
+    "checked_at": "2026-10-15T08:47:54.891935+00:00",
+    "source_url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/000016factsheet.pdf",
+    "local_snapshot": "data/source_snapshots/000016_factsheet_20260930.pdf",
+    "document_sha256": "d7ced266f7100d99ff4dbd5cf134c649742cd13d8a752fde854c626458b43fd0",
+    "content_as_of": "2026-09-30",
+    "pages": 2,
+    "read_scope": "Industry chart and date on page2; extracted text used to locate data; other charts not re-audited"
+  }
+]

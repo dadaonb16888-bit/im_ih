@@ -365,7 +365,7 @@
       ]
     }
   ],
-  "as_of": "2026-10-15T07:21:45.636277+00:00",
+  "as_of": "2026-10-15T08:51:37.869519+00:00",
   "by_horizon": {
     "Fast": {
       "dominant_event": null,
@@ -381,7 +381,7 @@
       "reason": "no_eligible_alpha",
       "ranking": [],
       "excluded": [],
-      "as_of": "2026-10-15T07:21:45.636277+00:00"
+      "as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     "Swing": {
       "dominant_event": null,
@@ -412,7 +412,7 @@
           ]
         }
       ],
-      "as_of": "2026-10-15T07:21:45.636277+00:00"
+      "as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     "Trend": {
       "dominant_event": null,
@@ -443,7 +443,7 @@
           ]
         }
       ],
-      "as_of": "2026-10-15T07:21:45.636277+00:00"
+      "as_of": "2026-10-15T08:51:37.869519+00:00"
     }
   },
   "events": [
@@ -470,7 +470,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "202211_REOPENING",
@@ -495,7 +495,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "202307_POLICY_SUPPORT",
@@ -520,7 +520,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "202310_HUIJIN",
@@ -545,7 +545,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "202401_SMALLCAP_LIQUIDITY",
@@ -570,7 +570,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "202402_STABILIZATION",
@@ -595,7 +595,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "202404_REGULATION",
@@ -620,7 +620,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "202405_PROPERTY",
@@ -645,7 +645,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "202409_POLICY_PIVOT",
@@ -674,7 +674,7 @@
       ],
       "decay_period_days": 5.0,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "202501_DEEPSEEK",
@@ -703,7 +703,7 @@
       ],
       "decay_period_days": 20.0,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "202504_TARIFF",
@@ -728,7 +728,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261009-001",
@@ -753,7 +753,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261009-002",
@@ -778,7 +778,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261009-003",
@@ -803,7 +803,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261009-004",
@@ -828,7 +828,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261009-005",
@@ -853,7 +853,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261009-006",
@@ -878,7 +878,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261010-001",
@@ -903,7 +903,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261013-001",
@@ -928,7 +928,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261013-002",
@@ -953,7 +953,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261013-003",
@@ -978,7 +978,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261014-001",
@@ -1003,7 +1003,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     },
     {
       "event_id": "E-20261014-002",
@@ -1028,7 +1028,7 @@
       ],
       "decay_period_days": null,
       "model_version": "event-alpha-v1",
-      "score_as_of": "2026-10-15T07:21:45.636277+00:00"
+      "score_as_of": "2026-10-15T08:51:37.869519+00:00"
     }
   ]
 }

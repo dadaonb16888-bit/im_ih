@@ -1,0 +1,238 @@
+{
+  "checked_at": "2026-10-15T08:56:10.138641+00:00",
+  "before_counts": {
+    "information_inbox": 150,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 55,
+    "legacy_audit": 16,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 57,
+    "information_reviews": 57,
+    "parent_reviews": 17,
+    "ai_research_runs": 8,
+    "ai_assessments": 24,
+    "news_screening_runs": 7,
+    "information_screenings": 99
+  },
+  "after_counts": {
+    "information_inbox": 152,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 59,
+    "legacy_audit": 16,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 57,
+    "information_reviews": 57,
+    "parent_reviews": 17,
+    "ai_research_runs": 9,
+    "ai_assessments": 25,
+    "news_screening_runs": 8,
+    "information_screenings": 101
+  },
+  "all_old_rows_preserved": {
+    "information_inbox": true,
+    "events": true,
+    "event_updates": true,
+    "state_updates": true,
+    "event_information": true,
+    "legacy_audit": true,
+    "research_notes": true,
+    "collection_batches": true,
+    "source_checks": true,
+    "collection_items": true,
+    "information_reviews": true,
+    "parent_reviews": true,
+    "ai_research_runs": true,
+    "ai_assessments": true,
+    "news_screening_runs": true,
+    "information_screenings": true
+  },
+  "integrity": "ok",
+  "foreign_key_violations": [],
+  "same_pack_replay": "No writes",
+  "historical_as_of_hides_new_sources_and_revision": true,
+  "no_new_parent_formal_cause_market_state_or_daily_batch": true,
+  "screening_counts": {
+    "DeepReview": 5,
+    "Watch": 23,
+    "Background": 57,
+    "Unscreened": 67
+  },
+  "research_queue": {
+    "as_of": "2026-10-15T08:51:37.852519+00:00",
+    "tasks": [
+      {
+        "event_id": "E-20261013-001",
+        "event_name": "沙特—也门冲突升级与报复风险",
+        "scope": "Current",
+        "information_ids": [
+          "DC-S-20261014-ARAMCO",
+          "DC-S-20261014-WAR13",
+          "DC-S-20261015-AIRPORT"
+        ],
+        "source_count": 3,
+        "status": "ReviewedWithGaps",
+        "reason": "本轮通过项已合并判读",
+        "assessment_id": "AI-DAILY-20261015-AIRPORT",
+        "reviewed_at": "2026-10-15T03:16:48.717905+00:00",
+        "research_bias": null,
+        "decision": "InsufficientEvidence",
+        "gaps": [
+          "机场停运与能源产运实际影响的独立证据",
+          "相对既有冲突基线的超预期程度",
+          "双方主张的第三方核查",
+          "两指数净盈利与风险暴露及行情反馈"
+        ],
+        "next_action": "继续观察独立供给、运输中断或降温协议等新触发；延续上一版不定方向，不因同链新闻变多恢复IH研究倾向。",
+        "trade_permission": false,
+        "entry_allowed": false
+      },
+      {
+        "event_id": "E-20261014-001",
+        "event_name": "2026年前三季度金融统计发布",
+        "scope": "Current",
+        "information_ids": [
+          "DC-S-20261015-FINSTATS"
+        ],
+        "source_count": 1,
+        "status": "ReviewedWithGaps",
+        "reason": "本轮通过项已合并判读",
+        "assessment_id": "AI-FS-20261015-V2",
+        "reviewed_at": "2026-10-15T08:51:37.550824+00:00",
+        "research_bias": null,
+        "decision": "InsufficientEvidence",
+        "gaps": [
+          "发布前一致预期与独立相对定价增量",
+          "累计数据修订及同版本官方单月表；列示贷款部门与总项覆盖未对平",
+          "银行与其他金融的拆分、样本融资需求/净息差/信用风险/订单的净暴露",
+          "事件日成分权重、全局首发和精确最早可交易时刻；无同步行情"
+        ],
+        "next_action": "8月基线与行业代理缺口已部分关闭，不重复读取相同报告。下一触发是同版本月表、发布前预期或样本净传导依据；先解释部门覆盖差异，仍不定方向。",
+        "trade_permission": false,
+        "entry_allowed": false
+      },
+      {
+        "event_id": "E-20261014-002",
+        "event_name": "美国10月褐皮书增长与成本压力",
+        "scope": "Current",
+        "information_ids": [
+          "DC-S-20261015-FEDSUMMARY"
+        ],
+        "source_count": 1,
+        "status": "ReviewedWithGaps",
+        "reason": "本轮通过项已合并判读",
+        "assessment_id": "AI-NE-20261015-BEIGE-V2",
+        "reviewed_at": "2026-10-15T07:21:45.309249+00:00",
+        "research_bias": null,
+        "decision": "InsufficientEvidence",
+        "gaps": [
+          "发布前一致预期与相对其他已公布数据的独立增量",
+          "两指数利率敏感度、出口、能源成本和盈利的净暴露",
+          "联储目录链接与August标题身份冲突未澄清",
+          "精确公开时间及最早可交易时刻；无同步行情"
+        ],
+        "next_action": "旧版比较缺口已部分关闭。只在有事前预期或相对暴露证据时继续，不再反复读取同两份摘要；目录身份冲突等官方说明。",
+        "trade_permission": false,
+        "entry_allowed": false
+      }
+    ],
+    "needs_association": [],
+    "counts": {
+      "NeedsReview": 0,
+      "ReviewedWithGaps": 3,
+      "Reviewed": 0
+    },
+    "research_only": true,
+    "trade_permission": false,
+    "entry_allowed": false,
+    "note": "按Parent合并研究工作；已判读不等于方向或市场确认。旧关联表无建立时间，历史归属不能完整重建。"
+  },
+  "data_quality": {
+    "unique_metric_ids": true,
+    "main_numeric_mirror_matches": true,
+    "same_m1_definition_note_in_both_reports": true,
+    "earlier_public_baseline": true,
+    "stock_flow_not_interchanged": true,
+    "unknowns_remain_null": true,
+    "all_financial_rows_preliminary": true,
+    "sector_reconciliation": [
+      {
+        "period": "2026-01/08",
+        "headline_total": "10.44",
+        "sum_of_displayed_sectors": "9.7920",
+        "unreconciled_difference": "0.6480",
+        "unit": "万亿元",
+        "partition_completeness_confirmed": false,
+        "cause": null
+      },
+      {
+        "period": "2026-01/09",
+        "headline_total": "11.52",
+        "sum_of_displayed_sectors": "10.9335",
+        "unreconciled_difference": "0.5865",
+        "unit": "万亿元",
+        "partition_completeness_confirmed": false,
+        "cause": null
+      }
+    ]
+  },
+  "unresolved_data_quality_findings": [
+    {
+      "severity": "High",
+      "status": "Unresolved",
+      "finding": "列示部门累计贷款未与总项严格对平；分项是否穷尽及口径未核，不判定官方数据错误。",
+      "remediation": "保留各原值和残差；不计算完整部门贡献或填补未知部门。"
+    },
+    {
+      "severity": "High",
+      "status": "Guarded",
+      "finding": "跨版本累计差含修订与舍入风险；同一舍入披露数相减为0不证明实际零增量。",
+      "remediation": "官方单月流量保持null；找到同版本月表后再核。"
+    },
+    {
+      "severity": "Medium",
+      "status": "Scoped",
+      "finding": "行业快照只能作代理，金融行业不等于银行。",
+      "remediation": "双向路径标Hypothesis，不由权重映射方向。"
+    }
+  ],
+  "implementation_changed": false,
+  "prior_code_test_baseline": "170 passed; no new code test run claimed",
+  "applied": [
+    {
+      "inserted": true,
+      "pack_id": "AI-FINANCIAL-STATS-20261015-V1",
+      "known_at": "2026-10-15T08:51:37.550824+00:00",
+      "assessments": [
+        "AI-FS-20261015-V2"
+      ]
+    },
+    {
+      "inserted": true,
+      "known_at": "2026-10-15T08:51:37.599339+00:00",
+      "pack_id": "SCREEN-FINANCIAL-STATS-20261015-V1",
+      "screenings": [
+        "FS-SC-20261015-FS-S-20261015-AUG",
+        "FS-SC-20261015-FS-S-20261015-SEP_MIRROR"
+      ]
+    }
+  ],
+  "notebook_executed": true,
+  "browser_verification": {
+    "counts": "152 information/25 AI assessments",
+    "V2_and_old_revision_visible": true,
+    "scope_and_unresolved_findings_visible": true,
+    "console_warnings_errors": []
+  },
+  "service_verification": {
+    "background_start": "automatic approval blocked",
+    "controlled_session_start": "succeeded;127.0.0.1 only"
+  }
+}
