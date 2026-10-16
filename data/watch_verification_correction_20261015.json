@@ -1,0 +1,45 @@
+{
+  "pack_id": "WATCH-VERIFICATION-20261015-V2",
+  "actor": "Codex",
+  "version": "news-screening-v1",
+  "generated_at": "2026-10-14T22:15:29.300295+00:00",
+  "screenings": [
+    {
+      "information_id": "DC-S-20261014-SELLING",
+      "summary": "报道引述受访者对险资卖压及结束阶段的推测。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "B",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Medium",
+          "reason": "若属实可能影响风格资金，进入最后一轮短核验。",
+          "scope": "Style",
+          "spillover": "Clear"
+        },
+        "round3": {
+          "fact_support": "Unverified",
+          "novelty": "Unknown",
+          "reason": "卖压主体与出清阶段仍为采访判断，缺可核持仓和赎回序列；不以受访者判断代替已确认资金事件。",
+          "transmission": "Possible"
+        }
+      },
+      "follow_up": {
+        "evidence_source_ids": [
+          "WV-S-20261015-SELLING"
+        ],
+        "finding": "原文包含受访者观察和制度背景，未取得逐日持仓、赎回或账户序列，不升级为已确认流动性事件。",
+        "group_id": "INSURANCE",
+        "next_trigger": "有可核持仓或赎回序列及两指数相对暴露时重筛；相同采访不重做深查。",
+        "outcome": "WaitEvidence",
+        "prior_screening_id": "NS-WV-20261015-DC-S-20261014-SELLING",
+        "priority": "Normal",
+        "question": "核心卖盘与出清尾声是否已有可核原始序列？"
+      },
+      "screening_id": "NS-WV2-20261015-SELLING"
+    }
+  ]
+}

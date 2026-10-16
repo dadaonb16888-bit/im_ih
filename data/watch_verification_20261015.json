@@ -1,0 +1,478 @@
+{
+  "pack_id": "WATCH-VERIFICATION-20261015-V1",
+  "actor": "Codex",
+  "version": "news-screening-v1",
+  "generated_at": "2026-10-14T22:13:21.696274+00:00",
+  "screenings": [
+    {
+      "screening_id": "NS-WV-20261015-DC-S-20261014-MORNING",
+      "information_id": "DC-S-20261014-MORNING",
+      "summary": "早报包含海外数据、央行言论和待发布日程。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "B",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Unknown",
+          "reason": "摘要或目录尚不能辨认独立重大增量；仅在短核验取得重要新事实后重筛。",
+          "scope": "Market",
+          "spillover": "Unknown"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-DC-S-20261014-MORNING",
+        "group_id": "MACRO_DIGEST",
+        "priority": "Normal",
+        "question": "综合早报中的具体重要事项是否已核原始出处？",
+        "evidence_source_ids": [
+          "WV-S-20261015-MORNING"
+        ],
+        "finding": "早报混合宏观、讲话、行情与日程；本轮先独立处理到期CPI线索，其余项目未取得原始依据，不整页升级。",
+        "next_trigger": "有明确原始发布地址与新事实的具体事项时拆条重筛；不将早报发布时间套给所有内容。",
+        "outcome": "WaitEvidence"
+      }
+    },
+    {
+      "screening_id": "NS-WV-20261015-DC-S-20261014-EXPORT",
+      "information_id": "DC-S-20261014-EXPORT",
+      "summary": "解读拟对低风险民航维修等出口实施登记凭证并说明此前许可证制度。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "A",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Medium",
+          "reason": "影响主要落在细分产业或地方，尚未见新增大额预算/订单或清晰风格扩散；先观察，停止企业逐项深查。",
+          "scope": "Industry",
+          "spillover": "Possible"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-DC-S-20261014-EXPORT",
+        "group_id": "AVIATION",
+        "priority": "Low",
+        "question": "细分登记草案是否出现重大实施范围或金额变化？",
+        "evidence_source_ids": [],
+        "finding": "已有解读和受阻草案保留；本轮没有新的实施触发依据，不重复读取受阻入口或扩展企业分析。",
+        "next_trigger": "正式生效或取得范围、费用、覆盖产业明显变化的可读原文后再核。",
+        "outcome": "WaitEvidence"
+      }
+    },
+    {
+      "screening_id": "NS-WV-20261015-DC-S-20261014-BOATS",
+      "information_id": "DC-S-20261014-BOATS",
+      "summary": "报道2026—2030年行动方案及2028年保有量相对2025年翻倍目标。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "A",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Medium",
+          "reason": "影响主要落在细分产业或地方，尚未见新增大额预算/订单或清晰风格扩散；先观察，停止企业逐项深查。",
+          "scope": "Industry",
+          "spillover": "Possible"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-DC-S-20261014-BOATS",
+        "group_id": "BOATS",
+        "priority": "Low",
+        "question": "是否出现超出既有行动意向的重大新增执行量？",
+        "evidence_source_ids": [],
+        "finding": "已有细分产业资料仍按第二轮等待。本轮未取得新的触发线索，没有重复抓取或企业逐项深查。",
+        "next_trigger": "出现可核新增预算、强制执行或重大订单，并有风格级扩散线索时再核。",
+        "outcome": "WaitEvidence"
+      }
+    },
+    {
+      "screening_id": "NS-WV-20261015-DC-S-20261014-BOAT_POLICY",
+      "information_id": "DC-S-20261014-BOAT_POLICY",
+      "summary": "原文列出电动和甲醇船舶、补能网络、制造、技术攻关与政策支持安排。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "A",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Medium",
+          "reason": "影响主要落在细分产业或地方，尚未见新增大额预算/订单或清晰风格扩散；先观察，停止企业逐项深查。",
+          "scope": "Industry",
+          "spillover": "Possible"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-DC-S-20261014-BOAT_POLICY",
+        "group_id": "BOATS",
+        "priority": "Low",
+        "question": "是否出现超出既有行动意向的重大新增执行量？",
+        "evidence_source_ids": [],
+        "finding": "已有细分产业资料仍按第二轮等待。本轮未取得新的触发线索，没有重复抓取或企业逐项深查。",
+        "next_trigger": "出现可核新增预算、强制执行或重大订单，并有风格级扩散线索时再核。",
+        "outcome": "WaitEvidence"
+      }
+    },
+    {
+      "screening_id": "NS-WV-20261015-DC-S-20261014-BILL65",
+      "information_id": "DC-S-20261014-BILL65",
+      "summary": "财政部目录出现国债发行通知线索，正文未取得。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "A",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "该正文为具体发行操作，未给出新增支出机制，单份通知不足以成为IM/IH重大事件；按背景归档。"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-DC-S-20261014-BILL65",
+        "group_id": "BILLS",
+        "priority": "Low",
+        "question": "通知是否提出可辨认的新财政支出机制？",
+        "evidence_source_ids": [
+          "WV-S-20261015-BILL65"
+        ],
+        "finding": "已读正文为单期贴现债发行操作，不提供新支出机制；不据此推IM/IH方向。",
+        "next_trigger": "出现新增预算、超常净融资或资金安排的可靠材料再核。",
+        "outcome": "Archive"
+      }
+    },
+    {
+      "screening_id": "NS-WV-20261015-DC-S-20261014-BILL64",
+      "information_id": "DC-S-20261014-BILL64",
+      "summary": "财政部目录出现另一国债发行通知线索，正文未取得。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "A",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Unknown",
+          "reason": "摘要或目录尚不能辨认独立重大增量；仅在短核验取得重要新事实后重筛。",
+          "scope": "Market",
+          "spillover": "Unknown"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-DC-S-20261014-BILL64",
+        "group_id": "BILLS",
+        "priority": "Low",
+        "question": "通知是否提出可辨认的新财政支出机制？",
+        "evidence_source_ids": [
+          "WV-S-20261015-BILL64"
+        ],
+        "finding": "原地址仍502，未取得正文，不因相邻一期可读而推定本期内容。",
+        "next_trigger": "有可读官方正文或新的明确增量线索时再核，停止原地址重试。",
+        "outcome": "WaitEvidence"
+      }
+    },
+    {
+      "screening_id": "NS-WV-20261015-DC-S-20261014-FLOWS",
+      "information_id": "DC-S-20261014-FLOWS",
+      "summary": "媒体引用Wind统计ETF资金流入，并列出个别中证1000产品。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "B",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Medium",
+          "reason": "若属实可能影响风格资金，进入最后一轮短核验。",
+          "scope": "Style",
+          "spillover": "Clear"
+        },
+        "round3": {
+          "fact_support": "Unverified",
+          "novelty": "Unknown",
+          "reason": "媒体估算/采访推测不等于已核整体资金流；虽取得两只ETF份额，覆盖与份额事项仍缺，先待核。",
+          "transmission": "Possible"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-DC-S-20261014-FLOWS",
+        "group_id": "ETF",
+        "priority": "Normal",
+        "question": "媒体流入估算是否有完整可复核的原始依据？",
+        "evidence_source_ids": [
+          "WV-S-20261015-FLOWS"
+        ],
+        "finding": "重读仍是媒体引用Wind口径。两只样本份额不能替代全产品覆盖和调整核查；网页指纹变化不作为新资金事件。",
+        "next_trigger": "取得同日完整可比IM/IH产品原始份额及调整依据，再核资金方向。",
+        "outcome": "WaitEvidence"
+      }
+    },
+    {
+      "screening_id": "NS-WV-20261015-DC-S-20261014-SELLING",
+      "information_id": "DC-S-20261014-SELLING",
+      "summary": "报道引述受访者对险资卖压及结束阶段的推测。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "B",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Medium",
+          "reason": "若属实可能影响风格资金，进入最后一轮短核验。",
+          "scope": "Style",
+          "spillover": "Clear"
+        },
+        "round3": {
+          "fact_support": "Unverified",
+          "novelty": "Unknown",
+          "reason": "媒体估算/采访推测不等于已核整体资金流；虽取得两只ETF份额，覆盖与份额事项仍缺，先待核。",
+          "transmission": "Possible"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-DC-S-20261014-SELLING",
+        "group_id": "INSURANCE",
+        "priority": "Normal",
+        "question": "核心卖盘与出清尾声是否已有可核原始序列？",
+        "evidence_source_ids": [
+          "WV-S-20261015-SELLING"
+        ],
+        "finding": "原文包含受访者观察和制度背景，未取得逐日持仓、赎回或账户序列，不升级为已确认流动性事件。",
+        "next_trigger": "有可核持仓或赎回序列及两指数相对暴露时重筛；相同采访不重做深查。",
+        "outcome": "WaitEvidence"
+      }
+    },
+    {
+      "screening_id": "NS-WV-20261015-DC-S-20261014-BLSCALENDAR",
+      "information_id": "DC-S-20261014-BLSCALENDAR",
+      "summary": "官方日历列10月14日美东08:30发布9月CPI，即北京时间20:30。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧日程已过计划时刻，转背景；实际发布线索独立入池，不以日程替代数据。"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-DC-S-20261014-BLSCALENDAR",
+        "group_id": "CPI",
+        "priority": "High",
+        "question": "计划发布时刻过后，是否实际取得正式原件？",
+        "evidence_source_ids": [
+          "WV-S-20261015-CALENDAR",
+          "WV-S-20261015-CPI",
+          "WV-S-20261015-CPIPDF"
+        ],
+        "finding": "旧日程到期，只作背景；发布线索另建来源待核。原件两入口受阻，不填实际值或超预期。",
+        "next_trigger": "新发布来源取得可读正式原件及事前预期后重筛；不继续反复查旧日历。",
+        "outcome": "Archive"
+      }
+    },
+    {
+      "screening_id": "NS-WV-20261015-DC-S-20261014-RIZHAO",
+      "information_id": "DC-S-20261014-RIZHAO",
+      "summary": "搜索索引出现日照AI制造计划报道，正文未取得。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "B",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Medium",
+          "reason": "影响主要落在细分产业或地方，尚未见新增大额预算/订单或清晰风格扩散；先观察，停止企业逐项深查。",
+          "scope": "Local",
+          "spillover": "Possible"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-DC-S-20261014-RIZHAO",
+        "group_id": "LOCAL_AI",
+        "priority": "Low",
+        "question": "地方计划正文能否支持重大外溢判断？",
+        "evidence_source_ids": [
+          "WV-S-20261015-RIZHAO"
+        ],
+        "finding": "原地址证书主机名不符，未绕过。正文与预算仍未知，不认定无价值或提高优先级。",
+        "next_trigger": "取得可安全读取的官方原文且含重大执行量、跨地区外溢时再核。",
+        "outcome": "WaitEvidence"
+      }
+    },
+    {
+      "screening_id": "NS-WV-20261015-BR-S-20261014-AVIATIONDRAFT",
+      "information_id": "BR-S-20261014-AVIATIONDRAFT",
+      "summary": "正式通知链接已定位，正文及附件本轮未取得。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "来源和日期已简短核对，进入影响力初筛。",
+          "source_quality": "A",
+          "time_relevance": "Unknown"
+        },
+        "round2": {
+          "potential": "Medium",
+          "reason": "细分制度草案正文受阻，尚无风格级影响证据；保持短待核，暂不扩大分析。",
+          "scope": "Industry",
+          "spillover": "Possible"
+        }
+      },
+      "follow_up": {
+        "prior_screening_id": "NS-20261014-BR-S-20261014-AVIATIONDRAFT",
+        "group_id": "AVIATION",
+        "priority": "Low",
+        "question": "细分登记草案是否出现重大实施范围或金额变化？",
+        "evidence_source_ids": [],
+        "finding": "已有解读和受阻草案保留；本轮没有新的实施触发依据，不重复读取受阻入口或扩展企业分析。",
+        "next_trigger": "正式生效或取得范围、费用、覆盖产业明显变化的可读原文后再核。",
+        "outcome": "WaitEvidence"
+      }
+    },
+    {
+      "screening_id": "NS-WV-S-20261015-BILL64",
+      "information_id": "WV-S-20261015-BILL64",
+      "summary": "原地址返回502，本轮停止重试。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "本条为既有待核项的短证据或读取失败记录，仅归档核验经过，不另开深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-WV-S-20261015-BILL65",
+      "information_id": "WV-S-20261015-BILL65",
+      "summary": "正文为182天贴现债、面值550亿元的发行操作安排；未读取两份应急表单附件。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "本条为既有待核项的短证据或读取失败记录，仅归档核验经过，不另开深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-WV-S-20261015-RIZHAO",
+      "information_id": "WV-S-20261015-RIZHAO",
+      "summary": "原地址证书与主机名不符，未关闭证书验证，不认定地方计划事实。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "B",
+          "reason": "本条为既有待核项的短证据或读取失败记录，仅归档核验经过，不另开深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-WV-S-20261015-FLOWS",
+      "information_id": "WV-S-20261015-FLOWS",
+      "summary": "报道仍为媒体引用Wind的ETF统计，未直接提供全产品原始份额与调整核查。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "B",
+          "reason": "本条为既有待核项的短证据或读取失败记录，仅归档核验经过，不另开深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-WV-S-20261015-SELLING",
+      "information_id": "WV-S-20261015-SELLING",
+      "summary": "卖压主体与出清阶段为受访者推断；未取得可复核账户或逐日持仓原始序列。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "B",
+          "reason": "本条为既有待核项的短证据或读取失败记录，仅归档核验经过，不另开深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-WV-S-20261015-MORNING",
+      "information_id": "WV-S-20261015-MORNING",
+      "summary": "页面混合多条海外宏观摘要和日程，原始依据须逐项核，不能整体升级为单一事件。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "B",
+          "reason": "本条为既有待核项的短证据或读取失败记录，仅归档核验经过，不另开深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-WV-S-20261015-CALENDAR",
+      "information_id": "WV-S-20261015-CALENDAR",
+      "summary": "官方日历列14日美东08:30发布9月CPI，计划时刻已过；日历本身不提供实际值。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "本条为既有待核项的短证据或读取失败记录，仅归档核验经过，不另开深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-WV-S-20261015-CPI",
+      "information_id": "WV-S-20261015-CPI",
+      "summary": "BLS搜索结果出现9月CPI正式发布正文线索；正文和官方替代附件均受阻，未取得完整原件。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "有明确官方发布索引和日期，但原文尚未取得。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "High",
+          "spillover": "Clear",
+          "reason": "美国通胀发布具有货币政策与风险偏好的跨市场潜在影响，值得短核原件。"
+        },
+        "round3": {
+          "novelty": "New",
+          "transmission": "Possible",
+          "fact_support": "Unverified",
+          "reason": "索引不能替代完整原件；网页与官方附件受阻，停止本轮读取，待可读原件及事前预期再核。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-WV-S-20261015-CPIPDF",
+      "information_id": "WV-S-20261015-CPIPDF",
+      "summary": "明确官方PDF地址返回403，本主题本轮替代读取停止。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "本条为既有待核项的短证据或读取失败记录，仅归档核验经过，不另开深查。"
+        }
+      }
+    }
+  ]
+}

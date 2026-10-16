@@ -1,0 +1,669 @@
+{
+  "package_id": "CANDIDATE-READ-20261016-V1",
+  "sources": [
+    {
+      "information_id": "CR-S-20261016-0002",
+      "title": "郑栅洁主任主持召开民营企业座谈会 围绕准确把握三季度经济形势、积极应对国际供需情况变化听取意见建议",
+      "source_id": "NDRC",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261010_1408066.html",
+      "resolved_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261010_1408066.html",
+      "published_at": "2026-10-10",
+      "publication_precision": "SourceDate",
+      "publication_observations": [
+        {
+          "field": "PubDate",
+          "value": "2026-10-10 19:09:24"
+        }
+      ],
+      "first_seen_at": "2026-10-15T22:20:58.043569+00:00",
+      "read_status": "Partial",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "c6908ed65910670e6c5bf3ba8b500448f1c17a783d19c0171a4a08a3d9560ffb",
+      "fact": "民营企业座谈会页面日期10月10日，讨论经营与四季度政策协同；早于本批窗口。",
+      "verification": "核标题、日期与会议概要后停止；不声称所有政策实施或企业反馈已独立核实。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "POLICY_GROWTH"
+    },
+    {
+      "information_id": "CR-S-20261016-0003",
+      "title": "国家发展改革委有关负责同志就《关于发展新质生产力的意见》答记者问",
+      "source_id": "NDRC",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261009_1408037.html",
+      "resolved_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261009_1408037.html",
+      "published_at": "2026-10-09",
+      "publication_precision": "SourceDate",
+      "publication_observations": [
+        {
+          "field": "PubDate",
+          "value": "2026-10-09 20:19:48"
+        }
+      ],
+      "first_seen_at": "2026-10-15T22:20:58.045082+00:00",
+      "read_status": "Partial",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "17eb278c40e2c97f5b23c17bc00568b1b445024caadf160e9442e4c83cae5eda",
+      "fact": "新质生产力问答页面日期10月9日，涉及科技、传统产业和改革；不是窗口内新文件。",
+      "verification": "核日期及前段原则解释即停止；问答全文/关联意见实施未逐条复核。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "POLICY_GROWTH"
+    },
+    {
+      "information_id": "CR-S-20261016-0005",
+      "title": "国家发展改革委举行专题新闻发布会 介绍推进服务业扩能提质有关情况",
+      "source_id": "NDRC",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260929_1407929.html",
+      "resolved_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260929_1407929.html",
+      "published_at": "2026-09-29",
+      "publication_precision": "SourceDate",
+      "publication_observations": [
+        {
+          "field": "PubDate",
+          "value": "2026-09-29 17:02:58"
+        }
+      ],
+      "first_seen_at": "2026-10-15T22:20:58.045082+00:00",
+      "read_status": "Partial",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "c4aa7a16359ebabad50c60b21d926684d53fbc4ac8a93c0207ad7b30c50dd12b",
+      "fact": "服务业扩能提质发布会介绍页标注9月29日；页面另链发布会实录。",
+      "verification": "只核本页日期和概要；未打开实录，不把会议概要当全部政策原文。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "POLICY_GROWTH"
+    },
+    {
+      "information_id": "CR-S-20261016-0007",
+      "title": "国家发展改革委举行9月份新闻发布会",
+      "source_id": "NDRC",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260922_1407781.html",
+      "resolved_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260922_1407781.html",
+      "published_at": "2026-09-22",
+      "publication_precision": "SourceDate",
+      "publication_observations": [
+        {
+          "field": "PubDate",
+          "value": "2026-09-22 16:58:06"
+        }
+      ],
+      "first_seen_at": "2026-10-15T22:20:58.046091+00:00",
+      "read_status": "Partial",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "bef12a2b4561952d14fc21bea47ee220c25998c8c4c8afdc5f32446ce669bd37",
+      "fact": "9月份发布会介绍页标注9月22日；不是10月14—15日新发布。",
+      "verification": "核日期与概要后停止；未读取另链实录。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "POLICY_GROWTH"
+    },
+    {
+      "information_id": "CR-S-20261016-0042",
+      "title": "中国证监会就《公开募集证券投资基金运作管理办法（征求意见稿）》及配套规则公开征求意见",
+      "source_id": "CSRC",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7663393/content.shtml",
+      "resolved_url": "https://www.csrc.gov.cn/csrc/c100028/c7663393/content.shtml",
+      "published_at": "2026-10-09",
+      "publication_precision": "SourceDate",
+      "publication_observations": [
+        {
+          "field": "PubDate",
+          "value": "2026-10-09 17:55:40"
+        }
+      ],
+      "first_seen_at": "2026-10-15T22:20:58.047091+00:00",
+      "read_status": "Partial",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "c682393ffc97a485379a7b27beaa13120dcedeed67a9a23f077980b3a9e52f4a",
+      "fact": "基金运作办法及配套规则征求意见介绍页日期10月9日，待履行程序后发布实施。",
+      "verification": "核页面日期和征求意见状态；未读取另链通知/附件和旧版条文，不推定已经生效。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "REGULATION"
+    },
+    {
+      "information_id": "CR-S-20261016-0051",
+      "title": "李乐成主持召开中小企业圆桌会 强调健全主动发现机制 做好对企服务",
+      "source_id": "MIIT",
+      "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_ad9f71a8dd3f4ec4a8b045d02823042a.html",
+      "resolved_url": "https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_ad9f71a8dd3f4ec4a8b045d02823042a.html",
+      "published_at": "2026-09-20",
+      "publication_precision": "SourceDate",
+      "publication_observations": [
+        {
+          "field": "PubDate",
+          "value": "2026-09-20 17:49"
+        },
+        {
+          "field": "MakeTime",
+          "value": "2026-10-16 06:19:33"
+        }
+      ],
+      "first_seen_at": "2026-10-15T22:20:59.698357+00:00",
+      "read_status": "Partial",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "0f11510074add982ff3ec3fa64e975281cfce7da6e616f7537dcf2db9cf929a3",
+      "fact": "中小企业圆桌会页日期9月20日，主题为主动发现与服务优质企业；早于旧窗口。",
+      "verification": "核日期与会议前段即停止；可见17:39、元数据17:49冲突，保留日期级，不选一个造精确首发。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "POLICY_GROWTH"
+    },
+    {
+      "information_id": "CR-S-20261016-0056",
+      "title": "李强在第140届中国进出口商品交易会开幕式上的主旨演讲（全文）",
+      "source_id": "MOFCOM",
+      "url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2026/art_e09d863934884b4b9783ec3605153d09.html",
+      "resolved_url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2026/art_e09d863934884b4b9783ec3605153d09.html",
+      "published_at": "2026-10-14",
+      "publication_precision": "SourceDate",
+      "publication_observations": [
+        {
+          "field": "PubDate",
+          "value": "2026-10-14 22:46"
+        },
+        {
+          "field": "MakeTime",
+          "value": "2026-10-14 22:46:26"
+        }
+      ],
+      "first_seen_at": "2026-10-15T22:21:00.638360+00:00",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "1cf70932213e8ae3b4ee15e92aada9ab435673fe5e47ed142bccc078d2731f21",
+      "fact": "商务部转载广交会开幕式讲话，围绕开放合作、内需和长期市场机遇；未见明确新增预算、税率或可执行条款。",
+      "verification": "已读讲话正文；未据一般开放表述生成政策增量。可见22:43、PubDate22:46不一致，精确发布时刻未定。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "POLICY_GROWTH"
+    },
+    {
+      "information_id": "CR-S-20261016-0239",
+      "title": "刷新世界纪录！我国量子网络领域实现关键技术突破",
+      "source_id": "SINA",
+      "url": "https://finance.sina.com.cn/wm/2026-10-15/doc-inivhiep7384183.shtml",
+      "resolved_url": "https://finance.sina.com.cn/wm/2026-10-15/doc-inivhiep7384183.shtml",
+      "published_at": "2026-10-15",
+      "publication_precision": "SourceDate",
+      "publication_observations": [
+        {
+          "field": "bytedance:published_time",
+          "value": "2026-10-15T08:48:33+08:00"
+        },
+        {
+          "field": "bytedance:lrDate_time",
+          "value": "2026-10-15T09:07:15+08:00"
+        },
+        {
+          "field": "bytedance:updated_time",
+          "value": "2026-10-15T09:07:15+08:00"
+        },
+        {
+          "field": "article:published_time",
+          "value": "2026-10-15T09:07:14+08:00"
+        }
+      ],
+      "first_seen_at": "2026-10-15T22:21:00.654033+00:00",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "bbcfa6ecd96228e369e6a1079388bc787415100a1861b93d7ff9e956f25efd6e",
+      "fact": "科技日报转载介绍量子频率转换成果；同一研究已有校方10月13日发布，不能把15日传播视为首次技术冲击。",
+      "verification": "已读报道正文并比对校方技术对象；页面08:48、元数据09:07等时刻不一，按日期保存。论文正文未读，纪录与倍数为来源表述。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "TECH"
+    },
+    {
+      "information_id": "CR-S-20261016-0727",
+      "title": "交通运输部办公厅关于印发《水运领域人工智能应用场景指引》的通知",
+      "source_id": "MOT",
+      "url": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261013_4225770.html",
+      "resolved_url": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261013_4225770.html",
+      "published_at": "2026-10-14",
+      "publication_precision": "SourceDate",
+      "publication_observations": [
+        {
+          "field": "PubDate",
+          "value": "2026-10-14 08:45"
+        }
+      ],
+      "first_seen_at": "2026-10-15T22:21:00.657301+00:00",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "395b1e9629b21b1b464687580246d403207b40e609d4474de6fe82174a246e41",
+      "fact": "水运AI指引公开日期10月14日、落款10月8日，列22类场景；链接含10月13日不代表公开日期。",
+      "verification": "已读通知及内嵌场景正文；未取得新增预算、采购/订单和风格级扩散证据。公开日、落款及URL分开，不当成真实实施量。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "TECH"
+    },
+    {
+      "information_id": "CR-S-20261016-0729",
+      "title": "《内河新能源船舶推广应用行动方案（2026—2030年）》政策解读",
+      "source_id": "MOT",
+      "url": "https://www.mot.gov.cn/gongkai/zcjd/202610/t20261012_4225721.html",
+      "resolved_url": "https://www.mot.gov.cn/gongkai/zcjd/202610/t20261012_4225721.html",
+      "published_at": "2026-10-13",
+      "publication_precision": "SourceDate",
+      "publication_observations": [
+        {
+          "field": "PubDate",
+          "value": "2026-10-13 08:44"
+        }
+      ],
+      "first_seen_at": "2026-10-15T22:21:00.661312+00:00",
+      "read_status": "Partial",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "48b036b9375d878f4e8eb5124e49cc65a42e0e88b89e7b25572baa4051650394",
+      "fact": "内河新能源船舶政策解读可见10月13日08:44，介绍2028/2030目标；属于窗口前旧背景。",
+      "verification": "核页面日期与概要后停止；URL含10月12日不替代可见日期，不把目标当已交付船量。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "POLICY_GROWTH"
+    },
+    {
+      "information_id": "CR-S-20261016-9001",
+      "title": "中国科大量子频率转换研究原始发布",
+      "source_id": "USTC-MPHY",
+      "url": "https://mphy.ustc.edu.cn/2026/1013/c27337a755951/pagem.htm",
+      "resolved_url": "https://mphy.ustc.edu.cn/2026/1013/c27337a755951/pagem.htm",
+      "published_at": "2026-10-13",
+      "publication_precision": "SourceDate",
+      "publication_observations": [],
+      "first_seen_at": "2026-10-15T22:22:18.071137+00:00",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "821069813db01487a3f883672d7f7cd5c04f13b1ba8e0d59639b8213018ea391",
+      "fact": "中国科大近代物理系10月13日发布393nm至1550nm量子频率转换研究；与15日媒体报道的技术对象相同。",
+      "verification": "已读校方发布正文；其中效率、噪声与国际纪录是校方研究表述，未读取论文全文或独立复现实验。",
+      "collection_mode": "CodexCandidateVerification",
+      "category": "TECH"
+    }
+  ],
+  "selection": [
+    {
+      "lead_id": "DL-20261015-0002",
+      "information_id": "CR-S-20261016-0002",
+      "status": "Excluded",
+      "route": "Background",
+      "category": "POLICY_GROWTH",
+      "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。"
+    },
+    {
+      "lead_id": "DL-20261015-0003",
+      "information_id": "CR-S-20261016-0003",
+      "status": "Excluded",
+      "route": "Background",
+      "category": "POLICY_GROWTH",
+      "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。"
+    },
+    {
+      "lead_id": "DL-20261015-0005",
+      "information_id": "CR-S-20261016-0005",
+      "status": "Excluded",
+      "route": "Background",
+      "category": "POLICY_GROWTH",
+      "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。"
+    },
+    {
+      "lead_id": "DL-20261015-0007",
+      "information_id": "CR-S-20261016-0007",
+      "status": "Excluded",
+      "route": "Background",
+      "category": "POLICY_GROWTH",
+      "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。"
+    },
+    {
+      "lead_id": "DL-20261015-0042",
+      "information_id": "CR-S-20261016-0042",
+      "status": "Excluded",
+      "route": "Background",
+      "category": "REGULATION",
+      "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。"
+    },
+    {
+      "lead_id": "DL-20261015-0051",
+      "information_id": "CR-S-20261016-0051",
+      "status": "Excluded",
+      "route": "Background",
+      "category": "POLICY_GROWTH",
+      "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。"
+    },
+    {
+      "lead_id": "DL-20261015-0056",
+      "information_id": "CR-S-20261016-0056",
+      "status": "Linked",
+      "route": "Background",
+      "category": "POLICY_GROWTH",
+      "reason": "已读本页原文，按三轮规则短归档或待核；关联原文不等于通过分析，也不生成Bias。"
+    },
+    {
+      "lead_id": "DL-20261015-0239",
+      "information_id": "CR-S-20261016-0239",
+      "status": "Linked",
+      "route": "Background",
+      "category": "TECH",
+      "reason": "已读本页原文，按三轮规则短归档或待核；关联原文不等于通过分析，也不生成Bias。"
+    },
+    {
+      "lead_id": "DL-20261015-0727",
+      "information_id": "CR-S-20261016-0727",
+      "status": "Linked",
+      "route": "Pending",
+      "category": "TECH",
+      "reason": "已读本页原文，按三轮规则短归档或待核；关联原文不等于通过分析，也不生成Bias。"
+    },
+    {
+      "lead_id": "DL-20261015-0729",
+      "information_id": "CR-S-20261016-0729",
+      "status": "Excluded",
+      "route": "Background",
+      "category": "POLICY_GROWTH",
+      "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。"
+    }
+  ],
+  "screening": {
+    "pack_id": "SCREEN-CANDIDATE-READ-20261016-V1",
+    "actor": "Codex",
+    "version": "news-screening-v1",
+    "generated_at": "2026-10-15T22:23:48.920978+00:00",
+    "screenings": [
+      {
+        "screening_id": "CR-SCR-20261016-0002",
+        "information_id": "CR-S-20261016-0002",
+        "summary": "民营企业座谈会页面日期10月10日，讨论经营与四季度政策协同；早于本批窗口。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "原文日期早于旧窗口；只保存旧政策/科研背景，不作为窗口内新冲击，也不撤销旧Parent。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-SCR-20261016-0003",
+        "information_id": "CR-S-20261016-0003",
+        "summary": "新质生产力问答页面日期10月9日，涉及科技、传统产业和改革；不是窗口内新文件。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "原文日期早于旧窗口；只保存旧政策/科研背景，不作为窗口内新冲击，也不撤销旧Parent。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-SCR-20261016-0005",
+        "information_id": "CR-S-20261016-0005",
+        "summary": "服务业扩能提质发布会介绍页标注9月29日；页面另链发布会实录。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "原文日期早于旧窗口；只保存旧政策/科研背景，不作为窗口内新冲击，也不撤销旧Parent。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-SCR-20261016-0007",
+        "information_id": "CR-S-20261016-0007",
+        "summary": "9月份发布会介绍页标注9月22日；不是10月14—15日新发布。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "原文日期早于旧窗口；只保存旧政策/科研背景，不作为窗口内新冲击，也不撤销旧Parent。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-SCR-20261016-0042",
+        "information_id": "CR-S-20261016-0042",
+        "summary": "基金运作办法及配套规则征求意见介绍页日期10月9日，待履行程序后发布实施。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "原文日期早于旧窗口；只保存旧政策/科研背景，不作为窗口内新冲击，也不撤销旧Parent。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-SCR-20261016-0051",
+        "information_id": "CR-S-20261016-0051",
+        "summary": "中小企业圆桌会页日期9月20日，主题为主动发现与服务优质企业；早于旧窗口。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "原文日期早于旧窗口；只保存旧政策/科研背景，不作为窗口内新冲击，也不撤销旧Parent。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-SCR-20261016-0056",
+        "information_id": "CR-S-20261016-0056",
+        "summary": "商务部转载广交会开幕式讲话，围绕开放合作、内需和长期市场机遇；未见明确新增预算、税率或可执行条款。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Current",
+            "source_quality": "A",
+            "reason": "正文公开日落旧窗口；只确认页面日期，精确首发和执行时刻不据URL/落款推断。"
+          },
+          "round2": {
+            "scope": "Market",
+            "potential": "Low",
+            "spillover": "Possible",
+            "reason": "对本策略的可辨认增量低：全文以开放合作和长期战略表述为主，未见新增可执行额度/税率/细则；短归档，实施新事实可重开。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-SCR-20261016-0239",
+        "information_id": "CR-S-20261016-0239",
+        "summary": "科技日报转载介绍量子频率转换成果；同一研究已有校方10月13日发布，不能把15日传播视为首次技术冲击。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": true,
+            "time_relevance": "Current",
+            "source_quality": "B",
+            "reason": "校方13日已经发布同一量子频率转换成果；本篇15日传播未见独立新增事实。保留技术背景，停止重复事件分析。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-SCR-20261016-0727",
+        "information_id": "CR-S-20261016-0727",
+        "summary": "水运AI指引公开日期10月14日、落款10月8日，列22类场景；链接含10月13日不代表公开日期。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Current",
+            "source_quality": "A",
+            "reason": "正文公开日落旧窗口；只确认页面日期，精确首发和执行时刻不据URL/落款推断。"
+          },
+          "round2": {
+            "scope": "Industry",
+            "potential": "Medium",
+            "spillover": "Possible",
+            "reason": "场景指引不等于新增采购或订单；细分水运应用尚无风格级外溢依据，第二轮待核，不做企业/指数完整分析。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-SCR-20261016-0729",
+        "information_id": "CR-S-20261016-0729",
+        "summary": "内河新能源船舶政策解读可见10月13日08:44，介绍2028/2030目标；属于窗口前旧背景。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "原文日期早于旧窗口；只保存旧政策/科研背景，不作为窗口内新冲击，也不撤销旧Parent。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-SCR-20261016-9001",
+        "information_id": "CR-S-20261016-9001",
+        "summary": "中国科大近代物理系10月13日发布393nm至1550nm量子频率转换研究；与15日媒体报道的技术对象相同。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "原文日期早于旧窗口；只保存旧政策/科研背景，不作为窗口内新冲击，也不撤销旧Parent。"
+          }
+        }
+      },
+      {
+        "screening_id": "CR-FU-20261016-SHIPAI",
+        "information_id": "DC-S-20261015-SHIPAI",
+        "summary": "15日报道安全、效率、绿色转型三方面22类应用场景。 行业场景指引未核新增预算与采购执行量，先在第二轮等待。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。",
+            "source_quality": "A",
+            "time_relevance": "Current"
+          },
+          "round2": {
+            "potential": "Medium",
+            "reason": "行业场景指引未核新增预算与采购执行量，先在第二轮等待。",
+            "scope": "Industry",
+            "spillover": "Possible"
+          }
+        },
+        "follow_up": {
+          "prior_screening_id": "SC-DAILY-20261015-SHIPAI",
+          "group_id": "CR-20261016-SHIPAI",
+          "priority": "Normal",
+          "question": "水运AI指引的原始通知及公开日是否已取得，是否已有真实新增执行量？",
+          "evidence_source_ids": [
+            "CR-S-20261016-0727"
+          ],
+          "finding": "已取得原始通知及内嵌22类场景，公开日14日、落款8日、URL含13日；公开原文不等于新增预算/采购。仍缺订单、实际执行及风格扩散依据，继续第二轮Watch。",
+          "next_trigger": "有新增预算、招标采购、订单/实施数据或明确跨风格扩散证据时重筛；相同场景清单不重复深查。",
+          "outcome": "WaitEvidence"
+        }
+      }
+    ]
+  },
+  "discovery": {
+    "pack_id": "DISCOVERY-CANDIDATE-READ-20261016-V1",
+    "leads": [],
+    "resolutions": [
+      {
+        "resolution_id": "CR-RES-20261016-0002",
+        "lead_id": "DL-20261015-0002",
+        "batch_id": "CB-20261015-110205",
+        "prior_resolution_id": "NT-RES-20261015-0002",
+        "status": "Excluded",
+        "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。",
+        "evidence": [
+          "information:CR-S-20261016-0002"
+        ]
+      },
+      {
+        "resolution_id": "CR-RES-20261016-0003",
+        "lead_id": "DL-20261015-0003",
+        "batch_id": "CB-20261015-110205",
+        "prior_resolution_id": "NT-RES-20261015-0003",
+        "status": "Excluded",
+        "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。",
+        "evidence": [
+          "information:CR-S-20261016-0003"
+        ]
+      },
+      {
+        "resolution_id": "CR-RES-20261016-0005",
+        "lead_id": "DL-20261015-0005",
+        "batch_id": "CB-20261015-110205",
+        "prior_resolution_id": "NT-RES-20261015-0005",
+        "status": "Excluded",
+        "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。",
+        "evidence": [
+          "information:CR-S-20261016-0005"
+        ]
+      },
+      {
+        "resolution_id": "CR-RES-20261016-0007",
+        "lead_id": "DL-20261015-0007",
+        "batch_id": "CB-20261015-110205",
+        "prior_resolution_id": "NT-RES-20261015-0007",
+        "status": "Excluded",
+        "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。",
+        "evidence": [
+          "information:CR-S-20261016-0007"
+        ]
+      },
+      {
+        "resolution_id": "CR-RES-20261016-0042",
+        "lead_id": "DL-20261015-0042",
+        "batch_id": "CB-20261015-110205",
+        "prior_resolution_id": "NT-RES-20261015-0042",
+        "status": "Excluded",
+        "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。",
+        "evidence": [
+          "information:CR-S-20261016-0042"
+        ]
+      },
+      {
+        "resolution_id": "CR-RES-20261016-0051",
+        "lead_id": "DL-20261015-0051",
+        "batch_id": "CB-20261015-110205",
+        "prior_resolution_id": "NT-RES-20261015-0051",
+        "status": "Excluded",
+        "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。",
+        "evidence": [
+          "information:CR-S-20261016-0051"
+        ]
+      },
+      {
+        "resolution_id": "CR-RES-20261016-0056",
+        "lead_id": "DL-20261015-0056",
+        "batch_id": "CB-20261015-110205",
+        "prior_resolution_id": "NT-RES-20261015-0056",
+        "status": "Linked",
+        "reason": "已读本页原文，按三轮规则短归档或待核；关联原文不等于通过分析，也不生成Bias。",
+        "evidence": [
+          "information:CR-S-20261016-0056"
+        ],
+        "information_id": "CR-S-20261016-0056"
+      },
+      {
+        "resolution_id": "CR-RES-20261016-0239",
+        "lead_id": "DL-20261015-0239",
+        "batch_id": "CB-20261015-110205",
+        "prior_resolution_id": "NT-RES-20261015-0239",
+        "status": "Linked",
+        "reason": "已读本页原文，按三轮规则短归档或待核；关联原文不等于通过分析，也不生成Bias。",
+        "evidence": [
+          "information:CR-S-20261016-0239",
+          "information:CR-S-20261016-9001"
+        ],
+        "information_id": "CR-S-20261016-0239"
+      },
+      {
+        "resolution_id": "CR-RES-20261016-0727",
+        "lead_id": "DL-20261015-0727",
+        "batch_id": "CB-20261015-110205",
+        "prior_resolution_id": "NT-RES-20261015-0727",
+        "status": "Linked",
+        "reason": "已读本页原文，按三轮规则短归档或待核；关联原文不等于通过分析，也不生成Bias。",
+        "evidence": [
+          "information:CR-S-20261016-0727"
+        ],
+        "information_id": "CR-S-20261016-0727"
+      },
+      {
+        "resolution_id": "CR-RES-20261016-0729",
+        "lead_id": "DL-20261015-0729",
+        "batch_id": "CB-20261015-110205",
+        "prior_resolution_id": "NT-RES-20261015-0729",
+        "status": "Excluded",
+        "reason": "正文日期核实早于窗口，短归档作旧基线；只核日期/前段，未声称全文已读或政策已经失效。",
+        "evidence": [
+          "information:CR-S-20261016-0729"
+        ]
+      }
+    ]
+  }
+}

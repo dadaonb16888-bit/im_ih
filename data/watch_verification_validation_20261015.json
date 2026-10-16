@@ -1,0 +1,91 @@
+{
+  "as_of": "2026-10-14T22:13:22.044754+00:00",
+  "apply": {
+    "inserted": true,
+    "known_at": "2026-10-14T22:13:21.722195+00:00",
+    "pack_id": "WATCH-VERIFICATION-20261015-V1",
+    "screenings": [
+      "NS-WV-20261015-DC-S-20261014-MORNING",
+      "NS-WV-20261015-DC-S-20261014-EXPORT",
+      "NS-WV-20261015-DC-S-20261014-BOATS",
+      "NS-WV-20261015-DC-S-20261014-BOAT_POLICY",
+      "NS-WV-20261015-DC-S-20261014-BILL65",
+      "NS-WV-20261015-DC-S-20261014-BILL64",
+      "NS-WV-20261015-DC-S-20261014-FLOWS",
+      "NS-WV-20261015-DC-S-20261014-SELLING",
+      "NS-WV-20261015-DC-S-20261014-BLSCALENDAR",
+      "NS-WV-20261015-DC-S-20261014-RIZHAO",
+      "NS-WV-20261015-BR-S-20261014-AVIATIONDRAFT",
+      "NS-WV-S-20261015-BILL64",
+      "NS-WV-S-20261015-BILL65",
+      "NS-WV-S-20261015-RIZHAO",
+      "NS-WV-S-20261015-FLOWS",
+      "NS-WV-S-20261015-SELLING",
+      "NS-WV-S-20261015-MORNING",
+      "NS-WV-S-20261015-CALENDAR",
+      "NS-WV-S-20261015-CPI",
+      "NS-WV-S-20261015-CPIPDF"
+    ]
+  },
+  "old_tables_preserved": {
+    "information_inbox": true,
+    "events": true,
+    "event_updates": true,
+    "state_updates": true,
+    "event_information": true,
+    "legacy_audit": true,
+    "research_notes": true,
+    "collection_batches": true,
+    "source_checks": true,
+    "collection_items": true,
+    "information_reviews": true,
+    "parent_reviews": true,
+    "ai_research_runs": true,
+    "ai_assessments": true,
+    "news_screening_runs": true,
+    "information_screenings": true
+  },
+  "integrity": "ok",
+  "foreign_key_issues": [],
+  "pack_replay_inserted": false,
+  "counts": {
+    "DeepReview": 2,
+    "Watch": 10,
+    "Background": 42,
+    "Unscreened": 67
+  },
+  "queue_counts": {
+    "NeedsReview": 0,
+    "ReviewedWithGaps": 1,
+    "Reviewed": 0
+  },
+  "targets": 11,
+  "archived": 2,
+  "waiting_original": 9,
+  "new_cpi_index_waiting": 1,
+  "totals": {
+    "information_inbox": 121,
+    "events": 21,
+    "ai_assessments": 20,
+    "event_updates": 2,
+    "state_updates": 0
+  },
+  "correction": {
+    "inserted": false,
+    "known_at": "2026-10-14T22:15:29.301290+00:00",
+    "pack_id": "WATCH-VERIFICATION-20261015-V2"
+  },
+  "tests": {
+    "total": 170,
+    "result": "passed"
+  },
+  "frontend_syntax": "passed",
+  "http": "passed",
+  "before_known_at_watch": 11,
+  "browser": {
+    "watch_cards": 10,
+    "follow_up_cards": 9,
+    "console_warn_errors": 0,
+    "screenshot": "docs/watch_verification_20261015_preview.png"
+  }
+}

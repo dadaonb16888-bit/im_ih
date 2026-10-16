@@ -1,0 +1,325 @@
+{
+  "package_id": "EVIDENCE-20261016-V1",
+  "sources": [
+    {
+      "information_id": "EVID-S-20261016-IDENTITY",
+      "title": "南方基金512100产品身份核对",
+      "source_id": "NFFUND-PUBLIC-IDENTITY",
+      "url": "https://www.nffund.com/nfwebApi/fund/overreview",
+      "published_at": null,
+      "publication_precision": "NotEstablished",
+      "first_seen_at": "2026-10-15T15:31:14.665550+00:00",
+      "read_status": "Read",
+      "capture_mode": "PublicReadOnlyAPI",
+      "document_sha256": "201a45f7b0e783ed1dfb21c899361c0fc04b11731ef905ab6b20593003291b7b",
+      "request": {
+        "method": "POST",
+        "parameters": {
+          "fundCode": "512100"
+        }
+      },
+      "fact": "官网公开查询返回512100，正式名称为南方中证1000交易型开放式指数证券投资基金；跟踪中证1000指数。",
+      "verification": "仅用于产品身份；不是日度申赎、资金流或IM/IH净暴露。",
+      "collection_mode": "CodexWatchEvidence",
+      "category": "FUND_FLOW"
+    },
+    {
+      "information_id": "EVID-S-20261016-SHARES",
+      "title": "512100目标两日份额缺口与季度口径核对",
+      "source_id": "NFFUND-PUBLIC-SHARES",
+      "url": "https://www.nffund.com/nfwebApi/fund/assetSize",
+      "published_at": null,
+      "publication_precision": "NotEstablished",
+      "first_seen_at": "2026-10-15T15:30:35.277261+00:00",
+      "read_status": "Read",
+      "capture_mode": "PublicReadOnlyAPI",
+      "document_sha256": "6e05e5a4e1227adaaffc4341dcef309681a1035603f1873a8dbcec3b4532182d",
+      "request": {
+        "method": "POST",
+        "parameters": {
+          "fundCode": "512100",
+          "startDate": "20261013",
+          "endDate": "20261014",
+          "curPage": 1,
+          "pageSize": 15
+        }
+      },
+      "fact": "历史规模接口查询20261013—20261014成功但空列表；不设日期查询首行是20260630、3077217646份。",
+      "verification": "查询结果不等于证明日度数据不存在。季度份额不能替代10月13/14日日度TotalShares，零结果不能当零申赎。",
+      "collection_mode": "CodexWatchEvidence",
+      "category": "FUND_FLOW"
+    },
+    {
+      "information_id": "EVID-S-20261016-NAV",
+      "title": "512100原始单位净值核对",
+      "source_id": "NFFUND-PUBLIC-NAV",
+      "url": "https://www.nffund.com/nfwebApi/fund/newValueList",
+      "published_at": null,
+      "publication_precision": "NotEstablished",
+      "first_seen_at": "2026-10-15T15:30:37.971374+00:00",
+      "read_status": "Read",
+      "capture_mode": "PublicReadOnlyAPI",
+      "document_sha256": "dafc588ed23662ee64e704f298355b0cdb683e67a1a7a56e5e8a23b9a0ebb36a",
+      "request": {
+        "method": "POST",
+        "parameters": {
+          "fundCode": "512100",
+          "curPage": 1,
+          "pageSize": 10
+        }
+      },
+      "fact": "官网512100查询返回20261013单位净值2.8556、20261014单位净值2.8074。",
+      "verification": "响应行fundCode为空，产品绑定来自请求fundCode=512100和同站身份查询；只读取目标日期fundNav，不是累计净值、场内价格或实际净流入。",
+      "collection_mode": "CodexWatchEvidence",
+      "category": "FUND_FLOW"
+    },
+    {
+      "information_id": "EVID-S-20261016-UK_RECENT",
+      "title": "UKMTO近期事件入口读取缺口",
+      "source_id": "UKMTO-UK_RECENT",
+      "url": "https://www.ukmto.org/recent-incidents",
+      "published_at": null,
+      "publication_precision": "NotEstablished",
+      "first_seen_at": "2026-10-15T15:25:36.814337+00:00",
+      "read_status": "Unavailable",
+      "capture_mode": "DirectHTTPFailure",
+      "fact": "直接读取返回HTTP 403，未取得可留存并逐项核对的具体日期、地点、船名及事件更新通报。",
+      "verification": "另经网页解析看到目录/空列表，不等于取得具体事件记录；此条只证明读取失败，不能证明未发生袭击、海峡开放或关闭。",
+      "collection_mode": "CodexWatchEvidence",
+      "category": "RISK_OFF"
+    },
+    {
+      "information_id": "EVID-S-20261016-UK_WARN",
+      "title": "UKMTO警报入口读取缺口",
+      "source_id": "UKMTO-UK_WARN",
+      "url": "https://www.ukmto.org/ukmto-products/warnings",
+      "published_at": null,
+      "publication_precision": "NotEstablished",
+      "first_seen_at": "2026-10-15T15:25:36.815337+00:00",
+      "read_status": "Unavailable",
+      "capture_mode": "DirectHTTPFailure",
+      "fact": "直接读取返回HTTP 403，未取得可留存并逐项核对的具体日期、地点、船名及事件更新通报。",
+      "verification": "另经网页解析看到目录/空列表，不等于取得具体事件记录；此条只证明读取失败，不能证明未发生袭击、海峡开放或关闭。",
+      "collection_mode": "CodexWatchEvidence",
+      "category": "RISK_OFF"
+    },
+    {
+      "information_id": "EVID-S-20261016-UK_WEEKLY",
+      "title": "UKMTO周报入口读取缺口",
+      "source_id": "UKMTO-UK_WEEKLY",
+      "url": "https://www.ukmto.org/ukmto-products/weekly-reports",
+      "published_at": null,
+      "publication_precision": "NotEstablished",
+      "first_seen_at": "2026-10-15T15:25:36.815337+00:00",
+      "read_status": "Unavailable",
+      "capture_mode": "DirectHTTPFailure",
+      "fact": "直接读取返回HTTP 403，未取得可留存并逐项核对的具体日期、地点、船名及事件更新通报。",
+      "verification": "另经网页解析看到目录/空列表，不等于取得具体事件记录；此条只证明读取失败，不能证明未发生袭击、海峡开放或关闭。",
+      "collection_mode": "CodexWatchEvidence",
+      "category": "RISK_OFF"
+    }
+  ],
+  "screening": {
+    "pack_id": "SCREEN-EVIDENCE-20261016-V1",
+    "actor": "Codex",
+    "version": "news-screening-v1",
+    "generated_at": "2026-10-15T15:33:14.506006+00:00",
+    "screenings": [
+      {
+        "screening_id": "EVID-BG-20261016-IDENTITY",
+        "information_id": "EVID-S-20261016-IDENTITY",
+        "summary": "官网公开查询返回512100，正式名称为南方中证1000交易型开放式指数证券投资基金；跟踪中证1000指数。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "仅作既有Watch的证据/读取日志，不当新市场事件；未知发布时间不推成当日冲击。"
+          }
+        }
+      },
+      {
+        "screening_id": "EVID-BG-20261016-SHARES",
+        "information_id": "EVID-S-20261016-SHARES",
+        "summary": "历史规模接口查询20261013—20261014成功但空列表；不设日期查询首行是20260630、3077217646份。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "仅作既有Watch的证据/读取日志，不当新市场事件；未知发布时间不推成当日冲击。"
+          }
+        }
+      },
+      {
+        "screening_id": "EVID-BG-20261016-NAV",
+        "information_id": "EVID-S-20261016-NAV",
+        "summary": "官网512100查询返回20261013单位净值2.8556、20261014单位净值2.8074。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "仅作既有Watch的证据/读取日志，不当新市场事件；未知发布时间不推成当日冲击。"
+          }
+        }
+      },
+      {
+        "screening_id": "EVID-BG-20261016-UK_RECENT",
+        "information_id": "EVID-S-20261016-UK_RECENT",
+        "summary": "直接读取返回HTTP 403，未取得可留存并逐项核对的具体日期、地点、船名及事件更新通报。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "仅作既有Watch的证据/读取日志，不当新市场事件；未知发布时间不推成当日冲击。"
+          }
+        }
+      },
+      {
+        "screening_id": "EVID-BG-20261016-UK_WARN",
+        "information_id": "EVID-S-20261016-UK_WARN",
+        "summary": "直接读取返回HTTP 403，未取得可留存并逐项核对的具体日期、地点、船名及事件更新通报。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "仅作既有Watch的证据/读取日志，不当新市场事件；未知发布时间不推成当日冲击。"
+          }
+        }
+      },
+      {
+        "screening_id": "EVID-BG-20261016-UK_WEEKLY",
+        "information_id": "EVID-S-20261016-UK_WEEKLY",
+        "summary": "直接读取返回HTTP 403，未取得可留存并逐项核对的具体日期、地点、船名及事件更新通报。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "time_relevance": "Background",
+            "source_quality": "A",
+            "reason": "仅作既有Watch的证据/读取日志，不当新市场事件；未知发布时间不推成当日冲击。"
+          }
+        }
+      },
+      {
+        "screening_id": "EVID-FU-20261016-0410",
+        "information_id": "NT-S-20261015-0410",
+        "summary": "Choice汇总报道列股票ETF申赎及一只中证1000ETF赎回，且声明AI生成；单产品不能代表全部IM/IH资金变化。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "reason": "发布时间位于旧窗口；现读取为补录，报道和底层主张的验证程度分开。",
+            "source_quality": "C",
+            "time_relevance": "Current"
+          },
+          "round2": {
+            "potential": "Medium",
+            "reason": "涉及中证1000单ETF，缺上证50及同口径全样本，需核原始份额和NAV。",
+            "scope": "Style",
+            "spillover": "Possible"
+          },
+          "round3": {
+            "fact_support": "Unverified",
+            "novelty": "Update",
+            "reason": "事实归因/原始数据及相对传导仍待核，不进入完整事件深查，不生成方向。",
+            "transmission": "Possible"
+          }
+        },
+        "follow_up": {
+          "prior_screening_id": "NT-SCR-20261015-0410",
+          "group_id": "EVID-20261016-ETF512100",
+          "priority": "Normal",
+          "question": "能否用512100在10月13/14日的真实总份额、匹配NAV和调整记录复算报道赎回？",
+          "evidence_source_ids": [
+            "EVID-S-20261016-IDENTITY",
+            "EVID-S-20261016-SHARES",
+            "EVID-S-20261016-NAV"
+          ],
+          "finding": "产品身份和两日NAV已核；目标两日份额接口空列表，最新规模仅6月30日。仍缺日度总份额、调整审查与IH同口径样本，净申赎估计及Bias保持未知。",
+          "next_trigger": "取得可复核的两日日度TotalShares及拆分/分红口径后再计算；再补同口径IM/IH样本。单ETF不升级为整体风格流向。",
+          "outcome": "WaitEvidence"
+        }
+      },
+      {
+        "screening_id": "EVID-FU-20261016-0399",
+        "information_id": "NT-S-20261015-0399",
+        "summary": "转载报道指两艘货船沉没，并描述替代路线和出口恢复；报道不证明航运全面中断。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "reason": "发布时间位于旧窗口；现读取为补录，报道和底层主张的验证程度分开。",
+            "source_quality": "B",
+            "time_relevance": "Current"
+          },
+          "round2": {
+            "potential": "High",
+            "reason": "航运风险潜在范围大，但当事方表态或转载尚不足以确认实际运力、运输和相对风格冲击。",
+            "scope": "Market",
+            "spillover": "Possible"
+          },
+          "round3": {
+            "fact_support": "Unverified",
+            "novelty": "Update",
+            "reason": "事实归因/原始数据及相对传导仍待核，不进入完整事件深查，不生成方向。",
+            "transmission": "Possible"
+          }
+        },
+        "follow_up": {
+          "prior_screening_id": "NT-SCR-20261015-0399",
+          "group_id": "EVID-20261016-SHIPPING",
+          "priority": "High",
+          "question": "货船报道能否匹配UKMTO具体日期、海域、对象与最新更新，证明真实运输影响？",
+          "evidence_source_ids": [
+            "EVID-S-20261016-UK_RECENT",
+            "EVID-S-20261016-UK_WARN",
+            "EVID-S-20261016-UK_WEEKLY"
+          ],
+          "finding": "UKMTO三个入口直接读取403；网页解析仅有目录/空列表，未取得具体通报。不能独立确认两船沉没或全面中断，也不能用空索引反驳报道。",
+          "next_trigger": "出现可读且有日期/位置/事件编号的原始通报或船东公告，再核对象、状态更新及实际运力；没有新文档或恢复信号不重复抓取。",
+          "outcome": "WaitEvidence"
+        }
+      },
+      {
+        "screening_id": "EVID-FU-20261016-0174",
+        "information_id": "NT-S-20261015-0174",
+        "summary": "新华社报道伊朗方面声称监控并限制航行，同时列出美方相反表态；实际通行状态未确认。",
+        "input_rounds": {
+          "round1": {
+            "duplicate": false,
+            "reason": "发布时间位于旧窗口；现读取为补录，报道和底层主张的验证程度分开。",
+            "source_quality": "B",
+            "time_relevance": "Current"
+          },
+          "round2": {
+            "potential": "High",
+            "reason": "航运风险潜在范围大，但当事方表态或转载尚不足以确认实际运力、运输和相对风格冲击。",
+            "scope": "Market",
+            "spillover": "Possible"
+          },
+          "round3": {
+            "fact_support": "Unverified",
+            "novelty": "Update",
+            "reason": "事实归因/原始数据及相对传导仍待核，不进入完整事件深查，不生成方向。",
+            "transmission": "Possible"
+          }
+        },
+        "follow_up": {
+          "prior_screening_id": "NT-SCR-20261015-0174",
+          "group_id": "EVID-20261016-SHIPPING",
+          "priority": "High",
+          "question": "霍尔木兹通行表态是否有实际通行和事件记录支持？",
+          "evidence_source_ids": [
+            "EVID-S-20261016-UK_RECENT",
+            "EVID-S-20261016-UK_WARN",
+            "EVID-S-20261016-UK_WEEKLY"
+          ],
+          "finding": "本轮未取得对应航运事件原始记录；UKMTO目录空列表或403不证明通行正常/受阻。双方表态与实际通行仍分开，不把伊朗风险自动并入旧沙特—也门Parent。",
+          "next_trigger": "取得具体日期、位置和更新的原始通报、港口/通行实测再核；保留双方归因，有新证据再重筛。",
+          "outcome": "WaitEvidence"
+        }
+      }
+    ]
+  }
+}

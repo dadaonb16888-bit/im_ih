@@ -1,0 +1,79 @@
+{
+  "pack_id": "SCREEN-NEWS-EVIDENCE-20261015-SUMMARY-V2",
+  "actor": "Codex",
+  "version": "news-screening-v1",
+  "generated_at": "2026-10-15T07:23:12.156337+00:00",
+  "screenings": [
+    {
+      "information_id": "DC-S-20261015-BUYOUT",
+      "summary": "央行14日预告15日开展7000亿元、182天买断式逆回购。 公告只给总额；缺同期限到期、历史续作和事前预期，先待核。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。",
+          "source_quality": "A",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Medium",
+          "reason": "已有匹配到期及相邻月公告基线，工具内安排差额可能影响资金条件；实际执行、全口径到期和相对风格效应仍未核。",
+          "scope": "Market",
+          "spillover": "Possible"
+        },
+        "round3": {
+          "fact_support": "Unverified",
+          "novelty": "New",
+          "reason": "公告口径下7000减匹配到期5000为2000亿元，相邻月同期限公告为5000。未核完整中标、其他到期和事前预期；不是全口径实际净投放。",
+          "transmission": "Possible"
+        }
+      },
+      "follow_up": {
+        "evidence_source_ids": [
+          "DC-S-20261015-BUYOUT",
+          "NE-S-20261015-BUYOUT8",
+          "NE-S-20261015-BUYOUT18"
+        ],
+        "finding": "公告口径下7000减匹配到期5000为2000亿元，相邻月同期限公告为5000。未核完整中标、其他到期和事前预期；不是全口径实际净投放。",
+        "group_id": "NE-BUYOUT",
+        "next_trigger": "有完整中标/结算、全口径到期或可核预期，才重新判断政策异常程度。",
+        "outcome": "WaitEvidence",
+        "prior_screening_id": "NE-SC-20261015-BUYOUT",
+        "priority": "High",
+        "question": "7000亿元是总操作还是新增净流动性？"
+      },
+      "screening_id": "NE-SC-20261015-BUYOUT-SUMMARY-V2"
+    },
+    {
+      "information_id": "DC-S-20261015-FCC",
+      "summary": "媒体区分传闻、已生效认证规则、拟议法案、特定采购和调查立案。 这是二手法律解读；未读FCC/联邦公报及ITC原件，不确认全面禁令或风险解除。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。",
+          "source_quality": "B",
+          "time_relevance": "Current"
+        },
+        "round2": {
+          "potential": "Medium",
+          "reason": "已核一项正式规则的限定条件，但全媒体组合命题及两指数外溢仍不清楚；停在行业线索，不启动企业/指数完整深查。",
+          "scope": "Industry",
+          "spillover": "Possible"
+        }
+      },
+      "follow_up": {
+        "evidence_source_ids": [
+          "NE-S-20261015-FCC_GPO",
+          "NE-S-20261015-FCC_DIRECT"
+        ],
+        "finding": "政府公报对应条文限定清单实体相关逻辑硬件组件及认证条件；完整FCC附件403，PCB采购/337和全部清单未核，不能推出全面禁令或风险消失。",
+        "group_id": "NE-FCC",
+        "next_trigger": "企业具体组件/清单/认证适用证据或新增正式法规，足以扩大到风格层时再筛。",
+        "outcome": "WaitEvidence",
+        "prior_screening_id": "NE-SC-20261015-FCC",
+        "priority": "High",
+        "question": "媒体说法是否能等同全面光模块禁令？"
+      },
+      "screening_id": "NE-SC-20261015-FCC-SUMMARY-V2"
+    }
+  ]
+}

@@ -1,0 +1,759 @@
+{
+  "pack_id": "NEWS-SCREENING-20261014-V1",
+  "actor": "Codex",
+  "version": "news-screening-v1",
+  "generated_at": "2026-10-14T04:35:12.677238+00:00",
+  "screenings": [
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-OMO_CNFIN",
+      "information_id": "DC-S-20261014-OMO_CNFIN",
+      "summary": "报道汇总当日逆回购及货币市场变化。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作、既有应用、自报观点或局部事项；未见较大独立增量，只保留短摘要与原链接。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-MORNING",
+      "information_id": "DC-S-20261014-MORNING",
+      "summary": "早报包含海外数据、央行言论和待发布日程。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Unknown",
+          "spillover": "Unknown",
+          "reason": "摘要或目录尚不能辨认独立重大增量；仅在短核验取得重要新事实后重筛。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-ARAMCO",
+      "information_id": "DC-S-20261014-ARAMCO",
+      "summary": "新华社引述沙特能源部声明：达兰办公楼遇袭，有局部火情，无人员伤亡。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "High",
+          "spillover": "Clear",
+          "reason": "地区空袭和报复升级可能影响能源/航运预期与全球风险偏好，具有较大潜在影响。"
+        },
+        "round3": {
+          "novelty": "Update",
+          "transmission": "Clear",
+          "fact_support": "Supported",
+          "reason": "短原文支持新动作，与原冲突链归并；值得深入核查实际影响，尚不意味着IH方向已确认。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-WAR13",
+      "information_id": "DC-S-20261014-WAR13",
+      "summary": "报道沙特空袭萨那石油设施，胡塞武装发出报复威胁；损害情况未明。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "High",
+          "spillover": "Clear",
+          "reason": "地区空袭和报复升级可能影响能源/航运预期与全球风险偏好，具有较大潜在影响。"
+        },
+        "round3": {
+          "novelty": "Update",
+          "transmission": "Clear",
+          "fact_support": "Supported",
+          "reason": "短原文支持新动作，与原冲突链归并；值得深入核查实际影响，尚不意味着IH方向已确认。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-OILSTOCK",
+      "information_id": "DC-S-20261014-OILSTOCK",
+      "summary": "报道负责人10月12日对全球库存和修复周期的判断。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作、既有应用、自报观点或局部事项；未见较大独立增量，只保留短摘要与原链接。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-EXPORT",
+      "information_id": "DC-S-20261014-EXPORT",
+      "summary": "解读拟对低风险民航维修等出口实施登记凭证并说明此前许可证制度。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "影响主要落在细分产业或地方，尚未见新增大额预算/订单或清晰风格扩散；先观察，停止企业逐项深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-SERVICES",
+      "information_id": "DC-S-20261014-SERVICES",
+      "summary": "官方发布1—8月服务贸易总额及结构增长情况。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作、既有应用、自报观点或局部事项；未见较大独立增量，只保留短摘要与原链接。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-BOATS",
+      "information_id": "DC-S-20261014-BOATS",
+      "summary": "报道2026—2030年行动方案及2028年保有量相对2025年翻倍目标。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "影响主要落在细分产业或地方，尚未见新增大额预算/订单或清晰风格扩散；先观察，停止企业逐项深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-BOAT_POLICY",
+      "information_id": "DC-S-20261014-BOAT_POLICY",
+      "summary": "原文列出电动和甲醇船舶、补能网络、制造、技术攻关与政策支持安排。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "影响主要落在细分产业或地方，尚未见新增大额预算/订单或清晰风格扩散；先观察，停止企业逐项深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-REGIONAL",
+      "information_id": "DC-S-20261014-REGIONAL",
+      "summary": "发改委介绍西部四省区协调会议及既有规划落实。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作、既有应用、自报观点或局部事项；未见较大独立增量，只保留短摘要与原链接。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-BILL65",
+      "information_id": "DC-S-20261014-BILL65",
+      "summary": "财政部目录出现国债发行通知线索，正文未取得。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Unknown",
+          "spillover": "Unknown",
+          "reason": "摘要或目录尚不能辨认独立重大增量；仅在短核验取得重要新事实后重筛。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-BILL64",
+      "information_id": "DC-S-20261014-BILL64",
+      "summary": "财政部目录出现另一国债发行通知线索，正文未取得。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Unknown",
+          "spillover": "Unknown",
+          "reason": "摘要或目录尚不能辨认独立重大增量；仅在短核验取得重要新事实后重筛。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-AI_REAFFIRM",
+      "information_id": "DC-S-20261014-AI_REAFFIRM",
+      "summary": "报道引用10月9日政策并串联既有AI应用案例。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Style",
+          "potential": "Medium",
+          "spillover": "Clear",
+          "reason": "主题可能影响产业或风格，先核是否有新增可分析事实。"
+        },
+        "round3": {
+          "novelty": "Repeat",
+          "transmission": "Possible",
+          "fact_support": "Supported",
+          "reason": "重述政策、旧草案或合作意愿，未见新增生效措施/执行量；简短归并，不追加深度分析。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-FLOWS",
+      "information_id": "DC-S-20261014-FLOWS",
+      "summary": "媒体引用Wind统计ETF资金流入，并列出个别中证1000产品。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Style",
+          "potential": "Medium",
+          "spillover": "Clear",
+          "reason": "若属实可能影响风格资金，进入最后一轮短核验。"
+        },
+        "round3": {
+          "novelty": "Unknown",
+          "transmission": "Possible",
+          "fact_support": "Unverified",
+          "reason": "媒体估算/采访推测不等于已核整体资金流；虽取得两只ETF份额，覆盖与份额事项仍缺，先待核。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-SELLING",
+      "information_id": "DC-S-20261014-SELLING",
+      "summary": "报道引述受访者对险资卖压及结束阶段的推测。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Style",
+          "potential": "Medium",
+          "spillover": "Clear",
+          "reason": "若属实可能影响风格资金，进入最后一轮短核验。"
+        },
+        "round3": {
+          "novelty": "Unknown",
+          "transmission": "Possible",
+          "fact_support": "Unverified",
+          "reason": "媒体估算/采访推测不等于已核整体资金流；虽取得两只ETF份额，覆盖与份额事项仍缺，先待核。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-FUNDMARKET",
+      "information_id": "DC-S-20261014-FUNDMARKET",
+      "summary": "页面展示10月13日基金市场规模和产品上市信息。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧基线或页面快照，作为背景保留，不是本窗新增事件。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-DELIST",
+      "information_id": "DC-S-20261014-DELIST",
+      "summary": "正文涉及113605可转债到期摘牌，不是公司股票退市。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Company",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作、既有应用、自报观点或局部事项；未见较大独立增量，只保留短摘要与原链接。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-PBC197",
+      "information_id": "DC-S-20261014-PBC197",
+      "summary": "央行开展650亿元7天逆回购，操作利率1.40%，全额满足需求。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作、既有应用、自报观点或局部事项；未见较大独立增量，只保留短摘要与原链接。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-PBC196",
+      "information_id": "DC-S-20261014-PBC196",
+      "summary": "前一日500亿元7天逆回购操作利率同为1.40%。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧基线或页面快照，作为背景保留，不是本窗新增事件。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-FEDMINUTES",
+      "information_id": "DC-S-20261014-FEDMINUTES",
+      "summary": "美国东部10月13日14时发布8月17日、9月9日和16日理事会贴现率会议纪要。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作、既有应用、自报观点或局部事项；未见较大独立增量，只保留短摘要与原链接。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-BLSCALENDAR",
+      "information_id": "DC-S-20261014-BLSCALENDAR",
+      "summary": "官方日历列10月14日美东08:30发布9月CPI，即北京时间20:30。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Upcoming",
+          "source_quality": "A",
+          "reason": "待发布日程只作提醒；实际数据未发布，不进入深度分析。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-RIZHAO",
+      "information_id": "DC-S-20261014-RIZHAO",
+      "summary": "搜索索引出现日照AI制造计划报道，正文未取得。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Local",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "影响主要落在细分产业或地方，尚未见新增大额预算/订单或清晰风格扩散；先观察，停止企业逐项深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-AVIATIONAI",
+      "information_id": "DC-S-20261014-AVIATIONAI",
+      "summary": "访谈介绍已有AI服务和运维应用，也列出安全与数据约束。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Company",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作、既有应用、自报观点或局部事项；未见较大独立增量，只保留短摘要与原链接。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-HANGZHOU",
+      "information_id": "DC-S-20261014-HANGZHOU",
+      "summary": "报道当地AI编程工具优惠、企业和社区建设。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作、既有应用、自报观点或局部事项；未见较大独立增量，只保留短摘要与原链接。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-BANKACCOUNTING",
+      "information_id": "DC-S-20261014-BANKACCOUNTING",
+      "summary": "媒体讨论持股低于20%的权益法条件及廉价购买利得。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Style",
+          "potential": "Medium",
+          "spillover": "Clear",
+          "reason": "主题可能影响产业或风格，先核是否有新增可分析事实。"
+        },
+        "round3": {
+          "novelty": "Repeat",
+          "transmission": "Possible",
+          "fact_support": "Supported",
+          "reason": "重述政策、旧草案或合作意愿，未见新增生效措施/执行量；简短归并，不追加深度分析。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-ROBOT",
+      "information_id": "DC-S-20261014-ROBOT",
+      "summary": "报道工博会机器人应用和企业自报表现，同时指出稳定性与数据限制。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作、既有应用、自报观点或局部事项；未见较大独立增量，只保留短摘要与原链接。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-DANONE",
+      "information_id": "DC-S-20261014-DANONE",
+      "summary": "10月12日会见在13日发布，重述中欧磋商成果并表达投资意愿。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Medium",
+          "spillover": "Clear",
+          "reason": "主题可能影响产业或风格，先核是否有新增可分析事实。"
+        },
+        "round3": {
+          "novelty": "Repeat",
+          "transmission": "Possible",
+          "fact_support": "Supported",
+          "reason": "重述政策、旧草案或合作意愿，未见新增生效措施/执行量；简短归并，不追加深度分析。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-ACCOUNTING_PRIMARY",
+      "information_id": "DC-S-20261014-ACCOUNTING_PRIMARY",
+      "summary": "财政部原站索引显示9月已公开征意见函，本次正文获取失败。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧基线或页面快照，作为背景保留，不是本窗新增事件。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-DC-S-20261014-CSRC_MEETING",
+      "information_id": "DC-S-20261014-CSRC_MEETING",
+      "summary": "官方原文列出与会专家关于稳市、长期资金、分红及储备工具的建议。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧基线或页面快照，作为背景保留，不是本窗新增事件。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-SHIP2022",
+      "information_id": "BR-S-20261014-SHIP2022",
+      "summary": "早期意见已有电池/甲醇应用、充换电、船电分离及现有财金工具。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-SHIP2024",
+      "information_id": "BR-S-20261014-SHIP2024",
+      "summary": "已有新能源船型研发、充换电、靠离泊和再贷款支持。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-SUBSIDY2024",
+      "information_id": "BR-S-20261014-SUBSIDY2024",
+      "summary": "已有新能源清洁能源新船补贴资格与资金申报流程。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-SUBSIDY2025",
+      "information_id": "BR-S-20261014-SUBSIDY2025",
+      "summary": "说明动力资格、证书标识、对象排除和申报规则。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-AVIATION2006",
+      "information_id": "BR-S-20261014-AVIATION2006",
+      "summary": "原办法已有特定出口方式批件、有效期内多次通关和事后报告。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-XEMC",
+      "information_id": "BR-S-20261014-XEMC",
+      "summary": "企业介绍船用电机与电动船配套，属于事件前已有业务。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "B",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-AVIATIONDRAFT",
+      "information_id": "BR-S-20261014-AVIATIONDRAFT",
+      "summary": "正式通知链接已定位，正文及附件本轮未取得。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Unknown",
+          "source_quality": "A",
+          "reason": "来源和日期已简短核对，进入影响力初筛。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "细分制度草案正文受阻，尚无风格级影响证据；保持短待核，暂不扩大分析。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-CSSCBUSINESS",
+      "information_id": "BR-S-20261014-CSSCBUSINESS",
+      "summary": "公司报告列造船、修船、海工及配套业务；以销定产，业绩也受船价和建造成本影响。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-SHARES-512100-20261009",
+      "information_id": "BR-S-20261014-SHARES-512100-20261009",
+      "summary": "上交所查询返回512100日期2026-10-09的TOT_VOL为788321.76万份。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-SHARES-512100-20261012",
+      "information_id": "BR-S-20261014-SHARES-512100-20261012",
+      "summary": "上交所查询返回512100日期2026-10-12的TOT_VOL为806521.76万份。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-SHARES-510050-20261009",
+      "information_id": "BR-S-20261014-SHARES-510050-20261009",
+      "summary": "上交所查询返回510050日期2026-10-09的TOT_VOL为712236.68万份。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-SHARES-510050-20261012",
+      "information_id": "BR-S-20261014-SHARES-510050-20261012",
+      "summary": "上交所查询返回510050日期2026-10-12的TOT_VOL为711966.68万份。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "A",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-PCF-20261012",
+      "information_id": "BR-S-20261014-PCF-20261012",
+      "summary": "TradingDay=20261012，PreTradingDay=20261009，NAV=2.9089；清单未提供基金总份额。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "B",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    },
+    {
+      "screening_id": "NS-20261014-BR-S-20261014-PCF-20261013",
+      "information_id": "BR-S-20261014-PCF-20261013",
+      "summary": "TradingDay=20261013，PreTradingDay=20261012，NAV=2.8548；清单未提供基金总份额。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Background",
+          "source_quality": "B",
+          "reason": "旧政策、既有业务或数据校验材料，只作短证据归档，不单独形成新新闻分析任务。"
+        }
+      }
+    }
+  ]
+}

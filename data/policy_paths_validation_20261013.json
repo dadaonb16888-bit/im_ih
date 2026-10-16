@@ -1,0 +1,96 @@
+{
+  "as_of": "2026-10-13T14:23:04.510761+00:00",
+  "tests_passed": 130,
+  "database_integrity": "ok",
+  "foreign_key_errors": [],
+  "retained_tables": {
+    "information_inbox": {
+      "before": 57,
+      "after": 61,
+      "retained": true
+    },
+    "events": {
+      "before": 18,
+      "after": 18,
+      "retained": true
+    },
+    "event_updates": {
+      "before": 2,
+      "after": 2,
+      "retained": true
+    },
+    "state_updates": {
+      "before": 0,
+      "after": 0,
+      "retained": true
+    },
+    "event_information": {
+      "before": 30,
+      "after": 34,
+      "retained": true
+    },
+    "legacy_audit": {
+      "before": 14,
+      "after": 14,
+      "retained": true
+    },
+    "research_notes": {
+      "before": 19,
+      "after": 19,
+      "retained": true
+    },
+    "collection_batches": {
+      "before": 1,
+      "after": 1,
+      "retained": true
+    },
+    "source_checks": {
+      "before": 0,
+      "after": 0,
+      "retained": true
+    },
+    "collection_items": {
+      "before": 0,
+      "after": 0,
+      "retained": true
+    },
+    "information_reviews": {
+      "before": 0,
+      "after": 0,
+      "retained": true
+    },
+    "parent_reviews": {
+      "before": 0,
+      "after": 0,
+      "retained": true
+    },
+    "ai_research_runs": {
+      "before": 2,
+      "after": 3,
+      "retained": true
+    },
+    "ai_assessments": {
+      "before": 10,
+      "after": 12,
+      "retained": true
+    }
+  },
+  "pack_replay_inserted": false,
+  "formal_dominant": null,
+  "cases": [
+    {
+      "event_id": "E-20261009-001",
+      "assessment_id": "AI-20261013-E001-PATHS-V3",
+      "bias": "IM",
+      "policy_items": 5,
+      "beneficiary_paths": 4
+    },
+    {
+      "event_id": "E-20261009-004",
+      "assessment_id": "AI-20261013-E004-PATHS-V3",
+      "bias": null,
+      "policy_items": 3,
+      "beneficiary_paths": 3
+    }
+  ]
+}

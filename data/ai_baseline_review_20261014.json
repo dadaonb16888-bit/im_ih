@@ -1,0 +1,875 @@
+{
+  "pack_id": "AI-BASELINE-REVIEW-20261014-V4",
+  "actor": "Codex",
+  "method_version": "ai-event-v1",
+  "generated_at": "2026-10-13T23:35:07.854065+00:00",
+  "sources": [
+    {
+      "information_id": "AI-S-20261014-REFORM2024",
+      "title": "2024中央改革决定：研发准备金、研发比例及成果先用后付基线",
+      "source_id": "BJ-SFJ",
+      "url": "https://sfj.beijing.gov.cn/sfj/sfdt/rdzz8/543364612/index.html",
+      "published_at": "2024-07-21",
+      "fact": "第13项已有企业研发准备金、提高研发加计扣除比例和高校科研成果先用后付安排。",
+      "verification": "实际读取公开原文对应章节；日期来自页面PubDate元数据，未推断全局首发，标Partial。"
+    },
+    {
+      "information_id": "AI-S-20261014-RD44",
+      "title": "2023年第44号研发优惠公告",
+      "source_id": "MOF",
+      "url": "https://www.mof.gov.cn/jrttts/202309/t20230928_3909593.htm",
+      "published_at": "2023-09-18",
+      "fact": "符合条件集成电路和工业母机企业已有120%加计扣除及220%摊销安排，适用期间2023至2027年。",
+      "verification": "读取财政部原文及资格、清单条款；不声称任一具名企业已经符合资格。"
+    },
+    {
+      "information_id": "AI-S-20261014-TAX202609",
+      "title": "上海税务2026年9月研发扣除答复",
+      "source_id": "SH-TAX",
+      "url": "https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202609/t481574.html",
+      "published_at": "2026-09-22T17:49:00+08:00",
+      "fact": "发布于本事件前的官方答复仍区分一般100%与符合条件行业120%研发扣除。",
+      "verification": "实际读取答复，不能据有限检索证明此后不存在任何实施文件。"
+    },
+    {
+      "information_id": "AI-S-20261014-FUND2014",
+      "title": "公募运作2014旧规：成立门槛与指数基金例外",
+      "source_id": "CSRC",
+      "url": "https://www.csrc.gov.cn/csrc/c106256/c1653978/content.shtml",
+      "published_at": "2014-07-07",
+      "fact": "第12条一般募集门槛为2亿份和2亿元，发起式另有例外；第32条指数复制基金已有部分集中度限制例外。",
+      "verification": "实际核对12/30/31/32条，未完成全部59条与全部附件逐条比较；公布日期见规章标题，标Partial。"
+    },
+    {
+      "information_id": "AI-S-20261014-FUND1000H1",
+      "title": "华夏中证1000ETF 2026中期披露",
+      "source_id": "CHINAAMC",
+      "url": "https://fund.chinaamc.com/upload/resources/file/2026/08/31/067939355b814b259e99b7a9ffb08646.pdf",
+      "published_at": "2026-08-31",
+      "fact": "159845跟踪中证1000，6月末持有剑桥科技，占该基金净值0.69%。",
+      "verification": "实际下载官方附件，定向读取基本情况、期末数据和组合关键页并渲染核对股票明细；标Partial。6月末组合不是10月9日实时持仓。",
+      "content_as_of": "2026-06-30",
+      "document_sha256": "3a52ef9b78a4c4e9b52e73771c41d9e2a4c6fdfd7a2f6d5116aee184bbd96ce3",
+      "reviewed_pages": [
+        5,
+        6,
+        44,
+        46
+      ],
+      "original_url": "https://fund.chinaamc.com/c/2026-08-31/1001945.shtml"
+    },
+    {
+      "information_id": "AI-S-20261014-FUND50H1",
+      "title": "华夏上证50ETF 2026中期披露",
+      "source_id": "CHINAAMC",
+      "url": "https://fund.chinaamc.com/upload/resources/file/2026/08/31/6986d7fe7403476986686b75f048986d.pdf",
+      "published_at": "2026-08-31",
+      "fact": "510050跟踪上证50，6月末持有寒武纪，占该基金净值4.93%。",
+      "verification": "实际下载官方附件，定向读取基本情况、期末数据和组合关键页并渲染核对股票明细；标Partial。6月末组合不是10月9日实时持仓。",
+      "content_as_of": "2026-06-30",
+      "document_sha256": "ca53e166e98ef4ba2d9c8cc8f392feff83ca19baa83e20353ded9b9de99b1280",
+      "reviewed_pages": [
+        5,
+        6,
+        40,
+        41
+      ],
+      "original_url": "https://fund.chinaamc.com/c/2026-08-31/1001372.shtml"
+    }
+  ],
+  "assessments": [
+    {
+      "assessment_id": "AI-20261014-E001-BASELINE-V4",
+      "event_id": "E-20261009-001",
+      "source_ids": [
+        "I-20261010-002",
+        "AI-S-20261013-RD-BASELINE",
+        "AI-S-20261013-AIPLUS-BASELINE",
+        "AI-S-20261013-000852-ARCHIVE",
+        "AI-S-20261013-000016-ARCHIVE",
+        "AI-S-20261013-EQUIPMENT-BASELINE",
+        "AI-S-20261013-VC-BASELINE",
+        "AI-S-20261013-CIG-BUSINESS",
+        "AI-S-20261013-CAMBRICON-BUSINESS",
+        "AI-S-20261014-REFORM2024",
+        "AI-S-20261014-RD44",
+        "AI-S-20261014-TAX202609"
+      ],
+      "source_checks": [
+        {
+          "information_id": "I-20261010-002",
+          "url": "https://www3.xinhuanet.com/politics/20261009/37bc898ce93f4c0899e926039f842891/c.html",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "同时支持科技型中小企业、传统产业升级、科技领军企业与金融创新。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-RD-BASELINE",
+          "url": "https://www.mof.gov.cn/jrttts/202303/t20230328_3875460.htm",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "2023年第7号公告规定符合条件研发费用按100%税前加计扣除；此条用于历史政策基线，不推断2026年所有细则仍完全相同。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-AIPLUS-BASELINE",
+          "url": "https://www.cac.gov.cn/2025-08/27/c_1758018277755538.htm",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "2025年意见已有科研、产业应用、智能终端、算力与财政金融支持安排。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-000852-ARCHIVE",
+          "url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/000852factsheet.pdf",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "信息技术23.4%、工业27.9%、金融2.8%。",
+          "capture_mode": "ArchivedOfficialAttachment",
+          "document_sha256": "6d8885c93597a609260cc11385a9b8aaec33593d164d492120018d2b2e914551"
+        },
+        {
+          "information_id": "AI-S-20261013-000016-ARCHIVE",
+          "url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/000016factsheet.pdf",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "信息技术20.7%、工业8.4%、金融32.1%。",
+          "capture_mode": "ArchivedOfficialAttachment",
+          "document_sha256": "d7ced266f7100d99ff4dbd5cf134c649742cd13d8a752fde854c626458b43fd0"
+        },
+        {
+          "information_id": "AI-S-20261013-EQUIPMENT-BASELINE",
+          "url": "https://www.miit.gov.cn/xwdt/szyw/art/2024/art_a2452750705944c2ac56ea809ba7f2aa.html",
+          "status": "Read",
+          "checked_at": "2026-10-13T14:21:19.923142+00:00",
+          "fact_summary": "已有重点行业设备更新、智能制造设备软件及财税金融支持。 已读取公开行动方案。页面时刻为工信部转载，不认作全局首发。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-VC-BASELINE",
+          "url": "https://www.mee.gov.cn/zcwj/gwywj/202406/t20240620_1076246.shtml",
+          "status": "Partial",
+          "checked_at": "2026-10-13T14:21:19.923142+00:00",
+          "fact_summary": "公开文本已有中小科技、早期硬科技创业投资及政府基金安排。 本轮定向核对第2/3项及科技融资相关条款；页面自注本文有删减，标为Partial。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-CIG-BUSINESS",
+          "url": "https://www.cigtech.com/cn",
+          "status": "Read",
+          "checked_at": "2026-10-13T14:21:19.923142+00:00",
+          "fact_summary": "业务包括高速光模块和网络终端；光收发器面向数据中心、高性能计算等。 实际读取官网首页业务及产品预览，产品详情页超时未引用。当前业务观察不倒填历史首次公开。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-CAMBRICON-BUSINESS",
+          "url": "https://www.cambricon.com/index.php?a=lists&c=index&catid=7&m=content",
+          "status": "Read",
+          "checked_at": "2026-10-13T14:21:19.923142+00:00",
+          "fact_summary": "提供AI智能芯片及基础系统软件，覆盖训练推理与云边端场景。 实际读取官网公司介绍。没有页面发布时间；不能据此确认新增订单或历史首次公开。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261014-REFORM2024",
+          "url": "https://sfj.beijing.gov.cn/sfj/sfdt/rdzz8/543364612/index.html",
+          "status": "Partial",
+          "checked_at": "2026-10-13T23:35:07.854065+00:00",
+          "fact_summary": "第13项已有企业研发准备金、提高研发加计扣除比例和高校科研成果先用后付安排。 实际读取公开原文对应章节；日期来自页面PubDate元数据，未推断全局首发，标Partial。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261014-RD44",
+          "url": "https://www.mof.gov.cn/jrttts/202309/t20230928_3909593.htm",
+          "status": "Read",
+          "checked_at": "2026-10-13T23:35:07.854065+00:00",
+          "fact_summary": "符合条件集成电路和工业母机企业已有120%加计扣除及220%摊销安排，适用期间2023至2027年。 读取财政部原文及资格、清单条款；不声称任一具名企业已经符合资格。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261014-TAX202609",
+          "url": "https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202609/t481574.html",
+          "status": "Read",
+          "checked_at": "2026-10-13T23:35:07.854065+00:00",
+          "fact_summary": "发布于本事件前的官方答复仍区分一般100%与符合条件行业120%研发扣除。 实际读取答复，不能据有限检索证明此后不存在任何实施文件。",
+          "capture_mode": "DirectWebText"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "政策覆盖中小科技企业，也覆盖大型企业、传统产业与金融创新。",
+          "source_ids": [
+            "I-20261010-002"
+          ]
+        },
+        {
+          "statement": "研发扣除和人工智能产业应用已有2023/2025政策基线。",
+          "source_ids": [
+            "AI-S-20261013-RD-BASELINE",
+            "AI-S-20261013-AIPLUS-BASELINE"
+          ]
+        },
+        {
+          "statement": "9月30日官方事实表：信息技术IM23.4%、IH20.7%；工业IM27.9%、IH8.4%；不是10月9日企业净受益表。",
+          "source_ids": [
+            "AI-S-20261013-000852-ARCHIVE",
+            "AI-S-20261013-000016-ARCHIVE"
+          ]
+        },
+        {
+          "statement": "2024中央原文已出现本轮两个重点表述；本事件前税务答复区分一般与合格行业既有比例。",
+          "source_ids": [
+            "AI-S-20261014-REFORM2024",
+            "AI-S-20261014-RD44",
+            "AI-S-20261014-TAX202609"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "TECH_GROWTH",
+        "MARKET_LIQUIDITY"
+      ],
+      "horizon": "Trend",
+      "directness": 1,
+      "independent_cause": true,
+      "relative_pricing": null,
+      "increment_reason": "此前研发强化仅对2023税率基线。2024中央决定已包含研发准备金、提高扣除比例及先用后付；已比5个主题均见旧安排。整体19项增量仍未核完。",
+      "expectation_baseline": "新补2024中央意向及2023行业税制、2026年9月答复。历史政策不等于市场预期，尚无事前一致预期。",
+      "transmission": "政策支持创新与产业升级的长期路径仍存在；目前所核条款不足以形成新的、可辨认的IM相对优势。",
+      "im_case": "中小科技支持有长期机会，但研发表述和先用后付已有旧意向；不能用重申替代新增IM冲击。",
+      "ih_case": "大型科技和金融也有受益路径；集成电路既有120%优惠适用须核资格，未确认任何公司新增优势。",
+      "exposure_evidence": "两份9月30日事实表经图表核对；另读取两家公司当前业务。样本例子及行业代理不能冒充全指数业务净暴露。",
+      "pre_move": "未读取事件前同步IM/IH行情，不判是否已提前交易。",
+      "conflicts": [
+        "贸易风险可能削弱科技成长渠道，但尚未比较净影响"
+      ],
+      "invalidation": "若后续新比例、预算、适用范围或订单提供新增且偏IM的可核证据，再建立方向；本次撤回研究IM不宣称原政策或市场已失效。",
+      "gaps": [
+        "其余14项与后续执行增量",
+        "全指数业务及适用资格相对暴露",
+        "事前预期与PreMove",
+        "全局首发及可交易时间"
+      ],
+      "next_action": "核剩余14项及新增执行比例、预算/覆盖，再比较两边受益；目前继续不定方向。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [
+        "AI-S-20261013-RD-BASELINE",
+        "AI-S-20261013-AIPLUS-BASELINE",
+        "AI-S-20261013-EQUIPMENT-BASELINE",
+        "AI-S-20261013-VC-BASELINE",
+        "AI-S-20261014-REFORM2024",
+        "AI-S-20261014-RD44",
+        "AI-S-20261014-TAX202609"
+      ],
+      "exposure_source_ids": [
+        "AI-S-20261013-000852-ARCHIVE",
+        "AI-S-20261013-000016-ARCHIVE",
+        "AI-S-20261013-CIG-BUSINESS",
+        "AI-S-20261013-CAMBRICON-BUSINESS"
+      ],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "6e3b17e436888155e1ed9bfb9fcc2af540a01e3dc535e07da1851e4c82b5c646",
+      "expected_last_update_id": null,
+      "source": "https://www3.xinhuanet.com/politics/20261009/37bc898ce93f4c0899e926039f842891/c.html",
+      "source_reliability": "B",
+      "impact_score": null,
+      "confidence_score": null,
+      "persistence_score": 1.0,
+      "score_basis": {
+        "rubric_version": "score-evidence-v1",
+        "components": {
+          "source": {
+            "value": "https://www3.xinhuanet.com/politics/20261009/37bc898ce93f4c0899e926039f842891/c.html",
+            "reason": "新华社受权发布正文，按B级权威媒体记录，不等于高方向置信度。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ]
+          },
+          "source_reliability": {
+            "value": "B",
+            "reason": "B级仅约束原文可靠性上限0.85；两份指数原件另留指纹。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ]
+          },
+          "impact_score": {
+            "value": null,
+            "reason": "新旧意向对照削弱新增相对冲击，撤回原刻度；当前相对影响和方向置信度不可量化。",
+            "source_ids": [
+              "AI-S-20261014-REFORM2024",
+              "AI-S-20261014-RD44",
+              "AI-S-20261014-TAX202609"
+            ]
+          },
+          "confidence_score": {
+            "value": null,
+            "reason": "新旧意向对照削弱新增相对冲击，撤回原刻度；当前相对影响和方向置信度不可量化。",
+            "source_ids": [
+              "AI-S-20261014-REFORM2024",
+              "AI-S-20261014-RD44",
+              "AI-S-20261014-TAX202609"
+            ]
+          },
+          "persistence_score": {
+            "value": 1.0,
+            "reason": "政策机制涉及长期研发和产业升级，选Trend持续度1；是模型配置，不认定交易有效期。",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-AIPLUS-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ]
+          }
+        },
+        "reference_time": {
+          "value": "2026-10-09T18:02:25+08:00",
+          "source_ids": [
+            "I-20261010-002"
+          ],
+          "reason": "仅采用已读新华社来源页面的公开时刻作研究衰减参考；未核实全局首发。"
+        }
+      },
+      "impact_analysis": {
+        "version": "policy-paths-v1",
+        "policy_deltas": [
+          {
+            "item_id": "rd",
+            "topic": "研发支持：意向与已执行税制分开",
+            "new_fact": "提出提高研发加计扣除比例，并支持科技型中小企业研发。",
+            "baseline": "2024中央决定已有准备金及提高比例意向；2023一般100%、合格行业120%为已执行税制。",
+            "new_source_ids": [
+              "I-20261010-002"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261014-REFORM2024",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261014-RD44",
+              "AI-S-20261014-TAX202609"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "Reaffirmation",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "新补较早同类中央意向，撤销上一版仅据税率基线作出的强化分类。",
+            "limits": "未找到可引用的本事件新增比例、覆盖与实施文件；有限检索不证明不存在。"
+          },
+          {
+            "item_id": "ai",
+            "topic": "人工智能应用",
+            "new_fact": "再次部署AI应用与基础要素支持。",
+            "baseline": "2025年AI+意见已有产业应用和算力支持。",
+            "new_source_ids": [
+              "I-20261010-002"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261013-AIPLUS-BASELINE"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "Reaffirmation",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "重合主题延续旧方向，不把整项当成首次AI刺激。",
+            "limits": "仅核对相同主题，未完成全部19项差异。"
+          },
+          {
+            "item_id": "equipment",
+            "topic": "设备更新与产业升级",
+            "new_fact": "继续推进设备更新和制造业技改支持。",
+            "baseline": "2024年方案已安排行业更新、智能设备软件与配套支持。",
+            "new_source_ids": [
+              "I-20261010-002"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261013-EQUIPMENT-BASELINE"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "Reaffirmation",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "方向重合，未找到本条新增预算。",
+            "limits": "后续预算与执行安排可能另有增量，目前未核实。"
+          },
+          {
+            "item_id": "vc",
+            "topic": "耐心资本与创业投资",
+            "new_fact": "继续支持早期、小型和硬科技资本。",
+            "baseline": "2024年公开措施已有对应创投与政府基金安排。",
+            "new_source_ids": [
+              "I-20261010-002"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261013-VC-BASELINE"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "Reaffirmation",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "不是自动新增基金或可计量资金流。",
+            "limits": "旧基线为公开删减文本，不能替代所有配套文件。"
+          },
+          {
+            "item_id": "conversion",
+            "topic": "科技成果先用后付",
+            "new_fact": "引导高校科研机构先许可使用、后收取费用。",
+            "baseline": "2024中央决定第13项已有高校科研成果先用后付方向。",
+            "new_source_ids": [
+              "I-20261010-002"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261014-REFORM2024"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "Reaffirmation",
+            "stage": "Intent",
+            "magnitude": null,
+            "reason": "具体旧基线已找到，撤销Unknown分类，现核为意向延续。",
+            "limits": "全国范围、执行条件及后续预算未全面核；不把地方实践等同本事件全国新增刺激。"
+          }
+        ],
+        "beneficiary_paths": [
+          {
+            "path_id": "small-tech",
+            "beneficiary": "科技型中小企业群体",
+            "style": "IM",
+            "benefit": "研发与成果转化支持可能缓解创新和融资约束。",
+            "offsets": "适用资质、应税利润、融资条件和实施比例尚未核实。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Unknown",
+            "exposure_as_of": null,
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-RD-BASELINE",
+              "AI-S-20261013-VC-BASELINE"
+            ],
+            "limits": "中小企业不等于中证1000样本；未核覆盖率，不能量化指数净受益。"
+          },
+          {
+            "path_id": "cig",
+            "beneficiary": "剑桥科技：中证1000样本例子（9月30日权重0.70%）",
+            "style": "IM",
+            "benefit": "数据中心和AI应用扩展可能增加光通信产品需求。",
+            "offsets": "价格竞争、研发及扩产投入可能抵消收益；未取得本事件新增订单。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Business",
+            "exposure_as_of": "2026-10-13",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-CIG-BUSINESS",
+              "AI-S-20261013-000852-ARCHIVE"
+            ],
+            "limits": "官网只证实当前业务；样本权重为9月30日，不是10月9日实际收入或盈利暴露。"
+          },
+          {
+            "path_id": "cam",
+            "beneficiary": "寒武纪：上证50样本例子（9月30日权重3.47%）",
+            "style": "IH",
+            "benefit": "AI训练推理和产业应用扩展可能增加芯片及软件需求。",
+            "offsets": "生态适配、研发投入、竞争与供应链约束尚未评估，未核事件新增利润。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Business",
+            "exposure_as_of": "2026-10-13",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-CAMBRICON-BUSINESS",
+              "AI-S-20261013-000016-ARCHIVE"
+            ],
+            "limits": "IH也有直接AI业务路径；两个公司例子不能代表全指数或用权重直接比较净受益。"
+          },
+          {
+            "path_id": "industry",
+            "beneficiary": "工业与金融行业组合",
+            "style": "Both",
+            "benefit": "设备需求及科技融资服务可能同时增加。",
+            "offsets": "改造方先承担资本开支；贷款收益与信用风险亦需比较。",
+            "effect": "Mixed",
+            "effect_status": "Hypothesis",
+            "exposure_type": "SectorProxy",
+            "exposure_as_of": "2026-09-30",
+            "source_ids": [
+              "I-20261010-002",
+              "AI-S-20261013-EQUIPMENT-BASELINE",
+              "AI-S-20261013-000852-ARCHIVE",
+              "AI-S-20261013-000016-ARCHIVE"
+            ],
+            "limits": "IM工业27.9%、IH工业8.4%；金融2.8%和32.1%只是行业代理，不等于全部企业收益。"
+          }
+        ],
+        "conclusion": "撤回上一版低置信度IM研究倾向，当前不定方向。已比5个主题均有旧安排；未核完其余14项，不声称整份政策无增量。两边相对净受益和新增执行力度仍不足。",
+        "limits": [
+          "同类意向已于2024年提出，不能仅比旧税率认定新意向强化。",
+          "未核全部19项及实施文件，不认定整个事件零增量。",
+          "未知方向不等于Neutral或零分。",
+          "不从研究撤回生成市场Rejected/失效状态。"
+        ]
+      }
+    },
+    {
+      "assessment_id": "AI-20261014-E004-BASELINE-V4",
+      "event_id": "E-20261009-004",
+      "source_ids": [
+        "I-20261010-005",
+        "AI-S-20261013-CSRC-BASELINE",
+        "AI-S-20261013-CSRC-REVISION",
+        "AI-S-20261013-FUND-DRAFT1",
+        "AI-S-20261014-FUND2014",
+        "AI-S-20261014-FUND1000H1",
+        "AI-S-20261014-FUND50H1"
+      ],
+      "source_checks": [
+        {
+          "information_id": "I-20261010-005",
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7663393/content.shtml",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "处于征求意见阶段；不能当成已生效制度。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-CSRC-BASELINE",
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7555824/content.shtml",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "2025年行动方案已提出业绩基准约束、权益产品发展及运作规则修订。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261013-CSRC-REVISION",
+          "url": "https://www.csrc.gov.cn/csrc/c101981/c7663407/7663407/files/%E9%99%84%E4%BB%B64%EF%BC%9A%E4%BF%AE%E8%AE%A2%E8%AF%B4%E6%98%8E.pdf",
+          "status": "Read",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "修订说明拟将权益类和FOF成立规模门槛由2亿元降至5000万元，并强化风格与分散管理；仍是征求意见。",
+          "capture_mode": "OfficialAttachment"
+        },
+        {
+          "information_id": "AI-S-20261013-FUND-DRAFT1",
+          "url": "https://www.csrc.gov.cn/csrc/c101981/c7663407/7663407/files/%E9%99%84%E4%BB%B61%EF%BC%9A%E5%85%AC%E5%BC%80%E5%8B%9F%E9%9B%86%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%9F%BA%E9%87%91%E8%BF%90%E4%BD%9C%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95%EF%BC%88%E5%BE%81%E6%B1%82%E6%84%8F%E8%A7%81%E7%A8%BF%EF%BC%89.pdf",
+          "status": "Partial",
+          "checked_at": "2026-10-13T13:35:52.434324+00:00",
+          "fact_summary": "第18条草案区分固收基金与其他基金的募集规模门槛；草案需履行程序后实施。",
+          "capture_mode": "OfficialAttachment"
+        },
+        {
+          "information_id": "AI-S-20261014-FUND2014",
+          "url": "https://www.csrc.gov.cn/csrc/c106256/c1653978/content.shtml",
+          "status": "Partial",
+          "checked_at": "2026-10-13T23:35:07.854065+00:00",
+          "fact_summary": "第12条一般募集门槛为2亿份和2亿元，发起式另有例外；第32条指数复制基金已有部分集中度限制例外。 实际核对12/30/31/32条，未完成全部59条与全部附件逐条比较；公布日期见规章标题，标Partial。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "AI-S-20261014-FUND1000H1",
+          "url": "https://fund.chinaamc.com/upload/resources/file/2026/08/31/067939355b814b259e99b7a9ffb08646.pdf",
+          "status": "Partial",
+          "checked_at": "2026-10-13T23:35:07.854065+00:00",
+          "fact_summary": "159845跟踪中证1000，6月末持有剑桥科技，占该基金净值0.69%。 实际下载官方附件，定向读取基本情况、期末数据和组合关键页并渲染核对股票明细；标Partial。6月末组合不是10月9日实时持仓。",
+          "capture_mode": "OfficialAttachment",
+          "document_sha256": "3a52ef9b78a4c4e9b52e73771c41d9e2a4c6fdfd7a2f6d5116aee184bbd96ce3"
+        },
+        {
+          "information_id": "AI-S-20261014-FUND50H1",
+          "url": "https://fund.chinaamc.com/upload/resources/file/2026/08/31/6986d7fe7403476986686b75f048986d.pdf",
+          "status": "Partial",
+          "checked_at": "2026-10-13T23:35:07.854065+00:00",
+          "fact_summary": "510050跟踪上证50，6月末持有寒武纪，占该基金净值4.93%。 实际下载官方附件，定向读取基本情况、期末数据和组合关键页并渲染核对股票明细；标Partial。6月末组合不是10月9日实时持仓。",
+          "capture_mode": "OfficialAttachment",
+          "document_sha256": "ca53e166e98ef4ba2d9c8cc8f392feff83ca19baa83e20353ded9b9de99b1280"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "当前仍为征求意见；正式实施须后续程序。",
+          "source_ids": [
+            "I-20261010-005"
+          ]
+        },
+        {
+          "statement": "附件修订说明及草案第18条提供权益/FOF等募集门槛调整依据；不能据此确定大小盘资金净流向。",
+          "source_ids": [
+            "AI-S-20261013-CSRC-REVISION",
+            "AI-S-20261013-FUND-DRAFT1"
+          ]
+        },
+        {
+          "statement": "2014成立门槛及指数比例例外已定向核；两只ETF的既有指数跟踪与6月末持有已核，但无事件后净流量。",
+          "source_ids": [
+            "AI-S-20261014-FUND2014",
+            "AI-S-20261014-FUND1000H1",
+            "AI-S-20261014-FUND50H1"
+          ]
+        }
+      ],
+      "information_gain": "Medium",
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "REGULATION_QUALITY",
+        "POSITIONING"
+      ],
+      "horizon": "Trend",
+      "directness": 2,
+      "independent_cause": true,
+      "relative_pricing": null,
+      "increment_reason": "独立核旧规第12/32条，补强成立门槛变化及旧比例例外区别；并补两只ETF事件前公开组合。Medium规则增量保持，不强填方向。",
+      "expectation_baseline": "2025年行动方案已给出改革方向，但未取得征求意见前对具体门槛和约束的预期。",
+      "transmission": "注册门槛与投资约束变化→新增产品供给、现有产品配置及集中度调整→大小盘需求可能双向变化；没有净资金配置证据，AI不定方向。",
+      "im_case": "主题产品创新与合规风格调整可能增加中小盘需求，需看合同与现有持仓。",
+      "ih_case": "分散和稳定约束可能降低某些拥挤主题集中度，也可能利于权重配置；资金不会机械流向IH。",
+      "exposure_evidence": "159845/510050中期报告明确跟踪1000/50指数；仅用6月末披露组合，公开于8月31日，不能代理10月9日实时持仓或净流量。",
+      "pre_move": "无改革发布前的相对价格或持仓变动证据。",
+      "conflicts": [],
+      "invalidation": "最终规则删除关键修订、实际产品规模或持仓变化不支持所述配置机制时重审。",
+      "gaps": [
+        "剩余条款/附件与交易规则逐项对照",
+        "全行业产品与净配置变化",
+        "最终实施文本及时间",
+        "事前预期、首发小时与PreMove"
+      ],
+      "next_action": "扩大产品/基准覆盖并核合同变更与净申赎；单一管理人两只基金不足以定IM/IH。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [
+        "AI-S-20261013-CSRC-BASELINE",
+        "AI-S-20261013-CSRC-REVISION",
+        "AI-S-20261014-FUND2014"
+      ],
+      "exposure_source_ids": [
+        "AI-S-20261014-FUND1000H1",
+        "AI-S-20261014-FUND50H1"
+      ],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "a7d7c449aa931d35465c57f3304c91087f780b5cdffe41e256c3abafef600146",
+      "expected_last_update_id": null,
+      "source": "https://www.csrc.gov.cn/csrc/c100028/c7663393/content.shtml",
+      "source_reliability": "A",
+      "impact_score": null,
+      "confidence_score": null,
+      "persistence_score": 1.0,
+      "score_basis": {
+        "rubric_version": "score-evidence-v1",
+        "components": {
+          "source": {
+            "value": "https://www.csrc.gov.cn/csrc/c100028/c7663393/content.shtml",
+            "reason": "证监会公开征求意见正文。",
+            "source_ids": [
+              "I-20261010-005",
+              "AI-S-20261013-CSRC-BASELINE",
+              "AI-S-20261013-CSRC-REVISION",
+              "AI-S-20261013-FUND-DRAFT1"
+            ]
+          },
+          "source_reliability": {
+            "value": "A",
+            "reason": "A级原文可靠性只说明草案事实可信，不能证明IH相对受益。",
+            "source_ids": [
+              "I-20261010-005",
+              "AI-S-20261013-CSRC-BASELINE",
+              "AI-S-20261013-CSRC-REVISION",
+              "AI-S-20261013-FUND-DRAFT1"
+            ]
+          },
+          "impact_score": {
+            "value": null,
+            "reason": "未知：无法将成立门槛变化直接转换为IM/IH净相对资金影响。",
+            "source_ids": []
+          },
+          "confidence_score": {
+            "value": null,
+            "reason": "未知：未确定相对方向，原卡Medium不能自动变成方向数值概率。",
+            "source_ids": []
+          },
+          "persistence_score": {
+            "value": 1.0,
+            "reason": "若最终实施可能影响长期基金运作，研究周期保持Trend=1；不认定草案已经生效。",
+            "source_ids": [
+              "I-20261010-005",
+              "AI-S-20261013-CSRC-BASELINE",
+              "AI-S-20261013-CSRC-REVISION",
+              "AI-S-20261013-FUND-DRAFT1"
+            ]
+          }
+        },
+        "reference_time": {
+          "value": null,
+          "source_ids": [
+            "I-20261010-005"
+          ],
+          "reason": "仅有日期，时刻未知，不补造零点"
+        }
+      },
+      "impact_analysis": {
+        "version": "policy-paths-v1",
+        "policy_deltas": [
+          {
+            "item_id": "threshold",
+            "topic": "权益/FOF成立门槛",
+            "new_fact": "草案说明将相关成立规模从2亿元降至5000万元，份额同步下调。",
+            "baseline": "独立核对2014旧规第12条：一般2亿份/2亿元，发起式有例外。",
+            "new_source_ids": [
+              "AI-S-20261013-CSRC-REVISION",
+              "I-20261010-005"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261014-FUND2014"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "ImplementationDetail",
+            "stage": "Draft",
+            "magnitude": "2亿元→5000万元；成立门槛，非新增资金",
+            "reason": "旧规门槛已独立核对；草案降低一般成立门槛是具体变化。",
+            "limits": "发起式例外须另分；不等于现有基金马上获得新增资金，最终规则待实施。"
+          },
+          {
+            "item_id": "benchmark",
+            "topic": "基准与风格稳定",
+            "new_fact": "草案明确主题方向、非主题分散投资及基准约束。",
+            "baseline": "2025年行动方案第2/20项已有基准和主题风格监管部署。",
+            "new_source_ids": [
+              "AI-S-20261013-CSRC-REVISION",
+              "I-20261010-005"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261013-CSRC-BASELINE"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "ImplementationDetail",
+            "stage": "Draft",
+            "magnitude": null,
+            "reason": "是既有改革方向的规则细化，不是新决定资金必须流向大盘。",
+            "limits": "具体持仓调整依赖产品基准、合同和现有组合。"
+          },
+          {
+            "item_id": "passive",
+            "topic": "指数基金交易约束",
+            "new_fact": "草案修订说明优化被动指数基金举牌、减持及短线交易约束。",
+            "baseline": "2014第32条已有完全指数复制基金的部分比例限制例外；2026说明另谈交易监管优化。",
+            "new_source_ids": [
+              "AI-S-20261013-CSRC-REVISION",
+              "I-20261010-005"
+            ],
+            "baseline_source_ids": [
+              "AI-S-20261014-FUND2014"
+            ],
+            "baseline_kind": "EarlierSource",
+            "change_type": "ImplementationDetail",
+            "stage": "Draft",
+            "magnitude": null,
+            "reason": "旧比例例外与拟优化举牌/减持等交易规则分别理解，不能把旧例外误认全部新放松。",
+            "limits": "尚需附件及证券交易规则逐项对照，保留部分核对范围。"
+          }
+        ],
+        "beneficiary_paths": [
+          {
+            "path_id": "new-products",
+            "beneficiary": "潜在新设权益及主题产品",
+            "style": "Both",
+            "benefit": "成立门槛降低可能提高产品创设可行性。",
+            "offsets": "发行意愿、实际认购、管理固定成本和产品投向未知。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Unknown",
+            "exposure_as_of": null,
+            "source_ids": [
+              "AI-S-20261013-CSRC-REVISION",
+              "I-20261010-005"
+            ],
+            "limits": "规模门槛下降不是市场获得新增融资；没有产品规模和成分暴露。"
+          },
+          {
+            "path_id": "benchmark",
+            "beneficiary": "现有公募持仓风格",
+            "style": "Unknown",
+            "benefit": "基准和风格约束可能减少漂移、改变组合。",
+            "offsets": "既有持仓偏离与纠偏方向未知；分散投资不会机械买IH。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Unknown",
+            "exposure_as_of": null,
+            "source_ids": [
+              "AI-S-20261013-CSRC-REVISION",
+              "AI-S-20261013-CSRC-BASELINE"
+            ],
+            "limits": "无真实基金持仓及指数映射，无法定相对方向。"
+          },
+          {
+            "path_id": "passive-products",
+            "beneficiary": "大小盘被动指数产品",
+            "style": "Both",
+            "benefit": "交易约束优化可能提高跟踪与再平衡效率。",
+            "offsets": "跟踪误差、流动性、费率与申赎净流量尚未核。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "Unknown",
+            "exposure_as_of": null,
+            "source_ids": [
+              "AI-S-20261013-CSRC-REVISION",
+              "I-20261010-005"
+            ],
+            "limits": "受益的是产品运作机制；不能自动转成某一风格的上市公司利润。"
+          },
+          {
+            "path_id": "im-product",
+            "beneficiary": "159845：中证1000ETF已披露组合",
+            "style": "IM",
+            "benefit": "已有明确指数跟踪和成分持有，可作为规则暴露的产品例子。",
+            "offsets": "原基金早已成立；成立门槛降低不会直接给存量组合新增资金，净申赎与调整仍未知。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "PortfolioDisclosure",
+            "exposure_as_of": "2026-06-30",
+            "source_ids": [
+              "AI-S-20261014-FUND1000H1",
+              "AI-S-20261014-FUND2014",
+              "AI-S-20261013-CSRC-REVISION"
+            ],
+            "limits": "剑桥科技占基金净值0.69%；报告8月31日公开。两只产品不能代表全行业，也不是10月9日组合或事件后净流量。"
+          },
+          {
+            "path_id": "ih-product",
+            "beneficiary": "510050：上证50ETF已披露组合",
+            "style": "IH",
+            "benefit": "已有明确指数跟踪和成分持有，可作为规则暴露的产品例子。",
+            "offsets": "原基金早已成立；成立门槛降低不会直接给存量组合新增资金，净申赎与调整仍未知。",
+            "effect": "Unknown",
+            "effect_status": "Hypothesis",
+            "exposure_type": "PortfolioDisclosure",
+            "exposure_as_of": "2026-06-30",
+            "source_ids": [
+              "AI-S-20261014-FUND50H1",
+              "AI-S-20261014-FUND2014",
+              "AI-S-20261013-CSRC-REVISION"
+            ],
+            "limits": "寒武纪占基金净值4.93%；报告8月31日公开。两只产品不能代表全行业，也不是10月9日组合或事件后净流量。"
+          }
+        ],
+        "conclusion": "独立旧规及两只产品披露补齐部分依据，但新产品成立与存量产品组合是两条机制，仍不定方向。基金持有哪类资产不等于事件后资金会增减。",
+        "limits": [
+          "只核关键主题和修订说明，未完成所有附件及旧规逐条对照。",
+          "仍为征求意见，最终实施文本与时刻未知。",
+          "产品规模、真实持仓、净流向、预期和提前定价缺失。"
+        ]
+      }
+    }
+  ]
+}

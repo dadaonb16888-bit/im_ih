@@ -1,0 +1,86 @@
+{
+  "applied": {
+    "inserted": true,
+    "known_at": "2026-10-15T22:24:37.899027+00:00"
+  },
+  "checked_at": "2026-10-15T22:24:38.676546+00:00",
+  "old_rows_preserved": true,
+  "old_asof_unchanged": true,
+  "replay_no_write": true,
+  "all_other_tables_unchanged": true,
+  "changed_tables": [
+    "collection_items",
+    "discovery_resolutions",
+    "discovery_runs",
+    "information_inbox",
+    "information_reviews",
+    "information_screenings",
+    "legacy_audit",
+    "news_screening_runs"
+  ],
+  "integrity": "ok",
+  "foreign_key_violations": 0,
+  "before_counts": {
+    "information_inbox": 170,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 59,
+    "legacy_audit": 18,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 69,
+    "information_reviews": 69,
+    "parent_reviews": 17,
+    "ai_research_runs": 9,
+    "ai_assessments": 25,
+    "news_screening_runs": 10,
+    "information_screenings": 122,
+    "discovery_runs": 2,
+    "discovery_leads": 729,
+    "discovery_resolutions": 729
+  },
+  "after_counts": {
+    "information_inbox": 181,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 59,
+    "legacy_audit": 19,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 79,
+    "information_reviews": 79,
+    "parent_reviews": 17,
+    "ai_research_runs": 9,
+    "ai_assessments": 25,
+    "news_screening_runs": 11,
+    "information_screenings": 134,
+    "discovery_runs": 3,
+    "discovery_leads": 729,
+    "discovery_resolutions": 739
+  },
+  "screening_counts": {
+    "DeepReview": 5,
+    "Watch": 29,
+    "Background": 80,
+    "Unscreened": 67
+  },
+  "discovery_counts": {
+    "Pending": 63,
+    "Blocked": 0,
+    "Linked": 32,
+    "Excluded": 634,
+    "PartialRead": 2
+  },
+  "unresolved_leads": 65,
+  "research_queue": {
+    "NeedsReview": 0,
+    "ReviewedWithGaps": 3,
+    "Reviewed": 0
+  },
+  "implementation_changed": false,
+  "code_test_status": "Prior implementation milestone:184 passed; no new code test run for this data-only import."
+}

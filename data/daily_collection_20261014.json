@@ -1,0 +1,1836 @@
+{
+  "package_id": "DAILY-20261014-V1",
+  "batch": {
+    "batch_id": "CB-20261014-082049",
+    "window_start": "2026-10-13T00:00:00+08:00",
+    "cutoff": "2026-10-14T08:20:49+08:00",
+    "window_reason": "本轮启动时冻结：前一自然日00:00至启动时刻"
+  },
+  "information": [
+    {
+      "information_id": "DC-S-20261014-OMO_CNFIN",
+      "title": "10月13日货币市场报道",
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/yw-lb/detail/20261013/4480284_1.html",
+      "published_at": "2026-10-13T20:07:06+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "报道汇总当日逆回购及货币市场变化。",
+      "verification": "与央行第197号公告重复；净投放及其他报道数字未全部追溯，不计独立冲击。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:51.674805+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "dc33e07aba950052ee5b2441f3d493ffc97dc10242aeeac84836f95380dbe49e"
+    },
+    {
+      "information_id": "DC-S-20261014-MORNING",
+      "title": "10月14日国际金融早报",
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/yw-lb/detail/20261014/4480422_1.html",
+      "published_at": "2026-10-14T07:35:46+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "早报包含海外数据、央行言论和待发布日程。",
+      "verification": "各条原始来源、发生日期和官员讲话时间尚未逐项核实，不能将摘要整体作为新事件。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:51.675808+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "39f06639bbb744b5a01b19c35d233c7f43df938a839105e2942e7556055ce9cf"
+    },
+    {
+      "information_id": "DC-S-20261014-ARAMCO",
+      "title": "沙特阿美办公楼遇袭报道",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/20261014/8f289993d0c54023a70ca78de6335e4b/c.html",
+      "published_at": "2026-10-14T06:15:48+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "新华社引述沙特能源部声明：达兰办公楼遇袭，有局部火情，无人员伤亡。",
+      "verification": "与也门—沙特升级归并一条事件链；办公楼受损不能推成产油设施停产。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:51.676809+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "690cc6888adef81c22389c74ae09e88be647514b5cd965424b460d372d2c4e17"
+    },
+    {
+      "information_id": "DC-S-20261014-WAR13",
+      "title": "沙特空袭也门及报复威胁",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+      "published_at": "2026-10-13T23:12:06+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "报道沙特空袭萨那石油设施，胡塞武装发出报复威胁；损害情况未明。",
+      "verification": "建立地区冲突升级候选，风险偏好方向仅为研究推断。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:51.676809+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "9c51deaf09a56acf8d85494e627ce1f7c34fca69b4653f8d9548deb44362a5d6"
+    },
+    {
+      "information_id": "DC-S-20261014-OILSTOCK",
+      "title": "沙特阿美负责人谈库存修复",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/20261013/35673e9f28b04796b50e5b435eb3c359/c.html",
+      "published_at": "2026-10-13T20:44:27+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "报道负责人10月12日对全球库存和修复周期的判断。",
+      "verification": "观点发生在窗口之前，来源发布日期在窗口内；库存为受访者判断，不是已复核供给损失。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:51.677805+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "dda0e11d102c388374149c49b2e3724390de9452345df3202fdf76dd13d10618"
+    },
+    {
+      "information_id": "DC-S-20261014-EXPORT",
+      "title": "民航两用物项出口登记草案解读",
+      "source_id": "MOFCOM",
+      "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_5fb14edff75c45fa887d5c16d3477eb4.html",
+      "published_at": "2026-10-13T10:00:00+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "解读拟对低风险民航维修等出口实施登记凭证并说明此前许可证制度。",
+      "verification": "这是降低部分合规程序负担的草案；不按出口管制标题机械归类风险厌恶。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:51.678805+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "4e45aac380074ff852e1ec7b179a65d1a522174368266de7a470948b680e63c3"
+    },
+    {
+      "information_id": "DC-S-20261014-SERVICES",
+      "title": "1—8月服务贸易统计发布",
+      "source_id": "MOFCOM",
+      "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_d20c715329f345b1b9ef7d61735fec61.html",
+      "published_at": "2026-10-13",
+      "publication_precision": "DateOnly",
+      "fact": "官方发布1—8月服务贸易总额及结构增长情况。",
+      "verification": "页面显示14:24与元数据14:28不一致，保留日期级；无一致预期和两指数盈利相对贡献。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:52.766216+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "0e81e259ba90b2ca7f3c03ab9b5b54edab81df1a5185e136e255651bbc4fd2ba",
+      "content_as_of": "2026-08-31"
+    },
+    {
+      "information_id": "DC-S-20261014-BOATS",
+      "title": "内河新能源船舶行动方案报道",
+      "source_id": "MOT",
+      "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261013_4225752.html",
+      "published_at": "2026-10-13T08:24:00+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "报道2026—2030年行动方案及2028年保有量相对2025年翻倍目标。",
+      "verification": "归并原行动方案；报道时间早于当前原文页面时间，不推定全局首发。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:53.021185+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "8cfd33a7a99362d80d397a55c96d7e33a89068c8a0e48f6af24c636fa5f0dc88"
+    },
+    {
+      "information_id": "DC-S-20261014-BOAT_POLICY",
+      "title": "内河新能源船舶推广应用行动方案",
+      "source_id": "MOT",
+      "url": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261012_4225720.html",
+      "published_at": "2026-10-13T08:43:00+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "原文列出电动和甲醇船舶、补能网络、制造、技术攻关与政策支持安排。",
+      "verification": "构建产业政策候选；新增财政金额、旧政策增量及指数相对业务暴露尚未核齐。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:53.250963+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "fbc4275d588ca311572a003384691c7f3ff51d29879d7d29a2cc7a838e6ba84a"
+    },
+    {
+      "information_id": "DC-S-20261014-REGIONAL",
+      "title": "西部区域协调机制会议",
+      "source_id": "NDRC",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261013_1408128.html",
+      "published_at": "2026-10-13T10:40:55+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "发改委介绍西部四省区协调会议及既有规划落实。",
+      "verification": "会议落实既有部署，原文未提供可核新增资金量，不能升级成全面刺激。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:53.522977+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "c1c158e2b647c1e40fce4c05f2c601eca20e33aebc05e14bdea2ea47bc7b5ec7"
+    },
+    {
+      "information_id": "DC-S-20261014-BILL65",
+      "title": "第六十五期贴现国债发行通知线索",
+      "source_id": "MOF",
+      "url": "https://zwgls.mof.gov.cn/ywgg/202610/t20261013_4002703.htm",
+      "published_at": null,
+      "publication_precision": "Unresolved",
+      "fact": "财政部目录出现国债发行通知线索，正文未取得。",
+      "verification": "HTTPS与原目录HTTP正文均未取得，禁止填发行规模和独立方向。",
+      "read_status": "Unavailable",
+      "capture_mode": "Unavailable",
+      "first_seen_at": "2026-10-14T00:24:53.585225+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": null
+    },
+    {
+      "information_id": "DC-S-20261014-BILL64",
+      "title": "第六十四期贴现国债发行通知线索",
+      "source_id": "MOF",
+      "url": "https://zwgls.mof.gov.cn/ywgg/202610/t20261013_4002694.htm",
+      "published_at": null,
+      "publication_precision": "Unresolved",
+      "fact": "财政部目录出现另一国债发行通知线索，正文未取得。",
+      "verification": "日期与正文仍待核实；日常债务发行不能仅凭目录算新增财政刺激。",
+      "read_status": "Unavailable",
+      "capture_mode": "Unavailable",
+      "first_seen_at": "2026-10-14T00:24:53.620526+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": null
+    },
+    {
+      "information_id": "DC-S-20261014-AI_REAFFIRM",
+      "title": "AI产业报道重述新质生产力意见",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/tech/20261013/431df1d3c32d45b088254eedb64a2c09/c.html",
+      "published_at": "2026-10-13T08:54:04+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "报道引用10月9日政策并串联既有AI应用案例。",
+      "verification": "低增量传播与例子，不重启旧事件衰减，不撤销V4的不定方向结论。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:53.799006+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "0facb9be846d7880e64caa63247d14ac29da43330b14fdc5b26aaedb697d022c"
+    },
+    {
+      "information_id": "DC-S-20261014-FLOWS",
+      "title": "媒体引用Wind的ETF流入报道",
+      "source_id": "CLS",
+      "url": "https://m.cls.cn/detail/2503192",
+      "published_at": "2026-10-13T13:12:00+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "媒体引用Wind统计ETF资金流入，并列出个别中证1000产品。",
+      "verification": "内容统计到前一日；未取得原始份额和匹配IH样本，不确认净流或IM优势。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:55.154901+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "20c64e658c13227716f8b2f56faf6a6b2f48f87900f096cf3ef567cec343cbc7",
+      "content_as_of": "2026-10-12"
+    },
+    {
+      "information_id": "DC-S-20261014-SELLING",
+      "title": "保险机构卖压的采访推测",
+      "source_id": "YICAI",
+      "url": "https://m.yicai.com/news/103392207.html",
+      "published_at": "2026-10-13T21:39:40+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "报道引述受访者对险资卖压及结束阶段的推测。",
+      "verification": "采访推测缺账户/持仓/赎回原始依据；不据此创建小盘流动性危机或市场确认。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:55.210089+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "02941c5b6775c5655081d5aea4734379ed525a09f44309cbae4ff501d9e55b15",
+      "content_as_of": null
+    },
+    {
+      "information_id": "DC-S-20261014-FUNDMARKET",
+      "title": "上交所基金市场页面观察",
+      "source_id": "SSE",
+      "url": "https://etf.sse.com.cn/home/",
+      "published_at": null,
+      "publication_precision": "Unresolved",
+      "fact": "页面展示10月13日基金市场规模和产品上市信息。",
+      "verification": "规模不等于资金净流；当前页面观察时刻不等于新闻发布时间，未来上市不倒填。",
+      "read_status": "Partial",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:55.266772+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "3b456c3917b2d72a8b28216e8090517f131697f132587717f1d12f8a1d34c76b"
+    },
+    {
+      "information_id": "DC-S-20261014-DELIST",
+      "title": "大参转债到期摘牌公告",
+      "source_id": "SSE",
+      "url": "https://www.sse.com.cn/disclosure/announcement/listing/stock/c/c_20261013_10834625.shtml",
+      "published_at": null,
+      "publication_precision": "Unresolved",
+      "fact": "正文涉及113605可转债到期摘牌，不是公司股票退市。",
+      "verification": "页面日期10月13日与正文落款10月14日冲突，保留待核时间和债券事件属性。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:24:55.938755+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "e59cd46447b4a7897a168a8db82ab4ae3cefbab098728b7c16ebcd1c4402db35"
+    },
+    {
+      "information_id": "DC-S-20261014-PBC197",
+      "title": "央行第197号公开市场操作公告",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101308450595979/index.html",
+      "published_at": "2026-10-13T09:20:30+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "央行开展650亿元7天逆回购，操作利率1.40%，全额满足需求。",
+      "verification": "与第196号同利率；数量变化需对到期量、资金需求和预期核查，不自动给IM。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:30:48.240235+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "4d8c6a450a33ee457184b944861828f3b23e67c054988dd9b7ad55899aec02b7"
+    },
+    {
+      "information_id": "DC-S-20261014-PBC196",
+      "title": "央行第196号公告：前日基线",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101208533774222/index.html",
+      "published_at": "2026-10-12T09:20:30+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "前一日500亿元7天逆回购操作利率同为1.40%。",
+      "verification": "窗口外基线补录；不计本窗口新增事件。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:30:48.241241+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "58e41f23e40d65c0ad6d352161e06cd11abe049cfb7358a38550b33805fa4888"
+    },
+    {
+      "information_id": "DC-S-20261014-FEDMINUTES",
+      "title": "美联储发布历史贴现率会议纪要",
+      "source_id": "FED",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "published_at": "2026-10-14T02:00:00+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "美国东部10月13日14时发布8月17日、9月9日和16日理事会贴现率会议纪要。",
+      "verification": "实际发布日期换算北京；不是10月13日FOMC新利率决定，附件未读。",
+      "read_status": "Partial",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:30:48.242244+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "936ac478eca749188973ff5f24f61772d58530fc36c8b8995c419f67ef028cea"
+    },
+    {
+      "information_id": "DC-S-20261014-BLSCALENDAR",
+      "title": "BLS待发布CPI日程",
+      "source_id": "BLS",
+      "url": "https://www.bls.gov/schedule/2026/10_sched.htm",
+      "published_at": "2026-02-18",
+      "publication_precision": "DateOnly",
+      "fact": "官方日历列10月14日美东08:30发布9月CPI，即北京时间20:30。",
+      "verification": "这里只读日历，截止时数据尚未发布；不是已知CPI惊喜或新风险事件。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:37:15.843752+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": null,
+      "capture_note": "urllib读取失败，实际改由网页读取官方日历；仅有日程，没有CPI数据",
+      "scheduled_release": "2026-10-14T20:30:00+08:00"
+    },
+    {
+      "information_id": "DC-S-20261014-RIZHAO",
+      "title": "日照AI制造计划报道线索",
+      "source_id": "XINHUA",
+      "url": "https://www.sd.news.cn/20261013/56b9295277054b5f9f79394fd60f97e0/c.html",
+      "published_at": null,
+      "publication_precision": "Unresolved",
+      "fact": "搜索索引出现日照AI制造计划报道，正文未取得。",
+      "verification": "无法核原计划首发、预算和资格，索引片段不充当全文。",
+      "read_status": "Partial",
+      "capture_mode": "OfficialSearchIndex",
+      "first_seen_at": "2026-10-14T00:30:48.244241+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": null
+    },
+    {
+      "information_id": "DC-S-20261014-AVIATIONAI",
+      "title": "东航数科AI应用访谈",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/house/20261013/0ab9d0c2c5dd4b3f87eed3ee4229875b/c.html",
+      "published_at": "2026-10-13T11:30:30+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "访谈介绍已有AI服务和运维应用，也列出安全与数据约束。",
+      "verification": "企业自述与既有应用，未核新增重大订单/成本净效益，不能作为指数科技冲击。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:30:48.244241+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "19226fa64fb599651a1c7184cd2929bbf3398e1696d01c5105652ed85eb850d8"
+    },
+    {
+      "information_id": "DC-S-20261014-HANGZHOU",
+      "title": "杭州上城AI工具普惠报道",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/20261013/2fd7f420200b405f84b587d665765ac8/c.html",
+      "published_at": "2026-10-13T10:16:40+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "报道当地AI编程工具优惠、企业和社区建设。",
+      "verification": "地方优惠和实例不等于全国新增预算；原方案日期与上市公司净受益未核。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:30:49.445715+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "7bc73d42a6683c1f7a62004844ca50c602975671649fc33aaf930b2d6f813471"
+    },
+    {
+      "information_id": "DC-S-20261014-BANKACCOUNTING",
+      "title": "媒体讨论权益法核算草案",
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/gs-lb/detail/20261014/4480411_1.html",
+      "published_at": "2026-10-14T07:31:25+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "媒体讨论持股低于20%的权益法条件及廉价购买利得。",
+      "verification": "追溯到9月征求意见函；新报道不等于今天新生效，不直接推断银行买入需求减少。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:30:49.470127+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "c527fa1f1e3c763dff085c67576a13e7fa2ca5a78291b52d18c5d81443726544"
+    },
+    {
+      "information_id": "DC-S-20261014-ROBOT",
+      "title": "机器人进厂应用报道",
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/hg-lb/detail/20261014/4480416_1.html",
+      "published_at": "2026-10-14T07:33:59+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "报道工博会机器人应用和企业自报表现，同时指出稳定性与数据限制。",
+      "verification": "展会、自报指标和旧应用未核到新订单或独立盈利惊喜；不机械触发TECH_GROWTH方向。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:30:49.517787+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "2368a67718012d09dbd7acb700c0457b9ebcd4d93dbe176a7cf072d7975493bf"
+    },
+    {
+      "information_id": "DC-S-20261014-DANONE",
+      "title": "商务部会见达能负责人",
+      "source_id": "MOFCOM",
+      "url": "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_c89c3db56dc54917b700ac5c438f9969.html",
+      "published_at": "2026-10-13T15:49:00+08:00",
+      "publication_precision": "SourceTimestamp",
+      "fact": "10月12日会见在13日发布，重述中欧磋商成果并表达投资意愿。",
+      "verification": "归并中欧贸易母事件，表达意愿不是新增已签金额或撤销贸易限制。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:33:03.195438+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "520912917b53185984640b153783bb77e9bbf264d1eac4c5410075619cfcbfe1"
+    },
+    {
+      "information_id": "DC-S-20261014-ACCOUNTING_PRIMARY",
+      "title": "会计解释22号9月征求意见函",
+      "source_id": "MOF",
+      "url": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czyw/202609/t20260915_3997441.htm",
+      "published_at": "2026-09-17",
+      "publication_precision": "DateOnly",
+      "fact": "财政部原站索引显示9月已公开征意见函，本次正文获取失败。",
+      "verification": "仅核官方索引中的早期发布日期和草案属性；未读PDF，不对四项条件给正式法律判断。",
+      "read_status": "Partial",
+      "capture_mode": "OfficialSearchIndex",
+      "first_seen_at": "2026-10-14T00:33:03.196440+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": null
+    },
+    {
+      "information_id": "DC-S-20261014-CSRC_MEETING",
+      "title": "10月10日资本市场座谈会：旧背景",
+      "source_id": "CSRC",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7663814/content.shtml",
+      "published_at": "2026-10-10",
+      "publication_precision": "DateOnly",
+      "fact": "官方原文列出与会专家关于稳市、长期资金、分红及储备工具的建议。",
+      "verification": "发生在窗口之前，建议不等于实施政策，不单独增设10月13日稳市冲击。",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-14T00:33:03.196440+00:00",
+      "collection_mode": "CodexDailyReview",
+      "document_sha256": "1f292bd8b4e577890a1de92db9d18b76e9d873860049a7f757fcd54475e61b85"
+    }
+  ],
+  "parents": [
+    {
+      "event_id": "E-20261013-001",
+      "name": "沙特—也门冲突升级与报复风险",
+      "category": "RISK_OFF",
+      "detection_mode": "News",
+      "scope": "Current",
+      "reviewed": false,
+      "bias": null,
+      "event_time": null,
+      "first_tradable_time": null,
+      "notes": "本轮实际读取后创建的研究候选，未完成全局首发、预期、相对暴露及正式因果审核。"
+    },
+    {
+      "event_id": "E-20261013-002",
+      "name": "内河新能源船舶推广行动方案",
+      "category": "POLICY_GROWTH",
+      "detection_mode": "News",
+      "scope": "Current",
+      "reviewed": false,
+      "bias": null,
+      "event_time": null,
+      "first_tradable_time": null,
+      "notes": "本轮实际读取后创建的研究候选，未完成全局首发、预期、相对暴露及正式因果审核。"
+    },
+    {
+      "event_id": "E-20261013-003",
+      "name": "民航两用物项出口登记草案",
+      "category": "REGULATION",
+      "detection_mode": "News",
+      "scope": "Current",
+      "reviewed": false,
+      "bias": null,
+      "event_time": null,
+      "first_tradable_time": null,
+      "notes": "本轮实际读取后创建的研究候选，未完成全局首发、预期、相对暴露及正式因果审核。"
+    }
+  ],
+  "source_checks": [
+    {
+      "check_id": "DC-C-GOV-POLICY_GROWTH",
+      "category": "POLICY_GROWTH",
+      "source_id": "GOV",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.905310+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POLICY_GROWTH",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://sousuo.www.gov.cn/zcwjk/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-GOV-BROAD_STIMULUS",
+      "category": "BROAD_STIMULUS",
+      "source_id": "GOV",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.905310+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：BROAD_STIMULUS",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://sousuo.www.gov.cn/zcwjk/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-GOV-REGULATION",
+      "category": "REGULATION",
+      "source_id": "GOV",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.905310+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：REGULATION",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://sousuo.www.gov.cn/zcwjk/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-NDRC-POLICY_GROWTH",
+      "category": "POLICY_GROWTH",
+      "source_id": "NDRC",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:24:53.522977+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POLICY_GROWTH",
+      "hit_count": 1,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.ndrc.gov.cn/xwdt/xwfb/",
+        "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261013_1408128.html"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-NDRC-BROAD_STIMULUS",
+      "category": "BROAD_STIMULUS",
+      "source_id": "NDRC",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.906305+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：BROAD_STIMULUS",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.ndrc.gov.cn/xwdt/xwfb/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-NDRC-TECH",
+      "category": "TECH",
+      "source_id": "NDRC",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.906305+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：TECH",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.ndrc.gov.cn/xwdt/xwfb/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-MOF-POLICY_GROWTH",
+      "category": "POLICY_GROWTH",
+      "source_id": "MOF",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.906305+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POLICY_GROWTH",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.mof.gov.cn/zhengwuxinxi/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-MOF-BROAD_STIMULUS",
+      "category": "BROAD_STIMULUS",
+      "source_id": "MOF",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.906305+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：BROAD_STIMULUS",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.mof.gov.cn/zhengwuxinxi/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-PBC-MONETARY",
+      "category": "MONETARY",
+      "source_id": "PBC",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:30:48.240235+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：MONETARY",
+      "hit_count": 1,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.pbc.gov.cn/",
+        "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101308450595979/index.html"
+      ],
+      "gaps": "已核197号操作及196号基线，尚未完整检查全部政策、信贷及其他公告分页。"
+    },
+    {
+      "check_id": "DC-C-CSRC-REGULATION",
+      "category": "REGULATION",
+      "source_id": "CSRC",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.907305+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：REGULATION",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.csrc.gov.cn/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-CSRC-FUND_FLOW",
+      "category": "FUND_FLOW",
+      "source_id": "CSRC",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.907305+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：FUND_FLOW",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.csrc.gov.cn/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-CSRC-POSITIONING",
+      "category": "POSITIONING",
+      "source_id": "CSRC",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.907305+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POSITIONING",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.csrc.gov.cn/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-MIIT-TECH",
+      "category": "TECH",
+      "source_id": "MIIT",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.908304+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：TECH",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.miit.gov.cn/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-MIIT-POLICY_GROWTH",
+      "category": "POLICY_GROWTH",
+      "source_id": "MIIT",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:03.908304+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POLICY_GROWTH",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.miit.gov.cn/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-MOFCOM-POLICY_GROWTH",
+      "category": "POLICY_GROWTH",
+      "source_id": "MOFCOM",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:24:52.766216+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POLICY_GROWTH",
+      "hit_count": 1,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.mofcom.gov.cn/xwfb/",
+        "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_d20c715329f345b1b9ef7d61735fec61.html"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-MOFCOM-RISK_OFF",
+      "category": "RISK_OFF",
+      "source_id": "MOFCOM",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:05.413491+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：RISK_OFF",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.mofcom.gov.cn/xwfb/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-MOFCOM-RISK_ON",
+      "category": "RISK_ON",
+      "source_id": "MOFCOM",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:33:03.195438+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：RISK_ON",
+      "hit_count": 1,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.mofcom.gov.cn/xwfb/",
+        "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_c89c3db56dc54917b700ac5c438f9969.html"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-MOFCOM-EXTERNAL_MACRO",
+      "category": "EXTERNAL_MACRO",
+      "source_id": "MOFCOM",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:05.413491+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：EXTERNAL_MACRO",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.mofcom.gov.cn/xwfb/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-CNINFO-EARNINGS",
+      "category": "EARNINGS",
+      "source_id": "CNINFO",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:05.615650+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：EARNINGS",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cninfo.com.cn/"
+      ],
+      "gaps": "动态公告正文及日期筛选未取得；不能以首页或搜索零结果证明没有业绩、分红或基金公告。"
+    },
+    {
+      "check_id": "DC-C-CNINFO-TECH",
+      "category": "TECH",
+      "source_id": "CNINFO",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:05.615650+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：TECH",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cninfo.com.cn/"
+      ],
+      "gaps": "动态公告正文及日期筛选未取得；不能以首页或搜索零结果证明没有业绩、分红或基金公告。"
+    },
+    {
+      "check_id": "DC-C-CNINFO-VALUE_DIVIDEND",
+      "category": "VALUE_DIVIDEND",
+      "source_id": "CNINFO",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:05.615650+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：VALUE_DIVIDEND",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cninfo.com.cn/"
+      ],
+      "gaps": "动态公告正文及日期筛选未取得；不能以首页或搜索零结果证明没有业绩、分红或基金公告。"
+    },
+    {
+      "check_id": "DC-C-CNINFO-FUND_FLOW",
+      "category": "FUND_FLOW",
+      "source_id": "CNINFO",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:05.615650+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：FUND_FLOW",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cninfo.com.cn/"
+      ],
+      "gaps": "动态公告正文及日期筛选未取得；不能以首页或搜索零结果证明没有业绩、分红或基金公告。"
+    },
+    {
+      "check_id": "DC-C-SSE-REGULATION",
+      "category": "REGULATION",
+      "source_id": "SSE",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:05.682698+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：REGULATION",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.sse.com.cn/"
+      ],
+      "gaps": "部分基金市场页面与公告可读，日期冲突和完整公告列表仍待核；市场规模不是净流入。"
+    },
+    {
+      "check_id": "DC-C-SSE-FUND_FLOW",
+      "category": "FUND_FLOW",
+      "source_id": "SSE",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:05.682698+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：FUND_FLOW",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.sse.com.cn/"
+      ],
+      "gaps": "部分基金市场页面与公告可读，日期冲突和完整公告列表仍待核；市场规模不是净流入。"
+    },
+    {
+      "check_id": "DC-C-SSE-VALUE_DIVIDEND",
+      "category": "VALUE_DIVIDEND",
+      "source_id": "SSE",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:05.682698+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：VALUE_DIVIDEND",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.sse.com.cn/"
+      ],
+      "gaps": "部分基金市场页面与公告可读，日期冲突和完整公告列表仍待核；市场规模不是净流入。"
+    },
+    {
+      "check_id": "DC-C-SZSE-REGULATION",
+      "category": "REGULATION",
+      "source_id": "SZSE",
+      "status": "Blocked",
+      "searched_at": "2026-10-14T00:22:05.811920+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：REGULATION",
+      "hit_count": 0,
+      "fulltext_status": "Unavailable",
+      "evidence": [
+        "https://www.szse.cn/"
+      ],
+      "gaps": "入口读取失败，覆盖未完成"
+    },
+    {
+      "check_id": "DC-C-SZSE-FUND_FLOW",
+      "category": "FUND_FLOW",
+      "source_id": "SZSE",
+      "status": "Blocked",
+      "searched_at": "2026-10-14T00:22:05.811920+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：FUND_FLOW",
+      "hit_count": 0,
+      "fulltext_status": "Unavailable",
+      "evidence": [
+        "https://www.szse.cn/"
+      ],
+      "gaps": "入口读取失败，覆盖未完成"
+    },
+    {
+      "check_id": "DC-C-SZSE-EARNINGS",
+      "category": "EARNINGS",
+      "source_id": "SZSE",
+      "status": "Blocked",
+      "searched_at": "2026-10-14T00:22:05.811920+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：EARNINGS",
+      "hit_count": 0,
+      "fulltext_status": "Unavailable",
+      "evidence": [
+        "https://www.szse.cn/"
+      ],
+      "gaps": "入口读取失败，覆盖未完成"
+    },
+    {
+      "check_id": "DC-C-CFFEX-POSITIONING",
+      "category": "POSITIONING",
+      "source_id": "CFFEX",
+      "status": "Blocked",
+      "searched_at": "2026-10-14T00:22:05.849805+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POSITIONING",
+      "hit_count": 0,
+      "fulltext_status": "Unavailable",
+      "evidence": [
+        "https://www.cffex.com.cn/"
+      ],
+      "gaps": "入口读取失败，覆盖未完成"
+    },
+    {
+      "check_id": "DC-C-CFFEX-SMALLCAP_LIQUIDITY",
+      "category": "SMALLCAP_LIQUIDITY",
+      "source_id": "CFFEX",
+      "status": "Blocked",
+      "searched_at": "2026-10-14T00:22:05.849805+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：SMALLCAP_LIQUIDITY",
+      "hit_count": 0,
+      "fulltext_status": "Unavailable",
+      "evidence": [
+        "https://www.cffex.com.cn/"
+      ],
+      "gaps": "入口读取失败，覆盖未完成"
+    },
+    {
+      "check_id": "DC-C-CFFEX-REGULATION",
+      "category": "REGULATION",
+      "source_id": "CFFEX",
+      "status": "Blocked",
+      "searched_at": "2026-10-14T00:22:05.849805+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：REGULATION",
+      "hit_count": 0,
+      "fulltext_status": "Unavailable",
+      "evidence": [
+        "https://www.cffex.com.cn/"
+      ],
+      "gaps": "入口读取失败，覆盖未完成"
+    },
+    {
+      "check_id": "DC-C-NBS-POLICY_GROWTH",
+      "category": "POLICY_GROWTH",
+      "source_id": "NBS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:06.562567+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POLICY_GROWTH",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-NBS-SEASONAL",
+      "category": "SEASONAL",
+      "source_id": "NBS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:06.562567+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：SEASONAL",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-FED-EXTERNAL_MACRO",
+      "category": "EXTERNAL_MACRO",
+      "source_id": "FED",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:30:48.242244+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：EXTERNAL_MACRO",
+      "hit_count": 1,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm"
+      ],
+      "gaps": "已读日程及新闻入口、历史贴现率纪要发布说明，未完整读所有讲话及附件；旧纪要不能当新FOMC决议。"
+    },
+    {
+      "check_id": "DC-C-FED-MONETARY",
+      "category": "MONETARY",
+      "source_id": "FED",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:06.895856+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：MONETARY",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      ],
+      "gaps": "已读日程及新闻入口、历史贴现率纪要发布说明，未完整读所有讲话及附件；旧纪要不能当新FOMC决议。"
+    },
+    {
+      "check_id": "DC-C-FED-RISK_OFF",
+      "category": "RISK_OFF",
+      "source_id": "FED",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:06.895856+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：RISK_OFF",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      ],
+      "gaps": "已读日程及新闻入口、历史贴现率纪要发布说明，未完整读所有讲话及附件；旧纪要不能当新FOMC决议。"
+    },
+    {
+      "check_id": "DC-C-FED-RISK_ON",
+      "category": "RISK_ON",
+      "source_id": "FED",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:06.895856+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：RISK_ON",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      ],
+      "gaps": "已读日程及新闻入口、历史贴现率纪要发布说明，未完整读所有讲话及附件；旧纪要不能当新FOMC决议。"
+    },
+    {
+      "check_id": "DC-C-XINHUA-TECH",
+      "category": "TECH",
+      "source_id": "XINHUA",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:30:49.445715+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：TECH",
+      "hit_count": 3,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.news.cn/",
+        "https://www.news.cn/tech/20261013/431df1d3c32d45b088254eedb64a2c09/c.html",
+        "https://www.news.cn/house/20261013/0ab9d0c2c5dd4b3f87eed3ee4229875b/c.html",
+        "https://www.news.cn/20261013/2fd7f420200b405f84b587d665765ac8/c.html"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-XINHUA-POLICY_GROWTH",
+      "category": "POLICY_GROWTH",
+      "source_id": "XINHUA",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.168713+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POLICY_GROWTH",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.news.cn/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-XINHUA-BROAD_STIMULUS",
+      "category": "BROAD_STIMULUS",
+      "source_id": "XINHUA",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.168713+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：BROAD_STIMULUS",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.news.cn/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-XINHUA-RISK_OFF",
+      "category": "RISK_OFF",
+      "source_id": "XINHUA",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:24:51.676809+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：RISK_OFF",
+      "hit_count": 2,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.news.cn/",
+        "https://www.news.cn/20261014/8f289993d0c54023a70ca78de6335e4b/c.html",
+        "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-XINHUA-RISK_ON",
+      "category": "RISK_ON",
+      "source_id": "XINHUA",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.168713+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：RISK_ON",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.news.cn/"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-XINHUA-EXTERNAL_MACRO",
+      "category": "EXTERNAL_MACRO",
+      "source_id": "XINHUA",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:24:51.677805+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：EXTERNAL_MACRO",
+      "hit_count": 1,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.news.cn/",
+        "https://www.news.cn/20261013/35673e9f28b04796b50e5b435eb3c359/c.html"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "check_id": "DC-C-CLS-TECH",
+      "category": "TECH",
+      "source_id": "CLS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.804468+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：TECH",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cls.cn/telegraph"
+      ],
+      "gaps": "电报入口为动态页面壳；定向取得ETF报道，未完整覆盖整窗电报。"
+    },
+    {
+      "check_id": "DC-C-CLS-POLICY_GROWTH",
+      "category": "POLICY_GROWTH",
+      "source_id": "CLS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.804468+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POLICY_GROWTH",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cls.cn/telegraph"
+      ],
+      "gaps": "电报入口为动态页面壳；定向取得ETF报道，未完整覆盖整窗电报。"
+    },
+    {
+      "check_id": "DC-C-CLS-MONETARY",
+      "category": "MONETARY",
+      "source_id": "CLS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.804468+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：MONETARY",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cls.cn/telegraph"
+      ],
+      "gaps": "电报入口为动态页面壳；定向取得ETF报道，未完整覆盖整窗电报。"
+    },
+    {
+      "check_id": "DC-C-CLS-REGULATION",
+      "category": "REGULATION",
+      "source_id": "CLS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.804468+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：REGULATION",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cls.cn/telegraph"
+      ],
+      "gaps": "电报入口为动态页面壳；定向取得ETF报道，未完整覆盖整窗电报。"
+    },
+    {
+      "check_id": "DC-C-CLS-FUND_FLOW",
+      "category": "FUND_FLOW",
+      "source_id": "CLS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:24:55.154901+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：FUND_FLOW",
+      "hit_count": 1,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cls.cn/telegraph",
+        "https://m.cls.cn/detail/2503192"
+      ],
+      "gaps": "电报入口为动态页面壳；定向取得ETF报道，未完整覆盖整窗电报。"
+    },
+    {
+      "check_id": "DC-C-CLS-RISK_OFF",
+      "category": "RISK_OFF",
+      "source_id": "CLS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.804468+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：RISK_OFF",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cls.cn/telegraph"
+      ],
+      "gaps": "电报入口为动态页面壳；定向取得ETF报道，未完整覆盖整窗电报。"
+    },
+    {
+      "check_id": "DC-C-CLS-RISK_ON",
+      "category": "RISK_ON",
+      "source_id": "CLS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.804468+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：RISK_ON",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cls.cn/telegraph"
+      ],
+      "gaps": "电报入口为动态页面壳；定向取得ETF报道，未完整覆盖整窗电报。"
+    },
+    {
+      "check_id": "DC-C-CLS-EARNINGS",
+      "category": "EARNINGS",
+      "source_id": "CLS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.804468+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：EARNINGS",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cls.cn/telegraph"
+      ],
+      "gaps": "电报入口为动态页面壳；定向取得ETF报道，未完整覆盖整窗电报。"
+    },
+    {
+      "check_id": "DC-C-CLS-EXTERNAL_MACRO",
+      "category": "EXTERNAL_MACRO",
+      "source_id": "CLS",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:22:07.804468+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：EXTERNAL_MACRO",
+      "hit_count": 0,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.cls.cn/telegraph"
+      ],
+      "gaps": "电报入口为动态页面壳；定向取得ETF报道，未完整覆盖整窗电报。"
+    },
+    {
+      "check_id": "DC-C-MARKET-SMALLCAP_LIQUIDITY",
+      "category": "SMALLCAP_LIQUIDITY",
+      "source_id": "MARKET",
+      "status": "Blocked",
+      "searched_at": "2026-10-14T00:22:07.809387+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：SMALLCAP_LIQUIDITY",
+      "hit_count": 0,
+      "fulltext_status": "Unavailable",
+      "evidence": [
+        "data/source_registry.json:MARKET"
+      ],
+      "gaps": "未接入同步IM/IH分钟行情、ETF份额净变化及机构持仓，禁止形成市场State。"
+    },
+    {
+      "check_id": "DC-C-MARKET-POSITIONING",
+      "category": "POSITIONING",
+      "source_id": "MARKET",
+      "status": "Blocked",
+      "searched_at": "2026-10-14T00:22:07.809387+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POSITIONING",
+      "hit_count": 0,
+      "fulltext_status": "Unavailable",
+      "evidence": [
+        "data/source_registry.json:MARKET"
+      ],
+      "gaps": "未接入同步IM/IH分钟行情、ETF份额净变化及机构持仓，禁止形成市场State。"
+    },
+    {
+      "check_id": "DC-C-MARKET-FUND_FLOW",
+      "category": "FUND_FLOW",
+      "source_id": "MARKET",
+      "status": "Blocked",
+      "searched_at": "2026-10-14T00:22:07.809387+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：FUND_FLOW",
+      "hit_count": 0,
+      "fulltext_status": "Unavailable",
+      "evidence": [
+        "data/source_registry.json:MARKET"
+      ],
+      "gaps": "未接入同步IM/IH分钟行情、ETF份额净变化及机构持仓，禁止形成市场State。"
+    },
+    {
+      "check_id": "DC-C-MARKET-SEASONAL",
+      "category": "SEASONAL",
+      "source_id": "MARKET",
+      "status": "Blocked",
+      "searched_at": "2026-10-14T00:22:07.809387+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：SEASONAL",
+      "hit_count": 0,
+      "fulltext_status": "Unavailable",
+      "evidence": [
+        "data/source_registry.json:MARKET"
+      ],
+      "gaps": "未接入同步IM/IH分钟行情、ETF份额净变化及机构持仓，禁止形成市场State。"
+    },
+    {
+      "check_id": "DC-C-MOT-POLICY_GROWTH",
+      "category": "POLICY_GROWTH",
+      "source_id": "MOT",
+      "status": "Partial",
+      "searched_at": "2026-10-14T00:24:53.250963+00:00",
+      "search_scope": "公开入口读取与2026-10-13至10-14日期关键词发现，命中正文另核时间；未遍历全部分页/动态接口。类别：POLICY_GROWTH",
+      "hit_count": 2,
+      "fulltext_status": "Partial",
+      "evidence": [
+        "https://www.mot.gov.cn/",
+        "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261013_4225752.html",
+        "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261012_4225720.html"
+      ],
+      "gaps": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    }
+  ],
+  "items": [
+    {
+      "item_id": "DC-M-OMO_CNFIN",
+      "information_id": "DC-S-20261014-OMO_CNFIN",
+      "category": "MONETARY",
+      "notes": "与央行第197号公告重复；净投放及其他报道数字未全部追溯，不计独立冲击。"
+    },
+    {
+      "item_id": "DC-M-MORNING",
+      "information_id": "DC-S-20261014-MORNING",
+      "category": "EXTERNAL_MACRO",
+      "notes": "各条原始来源、发生日期和官员讲话时间尚未逐项核实，不能将摘要整体作为新事件。"
+    },
+    {
+      "item_id": "DC-M-ARAMCO",
+      "information_id": "DC-S-20261014-ARAMCO",
+      "category": "RISK_OFF",
+      "notes": "与也门—沙特升级归并一条事件链；办公楼受损不能推成产油设施停产。"
+    },
+    {
+      "item_id": "DC-M-WAR13",
+      "information_id": "DC-S-20261014-WAR13",
+      "category": "RISK_OFF",
+      "notes": "建立地区冲突升级候选，风险偏好方向仅为研究推断。"
+    },
+    {
+      "item_id": "DC-M-OILSTOCK",
+      "information_id": "DC-S-20261014-OILSTOCK",
+      "category": "EXTERNAL_MACRO",
+      "notes": "观点发生在窗口之前，来源发布日期在窗口内；库存为受访者判断，不是已复核供给损失。"
+    },
+    {
+      "item_id": "DC-M-EXPORT",
+      "information_id": "DC-S-20261014-EXPORT",
+      "category": "REGULATION",
+      "notes": "这是降低部分合规程序负担的草案；不按出口管制标题机械归类风险厌恶。"
+    },
+    {
+      "item_id": "DC-M-SERVICES",
+      "information_id": "DC-S-20261014-SERVICES",
+      "category": "POLICY_GROWTH",
+      "notes": "页面显示14:24与元数据14:28不一致，保留日期级；无一致预期和两指数盈利相对贡献。"
+    },
+    {
+      "item_id": "DC-M-BOATS",
+      "information_id": "DC-S-20261014-BOATS",
+      "category": "POLICY_GROWTH",
+      "notes": "归并原行动方案；报道时间早于当前原文页面时间，不推定全局首发。"
+    },
+    {
+      "item_id": "DC-M-BOAT_POLICY",
+      "information_id": "DC-S-20261014-BOAT_POLICY",
+      "category": "POLICY_GROWTH",
+      "notes": "构建产业政策候选；新增财政金额、旧政策增量及指数相对业务暴露尚未核齐。"
+    },
+    {
+      "item_id": "DC-M-REGIONAL",
+      "information_id": "DC-S-20261014-REGIONAL",
+      "category": "POLICY_GROWTH",
+      "notes": "会议落实既有部署，原文未提供可核新增资金量，不能升级成全面刺激。"
+    },
+    {
+      "item_id": "DC-M-BILL65",
+      "information_id": "DC-S-20261014-BILL65",
+      "category": "MONETARY",
+      "notes": "HTTPS与原目录HTTP正文均未取得，禁止填发行规模和独立方向。"
+    },
+    {
+      "item_id": "DC-M-BILL64",
+      "information_id": "DC-S-20261014-BILL64",
+      "category": "MONETARY",
+      "notes": "日期与正文仍待核实；日常债务发行不能仅凭目录算新增财政刺激。"
+    },
+    {
+      "item_id": "DC-M-AI_REAFFIRM",
+      "information_id": "DC-S-20261014-AI_REAFFIRM",
+      "category": "TECH",
+      "notes": "低增量传播与例子，不重启旧事件衰减，不撤销V4的不定方向结论。"
+    },
+    {
+      "item_id": "DC-M-FLOWS",
+      "information_id": "DC-S-20261014-FLOWS",
+      "category": "FUND_FLOW",
+      "notes": "内容统计到前一日；未取得原始份额和匹配IH样本，不确认净流或IM优势。"
+    },
+    {
+      "item_id": "DC-M-SELLING",
+      "information_id": "DC-S-20261014-SELLING",
+      "category": "POSITIONING",
+      "notes": "采访推测缺账户/持仓/赎回原始依据；不据此创建小盘流动性危机或市场确认。"
+    },
+    {
+      "item_id": "DC-M-FUNDMARKET",
+      "information_id": "DC-S-20261014-FUNDMARKET",
+      "category": "FUND_FLOW",
+      "notes": "规模不等于资金净流；当前页面观察时刻不等于新闻发布时间，未来上市不倒填。"
+    },
+    {
+      "item_id": "DC-M-DELIST",
+      "information_id": "DC-S-20261014-DELIST",
+      "category": "REGULATION",
+      "notes": "页面日期10月13日与正文落款10月14日冲突，保留待核时间和债券事件属性。"
+    },
+    {
+      "item_id": "DC-M-PBC197",
+      "information_id": "DC-S-20261014-PBC197",
+      "category": "MONETARY",
+      "notes": "与第196号同利率；数量变化需对到期量、资金需求和预期核查，不自动给IM。"
+    },
+    {
+      "item_id": "DC-M-PBC196",
+      "information_id": "DC-S-20261014-PBC196",
+      "category": "MONETARY",
+      "notes": "窗口外基线补录；不计本窗口新增事件。"
+    },
+    {
+      "item_id": "DC-M-FEDMINUTES",
+      "information_id": "DC-S-20261014-FEDMINUTES",
+      "category": "EXTERNAL_MACRO",
+      "notes": "实际发布日期换算北京；不是10月13日FOMC新利率决定，附件未读。"
+    },
+    {
+      "item_id": "DC-M-BLSCALENDAR",
+      "information_id": "DC-S-20261014-BLSCALENDAR",
+      "category": "EXTERNAL_MACRO",
+      "notes": "这里只读日历，截止时数据尚未发布；不是已知CPI惊喜或新风险事件。"
+    },
+    {
+      "item_id": "DC-M-RIZHAO",
+      "information_id": "DC-S-20261014-RIZHAO",
+      "category": "TECH",
+      "notes": "无法核原计划首发、预算和资格，索引片段不充当全文。"
+    },
+    {
+      "item_id": "DC-M-AVIATIONAI",
+      "information_id": "DC-S-20261014-AVIATIONAI",
+      "category": "TECH",
+      "notes": "企业自述与既有应用，未核新增重大订单/成本净效益，不能作为指数科技冲击。"
+    },
+    {
+      "item_id": "DC-M-HANGZHOU",
+      "information_id": "DC-S-20261014-HANGZHOU",
+      "category": "TECH",
+      "notes": "地方优惠和实例不等于全国新增预算；原方案日期与上市公司净受益未核。"
+    },
+    {
+      "item_id": "DC-M-BANKACCOUNTING",
+      "information_id": "DC-S-20261014-BANKACCOUNTING",
+      "category": "VALUE_DIVIDEND",
+      "notes": "追溯到9月征求意见函；新报道不等于今天新生效，不直接推断银行买入需求减少。"
+    },
+    {
+      "item_id": "DC-M-ROBOT",
+      "information_id": "DC-S-20261014-ROBOT",
+      "category": "TECH",
+      "notes": "展会、自报指标和旧应用未核到新订单或独立盈利惊喜；不机械触发TECH_GROWTH方向。"
+    },
+    {
+      "item_id": "DC-M-DANONE",
+      "information_id": "DC-S-20261014-DANONE",
+      "category": "RISK_ON",
+      "notes": "归并中欧贸易母事件，表达意愿不是新增已签金额或撤销贸易限制。"
+    },
+    {
+      "item_id": "DC-M-ACCOUNTING_PRIMARY",
+      "information_id": "DC-S-20261014-ACCOUNTING_PRIMARY",
+      "category": "REGULATION",
+      "notes": "仅核官方索引中的早期发布日期和草案属性；未读PDF，不对四项条件给正式法律判断。"
+    },
+    {
+      "item_id": "DC-M-CSRC_MEETING",
+      "information_id": "DC-S-20261014-CSRC_MEETING",
+      "category": "REGULATION",
+      "notes": "发生在窗口之前，建议不等于实施政策，不单独增设10月13日稳市冲击。"
+    }
+  ],
+  "triage": [
+    {
+      "review_id": "DC-R-OMO_CNFIN",
+      "information_id": "DC-S-20261014-OMO_CNFIN",
+      "route": "Background",
+      "event_id": null,
+      "reason": "与央行第197号公告重复；净投放及其他报道数字未全部追溯，不计独立冲击。",
+      "evidence": [
+        "https://www.cnfin.com/yw-lb/detail/20261013/4480284_1.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-MORNING",
+      "information_id": "DC-S-20261014-MORNING",
+      "route": "Pending",
+      "event_id": null,
+      "reason": "各条原始来源、发生日期和官员讲话时间尚未逐项核实，不能将摘要整体作为新事件。",
+      "evidence": [
+        "https://www.cnfin.com/yw-lb/detail/20261014/4480422_1.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-ARAMCO",
+      "information_id": "DC-S-20261014-ARAMCO",
+      "route": "EventUpdate",
+      "event_id": "E-20261013-001",
+      "reason": "与也门—沙特升级归并一条事件链；办公楼受损不能推成产油设施停产。",
+      "evidence": [
+        "https://www.news.cn/20261014/8f289993d0c54023a70ca78de6335e4b/c.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-WAR13",
+      "information_id": "DC-S-20261014-WAR13",
+      "route": "NewParent",
+      "event_id": "E-20261013-001",
+      "reason": "建立地区冲突升级候选，风险偏好方向仅为研究推断。",
+      "evidence": [
+        "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-OILSTOCK",
+      "information_id": "DC-S-20261014-OILSTOCK",
+      "route": "Background",
+      "event_id": null,
+      "reason": "观点发生在窗口之前，来源发布日期在窗口内；库存为受访者判断，不是已复核供给损失。",
+      "evidence": [
+        "https://www.news.cn/20261013/35673e9f28b04796b50e5b435eb3c359/c.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-EXPORT",
+      "information_id": "DC-S-20261014-EXPORT",
+      "route": "NewParent",
+      "event_id": "E-20261013-003",
+      "reason": "这是降低部分合规程序负担的草案；不按出口管制标题机械归类风险厌恶。",
+      "evidence": [
+        "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_5fb14edff75c45fa887d5c16d3477eb4.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-SERVICES",
+      "information_id": "DC-S-20261014-SERVICES",
+      "route": "Background",
+      "event_id": null,
+      "reason": "页面显示14:24与元数据14:28不一致，保留日期级；无一致预期和两指数盈利相对贡献。",
+      "evidence": [
+        "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_d20c715329f345b1b9ef7d61735fec61.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-BOATS",
+      "information_id": "DC-S-20261014-BOATS",
+      "route": "EventUpdate",
+      "event_id": "E-20261013-002",
+      "reason": "归并原行动方案；报道时间早于当前原文页面时间，不推定全局首发。",
+      "evidence": [
+        "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261013_4225752.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-BOAT_POLICY",
+      "information_id": "DC-S-20261014-BOAT_POLICY",
+      "route": "NewParent",
+      "event_id": "E-20261013-002",
+      "reason": "构建产业政策候选；新增财政金额、旧政策增量及指数相对业务暴露尚未核齐。",
+      "evidence": [
+        "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261012_4225720.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-REGIONAL",
+      "information_id": "DC-S-20261014-REGIONAL",
+      "route": "Background",
+      "event_id": null,
+      "reason": "会议落实既有部署，原文未提供可核新增资金量，不能升级成全面刺激。",
+      "evidence": [
+        "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261013_1408128.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-BILL65",
+      "information_id": "DC-S-20261014-BILL65",
+      "route": "Pending",
+      "event_id": null,
+      "reason": "HTTPS与原目录HTTP正文均未取得，禁止填发行规模和独立方向。",
+      "evidence": [
+        "https://zwgls.mof.gov.cn/ywgg/202610/t20261013_4002703.htm"
+      ]
+    },
+    {
+      "review_id": "DC-R-BILL64",
+      "information_id": "DC-S-20261014-BILL64",
+      "route": "Pending",
+      "event_id": null,
+      "reason": "日期与正文仍待核实；日常债务发行不能仅凭目录算新增财政刺激。",
+      "evidence": [
+        "https://zwgls.mof.gov.cn/ywgg/202610/t20261013_4002694.htm"
+      ]
+    },
+    {
+      "review_id": "DC-R-AI_REAFFIRM",
+      "information_id": "DC-S-20261014-AI_REAFFIRM",
+      "route": "EventUpdate",
+      "event_id": "E-20261009-001",
+      "reason": "低增量传播与例子，不重启旧事件衰减，不撤销V4的不定方向结论。",
+      "evidence": [
+        "https://www.news.cn/tech/20261013/431df1d3c32d45b088254eedb64a2c09/c.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-FLOWS",
+      "information_id": "DC-S-20261014-FLOWS",
+      "route": "Pending",
+      "event_id": null,
+      "reason": "内容统计到前一日；未取得原始份额和匹配IH样本，不确认净流或IM优势。",
+      "evidence": [
+        "https://m.cls.cn/detail/2503192"
+      ]
+    },
+    {
+      "review_id": "DC-R-SELLING",
+      "information_id": "DC-S-20261014-SELLING",
+      "route": "Pending",
+      "event_id": null,
+      "reason": "采访推测缺账户/持仓/赎回原始依据；不据此创建小盘流动性危机或市场确认。",
+      "evidence": [
+        "https://m.yicai.com/news/103392207.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-FUNDMARKET",
+      "information_id": "DC-S-20261014-FUNDMARKET",
+      "route": "Background",
+      "event_id": null,
+      "reason": "规模不等于资金净流；当前页面观察时刻不等于新闻发布时间，未来上市不倒填。",
+      "evidence": [
+        "https://etf.sse.com.cn/home/"
+      ]
+    },
+    {
+      "review_id": "DC-R-DELIST",
+      "information_id": "DC-S-20261014-DELIST",
+      "route": "Pending",
+      "event_id": null,
+      "reason": "页面日期10月13日与正文落款10月14日冲突，保留待核时间和债券事件属性。",
+      "evidence": [
+        "https://www.sse.com.cn/disclosure/announcement/listing/stock/c/c_20261013_10834625.shtml"
+      ]
+    },
+    {
+      "review_id": "DC-R-PBC197",
+      "information_id": "DC-S-20261014-PBC197",
+      "route": "Background",
+      "event_id": null,
+      "reason": "与第196号同利率；数量变化需对到期量、资金需求和预期核查，不自动给IM。",
+      "evidence": [
+        "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101308450595979/index.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-PBC196",
+      "information_id": "DC-S-20261014-PBC196",
+      "route": "Background",
+      "event_id": null,
+      "reason": "窗口外基线补录；不计本窗口新增事件。",
+      "evidence": [
+        "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101208533774222/index.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-FEDMINUTES",
+      "information_id": "DC-S-20261014-FEDMINUTES",
+      "route": "Background",
+      "event_id": null,
+      "reason": "实际发布日期换算北京；不是10月13日FOMC新利率决定，附件未读。",
+      "evidence": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm"
+      ]
+    },
+    {
+      "review_id": "DC-R-BLSCALENDAR",
+      "information_id": "DC-S-20261014-BLSCALENDAR",
+      "route": "Background",
+      "event_id": null,
+      "reason": "这里只读日历，截止时数据尚未发布；不是已知CPI惊喜或新风险事件。",
+      "evidence": [
+        "https://www.bls.gov/schedule/2026/10_sched.htm"
+      ]
+    },
+    {
+      "review_id": "DC-R-RIZHAO",
+      "information_id": "DC-S-20261014-RIZHAO",
+      "route": "Pending",
+      "event_id": null,
+      "reason": "无法核原计划首发、预算和资格，索引片段不充当全文。",
+      "evidence": [
+        "https://www.sd.news.cn/20261013/56b9295277054b5f9f79394fd60f97e0/c.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-AVIATIONAI",
+      "information_id": "DC-S-20261014-AVIATIONAI",
+      "route": "Background",
+      "event_id": null,
+      "reason": "企业自述与既有应用，未核新增重大订单/成本净效益，不能作为指数科技冲击。",
+      "evidence": [
+        "https://www.news.cn/house/20261013/0ab9d0c2c5dd4b3f87eed3ee4229875b/c.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-HANGZHOU",
+      "information_id": "DC-S-20261014-HANGZHOU",
+      "route": "Background",
+      "event_id": null,
+      "reason": "地方优惠和实例不等于全国新增预算；原方案日期与上市公司净受益未核。",
+      "evidence": [
+        "https://www.news.cn/20261013/2fd7f420200b405f84b587d665765ac8/c.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-BANKACCOUNTING",
+      "information_id": "DC-S-20261014-BANKACCOUNTING",
+      "route": "Background",
+      "event_id": null,
+      "reason": "追溯到9月征求意见函；新报道不等于今天新生效，不直接推断银行买入需求减少。",
+      "evidence": [
+        "https://www.cnfin.com/gs-lb/detail/20261014/4480411_1.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-ROBOT",
+      "information_id": "DC-S-20261014-ROBOT",
+      "route": "Background",
+      "event_id": null,
+      "reason": "展会、自报指标和旧应用未核到新订单或独立盈利惊喜；不机械触发TECH_GROWTH方向。",
+      "evidence": [
+        "https://www.cnfin.com/hg-lb/detail/20261014/4480416_1.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-DANONE",
+      "information_id": "DC-S-20261014-DANONE",
+      "route": "EventUpdate",
+      "event_id": "E-20261009-003",
+      "reason": "归并中欧贸易母事件，表达意愿不是新增已签金额或撤销贸易限制。",
+      "evidence": [
+        "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_c89c3db56dc54917b700ac5c438f9969.html"
+      ]
+    },
+    {
+      "review_id": "DC-R-ACCOUNTING_PRIMARY",
+      "information_id": "DC-S-20261014-ACCOUNTING_PRIMARY",
+      "route": "Background",
+      "event_id": null,
+      "reason": "仅核官方索引中的早期发布日期和草案属性；未读PDF，不对四项条件给正式法律判断。",
+      "evidence": [
+        "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czyw/202609/t20260915_3997441.htm"
+      ]
+    },
+    {
+      "review_id": "DC-R-CSRC_MEETING",
+      "information_id": "DC-S-20261014-CSRC_MEETING",
+      "route": "Background",
+      "event_id": null,
+      "reason": "发生在窗口之前，建议不等于实施政策，不单独增设10月13日稳市冲击。",
+      "evidence": [
+        "https://www.csrc.gov.cn/csrc/c100028/c7663814/content.shtml"
+      ]
+    }
+  ],
+  "parent_reviews": [
+    {
+      "review_id": "DC-P-E-20261009-001",
+      "event_id": "E-20261009-001",
+      "result": "NewInformation",
+      "reason": "已读窗口内重述及案例，低增量信息归并；不重启评分参考时间，不恢复IM研究方向。",
+      "evidence": [
+        "https://www.news.cn/tech/20261013/431df1d3c32d45b088254eedb64a2c09/c.html"
+      ]
+    },
+    {
+      "review_id": "DC-P-E-20261009-002",
+      "event_id": "E-20261009-002",
+      "result": "Pending",
+      "reason": "检查相关部委入口并做日期/原主题检索；未完整覆盖后续附件与执行细则，不能用未命中断言无变化。",
+      "evidence": [
+        "https://www.mof.gov.cn/zhengwuxinxi/"
+      ]
+    },
+    {
+      "review_id": "DC-P-E-20261009-003",
+      "event_id": "E-20261009-003",
+      "result": "NewInformation",
+      "reason": "发现会见报道新增意愿表达，归并旧磋商；未找到新增签约金额和贸易措施变化。",
+      "evidence": [
+        "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_c89c3db56dc54917b700ac5c438f9969.html"
+      ]
+    },
+    {
+      "review_id": "DC-P-E-20261009-004",
+      "event_id": "E-20261009-004",
+      "result": "Pending",
+      "reason": "检查相关部委入口并做日期/原主题检索；未完整覆盖后续附件与执行细则，不能用未命中断言无变化。",
+      "evidence": [
+        "https://www.csrc.gov.cn/"
+      ]
+    },
+    {
+      "review_id": "DC-P-E-20261009-005",
+      "event_id": "E-20261009-005",
+      "result": "Pending",
+      "reason": "检查相关部委入口并做日期/原主题检索；未完整覆盖后续附件与执行细则，不能用未命中断言无变化。",
+      "evidence": [
+        "https://www.mof.gov.cn/zhengwuxinxi/"
+      ]
+    },
+    {
+      "review_id": "DC-P-E-20261009-006",
+      "event_id": "E-20261009-006",
+      "result": "Pending",
+      "reason": "检查相关部委入口并做日期/原主题检索；未完整覆盖后续附件与执行细则，不能用未命中断言无变化。",
+      "evidence": [
+        "https://www.mofcom.gov.cn/xwfb/"
+      ]
+    },
+    {
+      "review_id": "DC-P-E-20261010-001",
+      "event_id": "E-20261010-001",
+      "result": "Pending",
+      "reason": "检查相关部委入口并做日期/原主题检索；未完整覆盖后续附件与执行细则，不能用未命中断言无变化。",
+      "evidence": [
+        "https://www.mofcom.gov.cn/xwfb/"
+      ]
+    }
+  ]
+}

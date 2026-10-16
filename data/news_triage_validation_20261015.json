@@ -1,0 +1,76 @@
+{
+  "applied": {
+    "inserted": true,
+    "known_at": "2026-10-15T09:49:04.665015+00:00"
+  },
+  "checked_at": "2026-10-15T09:49:05.166990+00:00",
+  "old_rows_preserved": true,
+  "old_asof_unchanged": true,
+  "replay_no_write": true,
+  "unchanged_event_research_cause_state_tables": true,
+  "integrity": "ok",
+  "foreign_key_violations": 0,
+  "before_counts": {
+    "information_inbox": 152,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 59,
+    "legacy_audit": 16,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 57,
+    "information_reviews": 57,
+    "parent_reviews": 17,
+    "ai_research_runs": 9,
+    "ai_assessments": 25,
+    "news_screening_runs": 8,
+    "information_screenings": 101,
+    "discovery_runs": 1,
+    "discovery_leads": 729,
+    "discovery_resolutions": 38
+  },
+  "after_counts": {
+    "information_inbox": 164,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 59,
+    "legacy_audit": 17,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 69,
+    "information_reviews": 69,
+    "parent_reviews": 17,
+    "ai_research_runs": 9,
+    "ai_assessments": 25,
+    "news_screening_runs": 9,
+    "information_screenings": 113,
+    "discovery_runs": 2,
+    "discovery_leads": 729,
+    "discovery_resolutions": 729
+  },
+  "discovery_counts": {
+    "Pending": 73,
+    "Blocked": 0,
+    "Linked": 29,
+    "Excluded": 627,
+    "PartialRead": 2
+  },
+  "unresolved_leads": 75,
+  "screening_counts": {
+    "DeepReview": 5,
+    "Watch": 28,
+    "Background": 64,
+    "Unscreened": 67
+  },
+  "research_queue": {
+    "NeedsReview": 0,
+    "ReviewedWithGaps": 3,
+    "Reviewed": 0
+  },
+  "implementation_changed": false,
+  "prior_code_tests": "184 passed in preceding implementation milestone; no new code test run claimed"
+}

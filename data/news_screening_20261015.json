@@ -1,0 +1,475 @@
+{
+  "pack_id": "SCREEN-DAILY-20261015-V1",
+  "actor": "Codex",
+  "version": "news-screening-v1",
+  "generated_at": "2026-10-15T03:14:18.279363+00:00",
+  "screenings": [
+    {
+      "screening_id": "SC-DAILY-20261015-FINSTATS",
+      "information_id": "DC-S-20261015-FINSTATS",
+      "summary": "央行发布9月末社融存量、前三季度增量及M1/M2和信贷数据。 同比与前值不等于一致预期；金融统计不是当日新宽松指令。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "High",
+          "spillover": "Clear",
+          "reason": "宏观信贷/海外政策环境或冲突升级有市场级传导，值得核查相对方向；不预判Bias。"
+        },
+        "round3": {
+          "novelty": "New",
+          "transmission": "Clear",
+          "fact_support": "Supported",
+          "reason": "新报告或冲突后续已读；市场级传导成立，幅度、预期和IM/IH净差异交由研究层核查。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-OMO198",
+      "information_id": "DC-S-20261015-OMO198",
+      "summary": "10月14日560亿元7天逆回购，利率1.40%。 例行操作；未核到期量，不能称560亿元净投放。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "例行操作；未核到期量，不能称560亿元净投放。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-OMO199",
+      "information_id": "DC-S-20261015-OMO199",
+      "summary": "10月15日450亿元7天逆回购，利率1.40%。 与14日利率相同；总操作金额不代表新增净流动性。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "与14日利率相同；总操作金额不代表新增净流动性。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-BUYOUT",
+      "information_id": "DC-S-20261015-BUYOUT",
+      "summary": "央行14日预告15日开展7000亿元、182天买断式逆回购。 公告只给总额；缺同期限到期、历史续作和事前预期，先待核。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "公告只给总额；缺同期限到期、历史续作和事前预期，先待核。"
+        },
+        "round3": {
+          "novelty": "New",
+          "transmission": "Possible",
+          "fact_support": "Unverified",
+          "reason": "公告只给总额；缺同期限到期、历史续作和事前预期，先待核。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-CBMEET14",
+      "information_id": "DC-S-20261015-CBMEET14",
+      "summary": "14日会议就近期经济金融形势交换意见。 简讯未公布新增利率、准备金或可计量合作工具。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "简讯未公布新增利率、准备金或可计量合作工具。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-CBMEET15",
+      "information_id": "DC-S-20261015-CBMEET15",
+      "summary": "14日讨论跨境支付等合作，并续签与卡塔尔本币互换协议，15日发布。 续签不等于新增规模；未提供相对旧协议的额度和条件变化。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "续签不等于新增规模；未提供相对旧协议的额度和条件变化。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-APEC",
+      "information_id": "DC-S-20261015-APEC",
+      "summary": "财政部14日介绍20至21日会议安排与拟讨论议题。 这是会议日程和拟议成果，不能把未来声明视为已落地刺激。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Upcoming",
+          "source_quality": "A",
+          "reason": "这是会议日程和拟议成果，不能把未来声明视为已落地刺激。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-BRIDGE",
+      "information_id": "DC-S-20261015-BRIDGE",
+      "summary": "新华社报道15日中朝新鸭绿江大桥正式开通。 局部交通设施事件，未见足以外溢两指数的新增订单或政策量。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Local",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "局部交通设施事件，未见足以外溢两指数的新增订单或政策量。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-AIRPORT",
+      "information_id": "DC-S-20261015-AIRPORT",
+      "summary": "新华社分别转述胡塞命中机场主张、沙特方面拦截导弹和碎片伤人的说法。 双方说法分开保存；没有独立确认机场停运或供油损失，归并原冲突链。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "High",
+          "spillover": "Clear",
+          "reason": "宏观信贷/海外政策环境或冲突升级有市场级传导，值得核查相对方向；不预判Bias。"
+        },
+        "round3": {
+          "novelty": "Update",
+          "transmission": "Clear",
+          "fact_support": "Supported",
+          "reason": "新报告或冲突后续已读；市场级传导成立，幅度、预期和IM/IH净差异交由研究层核查。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-ROCKET",
+      "information_id": "DC-S-20261015-ROCKET",
+      "summary": "新华社报道14日晚发射并将十星送入预定轨道。 任务成功属行业进展；无相对既有发射能力、商业订单和盈利外溢依据。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "任务成功属行业进展；无相对既有发射能力、商业订单和盈利外溢依据。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-DIESEL",
+      "information_id": "DC-S-20261015-DIESEL",
+      "summary": "俄方代表14日预计未来几天签约；报道同时回顾9至10日既有安排。 预计签约不是已交付；尚无新合同量和相对既有放行的边际影响。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "预计签约不是已交付；尚无新合同量和相对既有放行的边际影响。"
+        },
+        "round3": {
+          "novelty": "New",
+          "transmission": "Possible",
+          "fact_support": "Unverified",
+          "reason": "预计签约不是已交付；尚无新合同量和相对既有放行的边际影响。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-SHIPAI",
+      "information_id": "DC-S-20261015-SHIPAI",
+      "summary": "15日报道安全、效率、绿色转型三方面22类应用场景。 行业场景指引未核新增预算与采购执行量，先在第二轮等待。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "行业场景指引未核新增预算与采购执行量，先在第二轮等待。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-GREENAMMONIA",
+      "information_id": "DC-S-20261015-GREENAMMONIA",
+      "summary": "交通部转载报道13日至14日一次1000吨加注作业完成。 单次技术应用案例，不能据此推导全国盈利和风格切换。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "单次技术应用案例，不能据此推导全国盈利和风格切换。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-CFFEXFX",
+      "information_id": "DC-S-20261015-CFFEXFX",
+      "summary": "媒体报道中金所负责人称正推进试点准备，并回顾4月QFI安排。 筹备不是已上市；报道没有新的上线日期、规则或股指仓位影响。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "筹备不是已上市；报道没有新的上线日期、规则或股指仓位影响。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-BONDETF",
+      "information_id": "DC-S-20261015-BONDETF",
+      "summary": "媒体汇总14日债券ETF成交并引用Wind的规模与13日流量估算。 成交不等于净流；债券ETF不等于股票风格资金，原始份额未核。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "成交不等于净流；债券ETF不等于股票风格资金，原始份额未核。"
+        },
+        "round3": {
+          "novelty": "New",
+          "transmission": "Possible",
+          "fact_support": "Unverified",
+          "reason": "成交不等于净流；债券ETF不等于股票风格资金，原始份额未核。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-EARNINGS",
+      "information_id": "DC-S-20261015-EARNINGS",
+      "summary": "媒体报道公司14日晚发布三季度业绩预告并介绍裂解价差等原因。 单家公司同比盈利改善，未见市场级新增冲击，不开展全指数深查。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Company",
+          "potential": "Low",
+          "spillover": "None",
+          "reason": "单家公司同比盈利改善，未见市场级新增冲击，不开展全指数深查。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-LING",
+      "information_id": "DC-S-20261015-LING",
+      "summary": "媒体援引百灵公众号称15日开源模型并列参数规格。 未核官方模型版本、性能评测和应用量；开源消息本身不确定IM更受益。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "C",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "未核官方模型版本、性能评测和应用量；开源消息本身不确定IM更受益。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-ASIC",
+      "information_id": "DC-S-20261015-ASIC",
+      "summary": "媒体以据悉和知情人士口径报道洽谈，数量未明且交易有条件。 未具名消息、无签约公告；第一轮待核，不展开企业和指数研究。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "D",
+          "reason": "未具名消息、无签约公告；第一轮待核，不展开企业和指数研究。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-SOLIDBATTERY",
+      "information_id": "DC-S-20261015-SOLIDBATTERY",
+      "summary": "15日媒体报道13日巨湾技研仪式并汇总产业及PCB公司信息。 投产时间与发稿分开；技术认证、良率、成本、订单原件未核，不将产能当销量。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Industry",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "投产时间与发稿分开；技术认证、良率、成本、订单原件未核，不将产能当销量。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-FCC",
+      "information_id": "DC-S-20261015-FCC",
+      "summary": "媒体区分传闻、已生效认证规则、拟议法案、特定采购和调查立案。 这是二手法律解读；未读FCC/联邦公报及ITC原件，不确认全面禁令或风险解除。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "这是二手法律解读；未读FCC/联邦公报及ITC原件，不确认全面禁令或风险解除。"
+        },
+        "round3": {
+          "novelty": "New",
+          "transmission": "Possible",
+          "fact_support": "Unverified",
+          "reason": "这是二手法律解读；未读FCC/联邦公报及ITC原件，不确认全面禁令或风险解除。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-CPI_MEDIA",
+      "information_id": "DC-S-20261015-CPI_MEDIA",
+      "summary": "新华财经14日报道美国9月通胀数据与预期，正文已读。 原BLS/DOL数据表仍未取得；媒体预期口径与官方实际值独立待核，不升格已核数值。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "B",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "Medium",
+          "spillover": "Possible",
+          "reason": "原BLS/DOL数据表仍未取得；媒体预期口径与官方实际值独立待核，不升格已核数值。"
+        },
+        "round3": {
+          "novelty": "New",
+          "transmission": "Possible",
+          "fact_support": "Unverified",
+          "reason": "原BLS/DOL数据表仍未取得；媒体预期口径与官方实际值独立待核，不升格已核数值。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-MEEREPRINT",
+      "information_id": "DC-S-20261015-MEEREPRINT",
+      "summary": "生态环境部页面日期14日，正文新华社电头为9日政策。 旧政策重新传播，不重建Parent、不刷新衰减参考时间；本轮仅短读识别重复。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": true,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "旧政策重新传播，不重建Parent、不刷新衰减参考时间；本轮仅短读识别重复。"
+        }
+      }
+    },
+    {
+      "screening_id": "SC-DAILY-20261015-FEDSUMMARY",
+      "information_id": "DC-S-20261015-FEDSUMMARY",
+      "summary": "官方摘要报告地区增长不一、就业总体变化小，部分地区价格增速上升。 报告材料收集至10月5日；不代表14日即时状态，也不是FOMC政策决定。12地区全文未读。",
+      "input_rounds": {
+        "round1": {
+          "duplicate": false,
+          "time_relevance": "Current",
+          "source_quality": "A",
+          "reason": "已核发布页面；报告时间、实际发生与数据截止另记，不把发布时间当全局首发。"
+        },
+        "round2": {
+          "scope": "Market",
+          "potential": "High",
+          "spillover": "Clear",
+          "reason": "宏观信贷/海外政策环境或冲突升级有市场级传导，值得核查相对方向；不预判Bias。"
+        },
+        "round3": {
+          "novelty": "New",
+          "transmission": "Clear",
+          "fact_support": "Supported",
+          "reason": "新报告或冲突后续已读；市场级传导成立，幅度、预期和IM/IH净差异交由研究层核查。"
+        }
+      }
+    }
+  ]
+}

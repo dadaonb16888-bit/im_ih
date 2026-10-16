@@ -1,0 +1,361 @@
+{
+  "checked_at": "2026-10-14T04:35:12.677238+00:00",
+  "observations": [
+    {
+      "fund_code": "512100",
+      "share_date": "2026-10-09",
+      "measure": "TotalShares",
+      "value": "788321.76",
+      "unit": "万份",
+      "source_id": "BR-S-20261014-SHARES-512100-20261009",
+      "source_url": "https://query.sse.com.cn/commonQuery.do?isPagination=false&sqlId=COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L&SEC_CODE=512100&STAT_DATE=2026-10-09",
+      "read_status": "Read",
+      "known_at": "2026-10-14T04:35:12.677238+00:00"
+    },
+    {
+      "fund_code": "512100",
+      "share_date": "2026-10-12",
+      "measure": "TotalShares",
+      "value": "806521.76",
+      "unit": "万份",
+      "source_id": "BR-S-20261014-SHARES-512100-20261012",
+      "source_url": "https://query.sse.com.cn/commonQuery.do?isPagination=false&sqlId=COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L&SEC_CODE=512100&STAT_DATE=2026-10-12",
+      "read_status": "Read",
+      "known_at": "2026-10-14T04:35:12.677238+00:00"
+    },
+    {
+      "fund_code": "510050",
+      "share_date": "2026-10-09",
+      "measure": "TotalShares",
+      "value": "712236.68",
+      "unit": "万份",
+      "source_id": "BR-S-20261014-SHARES-510050-20261009",
+      "source_url": "https://query.sse.com.cn/commonQuery.do?isPagination=false&sqlId=COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L&SEC_CODE=510050&STAT_DATE=2026-10-09",
+      "read_status": "Read",
+      "known_at": "2026-10-14T04:35:12.677238+00:00"
+    },
+    {
+      "fund_code": "510050",
+      "share_date": "2026-10-12",
+      "measure": "TotalShares",
+      "value": "711966.68",
+      "unit": "万份",
+      "source_id": "BR-S-20261014-SHARES-510050-20261012",
+      "source_url": "https://query.sse.com.cn/commonQuery.do?isPagination=false&sqlId=COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L&SEC_CODE=510050&STAT_DATE=2026-10-12",
+      "read_status": "Read",
+      "known_at": "2026-10-14T04:35:12.677238+00:00"
+    }
+  ],
+  "nav": {
+    "fund_code": "512100",
+    "nav_date": "2026-10-12",
+    "measure": "UnitNAV",
+    "value": "2.8548",
+    "currency": "CNY",
+    "source_id": "BR-S-20261014-PCF-20261013",
+    "source_url": "https://www.nffund.com/etf/bulletin/ETF1000/ssepcf_512100_20261013.xml",
+    "read_status": "Read",
+    "known_at": "2026-10-14T04:35:12.677238+00:00"
+  },
+  "adjustment_review": null,
+  "products": [
+    {
+      "fund_code": "512100",
+      "period_start": "2026-10-09",
+      "period_end": "2026-10-12",
+      "as_of": "2026-10-14T04:35:12.677238+00:00",
+      "previous_total_shares": 7883217600.0,
+      "current_total_shares": 8065217600.0,
+      "share_delta_unadjusted": 182000000.0,
+      "share_change_pct_unadjusted": 2.308701969612002,
+      "share_delta_adjusted": null,
+      "net_creation_notional_estimate": null,
+      "adjustment_status": "Unchecked",
+      "source_ids": [
+        "BR-S-20261014-SHARES-512100-20261009",
+        "BR-S-20261014-SHARES-512100-20261012",
+        "BR-S-20261014-PCF-20261013"
+      ],
+      "gaps": [
+        "份额拆分/合并等事项未核；不能把未调整变化认作净申赎"
+      ],
+      "research_only": true,
+      "bias": null,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "note": "产品样本的份额变化；估算名义申赎价值不等于现金入金，不代表整个指数资金流。"
+    },
+    {
+      "fund_code": "510050",
+      "period_start": "2026-10-09",
+      "period_end": "2026-10-12",
+      "as_of": "2026-10-14T04:35:12.677238+00:00",
+      "previous_total_shares": 7122366800.0,
+      "current_total_shares": 7119666800.0,
+      "share_delta_unadjusted": -2700000.0,
+      "share_change_pct_unadjusted": -0.03790874685083616,
+      "share_delta_adjusted": null,
+      "net_creation_notional_estimate": null,
+      "adjustment_status": "Unchecked",
+      "source_ids": [
+        "BR-S-20261014-SHARES-510050-20261009",
+        "BR-S-20261014-SHARES-510050-20261012"
+      ],
+      "gaps": [
+        "份额拆分/合并等事项未核；不能把未调整变化认作净申赎",
+        "匹配期末日期的单位净值未核"
+      ],
+      "research_only": true,
+      "bias": null,
+      "trade_permission": false,
+      "entry_allowed": false,
+      "note": "产品样本的份额变化；估算名义申赎价值不等于现金入金，不代表整个指数资金流。"
+    }
+  ],
+  "scope": "只比较两只ETF的未调整总份额变化；未核拆分等事项、其他产品和IH同期净值，金额估算未知，不推断全指数净流或IM/IH Bias。",
+  "policy_business_notes": "船舶政策已有2022/2024工具；公司和披露样本两边都有相关业务。按新筛选门槛仅短归档，本轮不继续新增深度判读。",
+  "pdf_checks": [
+    {
+      "name": "fund1000",
+      "path": "D:\\Codex\\新建文件夹\\exports\\baseline_review_20261014\\fund1000_2026h1.pdf",
+      "sha256": "3a52ef9b78a4c4e9b52e73771c41d9e2a4c6fdfd7a2f6d5116aee184bbd96ce3",
+      "matched_pages": [
+        55
+      ]
+    },
+    {
+      "name": "fund50",
+      "path": "D:\\Codex\\新建文件夹\\exports\\baseline_review_20261014\\fund50_2026h1.pdf",
+      "sha256": "ca53e166e98ef4ba2d9c8cc8f392feff83ca19baa83e20353ded9b9de99b1280",
+      "matched_pages": [
+        42
+      ]
+    },
+    {
+      "name": "china_ship",
+      "path": "D:\\Codex\\新建文件夹\\exports\\evidence_followup_20261014\\china_ship_2026h1.pdf",
+      "sha256": "27c722b759e0b9b58f7a1fd1b9eae0255ec6163b653d9f89fa07aa5066c31cfe",
+      "matched_pages": [
+        2,
+        9,
+        10,
+        11,
+        17,
+        18,
+        39
+      ]
+    }
+  ],
+  "source_attempts": [
+    {
+      "key": "ship2022",
+      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/yj/art/2022/art_bee1cae3eb6d4efcaf48ad13cd08fb3b.html",
+      "read_at": "2026-10-14T01:17:14.650853+00:00",
+      "status": "Readable",
+      "length": 4564,
+      "metadata": [
+        "<META HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-store, must-revalidate\">",
+        "<meta name=\"PubDate\" content=\"2023-05-12 23:33\">",
+        "<meta name=\"MakeTime\" content=\"2026-10-05 22:33:39\">"
+      ]
+    },
+    {
+      "key": "ship2024",
+      "url": "https://xxgk.mot.gov.cn/jigou/zhghs/202406/t20240607_4142138.html",
+      "read_at": "2026-10-14T01:17:14.651849+00:00",
+      "status": "Readable",
+      "length": 4948,
+      "metadata": [
+        "<meta name=\"PubDate\" content=\"2024-06-07 13:55\">",
+        "<META HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-store, must-revalidate\">"
+      ]
+    },
+    {
+      "key": "subsidy2024",
+      "url": "https://xxgk.mot.gov.cn/jigou/zhghs/202408/t20240802_4145816.html",
+      "read_at": "2026-10-14T01:17:14.652849+00:00",
+      "status": "Readable",
+      "length": 5172,
+      "metadata": [
+        "<meta name=\"PubDate\" content=\"2024-08-02 21:49\">",
+        "<META HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-store, must-revalidate\">"
+      ]
+    },
+    {
+      "key": "subsidy2025",
+      "url": "https://zjhy.mot.gov.cn/zzhxxgk/jigou/ysfwc/202502/t20250224_4164692.html",
+      "read_at": "2026-10-14T01:17:14.652849+00:00",
+      "status": "Readable",
+      "length": 4209,
+      "metadata": [
+        "<meta name=\"PubDate\" content=\"2025-02-24 14:53\">",
+        "<META HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-store, must-revalidate\">"
+      ]
+    },
+    {
+      "key": "aviation2006",
+      "url": "https://exportcontrol.mofcom.gov.cn/article/zcfg/gnzcfg/zcfggzqd/202111/506.html",
+      "read_at": "2026-10-14T01:17:14.653948+00:00",
+      "status": "Readable",
+      "length": 2312,
+      "metadata": []
+    },
+    {
+      "key": "mocindex",
+      "url": "https://www.mofcom.gov.cn/wap/index.html",
+      "read_at": "2026-10-14T01:17:14.653948+00:00",
+      "status": "Readable",
+      "length": 1163,
+      "metadata": [
+        "<meta name=\"MakeTime\" content=\"2026-10-13 22:53:20\">"
+      ]
+    },
+    {
+      "key": "nf512100",
+      "url": "https://www.nffund.com/new/personal-financing/detail.html?fundCode=512100",
+      "read_at": "2026-10-14T01:17:15.996709+00:00",
+      "status": "Partial",
+      "length": 11289,
+      "metadata": []
+    },
+    {
+      "key": "sse512100",
+      "url": "https://www.sse.com.cn/assortment/fund/list/etfinfo/basic/index.shtml?FUNDID=512100",
+      "read_at": "2026-10-14T01:17:16.521117+00:00",
+      "status": "Readable",
+      "length": 930,
+      "metadata": [
+        "<meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\">"
+      ]
+    },
+    {
+      "key": "sse510050",
+      "url": "https://www.sse.com.cn/assortment/fund/list/etfinfo/basic/index.shtml?FUNDID=510050",
+      "read_at": "2026-10-14T01:17:16.806797+00:00",
+      "status": "Readable",
+      "length": 930,
+      "metadata": [
+        "<meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\">"
+      ]
+    },
+    {
+      "key": "aviationdraft",
+      "url": "https://aqygzj.mofcom.gov.cn/zhxx/art/2026/art_6878d2c700114ad39a0e1d3958b02ee6.html",
+      "read_at": "2026-10-14T01:18:13.785593+00:00",
+      "status": "Unavailable",
+      "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    },
+    {
+      "key": "xemc",
+      "url": "https://www.xemc.com.cn/portal/article/index/id/1470/cid/23.html",
+      "read_at": "2026-10-14T01:18:13.786592+00:00",
+      "status": "Readable",
+      "length": 1232,
+      "metadata": []
+    }
+  ],
+  "share_response_audit": [
+    {
+      "url": "https://query.sse.com.cn/commonQuery.do?isPagination=false&sqlId=COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L&SEC_CODE=512100&STAT_DATE=2026-10-09",
+      "request": {
+        "isPagination": "false",
+        "sqlId": "COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L",
+        "SEC_CODE": "512100",
+        "STAT_DATE": "2026-10-09"
+      },
+      "checked_at": "2026-10-14T01:25:47.234302+00:00",
+      "status": "ReadResponse",
+      "rows": [
+        {
+          "STAT_DATE": "2026-10-09",
+          "ETF_TYPE": "跨市",
+          "SEC_CODE": "512100",
+          "SEC_NAME": "1000ETF",
+          "TOT_VOL": "788321.76",
+          "FUND_EXPANSION_ABBR": "中证1000ETF南方"
+        }
+      ]
+    },
+    {
+      "url": "https://query.sse.com.cn/commonQuery.do?isPagination=false&sqlId=COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L&SEC_CODE=512100&STAT_DATE=2026-10-12",
+      "request": {
+        "isPagination": "false",
+        "sqlId": "COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L",
+        "SEC_CODE": "512100",
+        "STAT_DATE": "2026-10-12"
+      },
+      "checked_at": "2026-10-14T01:25:47.235391+00:00",
+      "status": "ReadResponse",
+      "rows": [
+        {
+          "STAT_DATE": "2026-10-12",
+          "ETF_TYPE": "跨市",
+          "SEC_CODE": "512100",
+          "SEC_NAME": "1000ETF",
+          "TOT_VOL": "806521.76",
+          "FUND_EXPANSION_ABBR": "中证1000ETF南方"
+        }
+      ]
+    },
+    {
+      "url": "https://query.sse.com.cn/commonQuery.do?isPagination=false&sqlId=COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L&SEC_CODE=510050&STAT_DATE=2026-10-09",
+      "request": {
+        "isPagination": "false",
+        "sqlId": "COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L",
+        "SEC_CODE": "510050",
+        "STAT_DATE": "2026-10-09"
+      },
+      "checked_at": "2026-10-14T01:25:47.235391+00:00",
+      "status": "ReadResponse",
+      "rows": [
+        {
+          "STAT_DATE": "2026-10-09",
+          "ETF_TYPE": "单市",
+          "SEC_CODE": "510050",
+          "SEC_NAME": "50ETF",
+          "TOT_VOL": "712236.68",
+          "FUND_EXPANSION_ABBR": "上证50ETF华夏"
+        }
+      ]
+    },
+    {
+      "url": "https://query.sse.com.cn/commonQuery.do?isPagination=false&sqlId=COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L&SEC_CODE=510050&STAT_DATE=2026-10-12",
+      "request": {
+        "isPagination": "false",
+        "sqlId": "COMMON_SSE_ZQPZ_ETFZL_ETFJBXX_JJGM_SEARCH_L",
+        "SEC_CODE": "510050",
+        "STAT_DATE": "2026-10-12"
+      },
+      "checked_at": "2026-10-14T01:25:47.236400+00:00",
+      "status": "ReadResponse",
+      "rows": [
+        {
+          "STAT_DATE": "2026-10-12",
+          "ETF_TYPE": "单市",
+          "SEC_CODE": "510050",
+          "SEC_NAME": "50ETF",
+          "TOT_VOL": "711966.68",
+          "FUND_EXPANSION_ABBR": "上证50ETF华夏"
+        }
+      ]
+    }
+  ],
+  "pcf_header_audit": [
+    {
+      "url": "https://www.nffund.com/etf/bulletin/ETF1000/ssepcf_512100_20261012.xml",
+      "checked_at": "2026-10-14T01:24:03.156923+00:00",
+      "query_date": "2026-10-12",
+      "status": "ReadHeader",
+      "sha256": "ecac76888c7ef0311ad902838a337576dae71e128a34499ff27b3461a45a9eb9",
+      "size": 396502
+    },
+    {
+      "url": "https://www.nffund.com/etf/bulletin/ETF1000/ssepcf_512100_20261013.xml",
+      "checked_at": "2026-10-14T01:24:05.771514+00:00",
+      "query_date": "2026-10-13",
+      "status": "ReadHeader",
+      "sha256": "76a0e4eefec9a552008e2c6a939976dbb1e510366d2890e071758f931b8612e8",
+      "size": 396553
+    }
+  ]
+}

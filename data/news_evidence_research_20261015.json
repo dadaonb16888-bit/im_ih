@@ -1,0 +1,254 @@
+{
+  "pack_id": "AI-NEWS-EVIDENCE-20261015-V1",
+  "actor": "Codex",
+  "method_version": "ai-event-v1",
+  "generated_at": "2026-10-15T07:21:45.309249+00:00",
+  "sources": [
+    {
+      "information_id": "NE-S-20261015-BUYOUT8",
+      "title": "4月第8号买断式逆回购到期安排",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026041416545098236/index.html",
+      "published_at": "2026-04-14T17:30:00+08:00",
+      "publication_precision": "SourceTimestamp",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-15T07:17:58.892977+00:00",
+      "fact": "旧公告安排4月15日5000亿元、6个月183天操作，到期2026年10月15日。",
+      "verification": "原文为操作预告；提供到期基线，不证明当时实际中标/足额执行。",
+      "document_sha256": "a0140f7f037bf46d3231b916fb5d890a25770fe8c69ca3cf3401c5a5d4eb5133",
+      "collection_mode": "CodexBoundedEvidenceReview"
+    },
+    {
+      "information_id": "NE-S-20261015-BUYOUT18",
+      "title": "9月第18号同期限操作基线",
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026091416410185399/index.html",
+      "published_at": "2026-09-14T17:00:00+08:00",
+      "publication_precision": "SourceTimestamp",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-15T07:17:58.894982+00:00",
+      "fact": "旧公告安排9月15日5000亿元6个月操作，到期2027年3月15日。",
+      "verification": "可作相邻月同期限公告对照；不是本次到期资金，也不是市场一致预期。",
+      "document_sha256": "ddde77d93f7189b527688e53ac0c8fdb12dbed20374e65129314129bc78a291e",
+      "collection_mode": "CodexBoundedEvidenceReview"
+    },
+    {
+      "information_id": "NE-S-20261015-BEIGE_PRIOR",
+      "title": "明尼阿波利斯联储9月2日全国摘要",
+      "source_id": "FED",
+      "url": "https://www.minneapolisfed.org/beige-book-reports/2026/2026-09-su",
+      "published_at": "2026-09-02",
+      "publication_precision": "DateOnly",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-15T07:17:58.894982+00:00",
+      "fact": "明确标注9月2日，调查截至8月24日；价格加速地区1个，价格强劲地区1个，增长地区10个。",
+      "verification": "全国摘要已读，未读各区独立全文；地区计数非按经济规模加权，不直接推为GDP或通胀幅度。",
+      "document_sha256": "75cb5a8b9f1d5c17882cf96d09759d8e8f1368059a520d436ec7f963a518ef00",
+      "collection_mode": "CodexBoundedEvidenceReview"
+    },
+    {
+      "information_id": "NE-S-20261015-BEIGE_AMBIGUOUS",
+      "title": "联储目录9月链接与August页标题冲突",
+      "source_id": "FED",
+      "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202608-summary.htm",
+      "published_at": null,
+      "publication_precision": "Unresolved",
+      "read_status": "Partial",
+      "capture_mode": "DirectWebText",
+      "first_seen_at": "2026-10-15T07:17:58.895981+00:00",
+      "fact": "目录9月2日HTML指向202608-summary，正文标题August，页尾更新September02。",
+      "verification": "保留身份冲突，不自行把月份/URL修正；只核主要段落及标题/页尾，上一期比较采用明确日期的联储银行摘要。",
+      "document_sha256": "234163691c7f6367d5251ee41d06fd48915d1716239c47a1f34d3c04239934f2",
+      "collection_mode": "CodexBoundedEvidenceReview"
+    },
+    {
+      "information_id": "NE-S-20261015-FCC_GPO",
+      "title": "政府公报FCC26-50对应规则页",
+      "source_id": "GPO",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/FR-2026-09-11.pdf",
+      "published_at": "2026-09-11",
+      "publication_precision": "DateOnly",
+      "read_status": "Partial",
+      "capture_mode": "OfficialAttachment",
+      "first_seen_at": "2026-10-15T07:17:58.896982+00:00",
+      "fact": "已核243页公报中的PDF31至34页（印刷57798至57801），包括清单实体逻辑硬件组件认证规则和10月13日生效说明。",
+      "verification": "只读对应规则并核图，其余公报未读；不是FCC完整命令/附件。不能据此确认其他法案、337调查或全部光模块产品清单状态。",
+      "document_sha256": "c838cde351a66b6458e33739324836e7309876d100ca1da4cd3a5dec02d20964",
+      "collection_mode": "CodexBoundedEvidenceReview"
+    },
+    {
+      "information_id": "NE-S-20261015-FCC_DIRECT",
+      "title": "FCC26-50完整命令附件受阻",
+      "source_id": "FCC",
+      "url": "https://docs.fcc.gov/public/attachments/FCC-26-50A1.pdf",
+      "published_at": null,
+      "publication_precision": "Unresolved",
+      "read_status": "Unavailable",
+      "capture_mode": "Unavailable",
+      "first_seen_at": "2026-10-15T07:18:12.067644+00:00",
+      "fact": "明确完整命令附件地址读取403，未下载或读取。",
+      "verification": "停止原地址重试；政府公报是不同发布文件，不把可读摘要等同完整命令附件。",
+      "document_sha256": null,
+      "collection_mode": "CodexBoundedEvidenceReview"
+    }
+  ],
+  "assessments": [
+    {
+      "assessment_id": "AI-NE-20261015-BEIGE-V2",
+      "baseline_source_ids": [
+        "NE-S-20261015-BEIGE_PRIOR"
+      ],
+      "bias": null,
+      "channels": [
+        "RISK_APPETITE",
+        "RISK_OFF"
+      ],
+      "confidence": "Low",
+      "confidence_score": null,
+      "conflicts": [
+        "国内信用、海外需求与风险偏好可能同时作用；未核净相对影响，不叠加同链来源为独立冲击。"
+      ],
+      "decision": "InsufficientEvidence",
+      "event_id": "E-20261014-002",
+      "event_time": null,
+      "expectation_baseline": "旧报告用于比较调查描述，不是一致预期。没有发布前预期快照；目录链接与页标题冲突另列，采用明确日期的联储银行摘要。",
+      "expected_last_update_id": null,
+      "exposure_evidence": "未取得两指数当时样本的业务收入、利润、资金及风险暴露差异；行业/大小盘标签不能替代净受益比较。",
+      "exposure_source_ids": [],
+      "facts": [
+        {
+          "statement": "明确标注9月2日的联储银行摘要调查截至8月24日；10月摘要截至10月5日，两个调查窗口不同。",
+          "source_ids": [
+            "DC-S-20261015-FEDSUMMARY",
+            "NE-S-20261015-BEIGE_PRIOR"
+          ]
+        },
+        {
+          "statement": "两期文字分类中，价格增长强劲的地区由1个变为3个；报告较前期价格增速加快的地区由1个变为4个。",
+          "source_ids": [
+            "DC-S-20261015-FEDSUMMARY",
+            "NE-S-20261015-BEIGE_PRIOR"
+          ]
+        },
+        {
+          "statement": "活动增长地区在前一期摘要为10个，本期分类计数2+3+4=9个；这是未加权地区计数，不能直接推为经济增速变化。",
+          "source_ids": [
+            "DC-S-20261015-FEDSUMMARY",
+            "NE-S-20261015-BEIGE_PRIOR"
+          ]
+        },
+        {
+          "statement": "目录标注9月2日的链接打开为August标题、September02页尾，身份标注冲突保留，不用它单独确定基线。",
+          "source_ids": [
+            "NE-S-20261015-BEIGE_AMBIGUOUS"
+          ]
+        }
+      ],
+      "first_tradable_time": null,
+      "gaps": [
+        "发布前一致预期与相对其他已公布数据的独立增量",
+        "两指数利率敏感度、出口、能源成本和盈利的净暴露",
+        "联储目录链接与August标题身份冲突未澄清",
+        "精确公开时间及最早可交易时刻；无同步行情"
+      ],
+      "horizon": "Fast",
+      "ih_case": "相对防御和金融配置可能利于IH；但海外需求、金融风险与内需盈利也可能拖累IH，不能用大盘标签认定避险收益。",
+      "im_case": "海外贴现率若上升可能压制成长估值；但制造业和AI需求也可能利于出口与科技，缺少净暴露不能把IM统称受损。",
+      "impact_score": null,
+      "increment_reason": "已补明确日期的官方旧摘要，地区价格与活动描述存在可核变化，标记中等研究信息增量；这不是相对市场预期的超预期，也未证明新增相对定价冲击。",
+      "information_gain": "Medium",
+      "input_digest": "ebbb19887cca3c9b50e2c63de8c221c9ba922bf5ea1f393228d3be615a0a43bd",
+      "invalidation": "若新增原文推翻事实、执行条件或净传导，追加修订；取得价格证据以后另做市场State。",
+      "next_action": "旧版比较缺口已部分关闭。只在有事前预期或相对暴露证据时继续，不再反复读取同两份摘要；目录身份冲突等官方说明。",
+      "persistence_score": null,
+      "pre_move": "本轮没有读取同步IM/IH行情，不判断提前交易、接受度或市场阶段。",
+      "promote_causal": false,
+      "research_mode": "CurrentReview",
+      "score_basis": {
+        "components": {
+          "confidence_score": {
+            "reason": "旧版已补，但相对影响、方向数值置信度与持续度仍未核实，保留null。",
+            "source_ids": [
+              "DC-S-20261015-FEDSUMMARY"
+            ],
+            "value": null
+          },
+          "impact_score": {
+            "reason": "旧版已补，但相对影响、方向数值置信度与持续度仍未核实，保留null。",
+            "source_ids": [
+              "DC-S-20261015-FEDSUMMARY"
+            ],
+            "value": null
+          },
+          "persistence_score": {
+            "reason": "旧版已补，但相对影响、方向数值置信度与持续度仍未核实，保留null。",
+            "source_ids": [
+              "DC-S-20261015-FEDSUMMARY"
+            ],
+            "value": null
+          },
+          "source": {
+            "reason": "实际读取的发布页；不认作全局首发。",
+            "source_ids": [
+              "DC-S-20261015-FEDSUMMARY"
+            ],
+            "value": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm"
+          },
+          "source_reliability": {
+            "reason": "来源等级只约束报道/原文事实可靠性，不等于方向置信度。",
+            "source_ids": [
+              "DC-S-20261015-FEDSUMMARY"
+            ],
+            "value": "A"
+          }
+        },
+        "reference_time": {
+          "reason": "未知独立Alpha增量，不新增评分起点；日期级不造零点，原冲突链不因再次传播刷新。",
+          "source_ids": [
+            "DC-S-20261015-FEDSUMMARY"
+          ],
+          "value": null
+        },
+        "rubric_version": "score-evidence-v1"
+      },
+      "source": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm",
+      "source_checks": [
+        {
+          "information_id": "DC-S-20261015-FEDSUMMARY",
+          "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm",
+          "status": "Partial",
+          "checked_at": "2026-10-15T07:17:58.896982+00:00",
+          "fact_summary": "重读本期全国活动、就业、价格及调查截止段；地区详细报告未读。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "NE-S-20261015-BEIGE_PRIOR",
+          "url": "https://www.minneapolisfed.org/beige-book-reports/2026/2026-09-su",
+          "status": "Read",
+          "checked_at": "2026-10-15T07:17:58.894982+00:00",
+          "fact_summary": "明确标注9月2日，调查截至8月24日；价格加速地区1个，价格强劲地区1个，增长地区10个。",
+          "capture_mode": "DirectWebText"
+        },
+        {
+          "information_id": "NE-S-20261015-BEIGE_AMBIGUOUS",
+          "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202608-summary.htm",
+          "status": "Partial",
+          "checked_at": "2026-10-15T07:17:58.895981+00:00",
+          "fact_summary": "目录9月2日HTML指向202608-summary，正文标题August，页尾更新September02。",
+          "capture_mode": "DirectWebText"
+        }
+      ],
+      "source_ids": [
+        "DC-S-20261015-FEDSUMMARY",
+        "NE-S-20261015-BEIGE_PRIOR",
+        "NE-S-20261015-BEIGE_AMBIGUOUS"
+      ],
+      "source_reliability": "A",
+      "surprise": null,
+      "transmission": "两期价格压力描述强化可经美国政策预期和全球贴现率影响中国股票；增长分化及能源因素同时作用。褐皮书为定性调查，不能据地区计数推为通胀幅度或新加息决定。"
+    }
+  ]
+}

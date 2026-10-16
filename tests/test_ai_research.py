@@ -85,6 +85,133 @@ class AIResearchTests(unittest.TestCase):
     def count(self, table):
         return self.engine.db.execute('SELECT COUNT(*) FROM ' + table).fetchone()[0]
 
+    def scoring_assessment(self):
+        assessment = self.assessment()
+        values = {'source': self.source['url'], 'source_reliability': 'A',
+                  'impact_score': 2, 'confidence_score': .25, 'persistence_score': 1.0}
+        assessment.update(values)
+        assessment['score_basis'] = {'rubric_version': 'score-evidence-v1',
+            'components': {k: {'value': v, 'reason': 'Fixture reasoning', 'source_ids': ['fixture-news']} for k, v in values.items()},
+            'reference_time': {'value': None, 'reason': 'Fixture date only', 'source_ids': ['fixture-news']}}
+        return assessment
+
+    def impact_assessment(self):
+        from test_impact_analysis import analysis_fixture
+        a = self.assessment()
+        a['impact_analysis'] = analysis_fixture()
+        delta = a['impact_analysis']['policy_deltas'][0]
+        delta.update(new_source_ids=['fixture-news'], baseline_source_ids=['fixture-news'],
+                     baseline_kind='IssuerComparison')
+        a['impact_analysis']['beneficiary_paths'][0]['source_ids'] = ['fixture-news']
+        return a
+
+    def test_impact_tables_append_without_formal_direction_or_market_state(self):
+        a = self.impact_assessment()
+        result = self.research.apply_pack(self.pack(a))
+        saved = self.research.list_assessments('fixture-event')[-1]
+        self.assertEqual(saved['impact_analysis'], a['impact_analysis'])
+        self.assertEqual(saved['bias'], 'IM')
+        self.assertIsNone(self.engine.snapshot('fixture-event', KNOWN)['bias'])
+        self.assertEqual(self.count('state_updates'), 0)
+        self.assertTrue(result['inserted'])
+        self.assertFalse(self.research.apply_pack(self.pack(a))['inserted'])
+        self.assertEqual(self.research.list_assessments('fixture-event', BEFORE), [])
+
+    def test_research_withdrawal_preserves_prior_scoring_at_its_known_time(self):
+        original = self.scoring_assessment()
+        self.research.apply_pack(self.pack(original))
+        withdrawn = copy.deepcopy(original)
+        withdrawn.update(assessment_id='fixture-withdrawal', decision='InsufficientEvidence',
+                         bias=None, impact_score=None, confidence_score=None)
+        for field in ('impact_score', 'confidence_score'):
+            withdrawn['score_basis']['components'][field]['value'] = None
+        with patch('event_engine.ai_research.now', return_value=FUTURE):
+            self.research.apply_pack(self.pack(withdrawn, pack_id='fixture-withdrawal-pack'))
+        prior = self.research.preview('fixture-event', KNOWN)
+        latest = self.research.preview('fixture-event', FUTURE)
+        self.assertEqual(prior['bias'], 'IM')
+        self.assertEqual(prior['event_strength'], .5)
+        self.assertIsNone(latest['bias'])
+        self.assertIsNone(latest['event_strength'])
+        self.assertIsNone(latest['score'])
+        self.assertEqual(self.count('event_updates'), 0)
+        self.assertEqual(self.count('state_updates'), 0)
+
+    def test_invalid_impact_table_rolls_back_new_sources_and_run(self):
+        a = self.impact_assessment()
+        a['impact_analysis']['policy_deltas'][0]['new_source_ids'] = ['not-checked']
+        source = self.make_source('fixture-uncommitted')
+        with self.assertRaises(ValueError):
+            self.research.apply_pack(self.pack(a, sources=[source]))
+        self.assertEqual(self.count('information_inbox'), 1)
+        self.assertEqual(self.count('ai_assessments'), 0)
+        self.assertEqual(self.count('ai_research_runs'), 0)
+
+    def test_score_basis_import_preserves_parent_and_formal_pool(self):
+        assessment = self.scoring_assessment()
+        self.research.apply_pack(self.pack(assessment))
+        preview = self.research.preview('fixture-event', KNOWN)
+        self.assertEqual(preview['event_strength'], .5)
+        self.assertIsNone(preview['score'])
+        self.assertIsNone(self.engine.snapshot('fixture-event', KNOWN)['bias'])
+        self.assertIsNone(self.engine.alpha_report(KNOWN)['dominant_event'])
+        self.assertEqual(self.research.scoring_report(KNOWN)['basis_count'], 1)
+        self.assertEqual(self.count('state_updates'), 0)
+
+    def test_invalid_score_basis_rolls_back_research_pack(self):
+        assessment = self.scoring_assessment()
+        assessment['score_basis']['components']['impact_score']['source_ids'] = ['unknown']
+        with self.assertRaises(ValueError):
+            self.research.apply_pack(self.pack(assessment))
+        self.assertEqual(self.count('ai_assessments'), 0)
+        self.assertEqual(self.count('ai_research_runs'), 0)
+
+    def test_archive_requires_real_local_pdf_and_matching_digest(self):
+        assessment = self.assessment()
+        assessment['source_checks'][0].update({'capture_mode': 'ArchivedOfficialAttachment', 'document_sha256': 'f' * 64})
+        with self.assertRaises(ValueError):
+            self.research.apply_pack(self.pack(assessment))
+        self.assertEqual(self.count('ai_assessments'), 0)
+
+    def test_valid_archive_can_be_read_and_tampered_archive_is_rejected(self):
+        import hashlib
+        root = Path(self.temp.name) / 'snapshot-root'
+        file = root / 'data/source_snapshots/fixture.pdf'
+        file.parent.mkdir(parents=True)
+        raw = b'%PDF-1.7 fixture for fingerprint validation only'
+        file.write_bytes(raw)
+        source = self.make_source('archive-fixture')
+        source.update({'local_snapshot': 'data/source_snapshots/fixture.pdf',
+                       'document_sha256': hashlib.sha256(raw).hexdigest()})
+        self.engine.add_information(source)
+        assessment = self.assessment(source_ids=['archive-fixture'])
+        assessment['source_checks'][0].update({'capture_mode': 'ArchivedOfficialAttachment',
+                                              'document_sha256': source['document_sha256']})
+        with patch('event_engine.ai_research.ROOT', root):
+            self.research.apply_pack(self.pack(assessment))
+            self.assertEqual(self.research.source_snapshot('archive-fixture'), raw)
+            file.write_bytes(b'%PDF-1.7 changed')
+            with self.assertRaises(ValueError):
+                self.research.source_snapshot('archive-fixture')
+
+    def test_research_scoring_api_returns_readonly_preview(self):
+        self.research.apply_pack(self.pack(self.scoring_assessment()))
+        server = ThreadingHTTPServer(('127.0.0.1', 0), make_handler(self.engine.path))
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        try:
+            with urlopen(f'http://127.0.0.1:{server.server_port}/api/research-alpha', timeout=10) as response:
+                result = json.load(response)
+            self.assertEqual(result['basis_count'], 1)
+            self.assertTrue(result['research_only'])
+            self.assertFalse(result['trade_permission'])
+            with self.assertRaises(HTTPError):
+                urlopen(f'http://127.0.0.1:{server.server_port}/api/source-snapshot?id=fixture-news', timeout=10)
+        finally:
+            server.shutdown()
+            thread.join()
+            server.server_close()
+
     def formal_assessment(self):
         for iid in ('fixture-baseline', 'fixture-exposure'):
             self.engine.add_information(self.make_source(iid))
@@ -96,6 +223,35 @@ class AIResearchTests(unittest.TestCase):
             'increment_reason': '虚构基线对照显示机制变化',
             'exposure_evidence': '虚构成分暴露表显示差异，引用独立证据'})
         return assessment
+
+    def test_numeric_alpha_fields_flow_through_formal_research_without_market_confirmation(self):
+        assessment = self.formal_assessment()
+        assessment.update({'source': self.source['url'], 'source_reliability': 'B',
+                           'impact_score': 4, 'confidence_score': .8, 'persistence_score': .7})
+        self.research.apply_pack(self.pack(assessment))
+        event = self.engine.snapshot('fixture-event', KNOWN)
+        self.assertGreater(event['score'], 0)
+        self.assertEqual(event['confidence_score'], .8)
+        self.assertIsNone(event['acceptance'])
+        self.assertEqual(self.engine.alpha_report(KNOWN)['dominant_event'], 'fixture-event')
+        self.assertFalse(self.engine.alpha_report(KNOWN)['trade_permission'])
+
+    def test_numeric_research_does_not_bypass_missing_evidence(self):
+        assessment = self.assessment()
+        assessment.update({'source': self.source['url'], 'source_reliability': 'A',
+                           'impact_score': 5, 'confidence_score': 1})
+        self.research.apply_pack(self.pack(assessment))
+        self.assertIsNone(self.engine.snapshot('fixture-event', KNOWN)['score'])
+        self.assertIsNone(self.engine.alpha_report(KNOWN)['dominant_event'])
+
+    def test_invalid_numeric_research_rolls_back_pack(self):
+        assessment = self.formal_assessment()
+        assessment['confidence_score'] = 2
+        with self.assertRaises(ValueError):
+            self.research.apply_pack(self.pack(assessment))
+        self.assertEqual(self.count('ai_research_runs'), 0)
+        self.assertEqual(self.count('ai_assessments'), 0)
+        self.assertEqual(self.count('event_updates'), 0)
 
     def test_real_known_at_does_not_backdate_or_invent_date_only_timestamp(self):
         self.research.apply_pack(self.pack(self.assessment()))

@@ -1,0 +1,225 @@
+{
+  "checked_at": "2026-10-15T03:16:49.023377+00:00",
+  "before_counts": {
+    "information_inbox": 121,
+    "events": 21,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 49,
+    "legacy_audit": 15,
+    "research_notes": 19,
+    "collection_batches": 2,
+    "source_checks": 57,
+    "collection_items": 29,
+    "information_reviews": 29,
+    "parent_reviews": 7,
+    "ai_research_runs": 6,
+    "ai_assessments": 20,
+    "news_screening_runs": 4,
+    "information_screenings": 66
+  },
+  "after_counts": {
+    "information_inbox": 144,
+    "events": 23,
+    "event_updates": 2,
+    "state_updates": 0,
+    "event_information": 53,
+    "legacy_audit": 16,
+    "research_notes": 19,
+    "collection_batches": 3,
+    "source_checks": 114,
+    "collection_items": 57,
+    "information_reviews": 57,
+    "parent_reviews": 17,
+    "ai_research_runs": 7,
+    "ai_assessments": 23,
+    "news_screening_runs": 5,
+    "information_screenings": 89
+  },
+  "all_old_rows_preserved": {
+    "information_inbox": true,
+    "events": true,
+    "event_updates": true,
+    "state_updates": true,
+    "event_information": true,
+    "legacy_audit": true,
+    "research_notes": true,
+    "collection_batches": true,
+    "source_checks": true,
+    "collection_items": true,
+    "information_reviews": true,
+    "parent_reviews": true,
+    "ai_research_runs": true,
+    "ai_assessments": true,
+    "news_screening_runs": true,
+    "information_screenings": true
+  },
+  "integrity": "ok",
+  "foreign_key_violations": [],
+  "same_pack_replay": "No writes",
+  "pre_import_as_of_hides_new_batch": true,
+  "formal_causal_unchanged": true,
+  "market_state_unchanged": true,
+  "screening_counts": {
+    "DeepReview": 5,
+    "Watch": 23,
+    "Background": 49,
+    "Unscreened": 67
+  },
+  "research_queue": {
+    "as_of": "2026-10-15T03:16:49.011670+00:00",
+    "tasks": [
+      {
+        "event_id": "E-20261013-001",
+        "event_name": "沙特—也门冲突升级与报复风险",
+        "scope": "Current",
+        "information_ids": [
+          "DC-S-20261014-ARAMCO",
+          "DC-S-20261014-WAR13",
+          "DC-S-20261015-AIRPORT"
+        ],
+        "source_count": 3,
+        "status": "ReviewedWithGaps",
+        "reason": "本轮通过项已合并判读",
+        "assessment_id": "AI-DAILY-20261015-AIRPORT",
+        "reviewed_at": "2026-10-15T03:16:48.717905+00:00",
+        "research_bias": null,
+        "decision": "InsufficientEvidence",
+        "gaps": [
+          "机场停运与能源产运实际影响的独立证据",
+          "相对既有冲突基线的超预期程度",
+          "双方主张的第三方核查",
+          "两指数净盈利与风险暴露及行情反馈"
+        ],
+        "next_action": "继续观察独立供给、运输中断或降温协议等新触发；延续上一版不定方向，不因同链新闻变多恢复IH研究倾向。",
+        "trade_permission": false,
+        "entry_allowed": false
+      },
+      {
+        "event_id": "E-20261014-001",
+        "event_name": "2026年前三季度金融统计发布",
+        "scope": "Current",
+        "information_ids": [
+          "DC-S-20261015-FINSTATS"
+        ],
+        "source_count": 1,
+        "status": "ReviewedWithGaps",
+        "reason": "本轮通过项已合并判读",
+        "assessment_id": "AI-DAILY-20261015-FINSTATS",
+        "reviewed_at": "2026-10-15T03:16:48.717905+00:00",
+        "research_bias": null,
+        "decision": "InsufficientEvidence",
+        "gaps": [
+          "同口径上期数据与发布前一致预期",
+          "居民/企业/政府融资的新增边际与传导",
+          "IM与IH样本业务、融资和金融风险相对暴露",
+          "全局首发及精确最早可交易时刻"
+        ],
+        "next_action": "仅在取得同口径历史数据和事前预期后复核新增信用冲击；有显著分项异常再补受益与受损企业，不因标题总额直接定向。",
+        "trade_permission": false,
+        "entry_allowed": false
+      },
+      {
+        "event_id": "E-20261014-002",
+        "event_name": "美国10月褐皮书增长与成本压力",
+        "scope": "Current",
+        "information_ids": [
+          "DC-S-20261015-FEDSUMMARY"
+        ],
+        "source_count": 1,
+        "status": "ReviewedWithGaps",
+        "reason": "本轮通过项已合并判读",
+        "assessment_id": "AI-DAILY-20261015-FEDSUMMARY",
+        "reviewed_at": "2026-10-15T03:16:48.717905+00:00",
+        "research_bias": null,
+        "decision": "InsufficientEvidence",
+        "gaps": [
+          "上一期官方摘要与可核事前预期",
+          "新信息相对已公布美国统计的独立增量",
+          "两指数利率敏感度、出口和盈利暴露",
+          "精确发布时间与最早可交易时刻"
+        ],
+        "next_action": "只在独立旧版/预期及相对暴露可得时继续；不把CPI媒体评论与褐皮书价格描述作为两个独立收紧冲击重复计分。",
+        "trade_permission": false,
+        "entry_allowed": false
+      }
+    ],
+    "needs_association": [],
+    "counts": {
+      "NeedsReview": 0,
+      "ReviewedWithGaps": 3,
+      "Reviewed": 0
+    },
+    "research_only": true,
+    "trade_permission": false,
+    "entry_allowed": false,
+    "note": "按Parent合并研究工作；已判读不等于方向或市场确认。旧关联表无建立时间，历史归属不能完整重建。"
+  },
+  "collection_counts": {
+    "information": 28,
+    "pending_triage": 15,
+    "unknown_time": 9,
+    "late": 23,
+    "after_cutoff": 0,
+    "missing_categories": 14,
+    "pending_parent_reviews": 8
+  },
+  "coverage_complete": false,
+  "imports": [
+    {
+      "inserted": true,
+      "known_at": "2026-10-15T03:16:48.684904+00:00",
+      "batch_id": "CB-20261015-110205",
+      "added": {
+        "information": 23,
+        "parents": 2,
+        "source_checks": 57,
+        "items": 28,
+        "triage": 28,
+        "parent_reviews": 10
+      }
+    },
+    {
+      "inserted": true,
+      "known_at": "2026-10-15T03:16:48.712878+00:00",
+      "pack_id": "SCREEN-DAILY-20261015-V1",
+      "screenings": [
+        "SC-DAILY-20261015-FINSTATS",
+        "SC-DAILY-20261015-OMO198",
+        "SC-DAILY-20261015-OMO199",
+        "SC-DAILY-20261015-BUYOUT",
+        "SC-DAILY-20261015-CBMEET14",
+        "SC-DAILY-20261015-CBMEET15",
+        "SC-DAILY-20261015-APEC",
+        "SC-DAILY-20261015-BRIDGE",
+        "SC-DAILY-20261015-AIRPORT",
+        "SC-DAILY-20261015-ROCKET",
+        "SC-DAILY-20261015-DIESEL",
+        "SC-DAILY-20261015-SHIPAI",
+        "SC-DAILY-20261015-GREENAMMONIA",
+        "SC-DAILY-20261015-CFFEXFX",
+        "SC-DAILY-20261015-BONDETF",
+        "SC-DAILY-20261015-EARNINGS",
+        "SC-DAILY-20261015-LING",
+        "SC-DAILY-20261015-ASIC",
+        "SC-DAILY-20261015-SOLIDBATTERY",
+        "SC-DAILY-20261015-FCC",
+        "SC-DAILY-20261015-CPI_MEDIA",
+        "SC-DAILY-20261015-MEEREPRINT",
+        "SC-DAILY-20261015-FEDSUMMARY"
+      ]
+    },
+    {
+      "inserted": true,
+      "pack_id": "AI-DAILY-COLLECTION-20261015-V1",
+      "known_at": "2026-10-15T03:16:48.717905+00:00",
+      "assessments": [
+        "AI-DAILY-20261015-FINSTATS",
+        "AI-DAILY-20261015-FEDSUMMARY",
+        "AI-DAILY-20261015-AIRPORT"
+      ]
+    }
+  ],
+  "code_changes": false,
+  "tests": "Data/doc-only batch: existing 170-test code result retained; no new code test rerun claimed."
+}

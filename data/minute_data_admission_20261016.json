@@ -1,0 +1,1799 @@
+{
+  "schema_version": 1,
+  "contract_id": "IMIH-MINUTE-DIAGNOSTIC-v0.1",
+  "checked_at": "2026-10-16T01:22:42.141915+00:00",
+  "inventory_checked_at": "2026-10-16T00:46:39.010341+00:00",
+  "selection": "six case contracts, four gap contracts, and all previously price-anomalous raw files; deduplicated",
+  "summary": {
+    "files_rechecked": 54,
+    "rows_read": 519890,
+    "quarantined_rows": 48,
+    "structurally_valid_rows": 519842,
+    "case_days": 3,
+    "gap_days": 2,
+    "research_admitted_case_days": 0,
+    "entry_allowed": false
+  },
+  "files": [
+    {
+      "file_id": "primary/raw/IH2402_1分钟.csv",
+      "sha256": "9392137f18ba2d80f38bc3bdcf06f964814ee4ea0b7bb42d9d7e5e8664891d16",
+      "rows_read": 9360,
+      "quarantined_rows": 0,
+      "reason_counts": {},
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IH2502_1分钟.csv",
+      "sha256": "f51c965f7f16d5679dedf38633b4a5573f7dbff14346df3ac0869bdd29338b61",
+      "rows_read": 9119,
+      "quarantined_rows": 0,
+      "reason_counts": {},
+      "structurally_valid_rows": 9119,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IH2504_1分钟.csv",
+      "sha256": "957aa1f2aefb6b5f0191935ab87ab7031275ca1bc3fd6a5c9c52b15cf8a8251f",
+      "rows_read": 9360,
+      "quarantined_rows": 0,
+      "reason_counts": {},
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IH2608_1分钟.csv",
+      "sha256": "037280a252649c943bc34c9a9690ca5a983cf5324e55bcb73cdcfe6e140ecd78",
+      "rows_read": 10319,
+      "quarantined_rows": 0,
+      "reason_counts": {},
+      "structurally_valid_rows": 10319,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IH2609_1分钟.csv",
+      "sha256": "58f9afd5d7f556665530e38d1e47af3430aeb970516c1f18d445c9cb295836b0",
+      "rows_read": 11103,
+      "quarantined_rows": 0,
+      "reason_counts": {},
+      "structurally_valid_rows": 11103,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2208_1分钟.csv",
+      "sha256": "69fa561f48ff9d4a0be2bffe79140c5c4be4c293dcfbf63b484bdc17eb89f701",
+      "rows_read": 5041,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 5040,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2209_1分钟.csv",
+      "sha256": "39bb354b5b8a1986ed11450f3b97ba9548693c7739a517e73f327238530a2526",
+      "rows_read": 9601,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9600,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2210_1分钟.csv",
+      "sha256": "fd4b35ab4437e3ffc974a10770d6ed93bf78b9df4d74efb044ae9e14a1ed1528",
+      "rows_read": 9361,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2211_1分钟.csv",
+      "sha256": "de819586cadebe5a61fb614da7e3122f42bbb72a2293e214917ed237ca1c0172",
+      "rows_read": 9601,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9600,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2212_1分钟.csv",
+      "sha256": "d4480ad5de7dbb4d521918907a207d43221f0e88f75ec6a18899b7fd4336be97",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2301_1分钟.csv",
+      "sha256": "1d0d7652c4dd6b364d8bf6a276c21a10cc018dadf912332970ac01fec51c3bf3",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2302_1分钟.csv",
+      "sha256": "5a36f5531ab4c34a1e6241e3a925f85b79ea0126e5c87a060fec3c7e9f849d1a",
+      "rows_read": 9361,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2303_1分钟.csv",
+      "sha256": "497d6f39cfbe2409c52c9ed416d6d961f551de1f4b4ad8b0684a607ddc96c801",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2304_1分钟.csv",
+      "sha256": "8c18915ade4958e635c74bc8245600e47af318b743774a99bd4d2806dd9d158a",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2305_1分钟.csv",
+      "sha256": "b9c0a3310f1d3363321354c9403f899a917458ce4607349712f2027dd8a6e064",
+      "rows_read": 9841,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9840,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2306_1分钟.csv",
+      "sha256": "159fac49067788fd1d1bf27d57d45e4bb817c00ed8da71d8f76b1b5ba93be97c",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2307_1分钟.csv",
+      "sha256": "48ef872b731b2f70297684d7d6b75ef1c86d732bba0c8aa2a7f09a062100861e",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2308_1分钟.csv",
+      "sha256": "9a1211f4818b8fd113fa1958c74e4db0c7460a7df669e681940c6d3a4b62223f",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2309_1分钟.csv",
+      "sha256": "ab51a5c36bde703f1b24c4a4598f10c13076963e838286aa187d5717edcb153c",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2310_1分钟.csv",
+      "sha256": "829c79fa29f6908fd2124a55d3bad1175d327b0102386725b406cc6777728378",
+      "rows_read": 9361,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2311_1分钟.csv",
+      "sha256": "20151bd5745c912e53bea2a44f77e5f658af59cea73c5e9446e9489d26d93b61",
+      "rows_read": 9361,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2312_1分钟.csv",
+      "sha256": "099eb8341f7c6c3d7b7512c5556eaacaf0d8a8e8ac8dffabc436d76aeb347720",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2401_1分钟.csv",
+      "sha256": "42dddfe99e4f2cbbb5bc6959f71d401b7e5f669529113b3a9319a6caafa3c91c",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2402_1分钟.csv",
+      "sha256": "a603ee20aac52b952c63e2068029ef212446c9c132b1dd58baecbfb26f620d02",
+      "rows_read": 9361,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2403_1分钟.csv",
+      "sha256": "e959b1f332d60e51c9b05e77a2a797605ccb42d8c349184f04c1af3c14d83c1b",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2404_1分钟.csv",
+      "sha256": "3e0333562b304da1d38ffbc53ddf37cf4938a81ac201854018067021cc610894",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2405_1分钟.csv",
+      "sha256": "9921222a4346c3702e93e55c74b5e52169c71c85f7bdf7929c87ece393034fd9",
+      "rows_read": 9601,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9600,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2406_1分钟.csv",
+      "sha256": "16a6922777705aedf55046c24488373b040b25cce9e11526219ff67e32a23d1a",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2407_1分钟.csv",
+      "sha256": "d9075f521636ab8495fd0b03f2666c8b8d5b5d4553f7fd8b1b12d1bec11a5b30",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2408_1分钟.csv",
+      "sha256": "53377599a03472ed958b0e37d8fd4338a0d73a66cd035310c71eb59f1acd4f25",
+      "rows_read": 9601,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9600,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2409_1分钟.csv",
+      "sha256": "dbf496e285e3db1eefca0ad3e1a128e707106f2e30f85d7242256777a45e794e",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2410_1分钟.csv",
+      "sha256": "7ffe1cf4963139b4c6a74446bf25265743f44d657aaa560eae2f951caab132f7",
+      "rows_read": 9121,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9120,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2411_1分钟.csv",
+      "sha256": "61719c392e5e2a157dbfe99855f736ae404180bde36d09fd42b7778a237cc9f9",
+      "rows_read": 8401,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 8400,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2412_1分钟.csv",
+      "sha256": "8ec7fce167aef2212ebc6043e04b51df8b8c587b44ab6c5b40d8f5cddf544d8c",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2501_1分钟.csv",
+      "sha256": "0a6cdc30d5dede89205708e370a520114068bac9a1d22a53c2d5bb388ff5bb01",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2502_1分钟.csv",
+      "sha256": "5abe1c79995f38d45b1384d687e31571848c0c2145753438cc5760007fb85eb4",
+      "rows_read": 9121,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9120,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2503_1分钟.csv",
+      "sha256": "795e4a399e16021bff0450b6895a496885eb49a6108d96106b5ad5db178be093",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2504_1分钟.csv",
+      "sha256": "674b85b22e506f461a870d6604d1cbf8585a1def8ee1ba928f8e307f5bf42501",
+      "rows_read": 9361,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2505_1分钟.csv",
+      "sha256": "a7fe17ed9da915a0f4dad9901d4cf34133ee2c8fe9f8224157ac7fe16576824d",
+      "rows_read": 8641,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 8640,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2506_1分钟.csv",
+      "sha256": "6a34216577223ab1e9a839f268111095e8188cd63b31efbe790875a7aa912035",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2507_1分钟.csv",
+      "sha256": "180102679202fbbe0216d4d3283e8d34ed9b446d5de72765b0a685ce77c13126",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2508_1分钟.csv",
+      "sha256": "56f2382fc5389466254b7f60f9743c978fba5c1e4c9cbfa5f6e3bc01db609ed3",
+      "rows_read": 9601,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9600,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2509_1分钟.csv",
+      "sha256": "24132b40f652dcdb8f72f65eb092f72384dd169bda06e4b5b537138e655dd8de",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2510_1分钟.csv",
+      "sha256": "21a7bd465b6f0c02a30b32da095ddc4278ad101ef5f3f0b8afaabfa410b428bb",
+      "rows_read": 9361,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2511_1分钟.csv",
+      "sha256": "247ea4f8896d2afeef4bacbaec1f3bff121b4abb36970a3ed166719bf7ac5a59",
+      "rows_read": 9361,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2512_1分钟.csv",
+      "sha256": "8a3df0017f49b889f2a1beeedc2d90b52905e8d6cc6bd2590b7e9195e243ae2a",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2601_1分钟.csv",
+      "sha256": "519d9e1bf76499154013b48bc88a84e93383790f25e525a31a7748aa3e08b6c4",
+      "rows_read": 9121,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9120,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2602_1分钟.csv",
+      "sha256": "39b81a7d4956e7583b988f72cc6732d34557a3b01e47dde9cb0590c9e71d6407",
+      "rows_read": 9361,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 9360,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2603_1分钟.csv",
+      "sha256": "c262066584744e6206ba3ddae29378a12ffa52814ab5f41473864105c3061a33",
+      "rows_read": 10001,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10000,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2604_1分钟.csv",
+      "sha256": "a0bab8ad66203fddf76a1b5abf2d9d3f630de05ee742aa206370482b8707d0f2",
+      "rows_read": 8881,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 8880,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2605_1分钟.csv",
+      "sha256": "7447078bef1fe12690fd169ad4060d1dadcd3b3fbca3ceb8482c296425018e50",
+      "rows_read": 8641,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 8640,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2606_1分钟.csv",
+      "sha256": "c175cb81f8e4395db8efb81db96f41115e108f660dc4024b33be4f47466b280b",
+      "rows_read": 10310,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "MALFORMED_RECORD": 1,
+        "NUL_BYTE": 1,
+        "INVALID_DATETIME": 1,
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10309,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2608_1分钟.csv",
+      "sha256": "bde3b199c31bb53d3835f1b26bc147fd8d44af7aa8392ac1e559aa937c9e77df",
+      "rows_read": 10560,
+      "quarantined_rows": 0,
+      "reason_counts": {},
+      "structurally_valid_rows": 10560,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    },
+    {
+      "file_id": "primary/raw/IM2609_1分钟.csv",
+      "sha256": "3acf23de28827b4e6acc3b9e9d1d78adcc81e367a32af6dad8677e2d703ce2df",
+      "rows_read": 10673,
+      "quarantined_rows": 1,
+      "reason_counts": {
+        "PRICE_MISSING_OR_NONFINITE": 1
+      },
+      "structurally_valid_rows": 10672,
+      "source_unchanged": true,
+      "vendor": null,
+      "timezone": null,
+      "bar_label_semantics": null,
+      "official_calendar_verified": false,
+      "data_use_status": "DIAGNOSTIC_ONLY",
+      "research_admitted": false
+    }
+  ],
+  "quarantine_index": [
+    {
+      "file_id": "primary/raw/IM2208_1分钟.csv",
+      "csv_record_ordinal": 5041,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2209_1分钟.csv",
+      "csv_record_ordinal": 9601,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2210_1分钟.csv",
+      "csv_record_ordinal": 9361,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2211_1分钟.csv",
+      "csv_record_ordinal": 9601,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2212_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2301_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2302_1分钟.csv",
+      "csv_record_ordinal": 9361,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2303_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2304_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2305_1分钟.csv",
+      "csv_record_ordinal": 9841,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2306_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2307_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2308_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2309_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2310_1分钟.csv",
+      "csv_record_ordinal": 9361,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2311_1分钟.csv",
+      "csv_record_ordinal": 9361,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2312_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2401_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2402_1分钟.csv",
+      "csv_record_ordinal": 9361,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2403_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2404_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2405_1分钟.csv",
+      "csv_record_ordinal": 9601,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2406_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2407_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2408_1分钟.csv",
+      "csv_record_ordinal": 9601,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2409_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2410_1分钟.csv",
+      "csv_record_ordinal": 9121,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2411_1分钟.csv",
+      "csv_record_ordinal": 8401,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2412_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2501_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2502_1分钟.csv",
+      "csv_record_ordinal": 9121,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2503_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2504_1分钟.csv",
+      "csv_record_ordinal": 9361,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2505_1分钟.csv",
+      "csv_record_ordinal": 8641,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2506_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2507_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2508_1分钟.csv",
+      "csv_record_ordinal": 9601,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2509_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2510_1分钟.csv",
+      "csv_record_ordinal": 9361,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2511_1分钟.csv",
+      "csv_record_ordinal": 9361,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2512_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2601_1分钟.csv",
+      "csv_record_ordinal": 9121,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2602_1分钟.csv",
+      "csv_record_ordinal": 9361,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2603_1分钟.csv",
+      "csv_record_ordinal": 10001,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2604_1分钟.csv",
+      "csv_record_ordinal": 8881,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2605_1分钟.csv",
+      "csv_record_ordinal": 8641,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2606_1分钟.csv",
+      "csv_record_ordinal": 10310,
+      "time_stored": null,
+      "reasons": [
+        "MALFORMED_RECORD",
+        "NUL_BYTE",
+        "INVALID_DATETIME",
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    },
+    {
+      "file_id": "primary/raw/IM2609_1分钟.csv",
+      "csv_record_ordinal": 2273,
+      "time_stored": "2026-06-15 11:22:00",
+      "reasons": [
+        "PRICE_MISSING_OR_NONFINITE"
+      ]
+    }
+  ],
+  "case_days": [
+    {
+      "date": "2024-02-05",
+      "im_contract": "IM2402",
+      "ih_contract": "IH2402",
+      "im": {
+        "date": "2024-02-05",
+        "rows": 240,
+        "unique_labels": 240,
+        "structurally_valid_unique_labels": 240,
+        "quarantined_rows_with_known_date": 0,
+        "grid_diagnostic": "StartLike",
+        "first_stored": "2024-02-05 09:30:00",
+        "last_stored": "2024-02-05 14:59:00"
+      },
+      "ih": {
+        "date": "2024-02-05",
+        "rows": 240,
+        "unique_labels": 240,
+        "structurally_valid_unique_labels": 240,
+        "quarantined_rows_with_known_date": 0,
+        "grid_diagnostic": "StartLike",
+        "first_stored": "2024-02-05 09:30:00",
+        "last_stored": "2024-02-05 14:59:00"
+      },
+      "common_stored_labels": 240,
+      "common_structurally_valid_labels": 240,
+      "im_only_labels": 0,
+      "ih_only_labels": 0,
+      "structurally_aligned_observation": true,
+      "blockers": [
+        "TIMEZONE_UNVERIFIED",
+        "BAR_SEMANTICS_UNVERIFIED",
+        "ROW_VENDOR_UNVERIFIED",
+        "OFFICIAL_CALENDAR_UNVERIFIED"
+      ],
+      "research_admitted": false,
+      "entry_allowed": false
+    },
+    {
+      "date": "2025-02-05",
+      "im_contract": "IM2502",
+      "ih_contract": "IH2502",
+      "im": {
+        "date": "2025-02-05",
+        "rows": 240,
+        "unique_labels": 240,
+        "structurally_valid_unique_labels": 240,
+        "quarantined_rows_with_known_date": 0,
+        "grid_diagnostic": "StartLike",
+        "first_stored": "2025-02-05 09:30:00",
+        "last_stored": "2025-02-05 14:59:00"
+      },
+      "ih": {
+        "date": "2025-02-05",
+        "rows": 240,
+        "unique_labels": 240,
+        "structurally_valid_unique_labels": 240,
+        "quarantined_rows_with_known_date": 0,
+        "grid_diagnostic": "StartLike",
+        "first_stored": "2025-02-05 09:30:00",
+        "last_stored": "2025-02-05 14:59:00"
+      },
+      "common_stored_labels": 240,
+      "common_structurally_valid_labels": 240,
+      "im_only_labels": 0,
+      "ih_only_labels": 0,
+      "structurally_aligned_observation": true,
+      "blockers": [
+        "TIMEZONE_UNVERIFIED",
+        "BAR_SEMANTICS_UNVERIFIED",
+        "ROW_VENDOR_UNVERIFIED",
+        "OFFICIAL_CALENDAR_UNVERIFIED"
+      ],
+      "research_admitted": false,
+      "entry_allowed": false
+    },
+    {
+      "date": "2025-04-07",
+      "im_contract": "IM2504",
+      "ih_contract": "IH2504",
+      "im": {
+        "date": "2025-04-07",
+        "rows": 240,
+        "unique_labels": 240,
+        "structurally_valid_unique_labels": 240,
+        "quarantined_rows_with_known_date": 0,
+        "grid_diagnostic": "StartLike",
+        "first_stored": "2025-04-07 09:30:00",
+        "last_stored": "2025-04-07 14:59:00"
+      },
+      "ih": {
+        "date": "2025-04-07",
+        "rows": 240,
+        "unique_labels": 240,
+        "structurally_valid_unique_labels": 240,
+        "quarantined_rows_with_known_date": 0,
+        "grid_diagnostic": "StartLike",
+        "first_stored": "2025-04-07 09:30:00",
+        "last_stored": "2025-04-07 14:59:00"
+      },
+      "common_stored_labels": 240,
+      "common_structurally_valid_labels": 240,
+      "im_only_labels": 0,
+      "ih_only_labels": 0,
+      "structurally_aligned_observation": true,
+      "blockers": [
+        "TIMEZONE_UNVERIFIED",
+        "BAR_SEMANTICS_UNVERIFIED",
+        "ROW_VENDOR_UNVERIFIED",
+        "OFFICIAL_CALENDAR_UNVERIFIED"
+      ],
+      "research_admitted": false,
+      "entry_allowed": false
+    }
+  ],
+  "gap_days": [
+    {
+      "date": "2026-08-06",
+      "im_contract": "IM2608",
+      "ih_contract": "IH2608",
+      "im": {
+        "date": "2026-08-06",
+        "rows": 240,
+        "unique_labels": 240,
+        "structurally_valid_unique_labels": 240,
+        "quarantined_rows_with_known_date": 0,
+        "grid_diagnostic": "StartLike",
+        "first_stored": "2026-08-06 09:30:00",
+        "last_stored": "2026-08-06 14:59:00"
+      },
+      "ih": {
+        "date": "2026-08-06",
+        "rows": 0,
+        "unique_labels": 0,
+        "structurally_valid_unique_labels": 0,
+        "quarantined_rows_with_known_date": 0,
+        "grid_diagnostic": "Absent",
+        "first_stored": null,
+        "last_stored": null
+      },
+      "common_stored_labels": 0,
+      "common_structurally_valid_labels": 0,
+      "im_only_labels": 240,
+      "ih_only_labels": 0,
+      "structurally_aligned_observation": false,
+      "blockers": [
+        "TIMEZONE_UNVERIFIED",
+        "BAR_SEMANTICS_UNVERIFIED",
+        "ROW_VENDOR_UNVERIFIED",
+        "OFFICIAL_CALENDAR_UNVERIFIED",
+        "ONE_OR_BOTH_LEGS_ABSENT",
+        "UNMATCHED_LABELS",
+        "GRID_DIAGNOSTICS_DIFFER"
+      ],
+      "research_admitted": false,
+      "entry_allowed": false
+    },
+    {
+      "date": "2026-09-10",
+      "im_contract": "IM2609",
+      "ih_contract": "IH2609",
+      "im": {
+        "date": "2026-09-10",
+        "rows": 240,
+        "unique_labels": 240,
+        "structurally_valid_unique_labels": 240,
+        "quarantined_rows_with_known_date": 0,
+        "grid_diagnostic": "StartLike",
+        "first_stored": "2026-09-10 09:30:00",
+        "last_stored": "2026-09-10 14:59:00"
+      },
+      "ih": {
+        "date": "2026-09-10",
+        "rows": 0,
+        "unique_labels": 0,
+        "structurally_valid_unique_labels": 0,
+        "quarantined_rows_with_known_date": 0,
+        "grid_diagnostic": "Absent",
+        "first_stored": null,
+        "last_stored": null
+      },
+      "common_stored_labels": 0,
+      "common_structurally_valid_labels": 0,
+      "im_only_labels": 240,
+      "ih_only_labels": 0,
+      "structurally_aligned_observation": false,
+      "blockers": [
+        "TIMEZONE_UNVERIFIED",
+        "BAR_SEMANTICS_UNVERIFIED",
+        "ROW_VENDOR_UNVERIFIED",
+        "OFFICIAL_CALENDAR_UNVERIFIED",
+        "ONE_OR_BOTH_LEGS_ABSENT",
+        "UNMATCHED_LABELS",
+        "GRID_DIAGNOSTICS_DIFFER"
+      ],
+      "research_admitted": false,
+      "entry_allowed": false
+    }
+  ],
+  "limits": [
+    "Unknown timezone/vendor/bar semantics remain null; diagnostic grids are not evidence of vendor conventions.",
+    "CSV record ordinal excludes header and is not a physical line number.",
+    "Unparseable timestamps cannot be assigned to a trading day; file-level quarantine remains.",
+    "No normalization, forward fill, raw prices, relative candle, signal or executable order produced."
+  ]
+}

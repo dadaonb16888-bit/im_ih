@@ -1,0 +1,212 @@
+{
+  "pack_id": "AI-PRIORITY-20261014-V2",
+  "actor": "Codex",
+  "method_version": "ai-event-v1",
+  "generated_at": "2026-10-14T06:52:11.359564+00:00",
+  "sources": [
+    {
+      "information_id": "PR-S-20261014-CONFLICT0920",
+      "title": "9月既有冲突与能源设施袭击基线",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/20260920/b2521756522a4827ba2614a6870d0580/c.html",
+      "published_at": "2026-09-20T17:42:25+08:00",
+      "publication_precision": "SourceTimestamp",
+      "first_seen_at": "2026-10-14T06:48:13.378875+00:00",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "1d77b14a936edf09037ff4bbcc9037dc8e625844a2fcf915362050511577a34b",
+      "fact": "9月报道已描述双方多次袭击，风险并非本次首次出现。",
+      "verification": "本轮读取全文；旧报道中的各方说法保留归属，不把旧设施关闭当作10月仍关闭。"
+    },
+    {
+      "information_id": "PR-S-20261014-CONFLICT0912",
+      "title": "9月输油管道袭击及预防性关闭基线",
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/world/20260912/48f4c168e43d421c8405215b474e22cf/c.html",
+      "published_at": "2026-09-12T14:46:11+08:00",
+      "publication_precision": "SourceTimestamp",
+      "first_seen_at": "2026-10-14T06:48:15.294316+00:00",
+      "read_status": "Read",
+      "capture_mode": "DirectWebText",
+      "document_sha256": "d0a62194d2e4a2b0d323143303e16611f6680eff6d6218f48abf00ce51950dfa",
+      "fact": "9月报道引述能源部：输油管道遇袭后采取预防性关闭。",
+      "verification": "本轮读取全文；旧报道中的各方说法保留归属，不把旧设施关闭当作10月仍关闭。"
+    }
+  ],
+  "assessments": [
+    {
+      "assessment_id": "AI-PRIORITY-20261014-E-20261013-001-V2",
+      "event_id": "E-20261013-001",
+      "source_ids": [
+        "DC-S-20261014-WAR13",
+        "DC-S-20261014-ARAMCO",
+        "PR-S-20261014-CONFLICT0920",
+        "PR-S-20261014-CONFLICT0912"
+      ],
+      "source_checks": [
+        {
+          "information_id": "DC-S-20261014-WAR13",
+          "url": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T06:48:08.903747+00:00",
+          "fact_summary": "确认新一轮空袭报道；受损未明，无减产量。",
+          "capture_mode": "DirectWebText",
+          "document_sha256": "9c51deaf09a56acf8d85494e627ce1f7c34fca69b4653f8d9548deb44362a5d6"
+        },
+        {
+          "information_id": "DC-S-20261014-ARAMCO",
+          "url": "https://www.news.cn/20261014/8f289993d0c54023a70ca78de6335e4b/c.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T06:48:10.990488+00:00",
+          "fact_summary": "确认办公楼局部火情，无伤亡；未给出生产影响。",
+          "capture_mode": "DirectWebText",
+          "document_sha256": "690cc6888adef81c22389c74ae09e88be647514b5cd965424b460d372d2c4e17"
+        },
+        {
+          "information_id": "PR-S-20261014-CONFLICT0920",
+          "url": "https://www.news.cn/20260920/b2521756522a4827ba2614a6870d0580/c.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T06:48:13.378875+00:00",
+          "fact_summary": "9月报道已描述双方多次袭击，风险并非本次首次出现。",
+          "capture_mode": "DirectWebText",
+          "document_sha256": "1d77b14a936edf09037ff4bbcc9037dc8e625844a2fcf915362050511577a34b"
+        },
+        {
+          "information_id": "PR-S-20261014-CONFLICT0912",
+          "url": "https://www.news.cn/world/20260912/48f4c168e43d421c8405215b474e22cf/c.html",
+          "status": "Read",
+          "checked_at": "2026-10-14T06:48:15.294316+00:00",
+          "fact_summary": "9月报道引述能源部：输油管道遇袭后采取预防性关闭。",
+          "capture_mode": "DirectWebText",
+          "document_sha256": "d0a62194d2e4a2b0d323143303e16611f6680eff6d6218f48abf00ce51950dfa"
+        }
+      ],
+      "facts": [
+        {
+          "statement": "13日空袭与报复威胁属于新报道；设施损害未明确。",
+          "source_ids": [
+            "DC-S-20261014-WAR13"
+          ]
+        },
+        {
+          "statement": "14日报道能源部称办公楼遭袭，火情有限且无人伤亡。",
+          "source_ids": [
+            "DC-S-20261014-ARAMCO"
+          ]
+        },
+        {
+          "statement": "9月报道已描述双方多次袭击，风险并非本次首次出现。",
+          "source_ids": [
+            "PR-S-20261014-CONFLICT0920"
+          ]
+        },
+        {
+          "statement": "9月报道引述能源部：输油管道遇袭后采取预防性关闭。",
+          "source_ids": [
+            "PR-S-20261014-CONFLICT0912"
+          ]
+        }
+      ],
+      "information_gain": null,
+      "surprise": null,
+      "bias": null,
+      "decision": "InsufficientEvidence",
+      "confidence": "Medium",
+      "channels": [
+        "RISK_OFF"
+      ],
+      "horizon": "Fast",
+      "increment_reason": "两篇原文再次读取且指纹未变化。新袭击事实存在，但9月已有持续升级及管道关闭；不能把10月标题整体当首次风险冲击，新增供给影响和事件强度仍未知。",
+      "expectation_baseline": "9月报道仅构成旧事实基线，不是市场一致预期。缺10月13日前可核的停产恢复、航运风险预期及参与者定价，Surprise保持null。",
+      "transmission": "备选风险路径：冲突升级→风险溢价上升→风险敏感资产承压。备选供应路径：设施或运输实际受限→成本与盈利差异。原文未确认本次油气生产中断，后一路径不能当既成事实；两路径均未完成IM/IH相对暴露核验。",
+      "im_case": "若IM组合对风险厌恶更敏感，可能相对受损；若中小能源设备受益或风险迅速缓和，结论可反转。这些为待核路径，不按小盘标签直接判受损。",
+      "ih_case": "金融、防御或上游业务可能提供相对缓冲，但金融信用风险、炼化成本和需求也可能受损；没有当前组合净暴露，不把大盘标签视为IH优势。",
+      "exposure_evidence": "本轮未获取事件前两指数逐股净能源、信用及供应链暴露或事前Beta。旧行业占比只能作代理，尚不足以支持相对受益。",
+      "pre_move": "未读取同步IM/IH、油价及运价时间序列，不判定已提前交易；新闻发布时间不代替研究或成交时刻。",
+      "conflicts": [
+        "风险厌恶与能源供应链收益可能相互抵消，不能仅据RISK_OFF默认IH。",
+        "9月既有冲击及恢复状态未知，难以判断10月新增强度。"
+      ],
+      "invalidation": "若新证据显示局部事件已控制且未新增产销或运输约束，则不再维持供应冲击假设；若相对暴露不支持IH优势，撤销该条件假设。行情反向需另有行情证据，不能自动改因果。",
+      "gaps": [
+        "能源部原站声明尚未取得，仅读新华社转述",
+        "本次产销与航运新增中断量及恢复状态",
+        "事前预期与新增强度",
+        "两指数当期净暴露或事前风险敏感度",
+        "全局首次公开、最早可交易时刻及行情"
+      ],
+      "next_action": "本轮转为已判读、待证据。仅在出现可读取的运营/运输新增中断、恢复说明或可靠事前相对暴露资料时继续；相同消息转载只归档，不重做深查。取得证据前不定方向。",
+      "research_mode": "CurrentReview",
+      "baseline_source_ids": [
+        "PR-S-20261014-CONFLICT0920",
+        "PR-S-20261014-CONFLICT0912"
+      ],
+      "exposure_source_ids": [],
+      "event_time": null,
+      "first_tradable_time": null,
+      "promote_causal": false,
+      "input_digest": "3bf3f1645b51ce64873d88646a3451e67453d84c6280eb13f64d9c3de4bb4a43",
+      "expected_last_update_id": null,
+      "source": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+      "source_reliability": "B",
+      "impact_score": null,
+      "confidence_score": null,
+      "persistence_score": 0.4,
+      "score_basis": {
+        "rubric_version": "score-evidence-v1",
+        "components": {
+          "source": {
+            "value": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+            "source_ids": [
+              "DC-S-20261014-WAR13"
+            ],
+            "reason": "实际读取的发布页面，不认作全局首发。"
+          },
+          "source_reliability": {
+            "value": "B",
+            "source_ids": [
+              "DC-S-20261014-WAR13"
+            ],
+            "reason": "来源评级只限定事实可靠性，不决定相对方向。"
+          },
+          "impact_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261014-WAR13",
+              "DC-S-20261014-ARAMCO",
+              "PR-S-20261014-CONFLICT0920",
+              "PR-S-20261014-CONFLICT0912"
+            ],
+            "reason": "原文支持新事实，但旧冲突已存在且相对暴露不足；撤回IH研究倾向，方向及幅度均不可量化。"
+          },
+          "confidence_score": {
+            "value": null,
+            "source_ids": [
+              "DC-S-20261014-WAR13",
+              "DC-S-20261014-ARAMCO",
+              "PR-S-20261014-CONFLICT0920",
+              "PR-S-20261014-CONFLICT0912"
+            ],
+            "reason": "原文支持新事实，但旧冲突已存在且相对暴露不足；撤回IH研究倾向，方向及幅度均不可量化。"
+          },
+          "persistence_score": {
+            "value": 0.4,
+            "source_ids": [
+              "DC-S-20261014-WAR13"
+            ],
+            "reason": "Fast 0.4 / Trend 1是既有持续度配置，并非已验证持有时间。"
+          }
+        },
+        "reference_time": {
+          "value": "2026-10-13T23:12:06+08:00",
+          "source_ids": [
+            "DC-S-20261014-WAR13"
+          ],
+          "reason": "继续保留13日已读来源时刻；本轮重读没有新增新闻，不刷新衰减，不视为全局首发。"
+        }
+      },
+      "directness": 1,
+      "relative_pricing": null
+    }
+  ]
+}

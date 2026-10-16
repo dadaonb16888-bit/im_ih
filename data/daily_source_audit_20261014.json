@@ -1,0 +1,651 @@
+{
+  "window": {
+    "batch_id": "CB-20261014-082049",
+    "window_start": "2026-10-13T00:00:00+08:00",
+    "cutoff": "2026-10-14T08:20:49+08:00",
+    "window_reason": "本轮启动时冻结：前一自然日00:00至启动时刻"
+  },
+  "entries": [
+    {
+      "source_id": "GOV",
+      "url": "https://sousuo.www.gov.cn/zcwjk/",
+      "searched_at": "2026-10-14T00:22:03.905310+00:00",
+      "categories": [
+        "POLICY_GROWTH",
+        "BROAD_STIMULUS",
+        "REGULATION"
+      ],
+      "result": "Partial",
+      "text_length": 8,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "NDRC",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/",
+      "searched_at": "2026-10-14T00:22:03.906305+00:00",
+      "categories": [
+        "POLICY_GROWTH",
+        "BROAD_STIMULUS",
+        "TECH"
+      ],
+      "result": "Readable",
+      "text_length": 1076,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "MOF",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/",
+      "searched_at": "2026-10-14T00:22:03.906305+00:00",
+      "categories": [
+        "POLICY_GROWTH",
+        "BROAD_STIMULUS"
+      ],
+      "result": "Readable",
+      "text_length": 2317,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "PBC",
+      "url": "https://www.pbc.gov.cn/",
+      "searched_at": "2026-10-14T00:22:03.907305+00:00",
+      "categories": [
+        "MONETARY"
+      ],
+      "result": "Readable",
+      "text_length": 2943,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "CSRC",
+      "url": "https://www.csrc.gov.cn/",
+      "searched_at": "2026-10-14T00:22:03.907305+00:00",
+      "categories": [
+        "REGULATION",
+        "FUND_FLOW",
+        "POSITIONING"
+      ],
+      "result": "Readable",
+      "text_length": 8935,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "MIIT",
+      "url": "https://www.miit.gov.cn/",
+      "searched_at": "2026-10-14T00:22:03.908304+00:00",
+      "categories": [
+        "TECH",
+        "POLICY_GROWTH"
+      ],
+      "result": "Readable",
+      "text_length": 4344,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "MOFCOM",
+      "url": "https://www.mofcom.gov.cn/xwfb/",
+      "searched_at": "2026-10-14T00:22:05.413491+00:00",
+      "categories": [
+        "POLICY_GROWTH",
+        "RISK_OFF",
+        "RISK_ON",
+        "EXTERNAL_MACRO"
+      ],
+      "result": "Readable",
+      "text_length": 2094,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "CNINFO",
+      "url": "https://www.cninfo.com.cn/",
+      "searched_at": "2026-10-14T00:22:05.615650+00:00",
+      "categories": [
+        "EARNINGS",
+        "TECH",
+        "VALUE_DIVIDEND",
+        "FUND_FLOW"
+      ],
+      "result": "Readable",
+      "text_length": 3011,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "SSE",
+      "url": "https://www.sse.com.cn/",
+      "searched_at": "2026-10-14T00:22:05.682698+00:00",
+      "categories": [
+        "REGULATION",
+        "FUND_FLOW",
+        "VALUE_DIVIDEND"
+      ],
+      "result": "Readable",
+      "text_length": 2348,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "SZSE",
+      "url": "https://www.szse.cn/",
+      "searched_at": "2026-10-14T00:22:05.811920+00:00",
+      "categories": [
+        "REGULATION",
+        "FUND_FLOW",
+        "EARNINGS"
+      ],
+      "result": "Unavailable",
+      "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+      "gap": "入口读取失败，覆盖未完成"
+    },
+    {
+      "source_id": "CFFEX",
+      "url": "https://www.cffex.com.cn/",
+      "searched_at": "2026-10-14T00:22:05.849805+00:00",
+      "categories": [
+        "POSITIONING",
+        "SMALLCAP_LIQUIDITY",
+        "REGULATION"
+      ],
+      "result": "Unavailable",
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
+      "gap": "入口读取失败，覆盖未完成"
+    },
+    {
+      "source_id": "NBS",
+      "url": "https://www.stats.gov.cn/xxgk/sjfb/fbrcb/",
+      "searched_at": "2026-10-14T00:22:06.562567+00:00",
+      "categories": [
+        "POLICY_GROWTH",
+        "SEASONAL"
+      ],
+      "result": "Readable",
+      "text_length": 370,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "FED",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "searched_at": "2026-10-14T00:22:06.895856+00:00",
+      "categories": [
+        "EXTERNAL_MACRO",
+        "MONETARY",
+        "RISK_OFF",
+        "RISK_ON"
+      ],
+      "result": "Readable",
+      "text_length": 17521,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "XINHUA",
+      "url": "https://www.news.cn/",
+      "searched_at": "2026-10-14T00:22:07.168713+00:00",
+      "categories": [
+        "TECH",
+        "POLICY_GROWTH",
+        "BROAD_STIMULUS",
+        "RISK_OFF",
+        "RISK_ON",
+        "EXTERNAL_MACRO"
+      ],
+      "result": "Readable",
+      "text_length": 7061,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "CLS",
+      "url": "https://www.cls.cn/telegraph",
+      "searched_at": "2026-10-14T00:22:07.804468+00:00",
+      "categories": [
+        "TECH",
+        "POLICY_GROWTH",
+        "MONETARY",
+        "REGULATION",
+        "FUND_FLOW",
+        "RISK_OFF",
+        "RISK_ON",
+        "EARNINGS",
+        "EXTERNAL_MACRO"
+      ],
+      "result": "Readable",
+      "text_length": 521,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "MARKET",
+      "url": null,
+      "searched_at": "2026-10-14T00:22:07.809387+00:00",
+      "categories": [
+        "SMALLCAP_LIQUIDITY",
+        "POSITIONING",
+        "FUND_FLOW",
+        "SEASONAL"
+      ],
+      "result": "Unavailable",
+      "gap": "尚未接入分钟行情、ETF份额或历史统计；无可访问入口"
+    },
+    {
+      "source_id": "SINA",
+      "url": "https://finance.sina.com.cn/",
+      "searched_at": "2026-10-14T00:22:07.809387+00:00",
+      "categories": [],
+      "result": "Readable",
+      "text_length": 24659,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "EASTMONEY",
+      "url": "https://finance.eastmoney.com/",
+      "searched_at": "2026-10-14T00:22:08.005183+00:00",
+      "categories": [],
+      "result": "Readable",
+      "text_length": 6884,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "THS",
+      "url": "https://news.10jqka.com.cn/",
+      "searched_at": "2026-10-14T00:22:09.060496+00:00",
+      "categories": [],
+      "result": "Readable",
+      "text_length": 5235,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "STOCKSTAR",
+      "url": "https://stock.stockstar.com/",
+      "searched_at": "2026-10-14T00:22:09.147290+00:00",
+      "categories": [],
+      "result": "Readable",
+      "text_length": 21615,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "CAS",
+      "url": "https://sitp.cas.cn/",
+      "searched_at": "2026-10-14T00:22:09.225344+00:00",
+      "categories": [],
+      "result": "Readable",
+      "text_length": 2650,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "BJNEWS",
+      "url": "https://www.bjnews.com.cn/",
+      "searched_at": "2026-10-14T00:22:09.869056+00:00",
+      "categories": [],
+      "result": "Unavailable",
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>",
+      "gap": "入口读取失败，覆盖未完成"
+    },
+    {
+      "source_id": "CNFIN",
+      "url": "https://www.cnfin.com/",
+      "searched_at": "2026-10-14T00:22:10.549325+00:00",
+      "categories": [],
+      "result": "Readable",
+      "text_length": 13690,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "GELONGHUI",
+      "url": "https://www.gelonghui.com/",
+      "searched_at": "2026-10-14T00:22:10.663091+00:00",
+      "categories": [],
+      "result": "Readable",
+      "text_length": 5382,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "MCT",
+      "url": "https://www.mct.gov.cn/",
+      "searched_at": "2026-10-14T00:22:10.666255+00:00",
+      "categories": [],
+      "result": "Readable",
+      "text_length": 4877,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    },
+    {
+      "source_id": "MOT",
+      "url": "https://www.mot.gov.cn/",
+      "searched_at": "2026-10-14T00:22:11.239314+00:00",
+      "categories": [
+        "POLICY_GROWTH"
+      ],
+      "result": "Readable",
+      "text_length": 3156,
+      "gap": "入口页面只是线索，不证明所有分页、附件或整窗口已覆盖；时间须在文章内复核"
+    }
+  ],
+  "articles": [
+    {
+      "key": "omo_cnfin",
+      "url": "https://www.cnfin.com/yw-lb/detail/20261013/4480284_1.html",
+      "read_at": "2026-10-14T00:24:51.674805+00:00",
+      "status": "Readable",
+      "length": 2858,
+      "metadata": [
+        "<META name=\"publishedtype\" content=\"1\">",
+        "<meta name=\"publishdate\" content=\"2026-10-13\">",
+        "<meta name=\"publishTime\" content=\"2026-10-13 20:07:06\" id=\"metaPublishTime\">",
+        "<meta property=\"og:release_date\" content=\"2026-10-13 20:07:06\" />"
+      ]
+    },
+    {
+      "key": "morning",
+      "url": "https://www.cnfin.com/yw-lb/detail/20261014/4480422_1.html",
+      "read_at": "2026-10-14T00:24:51.675808+00:00",
+      "status": "Readable",
+      "length": 2638,
+      "metadata": [
+        "<META name=\"publishedtype\" content=\"1\">",
+        "<meta name=\"publishdate\" content=\"2026-10-14\">",
+        "<meta name=\"publishTime\" content=\"2026-10-14 07:35:46\" id=\"metaPublishTime\">",
+        "<meta property=\"og:release_date\" content=\"2026-10-14 07:35:46\" />"
+      ]
+    },
+    {
+      "key": "aramco",
+      "url": "https://www.news.cn/20261014/8f289993d0c54023a70ca78de6335e4b/c.html",
+      "read_at": "2026-10-14T00:24:51.676809+00:00",
+      "status": "Readable",
+      "length": 438,
+      "metadata": [
+        "<meta name=\"publishedtype\" content=\"1\">",
+        "<meta name=\"publishdate\" content=\"2026-10-14\">"
+      ]
+    },
+    {
+      "key": "war13",
+      "url": "https://www.news.cn/20261013/fe2580d1b133446c8f4d94aa83e52443/c.html",
+      "read_at": "2026-10-14T00:24:51.676809+00:00",
+      "status": "Readable",
+      "length": 906,
+      "metadata": [
+        "<meta name=\"publishedtype\" content=\"1\">",
+        "<meta name=\"publishdate\" content=\"2026-10-13\">"
+      ]
+    },
+    {
+      "key": "oilstock",
+      "url": "https://www.news.cn/20261013/35673e9f28b04796b50e5b435eb3c359/c.html",
+      "read_at": "2026-10-14T00:24:51.677805+00:00",
+      "status": "Readable",
+      "length": 817,
+      "metadata": [
+        "<meta name=\"publishedtype\" content=\"1\">",
+        "<meta name=\"publishdate\" content=\"2026-10-13\">"
+      ]
+    },
+    {
+      "key": "export",
+      "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_5fb14edff75c45fa887d5c16d3477eb4.html",
+      "read_at": "2026-10-14T00:24:51.678805+00:00",
+      "status": "Readable",
+      "length": 1734,
+      "metadata": [
+        "<meta name=\"PubDate\" content=\"2026-10-13 10:00\">",
+        "<meta name=\"MakeTime\" content=\"2026-10-14 07:59:26\">"
+      ]
+    },
+    {
+      "key": "services",
+      "url": "https://www.mofcom.gov.cn/xwfb/sjfzrfb/art/2026/art_d20c715329f345b1b9ef7d61735fec61.html",
+      "read_at": "2026-10-14T00:24:52.766216+00:00",
+      "status": "Readable",
+      "length": 791,
+      "metadata": [
+        "<meta name=\"PubDate\" content=\"2026-10-13 14:28\">",
+        "<meta name=\"MakeTime\" content=\"2026-10-13 23:27:16\">"
+      ]
+    },
+    {
+      "key": "boats",
+      "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202610/t20261013_4225752.html",
+      "read_at": "2026-10-14T00:24:53.021185+00:00",
+      "status": "Readable",
+      "length": 1493,
+      "metadata": [
+        "<meta name=\"PubDate\" content=\"2026-10-13 08:24\">"
+      ]
+    },
+    {
+      "key": "boat_policy",
+      "url": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261012_4225720.html",
+      "read_at": "2026-10-14T00:24:53.250963+00:00",
+      "status": "Readable",
+      "length": 4303,
+      "metadata": [
+        "<meta name=\"PubDate\" content=\"2026-10-13 08:43\">",
+        "<META HTTP-EQUIV=\"Cache-Control\" CONTENT=\"no-store, must-revalidate\">"
+      ]
+    },
+    {
+      "key": "regional",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261013_1408128.html",
+      "read_at": "2026-10-14T00:24:53.522977+00:00",
+      "status": "Readable",
+      "length": 459,
+      "metadata": [
+        "<meta name=\"PubDate\" content=\"2026-10-13 10:40:55\">"
+      ]
+    },
+    {
+      "key": "bill65",
+      "url": "https://zwgls.mof.gov.cn/ywgg/202610/t20261013_4002703.htm",
+      "read_at": "2026-10-14T00:24:53.585225+00:00",
+      "status": "Unavailable",
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+    },
+    {
+      "key": "bill64",
+      "url": "https://zwgls.mof.gov.cn/ywgg/202610/t20261013_4002694.htm",
+      "read_at": "2026-10-14T00:24:53.620526+00:00",
+      "status": "Unavailable",
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+    },
+    {
+      "key": "ai_reaffirm",
+      "url": "https://www.news.cn/tech/20261013/431df1d3c32d45b088254eedb64a2c09/c.html",
+      "read_at": "2026-10-14T00:24:53.799006+00:00",
+      "status": "Readable",
+      "length": 1838,
+      "metadata": [
+        "<meta name=\"publishedtype\" content=\"1\">",
+        "<meta name=\"publishdate\" content=\"2026-10-13\">"
+      ]
+    },
+    {
+      "key": "flows",
+      "url": "https://m.cls.cn/detail/2503192",
+      "read_at": "2026-10-14T00:24:55.154901+00:00",
+      "status": "Readable",
+      "length": 430,
+      "metadata": []
+    },
+    {
+      "key": "selling",
+      "url": "https://m.yicai.com/news/103392207.html",
+      "read_at": "2026-10-14T00:24:55.210089+00:00",
+      "status": "Readable",
+      "length": 3998,
+      "metadata": []
+    },
+    {
+      "key": "fundmarket",
+      "url": "https://etf.sse.com.cn/home/",
+      "read_at": "2026-10-14T00:24:55.266772+00:00",
+      "status": "Readable",
+      "length": 1734,
+      "metadata": []
+    },
+    {
+      "key": "fednews",
+      "url": "https://www.federalreserve.gov/newsevents.htm",
+      "read_at": "2026-10-14T00:24:55.318195+00:00",
+      "status": "Readable",
+      "length": 11506,
+      "metadata": []
+    },
+    {
+      "key": "delist",
+      "url": "https://www.sse.com.cn/disclosure/announcement/listing/stock/c/c_20261013_10834625.shtml",
+      "read_at": "2026-10-14T00:24:55.938755+00:00",
+      "status": "Readable",
+      "length": 1132,
+      "metadata": [
+        "<meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\">"
+      ]
+    },
+    {
+      "key": "pbc197",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101308450595979/index.html",
+      "read_at": "2026-10-14T00:30:48.240235+00:00",
+      "status": "Readable",
+      "length": 648,
+      "metadata": [
+        "<meta  name=\"createDate\" content=\"2026-10-13 09:21:02\" />",
+        "<meta name=\"PubDate\" content=\"2026-10-13\">"
+      ]
+    },
+    {
+      "key": "pbc196",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/2026101208533774222/index.html",
+      "read_at": "2026-10-14T00:30:48.241241+00:00",
+      "status": "Readable",
+      "length": 648,
+      "metadata": [
+        "<meta  name=\"createDate\" content=\"2026-10-12 09:20:18\" />",
+        "<meta name=\"PubDate\" content=\"2026-10-12\">"
+      ]
+    },
+    {
+      "key": "fedminutes",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "read_at": "2026-10-14T00:30:48.242244+00:00",
+      "status": "Readable",
+      "length": 9818,
+      "metadata": []
+    },
+    {
+      "key": "blscalendar",
+      "url": "https://www.bls.gov/schedule/2026/10_sched.htm",
+      "read_at": "2026-10-14T00:30:48.243245+00:00",
+      "status": "Unavailable",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "key": "rizhao",
+      "url": "https://www.sd.news.cn/20261013/56b9295277054b5f9f79394fd60f97e0/c.html",
+      "read_at": "2026-10-14T00:30:48.244241+00:00",
+      "status": "Unavailable",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.sd.news.cn'. (_ssl.c:1010)>"
+    },
+    {
+      "key": "aviationai",
+      "url": "https://www.news.cn/house/20261013/0ab9d0c2c5dd4b3f87eed3ee4229875b/c.html",
+      "read_at": "2026-10-14T00:30:48.244241+00:00",
+      "status": "Readable",
+      "length": 2280,
+      "metadata": [
+        "<meta name=\"publishedtype\" content=\"1\">",
+        "<meta name=\"publishdate\" content=\"2026-10-13\">"
+      ]
+    },
+    {
+      "key": "hangzhou",
+      "url": "https://www.news.cn/20261013/2fd7f420200b405f84b587d665765ac8/c.html",
+      "read_at": "2026-10-14T00:30:49.445715+00:00",
+      "status": "Readable",
+      "length": 1690,
+      "metadata": [
+        "<meta name=\"publishedtype\" content=\"1\">",
+        "<meta name=\"publishdate\" content=\"2026-10-13\">"
+      ]
+    },
+    {
+      "key": "bankaccounting",
+      "url": "https://www.cnfin.com/gs-lb/detail/20261014/4480411_1.html",
+      "read_at": "2026-10-14T00:30:49.470127+00:00",
+      "status": "Readable",
+      "length": 3915,
+      "metadata": [
+        "<META name=\"publishedtype\" content=\"1\">",
+        "<meta name=\"publishdate\" content=\"2026-10-14\">",
+        "<meta name=\"publishTime\" content=\"2026-10-14 07:31:25\" id=\"metaPublishTime\">",
+        "<meta property=\"og:release_date\" content=\"2026-10-14 07:31:25\" />"
+      ]
+    },
+    {
+      "key": "robot",
+      "url": "https://www.cnfin.com/hg-lb/detail/20261014/4480416_1.html",
+      "read_at": "2026-10-14T00:30:49.517787+00:00",
+      "status": "Readable",
+      "length": 2746,
+      "metadata": [
+        "<META name=\"publishedtype\" content=\"1\">",
+        "<meta name=\"publishdate\" content=\"2026-10-14\">",
+        "<meta name=\"publishTime\" content=\"2026-10-14 07:33:59\" id=\"metaPublishTime\">",
+        "<meta property=\"og:release_date\" content=\"2026-10-14 07:33:59\" />"
+      ]
+    },
+    {
+      "key": "bill65_http",
+      "url": "http://zwgls.mof.gov.cn/ywgg/202610/t20261013_4002703.htm",
+      "read_at": "2026-10-14T00:30:49.900353+00:00",
+      "status": "Unavailable",
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+    },
+    {
+      "key": "bill64_http",
+      "url": "http://zwgls.mof.gov.cn/ywgg/202610/t20261013_4002694.htm",
+      "read_at": "2026-10-14T00:30:50.285480+00:00",
+      "status": "Unavailable",
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+    },
+    {
+      "key": "danone",
+      "url": "https://www.mofcom.gov.cn/xwfb/bldhd/art/2026/art_c89c3db56dc54917b700ac5c438f9969.html",
+      "read_at": "2026-10-14T00:33:03.195438+00:00",
+      "status": "Readable",
+      "length": 622,
+      "metadata": [
+        "<meta name=\"PubDate\" content=\"2026-10-13 15:49\">",
+        "<meta name=\"MakeTime\" content=\"2026-10-14 08:31:10\">"
+      ]
+    },
+    {
+      "key": "accounting_primary",
+      "url": "https://bgt.mof.gov.cn/zhuantilanmu/rdwyh/czyw/202609/t20260915_3997441.htm",
+      "read_at": "2026-10-14T00:33:03.196440+00:00",
+      "status": "Unavailable",
+      "error": "HTTPError: HTTP Error 502: Bad Gateway"
+    },
+    {
+      "key": "csrc_meeting",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7663814/content.shtml",
+      "read_at": "2026-10-14T00:33:03.196440+00:00",
+      "status": "Readable",
+      "length": 833,
+      "metadata": [
+        "<meta name=\"PubDate\" content=\"2026-10-10 19:12:24\"/>"
+      ]
+    }
+  ],
+  "supplemental_reads": [
+    {
+      "url": "https://www.bls.gov/schedule/2026/10_sched.htm",
+      "method": "WebText",
+      "status": "Read",
+      "scope": "10月日历、CPI项目与时区说明，非CPI实际数据",
+      "checked_at": "2026-10-14T00:37:15.843752+00:00"
+    }
+  ],
+  "followup_searches": [
+    "地方债5500亿元后续",
+    "中欧磋商/产能与贸易后续",
+    "财政政策执行报告后续",
+    "品质电商后续",
+    "会计解释22号基线",
+    "证监会座谈会原文",
+    "巨潮10月13日业绩/红利日期发现"
+  ],
+  "note": "入口读取是发现线索，Partial不等于整窗口完成；搜索索引不能替代正文。"
+}

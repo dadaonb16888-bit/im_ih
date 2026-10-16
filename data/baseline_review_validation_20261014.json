@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-10-13T23:36:15.493214+00:00",
+  "retained_tables": {
+    "information_inbox": {
+      "before": 61,
+      "after": 67,
+      "old_rows_preserved": true
+    },
+    "events": {
+      "before": 18,
+      "after": 18,
+      "old_rows_preserved": true
+    },
+    "event_updates": {
+      "before": 2,
+      "after": 2,
+      "old_rows_preserved": true
+    },
+    "state_updates": {
+      "before": 0,
+      "after": 0,
+      "old_rows_preserved": true
+    },
+    "event_information": {
+      "before": 34,
+      "after": 40,
+      "old_rows_preserved": true
+    },
+    "legacy_audit": {
+      "before": 14,
+      "after": 14,
+      "old_rows_preserved": true
+    },
+    "research_notes": {
+      "before": 19,
+      "after": 19,
+      "old_rows_preserved": true
+    },
+    "collection_batches": {
+      "before": 1,
+      "after": 1,
+      "old_rows_preserved": true
+    },
+    "source_checks": {
+      "before": 0,
+      "after": 0,
+      "old_rows_preserved": true
+    },
+    "collection_items": {
+      "before": 0,
+      "after": 0,
+      "old_rows_preserved": true
+    },
+    "information_reviews": {
+      "before": 0,
+      "after": 0,
+      "old_rows_preserved": true
+    },
+    "parent_reviews": {
+      "before": 0,
+      "after": 0,
+      "old_rows_preserved": true
+    },
+    "ai_research_runs": {
+      "before": 3,
+      "after": 4,
+      "old_rows_preserved": true
+    },
+    "ai_assessments": {
+      "before": 12,
+      "after": 14,
+      "old_rows_preserved": true
+    }
+  },
+  "pack_replay_inserted": false,
+  "research_scorable_count": 0,
+  "previous_im_view_preserved_as_of": "2026-10-14T07:35:00+08:00",
+  "formal_dominant": null,
+  "integrity": "ok",
+  "foreign_key_errors": [],
+  "tests_passed": 132,
+  "ui_checked_at": "2026-10-13T23:38:46.408039+00:00",
+  "ui_cases_verified": [
+    "E-20261009-001",
+    "E-20261009-004"
+  ],
+  "ui_console_errors": [],
+  "screenshot": "docs/baseline_review_preview.png"
+}

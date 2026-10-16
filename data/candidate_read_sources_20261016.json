@@ -1,0 +1,954 @@
+{
+  "assembled_at": "2026-10-15T22:23:48.923979+00:00",
+  "sources": [
+    {
+      "lead_id": "DL-20261015-0002",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261010_1408066.html",
+      "checked_at": "2026-10-15T22:20:58.043569+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261010_1408066.html",
+      "content_type": "text/html",
+      "document_sha256": "c6908ed65910670e6c5bf3ba8b500448f1c17a783d19c0171a4a08a3d9560ffb",
+      "decoded_sha256": "c6908ed65910670e6c5bf3ba8b500448f1c17a783d19c0171a4a08a3d9560ffb",
+      "encoding": "UTF-8",
+      "text_length": 1208,
+      "meta": [
+        {
+          "charset": "UTF-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge,chrome=1"
+        },
+        {
+          "name": "renderer",
+          "content": "webkit|ie-comp|ie-stand"
+        },
+        {
+          "name": "renderer",
+          "content": "webkit"
+        },
+        {
+          "name": "SiteName",
+          "content": "中华人民共和国国家发展和改革委员会"
+        },
+        {
+          "name": "SiteDomain",
+          "content": "www.ndrc.gov.cn"
+        },
+        {
+          "name": "SiteIDCode",
+          "content": "bm04000007"
+        },
+        {
+          "name": "ColumnName",
+          "content": "新闻发布"
+        },
+        {
+          "name": "ArticleTitle",
+          "content": "郑栅洁主任主持召开民营企业座谈会 围绕准确把握三季度经济形势、积极应对国际供需情况变化听取意见建议"
+        },
+        {
+          "name": "PubDate",
+          "content": "2026-10-10 19:09:24"
+        },
+        {
+          "name": "ContentSource",
+          "content": "民营局"
+        },
+        {
+          "name": "Keywords",
+          "content": ""
+        },
+        {
+          "name": "Author",
+          "content": ""
+        },
+        {
+          "name": "Description",
+          "content": ""
+        },
+        {
+          "name": "ColumnType",
+          "content": "新闻发布"
+        }
+      ]
+    },
+    {
+      "lead_id": "DL-20261015-0003",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261009_1408037.html",
+      "checked_at": "2026-10-15T22:20:58.045082+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202610/t20261009_1408037.html",
+      "content_type": "text/html",
+      "document_sha256": "17eb278c40e2c97f5b23c17bc00568b1b445024caadf160e9442e4c83cae5eda",
+      "decoded_sha256": "17eb278c40e2c97f5b23c17bc00568b1b445024caadf160e9442e4c83cae5eda",
+      "encoding": "UTF-8",
+      "text_length": 8874,
+      "meta": [
+        {
+          "charset": "UTF-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge,chrome=1"
+        },
+        {
+          "name": "renderer",
+          "content": "webkit|ie-comp|ie-stand"
+        },
+        {
+          "name": "renderer",
+          "content": "webkit"
+        },
+        {
+          "name": "SiteName",
+          "content": "中华人民共和国国家发展和改革委员会"
+        },
+        {
+          "name": "SiteDomain",
+          "content": "www.ndrc.gov.cn"
+        },
+        {
+          "name": "SiteIDCode",
+          "content": "bm04000007"
+        },
+        {
+          "name": "ColumnName",
+          "content": "新闻发布"
+        },
+        {
+          "name": "ArticleTitle",
+          "content": "国家发展改革委有关负责同志就《关于发展新质生产力的意见》答记者问"
+        },
+        {
+          "name": "PubDate",
+          "content": "2026-10-09 20:19:48"
+        },
+        {
+          "name": "ContentSource",
+          "content": "高技术司"
+        },
+        {
+          "name": "Keywords",
+          "content": ""
+        },
+        {
+          "name": "Author",
+          "content": ""
+        },
+        {
+          "name": "Description",
+          "content": ""
+        },
+        {
+          "name": "ColumnType",
+          "content": "新闻发布"
+        }
+      ]
+    },
+    {
+      "lead_id": "DL-20261015-0005",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260929_1407929.html",
+      "checked_at": "2026-10-15T22:20:58.045082+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260929_1407929.html",
+      "content_type": "text/html",
+      "document_sha256": "c4aa7a16359ebabad50c60b21d926684d53fbc4ac8a93c0207ad7b30c50dd12b",
+      "decoded_sha256": "c4aa7a16359ebabad50c60b21d926684d53fbc4ac8a93c0207ad7b30c50dd12b",
+      "encoding": "UTF-8",
+      "text_length": 414,
+      "meta": [
+        {
+          "charset": "UTF-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge,chrome=1"
+        },
+        {
+          "name": "renderer",
+          "content": "webkit|ie-comp|ie-stand"
+        },
+        {
+          "name": "renderer",
+          "content": "webkit"
+        },
+        {
+          "name": "SiteName",
+          "content": "中华人民共和国国家发展和改革委员会"
+        },
+        {
+          "name": "SiteDomain",
+          "content": "www.ndrc.gov.cn"
+        },
+        {
+          "name": "SiteIDCode",
+          "content": "bm04000007"
+        },
+        {
+          "name": "ColumnName",
+          "content": "新闻发布"
+        },
+        {
+          "name": "ArticleTitle",
+          "content": "国家发展改革委举行专题新闻发布会 介绍推进服务业扩能提质有关情况"
+        },
+        {
+          "name": "PubDate",
+          "content": "2026-09-29 17:02:58"
+        },
+        {
+          "name": "ContentSource",
+          "content": "政研室"
+        },
+        {
+          "name": "Keywords",
+          "content": ""
+        },
+        {
+          "name": "Author",
+          "content": ""
+        },
+        {
+          "name": "Description",
+          "content": ""
+        },
+        {
+          "name": "ColumnType",
+          "content": "新闻发布"
+        }
+      ]
+    },
+    {
+      "lead_id": "DL-20261015-0007",
+      "url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260922_1407781.html",
+      "checked_at": "2026-10-15T22:20:58.046091+00:00",
+      "http_status": 200,
+      "final_url": "https://www.ndrc.gov.cn/xwdt/xwfb/202609/t20260922_1407781.html",
+      "content_type": "text/html",
+      "document_sha256": "bef12a2b4561952d14fc21bea47ee220c25998c8c4c8afdc5f32446ce669bd37",
+      "decoded_sha256": "bef12a2b4561952d14fc21bea47ee220c25998c8c4c8afdc5f32446ce669bd37",
+      "encoding": "UTF-8",
+      "text_length": 245,
+      "meta": [
+        {
+          "charset": "UTF-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge,chrome=1"
+        },
+        {
+          "name": "renderer",
+          "content": "webkit|ie-comp|ie-stand"
+        },
+        {
+          "name": "renderer",
+          "content": "webkit"
+        },
+        {
+          "name": "SiteName",
+          "content": "中华人民共和国国家发展和改革委员会"
+        },
+        {
+          "name": "SiteDomain",
+          "content": "www.ndrc.gov.cn"
+        },
+        {
+          "name": "SiteIDCode",
+          "content": "bm04000007"
+        },
+        {
+          "name": "ColumnName",
+          "content": "新闻发布"
+        },
+        {
+          "name": "ArticleTitle",
+          "content": "国家发展改革委举行9月份新闻发布会"
+        },
+        {
+          "name": "PubDate",
+          "content": "2026-09-22 16:58:06"
+        },
+        {
+          "name": "ContentSource",
+          "content": "政研室"
+        },
+        {
+          "name": "Keywords",
+          "content": ""
+        },
+        {
+          "name": "Author",
+          "content": ""
+        },
+        {
+          "name": "Description",
+          "content": ""
+        },
+        {
+          "name": "ColumnType",
+          "content": "新闻发布"
+        }
+      ]
+    },
+    {
+      "lead_id": "DL-20261015-0042",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7663393/content.shtml",
+      "checked_at": "2026-10-15T22:20:58.047091+00:00",
+      "http_status": 200,
+      "final_url": "https://www.csrc.gov.cn/csrc/c100028/c7663393/content.shtml",
+      "content_type": "text/html",
+      "document_sha256": "c682393ffc97a485379a7b27beaa13120dcedeed67a9a23f077980b3a9e52f4a",
+      "decoded_sha256": "c682393ffc97a485379a7b27beaa13120dcedeed67a9a23f077980b3a9e52f4a",
+      "encoding": "UTF-8",
+      "text_length": 1071,
+      "meta": [
+        {
+          "charset": "UTF-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge,chrome=1"
+        },
+        {
+          "name": "keywords",
+          "content": ""
+        },
+        {
+          "name": "description",
+          "content": "为落实《推动公募基金高质量发展行动方案》，规范公募基金投资运作，支持权益类基金发展，提高公募基金运作,2026-10-09"
+        },
+        {
+          "name": "ContentSource",
+          "content": "证监会"
+        },
+        {
+          "name": "SiteName",
+          "content": "中国证券监督管理委员会"
+        },
+        {
+          "name": "SiteDomain",
+          "content": ""
+        },
+        {
+          "name": "SiteIDCode",
+          "content": "bm56000001"
+        },
+        {
+          "name": "ColumnName",
+          "content": "证监会要闻"
+        },
+        {
+          "name": "ColumnDescription",
+          "content": "证监会要闻"
+        },
+        {
+          "name": "ColumnKeywords",
+          "content": "证监会要闻"
+        },
+        {
+          "name": "ColumnType",
+          "content": "新闻发布"
+        },
+        {
+          "name": "ArticleTitle",
+          "content": "中国证监会就《公开募集证券投资基金运作管理办法（征求意见稿）》及配套规则公开征求意见"
+        },
+        {
+          "name": "PubDate",
+          "content": "2026-10-09 17:55:40"
+        },
+        {
+          "name": "ContentSource",
+          "content": "证监会"
+        },
+        {
+          "name": "Keywords",
+          "content": ""
+        },
+        {
+          "name": "Description",
+          "content": "为落实《推动公募基金高质量发展行动方案》，规范公募基金投资运作，支持权益类基金发展，提高公募基金运作"
+        },
+        {
+          "name": "others",
+          "content": "页面生成时间 2026-10-09 17:55:40"
+        },
+        {
+          "name": "template,templategroup,version",
+          "content": "587,default,1.3"
+        }
+      ]
+    },
+    {
+      "lead_id": "DL-20261015-0051",
+      "url": "http://www.miit.gov.cn/xwfb/bldhd/art/2026/art_ad9f71a8dd3f4ec4a8b045d02823042a.html",
+      "checked_at": "2026-10-15T22:20:59.698357+00:00",
+      "http_status": 200,
+      "final_url": "https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_ad9f71a8dd3f4ec4a8b045d02823042a.html",
+      "content_type": "text/html; charset=utf-8",
+      "document_sha256": "0f11510074add982ff3ec3fa64e975281cfce7da6e616f7537dcf2db9cf929a3",
+      "decoded_sha256": "0f11510074add982ff3ec3fa64e975281cfce7da6e616f7537dcf2db9cf929a3",
+      "encoding": "utf-8",
+      "text_length": 912,
+      "meta": [
+        {
+          "http-equiv": "Content-Type",
+          "content": "text/html; charset=utf-8"
+        },
+        {
+          "name": "”renderer”",
+          "content": "”webkit”"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge,chrome=1"
+        },
+        {
+          "http-equiv": "pragma",
+          "content": "no-cache"
+        },
+        {
+          "http-equiv": "Cache-Control",
+          "content": "no-store, must-revalidate"
+        },
+        {
+          "name": "SiteName",
+          "content": "中华人民共和国工业和信息化部"
+        },
+        {
+          "name": "SiteDomain",
+          "content": "www.miit.gov.cn"
+        },
+        {
+          "name": "SiteIDCode",
+          "content": "bm07000001"
+        },
+        {
+          "name": "ColumnName",
+          "content": "部领导活动"
+        },
+        {
+          "name": "ColumnType",
+          "content": "部领导活动"
+        },
+        {
+          "name": "ArticleTitle",
+          "content": "李乐成主持召开中小企业圆桌会 强调健全主动发现机制 做好对企服务"
+        },
+        {
+          "name": "PubDate",
+          "content": "2026-09-20 17:49"
+        },
+        {
+          "name": "ContentSource",
+          "content": "中小企业局、办公厅、工信微报"
+        },
+        {
+          "name": "Keywords",
+          "content": "企业,中小企业,发展,推动,服务"
+        },
+        {
+          "name": "Author",
+          "content": ""
+        },
+        {
+          "name": "Description",
+          "content": "2026年9月20日，工业和信息化部党组书记、部长李乐成主持召开第十六次中小企业圆桌会议，深入学习贯彻习近平总书记关于发展先进制造业的重要指示和全国先进制造业大会精神，围绕健全优质中小企业主动发现机制、提升精准服务水平听取意见建议。部党组成员、副部长柯吉欣出席会议。"
+        },
+        {
+          "name": "Url",
+          "content": "/xwfb/bldhd/art/2026/art_ad9f71a8dd3f4ec4a8b045d02823042a.html"
+        },
+        {
+          "name": "MakeTime",
+          "content": "2026-10-16 06:19:33"
+        },
+        {
+          "id": "pagetype",
+          "content": "1"
+        }
+      ]
+    },
+    {
+      "lead_id": "DL-20261015-0056",
+      "url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2026/art_e09d863934884b4b9783ec3605153d09.html",
+      "checked_at": "2026-10-15T22:21:00.638360+00:00",
+      "http_status": 200,
+      "final_url": "https://www.mofcom.gov.cn/xwfb/ldrhd/art/2026/art_e09d863934884b4b9783ec3605153d09.html",
+      "content_type": "text/html",
+      "document_sha256": "1cf70932213e8ae3b4ee15e92aada9ab435673fe5e47ed142bccc078d2731f21",
+      "decoded_sha256": "1cf70932213e8ae3b4ee15e92aada9ab435673fe5e47ed142bccc078d2731f21",
+      "encoding": "UTF-8",
+      "text_length": 3622,
+      "meta": [
+        {
+          "http-equiv": "Content-Type",
+          "content": "text/html; charset=UTF-8"
+        },
+        {
+          "charset": "utf-8"
+        },
+        {
+          "content": "IE=edge,chrome=1",
+          "http-equiv": "X-UA-Compatible"
+        },
+        {
+          "content": "webkit",
+          "name": "renderer"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "ColId",
+          "content": "ee2cfa3f1f534d108378ece1327ee791"
+        },
+        {
+          "name": "SiteName",
+          "content": "中华人民共和国商务部"
+        },
+        {
+          "name": "SiteDomain",
+          "content": "www.mofcom.gov.cn"
+        },
+        {
+          "name": "SiteIDCode",
+          "content": "bm22000001"
+        },
+        {
+          "name": "ColumnName",
+          "content": "领导人活动"
+        },
+        {
+          "name": "ColumnType",
+          "content": "领导人活动"
+        },
+        {
+          "name": "ColumnDescription",
+          "content": ""
+        },
+        {
+          "name": "ColumnKeywords",
+          "content": "领导人活动"
+        },
+        {
+          "name": "ArticleTitle",
+          "content": "李强在第140届中国进出口商品交易会开幕式上的主旨演讲（全文）"
+        },
+        {
+          "name": "PubDate",
+          "content": "2026-10-14 22:46"
+        },
+        {
+          "name": "ContentSource",
+          "content": "新华社"
+        },
+        {
+          "name": "Keywords",
+          "content": "中国,发展,更多,国际,经济"
+        },
+        {
+          "name": "Author",
+          "content": "商务部新闻办公室"
+        },
+        {
+          "name": "Description",
+          "content": "新华社广州10月14日电在第140届中国进出口商品交易会开幕式上的主旨演讲（2026年10月14日，广州）中华人民共和国国务院总理　李强尊敬的各位来宾，女士们，先生们，朋友们：很高兴同大家相聚在美丽的花城广州，共同出席第140届中国进出口商品交易会。我谨代表中国政府，对各位的到来表示热烈欢迎！对大家长期以来为促进中外经贸合作和发展所作出的积极贡献表示衷心感谢！今年是广交会创办70周年。"
+        },
+        {
+          "name": "Url",
+          "content": "/xwfb/ldrhd/art/2026/art_e09d863934884b4b9783ec3605153d09.html"
+        },
+        {
+          "name": "server",
+          "content": "/xwfb/ldrhd/art/2026/art_e09d863934884b4b9783ec3605153d09.html"
+        },
+        {
+          "name": "extend1",
+          "content": "0"
+        },
+        {
+          "name": "MakeTime",
+          "content": "2026-10-14 22:46:26"
+        },
+        {
+          "id": "pagetype",
+          "content": "1"
+        }
+      ]
+    },
+    {
+      "lead_id": "DL-20261015-0239",
+      "url": "https://finance.sina.com.cn/wm/2026-10-15/doc-inivhiep7384183.shtml",
+      "checked_at": "2026-10-15T22:21:00.654033+00:00",
+      "http_status": 200,
+      "final_url": "https://finance.sina.com.cn/wm/2026-10-15/doc-inivhiep7384183.shtml",
+      "content_type": "text/html",
+      "document_sha256": "bbcfa6ecd96228e369e6a1079388bc787415100a1861b93d7ff9e956f25efd6e",
+      "decoded_sha256": "bbcfa6ecd96228e369e6a1079388bc787415100a1861b93d7ff9e956f25efd6e",
+      "encoding": "utf-8",
+      "text_length": 3511,
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge"
+        },
+        {
+          "content": "always",
+          "name": "referrer"
+        },
+        {
+          "property": "bytedance:published_time",
+          "content": "2026-10-15T08:48:33+08:00"
+        },
+        {
+          "property": "bytedance:lrDate_time",
+          "content": "2026-10-15T09:07:15+08:00"
+        },
+        {
+          "property": "bytedance:updated_time",
+          "content": "2026-10-15T09:07:15+08:00"
+        },
+        {
+          "name": "sudameta",
+          "content": "urlpath:o/; allCIDs:202214,257,51894,51070,258,240707,266405"
+        },
+        {
+          "name": "keywords",
+          "content": "刷新世界纪录！我国量子网络领域实现关键技术突破"
+        },
+        {
+          "name": "tags",
+          "content": ""
+        },
+        {
+          "name": "description",
+          "content": "◎ 科技日报记者 吴长锋记者14日从中国科学技术大学获悉，该校潘建伟、张强等与济南量子技术研究院郑名扬等组成的研究团队，在紫外波段离子阱存储器和通信光纤的高效量子互联方面取得重要进展。他们成功实现393纳米至1550纳米的高效率、低噪声量子..."
+        },
+        {
+          "property": "og:type",
+          "content": "news"
+        },
+        {
+          "property": "og:title",
+          "content": "刷新世界纪录！我国量子网络领域实现关键技术突破"
+        },
+        {
+          "property": "og:description",
+          "content": "刷新世界纪录！我国量子网络领域实现关键技术突破"
+        },
+        {
+          "property": "og:url",
+          "content": "https://finance.sina.com.cn/wm/2026-10-15/doc-inivhiep7384183.shtml"
+        },
+        {
+          "property": "og:image",
+          "content": "//n.sinaimg.cn/sinakd20261015s/224/w1280h544/20261015/2358-f8b22dbb07c438c7877e50b0702deeea.jpg"
+        },
+        {
+          "name": "weibo: article:create_at",
+          "content": "2026-10-15 08:48:33"
+        },
+        {
+          "name": "weibo: article:update_at",
+          "content": "2026-10-15 09:07:15"
+        },
+        {
+          "name": "stencil",
+          "content": "PGLS000526"
+        },
+        {
+          "name": "publishid",
+          "content": "nivhiep7384183"
+        },
+        {
+          "name": "comment",
+          "content": "cj:comos-nivhiep7384183"
+        },
+        {
+          "name": "sudameta",
+          "content": "comment_channel:cj;comment_id:comos-nivhiep7384183"
+        },
+        {
+          "name": "mediaid",
+          "content": "科技日报"
+        },
+        {
+          "name": "sudameta",
+          "content": "sinaog:0"
+        },
+        {
+          "name": "mobile-agent",
+          "content": "format=html5; url=https://finance.sina.cn/2026-10-15/detail-inivhiep7384183.d.html"
+        },
+        {
+          "name": "mobile-agent",
+          "content": "format=xhtml; url=https://finance.sina.cn/2026-10-15/detail-inivhiep7384183.d.html"
+        },
+        {
+          "name": "mobile-agent",
+          "content": "format=wml; url=https://finance.sina.cn/2026-10-15/detail-inivhiep7384183.d.html"
+        },
+        {
+          "property": "article:published_time",
+          "content": "2026-10-15T09:07:14+08:00"
+        },
+        {
+          "property": "article:author",
+          "content": ""
+        },
+        {
+          "name": "sinaPlistaAD",
+          "content": "{\"article\":\"false\",\"articleID\":\"artibody\",\"video\":\"false\",\"photos\":\"false\",\"photosID\":\"\",\"buttonPDPS\":\"PDPS000000044099\",\"plistaPDPS\":\"PDPS000000059666\"}"
+        },
+        {
+          "http-equiv": "Content-Security-Policy",
+          "content": "upgrade-insecure-requests"
+        },
+        {
+          "name": "sudameta",
+          "content": "dataid:comos:nivhiep7384183"
+        }
+      ]
+    },
+    {
+      "lead_id": "DL-20261015-0727",
+      "url": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261013_4225770.html",
+      "checked_at": "2026-10-15T22:21:00.657301+00:00",
+      "http_status": 200,
+      "final_url": "https://xxgk.mot.gov.cn/jigou/syj/202610/t20261013_4225770.html",
+      "content_type": "text/html; charset=UTF-8",
+      "document_sha256": "395b1e9629b21b1b464687580246d403207b40e609d4474de6fe82174a246e41",
+      "decoded_sha256": "395b1e9629b21b1b464687580246d403207b40e609d4474de6fe82174a246e41",
+      "encoding": "utf-8",
+      "text_length": 4293,
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge,Chrome=1"
+        },
+        {
+          "name": "renderer",
+          "content": "webkit"
+        },
+        {
+          "name": "robots",
+          "content": "index,follow"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "SiteName",
+          "content": "交通运输部政府网站"
+        },
+        {
+          "name": "SiteDomain",
+          "content": "www.mot.gov.cn"
+        },
+        {
+          "name": "SiteIDCode",
+          "content": "bm19000004"
+        },
+        {
+          "name": "ColumnName",
+          "content": "水运局"
+        },
+        {
+          "name": "ColumnType",
+          "content": "信息公开目录"
+        },
+        {
+          "name": "ArticleTitle",
+          "content": "交通运输部办公厅关于印发《水运领域人工智能应用场景指引》的通知"
+        },
+        {
+          "name": "PubDate",
+          "content": "2026-10-14 08:45"
+        },
+        {
+          "name": "ContentSource",
+          "content": ""
+        },
+        {
+          "name": "Keywords",
+          "content": "水运领域;人工智能;应用场景;指引"
+        },
+        {
+          "name": "Author",
+          "content": ""
+        },
+        {
+          "name": "Description",
+          "content": "中华人民共和国交通运输部水运局：《交通运输部办公厅关于印发《水运领域人工智能应用场景指引》的通知》-<br/>　　各省、自治区、直辖市交通运输厅（委），招商局集团有限公司、中国远洋海运集团有限公司、中国交通建设集团有限公司，部属各单位：<br/>　　为贯彻落实交通...,详情请点击访问！"
+        },
+        {
+          "name": "Url",
+          "content": "./t20261013_4225770.html"
+        },
+        {
+          "id": "pagetype",
+          "content": "1"
+        },
+        {
+          "http-equiv": "pragma",
+          "content": "no-cache"
+        },
+        {
+          "http-equiv": "Cache-Control",
+          "content": "no-store, must-revalidate"
+        }
+      ]
+    },
+    {
+      "lead_id": "DL-20261015-0729",
+      "url": "https://www.mot.gov.cn/gongkai/zcjd/202610/t20261012_4225721.html",
+      "checked_at": "2026-10-15T22:21:00.661312+00:00",
+      "http_status": 200,
+      "final_url": "https://www.mot.gov.cn/gongkai/zcjd/202610/t20261012_4225721.html",
+      "content_type": "text/html",
+      "document_sha256": "48b036b9375d878f4e8eb5124e49cc65a42e0e88b89e7b25572baa4051650394",
+      "decoded_sha256": "48b036b9375d878f4e8eb5124e49cc65a42e0e88b89e7b25572baa4051650394",
+      "encoding": "UTF-8",
+      "text_length": 2150,
+      "meta": [
+        {
+          "charset": "UTF-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge"
+        },
+        {
+          "name": "SiteName",
+          "content": "交通运输部政府网站"
+        },
+        {
+          "name": "SiteDomain",
+          "content": "www.mot.gov.cn"
+        },
+        {
+          "name": "SiteIDCode",
+          "content": "BM19000004"
+        },
+        {
+          "name": "ColumnName",
+          "content": "政策解读"
+        },
+        {
+          "name": "ColumnType",
+          "content": ""
+        },
+        {
+          "name": "ArticleTitle",
+          "content": "《内河新能源船舶推广应用行动方案（2026—2030年）》政策解读"
+        },
+        {
+          "name": "PubDate",
+          "content": "2026-10-13 08:44"
+        },
+        {
+          "name": "ContentSource",
+          "content": "水运局"
+        },
+        {
+          "name": "Keywords",
+          "content": "船舶;行动方案;新能源;行动;应用;内河;场景;强国;经济社会发展;交通运输部"
+        },
+        {
+          "name": "Author",
+          "content": ""
+        },
+        {
+          "name": "Url",
+          "content": "./t20261012_4225721.html"
+        },
+        {
+          "name": "Description",
+          "content": "中华人民共和国交通运输部政策解读：《《内河新能源船舶推广应用行动方案（2026—2030年）》政策解读》-<br/>　　近日，交通运输部联合工业和信息化部、国家能源局印发《内河新能源船舶推广应用行动方案（2026—2030年）》（以下简称《行动方案》）。为便于各方更好地...,详情请点击访问！"
+        }
+      ]
+    },
+    {
+      "lead_id": "SUP-20261016-9001",
+      "url": "https://mphy.ustc.edu.cn/2026/1013/c27337a755951/pagem.htm",
+      "checked_at": "2026-10-15T22:22:18.071137+00:00",
+      "http_status": 200,
+      "final_url": "https://mphy.ustc.edu.cn/2026/1013/c27337a755951/pagem.htm",
+      "content_type": "text/html",
+      "document_sha256": "821069813db01487a3f883672d7f7cd5c04f13b1ba8e0d59639b8213018ea391",
+      "decoded_sha256": "821069813db01487a3f883672d7f7cd5c04f13b1ba8e0d59639b8213018ea391",
+      "encoding": "utf-8",
+      "text_length": 1351,
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 minimal-ui"
+        },
+        {
+          "name": "renderer",
+          "content": "webkit"
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          "content": "IE=edge,chrome=1"
+        },
+        {
+          "http-equiv": "pragma",
+          "content": "no-cache"
+        },
+        {
+          "content": "yes",
+          "name": "apple-mobile-web-app-capable"
+        },
+        {
+          "content": "telephone=no",
+          "name": "format-detection"
+        },
+        {
+          "name": "description",
+          "content": "中国科学技术大学潘建伟、张强等与济南量子技术研究院郑名扬等，..."
+        }
+      ]
+    }
+  ],
+  "scope": "旧窗口候选补读；页面日期/元数据/URL/成文日各自保留，非全网收集或全文研究证明。"
+}

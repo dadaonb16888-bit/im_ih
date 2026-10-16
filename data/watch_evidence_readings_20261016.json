@@ -1,0 +1,147 @@
+{
+  "assembled_at": "2026-10-15T15:33:14.506006+00:00",
+  "scope": "两主题补证；非新每日窗口",
+  "fund_code": "512100",
+  "requests": [
+    {
+      "id": "NF_SHARES",
+      "url": "https://www.nffund.com/nfwebApi/fund/assetSize",
+      "method": "POST",
+      "params": {
+        "fundCode": "512100",
+        "startDate": "20261013",
+        "endDate": "20261014",
+        "curPage": 1,
+        "pageSize": 15
+      },
+      "fetched_at": "2026-10-15T15:30:35.277261+00:00",
+      "status": 200,
+      "sha256": "6e05e5a4e1227adaaffc4341dcef309681a1035603f1873a8dbcec3b4532182d",
+      "decoded_sha256": "6e05e5a4e1227adaaffc4341dcef309681a1035603f1873a8dbcec3b4532182d",
+      "length": 482
+    },
+    {
+      "id": "NF_NAV",
+      "url": "https://www.nffund.com/nfwebApi/fund/newValueList",
+      "method": "POST",
+      "params": {
+        "fundCode": "512100",
+        "curPage": 1,
+        "pageSize": 10
+      },
+      "fetched_at": "2026-10-15T15:30:37.971374+00:00",
+      "status": 200,
+      "sha256": "dafc588ed23662ee64e704f298355b0cdb683e67a1a7a56e5e8a23b9a0ebb36a",
+      "decoded_sha256": "dafc588ed23662ee64e704f298355b0cdb683e67a1a7a56e5e8a23b9a0ebb36a",
+      "length": 17116
+    },
+    {
+      "id": "NF_SHARES_LATEST",
+      "url": "https://www.nffund.com/nfwebApi/fund/assetSize",
+      "method": "POST",
+      "params": {
+        "fundCode": "512100",
+        "startDate": "",
+        "endDate": "",
+        "curPage": 1,
+        "pageSize": 15
+      },
+      "fetched_at": "2026-10-15T15:31:10.443185+00:00",
+      "status": 200,
+      "sha256": "9cc59573153793860df1989219e36745c942a89803dd4bdcb8985c4a6cb39c1f",
+      "decoded_sha256": "9cc59573153793860df1989219e36745c942a89803dd4bdcb8985c4a6cb39c1f",
+      "length": 3678
+    },
+    {
+      "id": "NF_IDENTITY",
+      "url": "https://www.nffund.com/nfwebApi/fund/overreview",
+      "method": "POST",
+      "params": {
+        "fundCode": "512100"
+      },
+      "fetched_at": "2026-10-15T15:31:14.665550+00:00",
+      "status": 200,
+      "sha256": "201a45f7b0e783ed1dfb21c899361c0fc04b11731ef905ab6b20593003291b7b",
+      "decoded_sha256": "201a45f7b0e783ed1dfb21c899361c0fc04b11731ef905ab6b20593003291b7b",
+      "length": 4620
+    }
+  ],
+  "identity": {
+    "fund_code": "512100",
+    "fund_name": "南方中证1000交易型开放式指数证券投资基金",
+    "benchmark": "本基金的业绩比较基准为标的指数。本基金标的指数为中证1000指数。"
+  },
+  "target_share_query": {
+    "total": 0,
+    "list": [],
+    "meaning": "成功空结果；不证明零申赎或所有渠道都不存在数据"
+  },
+  "latest_returned_scale": {
+    "fundCode": "512100",
+    "reportDate": "20260630",
+    "fundSize": 3077217646.0,
+    "fundAsset": 10961362350.93
+  },
+  "target_unit_nav": [
+    {
+      "fund_code_from_request": "512100",
+      "response_row_fund_code": null,
+      "date": "2026-10-14",
+      "unit_nav": "2.8074"
+    },
+    {
+      "fund_code_from_request": "512100",
+      "response_row_fund_code": null,
+      "date": "2026-10-13",
+      "unit_nav": "2.8556"
+    }
+  ],
+  "calculation": {
+    "previous_total_shares": null,
+    "current_total_shares": null,
+    "adjustment_review": "Unchecked",
+    "share_delta": null,
+    "net_creation_notional_estimate": null,
+    "bias": null,
+    "trade_permission": false,
+    "entry_allowed": false,
+    "reason": "缺真实日度总份额和调整审查，不调用compare_shares制造输入；NAV证据仅部分关闭缺口。"
+  },
+  "shipping": [
+    {
+      "id": "UK_RECENT",
+      "url": "https://www.ukmto.org/recent-incidents",
+      "checked_at": "2026-10-15T15:25:36.814337+00:00",
+      "direct_http_error": "HTTP Error 403: Forbidden",
+      "document_sha256": null,
+      "scope": "未取得具体通报；网页目录/空列表不具有否定事件的含义"
+    },
+    {
+      "id": "UK_WARN",
+      "url": "https://www.ukmto.org/ukmto-products/warnings",
+      "checked_at": "2026-10-15T15:25:36.815337+00:00",
+      "direct_http_error": "HTTP Error 403: Forbidden",
+      "document_sha256": null,
+      "scope": "未取得具体通报；网页目录/空列表不具有否定事件的含义"
+    },
+    {
+      "id": "UK_WEEKLY",
+      "url": "https://www.ukmto.org/ukmto-products/weekly-reports",
+      "checked_at": "2026-10-15T15:25:36.815337+00:00",
+      "direct_http_error": "HTTP Error 403: Forbidden",
+      "document_sha256": null,
+      "scope": "未取得具体通报；网页目录/空列表不具有否定事件的含义"
+    }
+  ],
+  "technical_navigation": {
+    "scope": "动态壳页和公开客户端脚本仅用于找到页面实际调用的只读接口，不作为额外市场证据；未执行脚本、登录或交易。",
+    "api_map_url": "https://www.nffund.com/js/4308-715cfafa.js",
+    "api_map_sha256": "bbe2a027da053408e2717de4e919bab704cc8f4857ce3f60ae9ac2a311bc77a1"
+  },
+  "source_budget": {
+    "topics": 2,
+    "sources_per_topic": 3,
+    "unique_evidence_sources": 6,
+    "maximum_per_pack": 12
+  }
+}

@@ -6,8 +6,14 @@ Only the local research runner imports these files. HTTP exposes results read-on
 """
 import hashlib
 import json
-from .engine import utc, now, encode, reject_extra, CHANNELS, HORIZONS, STYLE, GAIN
+from .engine import utc, now, encode, reject_extra, CHANNELS, HORIZONS, STYLE, GAIN, ROOT
 from .collection import normalize_url, text_required
+from .event import validate_alpha
+from .score_evidence import validate_score_basis, research_preview
+from .impact_analysis import validate_impact_analysis
+from .news_screening import NewsScreening
+
+AI_ALPHA_FIELDS = {'source', 'source_reliability', 'impact_score', 'confidence_score', 'persistence_score'}
 
 METHOD = 'ai-event-v1'
 TEXT_FIELDS = ('increment_reason', 'expectation_baseline', 'transmission', 'im_case',
@@ -16,7 +22,7 @@ ASSESSMENT_FIELDS = {'assessment_id', 'event_id', 'source_ids', 'source_checks',
     'information_gain', 'surprise', 'bias', 'decision', 'confidence', 'channels', 'horizon',
     'conflicts', 'gaps', 'research_mode', 'input_digest', 'expected_last_update_id',
     'baseline_source_ids', 'exposure_source_ids', 'directness', 'independent_cause',
-    'relative_pricing', 'event_time', 'first_tradable_time', 'promote_causal', *TEXT_FIELDS}
+    'relative_pricing', 'event_time', 'first_tradable_time', 'promote_causal', 'score_basis', 'impact_analysis', *TEXT_FIELDS, *AI_ALPHA_FIELDS}
 
 
 def strings(value, name, nonempty=False):
@@ -37,6 +43,17 @@ class AIResearch:
         if row is None:
             raise ValueError('AI引用的原始信息不存在：' + iid)
         return json.loads(row['payload'])
+
+    def source_snapshot(self, iid):
+        source = self._source(iid)
+        path = (ROOT / str(source.get('local_snapshot', ''))).resolve()
+        allowed = (ROOT / 'data' / 'source_snapshots').resolve()
+        if not path.is_relative_to(allowed) or path.suffix.lower() != '.pdf' or not path.is_file():
+            raise ValueError('归档附件需要仓库内可复核PDF快照')
+        raw = path.read_bytes()
+        if not raw.startswith(b'%PDF') or hashlib.sha256(raw).hexdigest() != source.get('document_sha256'):
+            raise ValueError('归档附件指纹或格式不一致')
+        return raw
 
     def context(self, event_id, source_ids=None, additional_sources=None, as_of=None):
         at = utc(as_of or now())
@@ -72,9 +89,31 @@ class AIResearch:
         return [json.loads(r['payload']) for r in self.db.execute(
             'SELECT payload FROM ai_assessments WHERE event_id=? AND known_at<=? ORDER BY known_at,rowid', (event_id, at))]
 
+    def preview(self, event_id, as_of=None):
+        at = utc(as_of or now())
+        cards = self.list_assessments(event_id, at)
+        return research_preview(cards[-1], at) if cards else None
+
+    def scoring_report(self, as_of=None, include_historical=False):
+        at = utc(as_of or now())
+        records = []
+        for row in self.db.execute('SELECT event_id FROM events ORDER BY event_id'):
+            event = self.engine.snapshot(row['event_id'], at)
+            if event is None or event.get('scope') == 'Historical' and not include_historical:
+                continue
+            preview = self.preview(event['event_id'], at)
+            if preview:
+                records.append({'event_name': event['name'], **preview})
+        records.sort(key=lambda r: (r['score'] is None, -(r['score'] or 0), r['event_id']))
+        return {'as_of': at, 'research_only': True, 'trade_permission': False,
+                'scored_count': sum(r['score'] is not None for r in records),
+                'basis_count': sum(r['score_basis'] is not None for r in records),
+                'records': records, 'note': '参考时间研究评分；不进入正式Dominant或市场状态'}
+
     def _validate(self, assessment, at):
         a = dict(assessment)
         reject_extra(a, ASSESSMENT_FIELDS)
+        validate_alpha(a)
         text_required(a, ('assessment_id', 'event_id', 'input_digest', *TEXT_FIELDS))
         strings(a.get('source_ids'), 'source_ids', True)
         for field in ('gaps', 'conflicts', 'channels', 'baseline_source_ids', 'exposure_source_ids'):
@@ -99,6 +138,12 @@ class AIResearch:
         expected_mode = 'HistoricalReview' if parent.get('scope') == 'Historical' else 'CurrentReview'
         if a.get('research_mode') != expected_mode:
             raise ValueError('历史研究不能伪装当前事件')
+        gate = NewsScreening(self.engine)
+        if expected_mode == 'CurrentReview' and gate.active(at):
+            screened = gate.latest(at)
+            linked = {r[0] for r in self.db.execute('SELECT information_id FROM event_information WHERE event_id=?', (a['event_id'],))}
+            if not any(iid in linked and screened.get(iid, {}).get('deep_review_allowed') for iid in a['source_ids']):
+                raise ValueError('当前深度判读须引用至少一条与事件关联且通过三轮初筛的信息；先做短初筛并归并')
         if 'expected_last_update_id' not in a or a['expected_last_update_id'] != parent['last_update_id']:
             raise ValueError('事件因果已经更新，请由Codex重新判读')
         context = self.context(a['event_id'], a['source_ids'], as_of=at)
@@ -111,7 +156,7 @@ class AIResearch:
         for item in checks:
             if not isinstance(item, dict):
                 raise ValueError('读取状态需要对象')
-            reject_extra(item, {'information_id', 'url', 'status', 'checked_at', 'fact_summary', 'capture_mode'})
+            reject_extra(item, {'information_id', 'url', 'status', 'checked_at', 'fact_summary', 'capture_mode', 'document_sha256'})
             text_required(item, ('information_id', 'url', 'fact_summary', 'capture_mode'))
             iid = item['information_id']
             if iid not in a['source_ids'] or iid in checked:
@@ -122,10 +167,14 @@ class AIResearch:
                 raise ValueError('读取地址与原始信息不一致')
             if item.get('status') not in ('Read', 'Partial', 'Unavailable'):
                 raise ValueError('读取状态无效')
-            if item['capture_mode'] not in ('DirectWebText', 'OfficialAttachment', 'OfficialSearchIndex', 'UserProvided', 'Unavailable'):
+            if item['capture_mode'] not in ('DirectWebText', 'OfficialAttachment', 'ArchivedOfficialAttachment', 'OfficialSearchIndex', 'UserProvided', 'Unavailable'):
                 raise ValueError('资料取得方式无效')
-            if item['status'] == 'Read' and item['capture_mode'] not in ('DirectWebText', 'OfficialAttachment'):
+            if item['status'] == 'Read' and item['capture_mode'] not in ('DirectWebText', 'OfficialAttachment', 'ArchivedOfficialAttachment'):
                 raise ValueError('索引片段或提供资料不能伪装成原文完整读取')
+            if item['capture_mode'] == 'ArchivedOfficialAttachment':
+                digest = hashlib.sha256(self.source_snapshot(iid)).hexdigest()
+                if item.get('document_sha256') != digest:
+                    raise ValueError('归档附件指纹不一致')
             if utc(item['checked_at']) > at:
                 raise ValueError('读取时间不能晚于当前入库时刻')
             checked[iid] = item['status']
@@ -147,6 +196,8 @@ class AIResearch:
         for field in ('baseline_source_ids', 'exposure_source_ids'):
             if set(a[field]) - set(a['source_ids']):
                 raise ValueError(field + '须引用本次证据')
+        validate_score_basis(a, {i: self._source(i) for i in a['source_ids']}, checked, at)
+        validate_impact_analysis(a, {i: self._source(i) for i in a['source_ids']}, checked, at)
         a.setdefault('promote_causal', False)
         if type(a['promote_causal']) is not bool:
             raise ValueError('promote_causal须为布尔值')
@@ -166,6 +217,7 @@ class AIResearch:
         changes = {k: a.get(k) for k in ('bias', 'channels', 'horizon', 'directness',
             'independent_cause', 'relative_pricing', 'invalidation', 'event_time', 'first_tradable_time')}
         changes['reviewed'] = True
+        changes.update({k: a[k] for k in AI_ALPHA_FIELDS if k in a})
         update_id = 'AI-U-' + a['assessment_id']
         self.engine.update_event({'update_id': update_id, 'event_id': a['event_id'],
             'known_at': at, 'effective_at': at, 'source_type': 'News',

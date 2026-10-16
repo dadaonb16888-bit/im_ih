@@ -1,0 +1,78 @@
+{
+  "captures": [
+    {
+      "key": "BUYOUT8",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026041416545098236/index.html",
+      "checked_at": "2026-10-15T07:17:58.892977+00:00",
+      "http_status": 200,
+      "final_url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026041416545098236/index.html",
+      "bytes": 27555,
+      "document_sha256": "a0140f7f037bf46d3231b916fb5d890a25770fe8c69ca3cf3401c5a5d4eb5133",
+      "local_snapshot": "D:\\Codex\\新建文件夹\\exports\\news_evidence_20261015\\BUYOUT8.html"
+    },
+    {
+      "key": "BUYOUT18",
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026091416410185399/index.html",
+      "checked_at": "2026-10-15T07:17:58.894982+00:00",
+      "http_status": 200,
+      "final_url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/5492845/2026091416410185399/index.html",
+      "bytes": 27558,
+      "document_sha256": "ddde77d93f7189b527688e53ac0c8fdb12dbed20374e65129314129bc78a291e",
+      "local_snapshot": "D:\\Codex\\新建文件夹\\exports\\news_evidence_20261015\\BUYOUT18.html"
+    },
+    {
+      "key": "BEIGE_PRIOR",
+      "url": "https://www.minneapolisfed.org/beige-book-reports/2026/2026-09-su",
+      "checked_at": "2026-10-15T07:17:58.894982+00:00",
+      "http_status": 200,
+      "final_url": "https://www.minneapolisfed.org/beige-book-reports/2026/2026-09-su",
+      "bytes": 110829,
+      "document_sha256": "75cb5a8b9f1d5c17882cf96d09759d8e8f1368059a520d436ec7f963a518ef00",
+      "local_snapshot": "D:\\Codex\\新建文件夹\\exports\\news_evidence_20261015\\BEIGE_PRIOR.html"
+    },
+    {
+      "key": "BEIGE_AMBIGUOUS",
+      "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202608-summary.htm",
+      "checked_at": "2026-10-15T07:17:58.895981+00:00",
+      "http_status": 200,
+      "final_url": "https://www.federalreserve.gov/monetarypolicy/beigebook202608-summary.htm",
+      "bytes": 88596,
+      "document_sha256": "234163691c7f6367d5251ee41d06fd48915d1716239c47a1f34d3c04239934f2",
+      "local_snapshot": "D:\\Codex\\新建文件夹\\exports\\news_evidence_20261015\\BEIGE_AMBIGUOUS.html"
+    },
+    {
+      "key": "BEIGE_CURRENT",
+      "url": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm",
+      "checked_at": "2026-10-15T07:17:58.896982+00:00",
+      "http_status": 200,
+      "final_url": "https://www.federalreserve.gov/monetarypolicy/beigebook202610-summary.htm",
+      "bytes": 88889,
+      "document_sha256": "d2b9bf52d49b1c2472cd68c26ea5a3a430190b5d72254b1863213917103714d4",
+      "local_snapshot": "D:\\Codex\\新建文件夹\\exports\\news_evidence_20261015\\BEIGE_CURRENT.html"
+    },
+    {
+      "key": "FCC_GPO",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/FR-2026-09-11.pdf",
+      "checked_at": "2026-10-15T07:17:58.896982+00:00",
+      "http_status": 200,
+      "final_url": "https://www.govinfo.gov/content/pkg/FR-2026-09-11/pdf/FR-2026-09-11.pdf",
+      "bytes": 3999826,
+      "document_sha256": "c838cde351a66b6458e33739324836e7309876d100ca1da4cd3a5dec02d20964",
+      "local_snapshot": "D:\\Codex\\新建文件夹\\exports\\news_evidence_20261015\\FCC_GPO.pdf",
+      "pages": 243,
+      "read_scope": "PDF pages 31-34 only; printed 57798-57801; rest of issue unread"
+    },
+    {
+      "key": "FCC_DIRECT",
+      "url": "https://docs.fcc.gov/public/attachments/FCC-26-50A1.pdf",
+      "checked_at": "2026-10-15T07:18:12.067644+00:00",
+      "read_status": "Unavailable",
+      "error": "web.open returned403; no downloaded attachment; no retry"
+    }
+  ],
+  "limits": [
+    "Government PDF issue only pages31-34 read; original full FCC order unavailable.",
+    "Old daily cutoff and source coverage not expanded.",
+    "No future/zero-filled unknown relative effect or direction."
+  ]
+}

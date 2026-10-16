@@ -6,6 +6,8 @@ from event_engine.engine import EventEngine, ROOT, now
 from event_engine.csv_io import import_research, export_research
 from event_engine.collection import CollectionLedger
 from event_engine.ai_research import AIResearch
+from event_engine.news_screening import NewsScreening
+from event_engine.discovery import DiscoveryLedger
 
 
 def read_json(path):
@@ -67,6 +69,14 @@ def main():
     report.add_argument('--as-of', default=None)
     report.add_argument('--output', default=None)
     report.add_argument('--include-historical', action='store_true')
+    alpha = sub.add_parser('alpha-report')
+    alpha.add_argument('--as-of', default=None)
+    alpha.add_argument('--output', default=None)
+    alpha.add_argument('--include-historical', action='store_true')
+    research_alpha = sub.add_parser('research-alpha-report')
+    research_alpha.add_argument('--as-of', default=None)
+    research_alpha.add_argument('--output', default=None)
+    research_alpha.add_argument('--include-historical', action='store_true')
     imp = sub.add_parser('import-research')
     imp.add_argument('directory')
     exp = sub.add_parser('export-research')
@@ -84,6 +94,13 @@ def main():
     ai_context.add_argument('--output', default=None)
     ai_import = sub.add_parser('apply-ai-research')
     ai_import.add_argument('json_file')
+    screening_import = sub.add_parser('apply-news-screening')
+    screening_import.add_argument('json_file')
+    discovery_import = sub.add_parser('apply-discovery')
+    discovery_import.add_argument('json_file')
+    screening_report = sub.add_parser('screening-report')
+    screening_report.add_argument('--as-of', default=None)
+    screening_report.add_argument('--output', default=None)
     args = parser.parse_args()
     engine = EventEngine(args.database)
     try:
@@ -91,6 +108,14 @@ def main():
             result = migrate(engine, args.research_folder, args.known_at or now())
         elif args.operation == 'report':
             result = engine.report(args.as_of or now(), include_historical=args.include_historical)
+            if args.output:
+                Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+        elif args.operation == 'alpha-report':
+            result = engine.alpha_report(args.as_of or now(), args.include_historical)
+            if args.output:
+                Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+        elif args.operation == 'research-alpha-report':
+            result = AIResearch(engine).scoring_report(args.as_of, args.include_historical)
             if args.output:
                 Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
         elif args.operation == 'import-research':
@@ -111,6 +136,14 @@ def main():
                 Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
         elif args.operation == 'apply-ai-research':
             result = AIResearch(engine).apply_pack(read_json(args.json_file))
+        elif args.operation == 'apply-news-screening':
+            result = NewsScreening(engine).apply_pack(read_json(args.json_file))
+        elif args.operation == 'apply-discovery':
+            result = DiscoveryLedger(engine).apply_pack(read_json(args.json_file))
+        elif args.operation == 'screening-report':
+            result = NewsScreening(engine).report(args.as_of)
+            if args.output:
+                Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
         else:
             collection = CollectionLedger(engine)
             operation = {'add-information': engine.add_information, 'create': engine.create_event,
