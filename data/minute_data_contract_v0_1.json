@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "contract_id": "IMIH-MINUTE-DIAGNOSTIC-v0.1",
+  "mode": "DIAGNOSTIC_ONLY",
+  "grain": "concrete same-expiry contract and stored minute label",
+  "source_kind": "primary/raw",
+  "timezone": null,
+  "bar_label_semantics": null,
+  "row_vendor": null,
+  "official_calendar_verified": false,
+  "research_admitted": false,
+  "entry_allowed": false,
+  "case_checks": [
+    {"month": "2402", "date": "2024-02-05"},
+    {"month": "2502", "date": "2025-02-05"},
+    {"month": "2504", "date": "2025-04-07"}
+  ],
+  "gap_checks": [
+    {"month": "2608", "date": "2026-08-06"},
+    {"month": "2609", "date": "2026-09-10"}
+  ],
+  "quarantine_policy": [
+    "NUL or malformed CSV records",
+    "invalid, nonminute or unreviewed timezone labels",
+    "missing, nonfinite, nonpositive or inconsistent OHLC",
+    "all records sharing a duplicated timestamp"
+  ],
+  "no_automatic_transforms": ["timezone shift", "bar-label shift", "forward fill", "cross-copy patch", "relative OHLC synthesis"],
+  "release_gaps": ["vendor lineage", "timezone evidence", "bar interval evidence", "official calendar", "complete paired coverage", "separate reviewed rule version"]
+}
