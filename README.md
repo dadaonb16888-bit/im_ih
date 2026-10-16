@@ -1,6 +1,8 @@
 # IM/IH 事件处理模块 V1.0
 
-当前工作转为开仓规则设计（2026-10-16）：用户暂停新闻处理，假设已判断IM强于IH，新增[开仓规则草案V0.1](docs/IM强于IH开仓规则草案_V0.1.md)和[合成案例](docs/IM强于IH开仓案例_V0.1.md)。明确同步相对K线突破、确认后报价、整数配比/残余敞口、现金预算、部分成交恢复与整组退出；n=5仍是待验证候选。只交付文档，未改行情/时机/执行代码、数据库或entry_allowed，未开始回测或下单。案例算术与文档链接检查通过，未重跑代码测试。以下保留新闻阶段快照。
+本轮已完成只读行情盘点（2026-10-16）：187文件、53组同月合约，三个旧案例两腿各240根分钟线；没有买卖盘报价，原同步相对高点模型仍缺输入。分钟标签混用、112个共同日期内单边标签及两个IH整日缺口已列明。详见[盘点结论](docs/本地行情盘点_20261016.md)与[计算笔记](research/local_market_data_inventory_20261016.ipynb)。仅新增可选pandas离线研究工具，不改事件库、entry_allowed或应用流程，未回测或生成信号。
+
+上一轮转为开仓规则设计（2026-10-16）：用户暂停新闻处理，假设已判断IM强于IH，新增[开仓规则草案V0.1](docs/IM强于IH开仓规则草案_V0.1.md)和[合成案例](docs/IM强于IH开仓案例_V0.1.md)。明确同步相对K线突破、确认后报价、整数配比/残余敞口、现金预算、部分成交恢复与整组退出；n=5仍是待验证候选。只交付文档，未改行情/时机/执行代码、数据库或entry_allowed，未开始回测或下单。案例算术与文档链接检查通过，未重跑代码测试。以下保留新闻阶段快照。
 
 最新候选处理（北京时间2026-10-16 06:24）：补读10条旧窗口候选、11个来源；7条核实旧日期后早停，3条关联原文。量子成果校方13日已发布，不把15日传播当首次冲击；水运AI通知按公开日14日保留，URL13日与落款8日不混用。新增资料10背景/1待核，未增加深入通过项或方向。现181条资料，5深入/29待核/80背景/67未筛；待处理候选63、总未解决65。旧行、旧时点、幂等、完整性与浏览器验证通过；本轮无实现代码变化。见[候选原文核查](docs/候选原文核查_20261016.md)。
 
@@ -109,7 +111,7 @@ python manage.py research-alpha-report --output data/research_alpha_report_20261
 
 阅读顺序：
 
-最新开发计划以根目录两份规范为准：Phase 1事件Alpha工程→Phase 2历史行情及Spread→Phase 3历史Alpha验证→Phase 4监控→Phase 5执行。原路线和历史版本保留在[最新开发路线](docs/最新开发路线.md)及[Phase 1工程启动包与实现对照](docs/Phase1计划与当前实现对照.md)。当前范围仍只含Event Layer，行情和统计任务尚未执行。
+最新开发计划以根目录两份规范为准：Phase 1事件Alpha工程→Phase 2历史行情及Spread→Phase 3历史Alpha验证→Phase 4监控→Phase 5执行。原路线和历史版本保留在[最新开发路线](docs/最新开发路线.md)及[Phase 1工程启动包与实现对照](docs/Phase1计划与当前实现对照.md)。正式应用范围仍只含Event Layer；2026-10-16另做离线行情盘点，尚未开发Phase 2行情模块或进行策略统计验证。
 
 1. [事件处理规则](docs/事件处理规则.md)：什么算事件，何时更新，方向怎样判断。
 2. [每日收集与审核流程](docs/每日收集与审核流程.md)：覆盖前一天至当前的完整收集窗口。
@@ -119,7 +121,7 @@ python manage.py research-alpha-report --output data/research_alpha_report_20261
 
 数据：`database/events.sqlite3`。原研究资料仍保留在 `../analysis/ih_im_event_research`，没有覆盖。
 
-程序使用Python标准库，无需安装额外依赖。在本目录运行：
+Event应用使用Python标准库，无需安装额外依赖；research下的可选行情盘点使用pandas 2或更新版本，不参与应用运行。在本目录运行：
 
 ```powershell
 $eventPython = 'C:\Users\yingh\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'

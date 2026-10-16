@@ -1,0 +1,122 @@
+{
+  "checked_at": "2026-10-16T00:51:21.870104+00:00",
+  "hashes_rechecked": 187,
+  "hash_mismatches": [],
+  "independent_csv_anomaly_counts": {
+    "actual_zero_or_negative_ohlc_rows": 0,
+    "nonfinite_ohlc_rows": 48,
+    "all_fields_empty_rows": 0,
+    "empty_datetime_rows": 0,
+    "structurally_short_rows": 47,
+    "datetime_contains_nul_rows": 47
+  },
+  "independent_case_checks": [
+    {
+      "date": "2024-02-05",
+      "month": "2402",
+      "im_rows": 240,
+      "ih_rows": 240,
+      "shared_labels": 240,
+      "duplicates": 0,
+      "agrees_with_inventory": true
+    },
+    {
+      "date": "2025-02-05",
+      "month": "2502",
+      "im_rows": 240,
+      "ih_rows": 240,
+      "shared_labels": 240,
+      "duplicates": 0,
+      "agrees_with_inventory": true
+    },
+    {
+      "date": "2025-04-07",
+      "month": "2504",
+      "im_rows": 240,
+      "ih_rows": 240,
+      "shared_labels": 240,
+      "duplicates": 0,
+      "agrees_with_inventory": true
+    }
+  ],
+  "continuous_day_grids": {
+    "IM": {
+      "day_grid_counts": {
+        "start": 1001,
+        "end": 23
+      },
+      "examples": {
+        "start": [
+          "2022-07-22",
+          "2022-07-25",
+          "2022-07-26",
+          "2022-07-27",
+          "2022-07-28",
+          "2022-07-29"
+        ],
+        "end": [
+          "2026-06-23",
+          "2026-06-24",
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-29",
+          "2026-06-30"
+        ],
+        "other": []
+      }
+    },
+    "IH": {
+      "day_grid_counts": {
+        "start": 2489,
+        "other": 3,
+        "end": 30
+      },
+      "examples": {
+        "start": [
+          "2016-05-23",
+          "2016-05-24",
+          "2016-05-25",
+          "2016-05-26",
+          "2016-05-27",
+          "2016-05-30"
+        ],
+        "end": [
+          "2026-06-22",
+          "2026-06-23",
+          "2026-06-24",
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-30"
+        ],
+        "other": [
+          "2026-06-18",
+          "2026-06-29",
+          "2026-07-07"
+        ]
+      }
+    }
+  },
+  "im_observed_dates_absent_from_ih": [
+    "2026-08-06",
+    "2026-09-10"
+  ],
+  "ih_only_date_count": 1500,
+  "shared_day_unmatched_labels_by_date": {
+    "2026-06-18": 68,
+    "2026-06-22": 4,
+    "2026-06-29": 1,
+    "2026-07-07": 7,
+    "2026-07-20": 4,
+    "2026-07-21": 4,
+    "2026-07-22": 4,
+    "2026-07-23": 4,
+    "2026-07-24": 4,
+    "2026-07-27": 4,
+    "2026-07-28": 4,
+    "2026-07-29": 4
+  },
+  "limits": [
+    "Grid names are diagnostic hypotheses, not verified vendor bar semantics.",
+    "Matching labels and hashes do not establish synchronized quotes, complete trading calendars or fills."
+  ]
+}
